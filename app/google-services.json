@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "358446607620",
+    "project_id": "gradify-4bd5e",
+    "storage_bucket": "gradify-4bd5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358446607620:android:c444989eebe837b0acb451",
+        "android_client_info": {
+          "package_name": "com.github.ltkicker.gradify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358446607620-5unmo04sh2ilf0p73uk3gphgl3e3ijrj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHcWhgt9g-VsOxPrPqjgyUGcGPZvktFnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358446607620-5unmo04sh2ilf0p73uk3gphgl3e3ijrj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

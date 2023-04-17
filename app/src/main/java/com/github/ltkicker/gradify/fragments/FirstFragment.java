@@ -1,4 +1,4 @@
-package com.github.ltkicker.gradify;
+package com.github.ltkicker.gradify.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.databinding.FragmentFirstBinding;
 
 public class FirstFragment extends Fragment {
