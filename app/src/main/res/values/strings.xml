@@ -1,7 +1,22 @@
 <resources>
+    <!-- General Messages -->
     <string name="app_name">Gradify</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
+
+    <!-- Portal Messages -->
+    <string name="menu_choose_portal">I\'m a…</string>
+    <string name="teacher_txt">Teacher</string>
+    <string name="student_txt">Student</string>
+    <string name="teacher_img_desc">Teacher Picture</string>
+    <string name="student_img_desc">Student Picture</string>
+
+    <!-- Background Image Description -->
+    <string name="background_desc">Background for Gradify</string>
+
+    <!-- Logo Image Description -->
+    <string name="gradify_logo">Logo for Gradify</string>
+
+    <!-- Messages used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
