@@ -1,0 +1,138 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/auth"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+
+	<ImageView
+		android:id="@+id/imageView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:contentDescription="@string/background_desc"
+		android:scaleType="centerCrop"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="1.0"
+		app:srcCompat="@drawable/img_background2" />
+
+	<TextView
+		android:id="@+id/textsignin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/sign_in"
+		android:textColor="@color/sign_in"
+		android:textSize="16sp"
+		tools:layout_editor_absoluteX="160dp"
+		tools:layout_editor_absoluteY="557dp" />
+
+	<EditText
+		android:id="@+id/editTextText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:inputType="text"
+		android:text="Name"
+		tools:layout_editor_absoluteX="76dp"
+		tools:layout_editor_absoluteY="458dp" />
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<TextView
+		android:id="@+id/textremember"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/remember_me"
+		android:textColor="@color/sign_in"
+		android:textSize="14sp"
+		tools:layout_editor_absoluteX="124dp"
+		tools:layout_editor_absoluteY="429dp" />
+
+
+	<TextView
+		android:id="@+id/textpassword"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/password"
+		android:textColor="@color/sign_in"
+		android:textSize="16sp"
+		tools:layout_editor_absoluteX="160dp"
+		tools:layout_editor_absoluteY="607dp" />
+
+	<TextView
+		android:id="@+id/textlogin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/login"
+		android:textColor="@color/sign_in"
+		android:textSize="16sp"
+		tools:layout_editor_absoluteX="169dp"
+		tools:layout_editor_absoluteY="503dp" />
+
+	<TextView
+		android:id="@+id/textsignup"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/not_a_member_yet"
+		android:textColor="@color/sign_in"
+		android:textSize="13sp"
+		tools:layout_editor_absoluteX="39dp"
+		tools:layout_editor_absoluteY="382dp" />
+
+	<TextView
+		android:id="@+id/textteacherlogin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/poppins"
+		android:gravity="center"
+		android:text="@string/teacher_login"
+		android:textColor="@color/sign_in"
+		android:textSize="24sp"
+		tools:layout_editor_absoluteX="124dp"
+		tools:layout_editor_absoluteY="326dp" />
+
+	<ImageView
+		android:id="@+id/img_teacher"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/background_desc"
+		android:src="@drawable/img_teacher_2"
+		tools:layout_editor_absoluteX="131dp"
+		tools:layout_editor_absoluteY="179dp" />
+
+
+	<View
+		android:id="@+id/shapeframe_"
+		android:layout_width="75dp"
+		android:layout_height="476dp"
+		android:alpha="0"
+		android:background="@drawable/shape_frame"
+		tools:layout_editor_absoluteX="269dp"
+		tools:layout_editor_absoluteY="300dp" />
+
+	<ImageView
+		android:id="@+id/iconback"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/background_desc"
+		android:src="@drawable/iconback"
+		tools:layout_editor_absoluteX="39dp"
+		tools:layout_editor_absoluteY="58dp" />
+
+	<com.google.android.material.textfield.TextInputEditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="hint"
+		tools:layout_editor_absoluteX="108dp"
+		tools:layout_editor_absoluteY="458dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

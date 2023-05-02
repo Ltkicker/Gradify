@@ -15,7 +15,7 @@ public class Gradify extends AppCompatActivity {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        setContentView(R.layout.activity_loginportal);
+        setContentView(R.layout.activity_authportal);
 
     }
 }

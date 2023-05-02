@@ -12,11 +12,11 @@
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerInside"
+        android:contentDescription="@string/background_desc"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_background2"
-        android:contentDescription="@string/background_desc" />
+        app:srcCompat="@drawable/img_background2" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

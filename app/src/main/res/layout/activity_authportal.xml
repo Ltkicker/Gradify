@@ -8,10 +8,10 @@
 
 	<ImageView
 		android:id="@+id/imgBackground"
-		android:layout_width="0dp"
-		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
 		android:contentDescription="@string/background_desc"
-		android:scaleType="centerInside"
+		android:scaleType="centerCrop"
 		android:visibility="visible"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
@@ -22,33 +22,58 @@
 
 	<LinearLayout
 		android:id="@+id/linearLayout"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="191dp"
+		android:layout_height="265dp"
 		android:layout_marginTop="50dp"
+		android:gravity="center_horizontal"
 		android:orientation="vertical"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="@+id/imgBackground">
 
-		<TextView
-			android:id="@+id/gradifybigtext"
+		<LinearLayout
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:gravity="center"
-			android:text="@string/app_name"
-			android:textColor="@color/white"
-			android:textSize="55sp"
-			android:textStyle="bold" />
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/pragati_narrow"
+				android:gravity="center"
+				android:text="@string/cubix_text_1"
+				android:textColor="@color/black"
+				android:textSize="55sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/pragati_narrow"
+				android:text="@string/cubix_text_2"
+				android:textColor="@color/light_gray"
+				android:textSize="55sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="64dp"
+				android:layout_weight="1"
+				android:fontFamily="@font/pragati_narrow"
+				android:text="@string/cubix_text_3"
+				android:textColor="@color/black"
+				android:textSize="50sp" />
+		</LinearLayout>
 
 		<ImageView
-			android:id="@+id/gradifybiglogo"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:adjustViewBounds="true"
 			android:contentDescription="@string/gradify_logo"
 			android:cropToPadding="false"
 			android:scaleType="centerInside"
-			android:src="@drawable/img_gradifybiglogo" />
+			android:src="@drawable/logo_cubixicon" />
+
 	</LinearLayout>
 
 	<ImageView

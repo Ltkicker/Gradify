@@ -3,12 +3,27 @@
     <string name="app_name">Gradify</string>
     <string name="action_settings">Settings</string>
 
-    <!-- Portal Messages -->
+
+    <!-- Cubix Text Logo -->
+    <string name="cubix_text_1">CU</string>
+    <string name="cubix_text_2">BIX</string>
+    <string name="cubix_text_3">+</string>
+
+    <!-- Auth Portal Messages -->
     <string name="menu_choose_portal">I\'m a…</string>
     <string name="teacher_txt">Teacher</string>
     <string name="student_txt">Student</string>
     <string name="teacher_img_desc">Teacher Picture</string>
     <string name="student_img_desc">Student Picture</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="remember_me">Remember me</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="not_a_member_yet">Not a member yet? Sign up</string>
+    <string name="teacher_login">Teacher Log in:</string>
+    <string name="student_login">Student Log in:</string>
 
     <!-- Background Image Description -->
     <string name="background_desc">Background for Gradify</string>
