@@ -1,0 +1,36 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<ScrollView android:id="@+id/verticalgradifylogo" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+
+			<TextView android:id="@+id/gradifybigtext"
+				android:textStyle="bold"
+				android:layout_gravity="center_horizontal|center"
+				android:gravity="center"
+				android:textSize="64sp"
+				android:textColor="@color/black"
+				android:layout_marginStart="-11dp"
+				android:layout_marginTop="0dp"
+				android:layout_width="310dp"
+				android:layout_height="124.63dp"
+				android:text="@string/app_name"
+				 />
+
+			<ImageView android:id="@+id/gradifybiglogo"
+				android:src="@drawable/img_gradifybiglogo"
+				android:contentDescription="@string/gradify_logo"
+				android:layout_marginStart="35.57dp"
+				android:layout_marginTop="65.27dp"
+				android:layout_width="191.1dp"
+				android:layout_height="224.73dp" />
+
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>

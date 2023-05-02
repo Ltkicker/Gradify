@@ -9,13 +9,13 @@ public class Gradify extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_loading);
+        setContentView(R.layout.activity_loading);
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        setContentView(R.layout.layout_loginportal);
+        setContentView(R.layout.activity_loginportal);
 
     }
 }
