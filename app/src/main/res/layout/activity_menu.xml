@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center_vertical|clip_horizontal"
+    android:foregroundTint="#F8E9E9"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/backgroud"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/background_desc"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/img_background2"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/WELCOMETEACHER"
+        android:layout_width="221dp"
+        android:layout_height="76dp"
+        android:contentDescription="welcometeacher"
+        android:text="W E L C O M E  "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck,TextContrastCheck"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <ImageView
+        android:id="@+id/img_gradifybigtext"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/img_gradifybigtext"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <ImageView
+        android:id="@+id/img_gradifybiglogo"
+        android:layout_width="113dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/img_gradifybiglogo"
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+
+    <ImageButton
+        android:id="@+id/menu_addclass"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="addcalass"
+        android:radius="500dp"
+        app:srcCompat="@drawable/img_MenuAddClass"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <ImageButton
+        android:id="@+id/menu_moreinfo"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="moreinfo"
+        android:radius="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/img_MenuAccntInfo"
+        tools:layout_editor_absoluteX="72dp" />
+
+    <ImageButton
+        android:id="@+id/menu_menuleaderbaord"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="leaderboard"
+        android:radius="500dp"
+        app:srcCompat="@drawable/img_MenuLeaderboard"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <ImageButton
+        android:id="@+id/menu_homepage"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="homepage"
+        android:radius="500dp"
+        app:srcCompat="@drawable/img_MenuHome"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <ImageButton
+        android:id="@+id/menu_message"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="message"
+        android:radius="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/img_MenuMessage"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <ImageButton
+        android:id="@+id/menu_notif"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="notif"
+        android:radius="500dp"
+        app:srcCompat="@drawable/img_MenuNotification"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <ImageButton
+        android:id="@+id/menu_gradesheet"
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="gradesheet"
+        android:radius="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_MenuGradeSheet"
+        tools:layout_editor_absoluteY="321dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

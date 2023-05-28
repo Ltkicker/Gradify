@@ -27,63 +27,47 @@
 		android:id="@+id/textsignin"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
-		android:layout_marginTop="54dp"
 		android:layout_marginBottom="60dp"
 		android:background="@drawable/shapepassword_shape"
 		android:backgroundTintMode="src_over"
 		android:clickable="true"
-		android:drawableBottom="@drawable/round_corner"
 		android:ellipsize="middle"
 		android:fontFamily="@font/poppins"
+		android:gravity="center|center_horizontal|center_vertical"
 		android:text="@string/sign_in"
 		android:textAlignment="inherit"
 		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-		android:textColor="#FF0000"
+		android:textColor="@color/sign_in"
 		android:textDirection="inherit"
 		android:textSize="20sp"
 		android:textStyle="bold"
 		android:visibility="visible"
+
 		app:drawableBottomCompat="@drawable/round_corner"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.5"
 		app:layout_constraintStart_toStartOf="parent"
-
-		app:layout_constraintTop_toBottomOf="@+id/textremember"
 		app:layout_marginBaseline="10dp"
 		tools:ignore="MissingConstraints"
-		tools:visibility="visible" />
-
-	<TextView
-		android:id="@+id/textremember"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="23dp"
-		android:layout_marginTop="164dp"
-		android:layout_marginBottom="162dp"
-		android:text="@string/remember_me"
-		android:textColor="@color/shapesignin_color"
-		android:textSize="16sp"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintStart_toStartOf="@+id/textInputEditText"
-		app:layout_constraintTop_toBottomOf="@+id/textsignup"
-		tools:ignore="MissingConstraints" />
+		tools:visibility="visible"
+		android:focusable="true" />
 
 	<TextView
 		android:id="@+id/textsignup"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="28dp"
+		android:layout_marginBottom="334dp"
+		android:fontFamily="@font/poppins"
 		android:text="@string/not_a_member_yet"
 		android:textColor="@color/shapesignin_color"
 		android:textSize="13sp"
-		app:layout_constraintEnd_toStartOf="@+id/textteacherlogin"
-		app:layout_constraintStart_toStartOf="@+id/textteacherlogin"
-		app:layout_constraintTop_toBottomOf="@+id/textteacherlogin"
-		tools:ignore="MissingConstraints" />
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/InputUsername"
+		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<TextView
-		android:id="@+id/textteacherlogin"
+		android:id="@+id/studentLogIn"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginBottom="42dp"
@@ -96,7 +80,8 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.497"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/img_teacher" />
+		app:layout_constraintTop_toBottomOf="@+id/img_teacher"
+		tools:ignore="TextContrastCheck" />
 
 	<ImageView
 		android:id="@+id/img_teacher"
@@ -106,11 +91,12 @@
 		android:layout_marginBottom="14dp"
 		android:contentDescription="@string/background_desc"
 		android:src="@drawable/img_teacher_2"
-		app:layout_constraintBottom_toTopOf="@+id/textteacherlogin"
+		app:layout_constraintBottom_toTopOf="@+id/studentLogIn"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.496"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintTop_toTopOf="parent"
+		tools:ignore="ImageContrastCheck" />
 
 	<ImageView
 		android:id="@+id/iconback"
@@ -121,23 +107,8 @@
 		android:contentDescription="@string/background_desc"
 		android:src="@drawable/iconback"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
-
-	<com.google.android.material.textfield.TextInputLayout
-		android:id="@+id/textInputLayout"
-		android:layout_width="182dp"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="32dp"
-		android:layout_marginTop="32dp"
-		android:layout_marginEnd="32dp"
-		android:layout_marginBottom="32dp"
-		android:textColorHint="#E0D3D3"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/textsignin">
-
-	</com.google.android.material.textfield.TextInputLayout>
+		app:layout_constraintTop_toTopOf="parent"
+		tools:ignore="ImageContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputLayout
 		android:id="@+id/textInputLayout2"
@@ -147,16 +118,16 @@
 		android:layout_marginTop="19dp"
 		android:orientation="vertical"
 		app:layout_constraintStart_toStartOf="@+id/imageView"
-		app:layout_constraintTop_toTopOf="@+id/editText"
+		app:layout_constraintTop_toTopOf="@+id/InputUsername"
 		tools:ignore="MissingConstraints">
 
 	</com.google.android.material.textfield.TextInputLayout>
 
 	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/textInputEditText"
+		android:id="@+id/InputPassword"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
-		android:layout_marginBottom="16dp"
+		android:layout_marginTop="16dp"
 		android:background="@drawable/shapesignin_shape"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
@@ -165,34 +136,46 @@
 		android:hint="    Password"
 		android:textColor="#FFFFFF"
 		android:textColorHint="#FFFFFF"
-		app:layout_constraintBottom_toTopOf="@+id/textremember"
+		android:textSize="16sp"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.493"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/editText"
-		tools:ignore="MissingConstraints" />
+		app:layout_constraintTop_toBottomOf="@+id/InputUsername"
+		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/editText"
+		android:id="@+id/InputUsername"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
 		android:layout_marginBottom="16dp"
-		android:
 		android:background="@drawable/shapesignin_shape"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
 		android:fontFamily="@font/poppins"
-		android:hint="     Username"
+		android:hint="    Username"
 		android:textColor="#FFFFFF"
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
-		app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+		app:layout_constraintBottom_toTopOf="@+id/InputPassword"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/textsignup"
-		tools:ignore="MissingConstraints" />
+		tools:ignore="MissingConstraints,TextContrastCheck" />
+
+	<CheckBox
+		android:id="@+id/cb_rememberMe"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:buttonTint="#FFFFFF"
+		android:fontFamily="@font/poppins"
+		android:text="@string/remember_me"
+		android:textColor="#FFFCFC"
+		android:textSize="14sp"
+		app:layout_constraintStart_toStartOf="@+id/InputPassword"
+		app:layout_constraintTop_toBottomOf="@+id/InputPassword"
+		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
