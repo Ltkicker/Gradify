@@ -3,6 +3,8 @@ package com.github.ltkicker.gradify;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.github.ltkicker.gradify.data.ClassroomHandler;
+
 public class Gradify extends AppCompatActivity {
 
     @Override
@@ -20,6 +22,7 @@ public class Gradify extends AppCompatActivity {
 
         // Sets the activity to authentication area
         setContentView(R.layout.activity_authportal);
+
 
     }
 }
