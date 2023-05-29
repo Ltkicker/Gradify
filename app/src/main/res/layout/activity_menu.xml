@@ -8,133 +8,191 @@
     android:foregroundTint="#F8E9E9"
     android:visibility="visible">
 
+
     <ImageView
         android:id="@+id/backgroud"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/background_desc"
         android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_background2"
         tools:ignore="ImageContrastCheck" />
 
+    <ImageView
+        android:id="@+id/img_gradifybigtext"
+        android:layout_width="215dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="596dp"
+        android:contentDescription="@string/addclass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_gradifybigtext" />
+
     <TextView
         android:id="@+id/WELCOMETEACHER"
-        android:layout_width="221dp"
-        android:layout_height="76dp"
-        android:contentDescription="welcometeacher"
-        android:text="W E L C O M E  "
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="535dp"
+        android:contentDescription="@string/welcometeacher"
+        android:text="@string/w_e_l_c_o_m_e"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
-        tools:ignore="TextSizeCheck,TextContrastCheck"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="114dp" />
-
-    <ImageView
-        android:id="@+id/img_gradifybigtext"
-        android:layout_width="212dp"
-        android:layout_height="36dp"
-        app:srcCompat="@drawable/img_gradifybigtext"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="56dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/img_gradifybiglogo"
         android:layout_width="113dp"
-        android:layout_height="90dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="261dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ImageContrastCheck"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="24dp" />
-
+        android:importantForAccessibility="no" />
 
     <ImageButton
         android:id="@+id/menu_addclass"
         android:layout_width="115dp"
-        android:layout_height="110dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="410dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="addcalass"
+        android:contentDescription="@string/addcalass"
         android:radius="500dp"
-        app:srcCompat="@drawable/img_MenuAddClass"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="190dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_MenuAddClass" />
 
     <ImageButton
         android:id="@+id/menu_moreinfo"
         android:layout_width="115dp"
-        android:layout_height="110dp"
-        android:layout_marginBottom="36dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="593dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="38dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="moreinfo"
+        android:contentDescription="@string/moreinfo"
         android:radius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/img_MenuAccntInfo"
-        tools:layout_editor_absoluteX="72dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_MenuAccntInfo" />
 
     <ImageButton
         android:id="@+id/menu_menuleaderbaord"
         android:layout_width="115dp"
-        android:layout_height="110dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="289dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="leaderboard"
+        android:contentDescription="@string/leaderboard"
         android:radius="500dp"
-        app:srcCompat="@drawable/img_MenuLeaderboard"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="321dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_MenuLeaderboard" />
 
     <ImageButton
         android:id="@+id/menu_homepage"
         android:layout_width="115dp"
-        android:layout_height="110dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="410dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="homepage"
+        android:contentDescription="@string/homepage"
         android:radius="500dp"
-        app:srcCompat="@drawable/img_MenuHome"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="190dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_MenuHome" />
 
     <ImageButton
         android:id="@+id/menu_message"
         android:layout_width="115dp"
-        android:layout_height="110dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="469dp"
         android:layout_marginEnd="64dp"
+        android:layout_marginBottom="163dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="message"
+        android:contentDescription="@string/message"
         android:radius="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/img_MenuMessage"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_MenuMessage" />
 
     <ImageButton
         android:id="@+id/menu_notif"
         android:layout_width="115dp"
-        android:layout_height="110dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="469dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="163dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="notif"
+        android:contentDescription="@string/notif"
         android:radius="500dp"
-        app:srcCompat="@drawable/img_MenuNotification"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_MenuNotification" />
 
     <ImageButton
         android:id="@+id/menu_gradesheet"
         android:layout_width="115dp"
-        android:layout_height="110dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="289dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="gradesheet"
+        android:contentDescription="@string/gradesheet"
         android:radius="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_MenuGradeSheet"
-        tools:layout_editor_absoluteY="321dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_MenuGradeSheet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
