@@ -42,4 +42,14 @@
     <string name="username">Username</string>
     <string name="password1">Password</string>
     <string name="InputPassword">Password</string>
+    <string name="addclass">addclass</string>
+    <string name="welcometeacher">welcometeacher</string>
+    <string name="w_e_l_c_o_m_e">W E L C O M E</string>
+    <string name="addcalass">addcalass</string>
+    <string name="moreinfo">moreinfo</string>
+    <string name="leaderboard">leaderboard</string>
+    <string name="homepage">homepage</string>
+    <string name="message">message</string>
+    <string name="notif">notif</string>
+    <string name="gradesheet">gradesheet</string>
 </resources>
