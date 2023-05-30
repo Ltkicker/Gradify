@@ -8,6 +8,7 @@
     <string name="cubix_text_1">CU</string>
     <string name="cubix_text_2">BIX</string>
     <string name="cubix_text_3">+</string>
+    <string name="cubix_text_full">CUBIX</string>
 
     <!-- Auth Portal Messages -->
     <string name="menu_choose_portal">I\'m a…</string>
@@ -52,4 +53,13 @@
     <string name="message">message</string>
     <string name="notif">notif</string>
     <string name="gradesheet">gradesheet</string>
+
+    <!-- Addclass Popup -->
+    <string name="popup_desc">Interactive Grading System for Teachers</string>
+    <string name="create_class">CREATE CLASS</string>
+    <string name="archive">Archived</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="all">All</string>
+    <string name="your_classes">Your Classes</string>
+
 </resources>

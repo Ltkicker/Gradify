@@ -11,6 +11,8 @@ public class ClassroomHandler {
         Classroom classroom = new Classroom(classroomId, className, instructorName);
         assert classroomId != null;
         dbClass.child(classroomId).setValue(classroom);
+    }
 
+    public static void getClassroom(String classroomId) {
     }
 }

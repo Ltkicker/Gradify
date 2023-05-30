@@ -13,4 +13,9 @@
     <color name="textsignin_color">#456C6B</color>
     <color name="shapecheckbox_color">#C4C4C4</color>
     <color name="shape_checkbox">#D9D9D9</color>
+    <color name="popup_box">#95C3BA</color>
+
+    <!-- Tags Colors -->
+    <color name="tags_0">#89AEA6</color>
+    <color name="tags_1">#61AE9F</color>
 </resources>
