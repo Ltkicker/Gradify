@@ -10,7 +10,7 @@
 
 
 	<ImageView
-		android:id="@+id/imageView"
+		android:id="@+id/background2"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:contentDescription="@string/background_desc"
@@ -24,7 +24,7 @@
 		app:srcCompat="@drawable/img_background2" />
 
 	<TextView
-		android:id="@+id/textsignin"
+		android:id="@+id/clickable_signup"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
 		android:layout_marginBottom="60dp"
@@ -63,7 +63,7 @@
 		android:textColor="@color/shapesignin_color"
 		android:textSize="13sp"
 		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintStart_toStartOf="@+id/InputUsername"
+		app:layout_constraintStart_toStartOf="@+id/input_last_name"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<TextView
@@ -117,8 +117,8 @@
 		android:layout_marginStart="1dp"
 		android:layout_marginTop="19dp"
 		android:orientation="vertical"
-		app:layout_constraintStart_toStartOf="@+id/imageView"
-		app:layout_constraintTop_toTopOf="@+id/InputUsername"
+		app:layout_constraintStart_toStartOf="@+id/background2"
+		app:layout_constraintTop_toTopOf="@+id/input_last_name"
 		tools:ignore="MissingConstraints">
 
 	</com.google.android.material.textfield.TextInputLayout>
@@ -133,18 +133,18 @@
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
 		android:fontFamily="@font/poppins"
-		android:hint="    Password"
+		android:hint="@string/password"
 		android:textColor="#FFFFFF"
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.493"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/InputUsername"
+		app:layout_constraintTop_toBottomOf="@+id/input_last_name"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/InputUsername"
+		android:id="@+id/input_last_name"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
@@ -154,7 +154,7 @@
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
 		android:fontFamily="@font/poppins"
-		android:hint="    Username"
+		android:hint="@string/username"
 		android:textColor="#FFFFFF"
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
@@ -165,7 +165,7 @@
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<CheckBox
-		android:id="@+id/cb_rememberMe"
+		android:id="@+id/cb_accept_terms"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:buttonTint="#FFFFFF"

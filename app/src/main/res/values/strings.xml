@@ -17,14 +17,24 @@
     <string name="teacher_img_desc">Teacher Picture</string>
     <string name="student_img_desc">Student Picture</string>
 
+    <!-- Sign in/up Portal Messages -->
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <string name="remember_me">Remember me</string>
-    <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="not_a_member_yet">Not a member yet? Sign up</string>
     <string name="teacher_login">Teacher Log in:</string>
     <string name="student_login">Student Log in:</string>
+    <string name="last_name">   Last Name:</string>
+    <string name="first_name">   First Name:</string>
+    <string name="middle_name">   Middle Name:</string>
+    <string name="suffix">   Suffix:</string>
+    <string name="username">    Username:</string>
+    <string name="password">    Password:</string>
+    <string name="email">     Email:</string>
+    <string name="allterms"> I accepted all Terms &amp; Conditions</string>
+    <string name="welcome">W E L C O M E</string>
+
 
     <!-- Background Image Description -->
     <string name="background_desc">Background for Gradify</string>
@@ -40,12 +50,6 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="username">Username</string>
-    <string name="password1">Password</string>
-    <string name="InputPassword">Password</string>
-    <string name="addclass">addclass</string>
-    <string name="welcometeacher">welcometeacher</string>
-    <string name="w_e_l_c_o_m_e">W E L C O M E</string>
     <string name="addcalass">addcalass</string>
     <string name="moreinfo">moreinfo</string>
     <string name="leaderboard">leaderboard</string>
@@ -55,6 +59,7 @@
     <string name="gradesheet">gradesheet</string>
 
     <!-- Addclass Popup -->
+    <string name="addclass">addclass</string>
     <string name="popup_desc">Interactive Grading System for Teachers</string>
     <string name="create_class">CREATE CLASS</string>
     <string name="archive">Archived</string>
