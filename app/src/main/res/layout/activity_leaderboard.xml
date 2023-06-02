@@ -10,14 +10,18 @@
         android:id="@+id/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/img_background2"
-        android:contextClickable="false" />
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/iconback2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="36dp"
         android:contentDescription="@string/background_desc"
         android:foregroundTint="#FFFFFF"
@@ -42,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_gradifysmalltext"
-        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteX="181dp"
         tools:layout_editor_absoluteY="49dp" />
 
     <ImageView
@@ -50,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_gradifysmall"
-        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteX="144dp"
         tools:layout_editor_absoluteY="36dp" />
 
     <ImageView
@@ -62,30 +66,20 @@
         tools:layout_editor_absoluteY="148dp" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="261dp"
-        android:layout_height="47dp"
-        android:background="@drawable/shape_signin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/round_corner"
-        tools:layout_editor_absoluteY="112dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="184dp"
-        android:layout_height="155dp"
-        android:fontFamily="@font/poppins"
-        android:text="Leaderboard"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="291dp" />
-
-    <ImageView
         android:id="@+id/imageView10"
         android:layout_width="12dp"
         android:layout_height="18dp"
         app:srcCompat="@drawable/icon_three_dots"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="344dp" />
+        tools:layout_editor_absoluteX="374dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_leaderboard"
+        tools:layout_editor_absoluteY="101dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
