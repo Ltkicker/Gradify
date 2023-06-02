@@ -10,7 +10,6 @@
         android:id="@+id/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:background="@drawable/img_background2"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,12 +33,57 @@
 
     <TextView
         android:id="@+id/category"
-        android:layout_width="83dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/poppins"
         android:text="@string/category_others"
         android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/category2"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="@font/poppins"
+        android:text="Attendance"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/category3"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="184dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="Exams"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="73dp"
+        android:layout_height="29dp"
+        app:srcCompat="@drawable/img_leaderboard_category"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <TextView
+        android:id="@+id/category4"
+        android:layout_width="63dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="280dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="Quizzes"
+        android:textColor="#1AC171"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="161dp" />
 
@@ -85,20 +129,22 @@
         tools:layout_editor_absoluteY="101dp" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_leaderboard_botton"
-        tools:layout_editor_absoluteY="154dp" />
+        app:srcCompat="@drawable/img_leaderboard_button"
+        tools:layout_editor_absoluteY="153dp" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/imageView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img_quizzes_text"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="165dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_leaderboard_button2"
+        tools:layout_editor_absoluteY="226dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
