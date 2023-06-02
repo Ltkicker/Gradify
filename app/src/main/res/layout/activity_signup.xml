@@ -12,8 +12,8 @@
 
 	<ImageView
 		android:id="@+id/background2"
-		android:layout_width="393dp"
-		android:layout_height="wrap_content"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
 		android:contentDescription="@string/background_desc"
 		android:scaleType="centerCrop"
 		app:layout_constraintBottom_toBottomOf="parent"
@@ -76,7 +76,7 @@
 		android:layout_height="48dp"
 		android:layout_marginTop="204dp"
 		android:layout_marginEnd="26dp"
-		android:background="@drawable/shapesignin_shape"
+		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
