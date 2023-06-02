@@ -25,21 +25,23 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content" >
 
-			<View   android:id="@+id/_bg__student_log_out"
-				android:background="@drawable/_bg__student_log_out_shape"
-				 android:layout_marginStart="0dp"
-				android:layout_marginTop="0dp"
-				android:layout_width="360dp"
-				android:layout_height="800dp" />
 
-
-			<RelativeLayout android:id="@+id/background"
+			<View
+				android:id="@+id/_bg__student_log_out"
+				android:layout_width="460dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:layout_marginStart="0dp"
 				android:layout_marginTop="0dp"
-				android:layout_marginStart="-17dp"
+				android:layout_marginEnd="532dp"
+				android:background="@drawable/img_background2" />
+
+			<RelativeLayout
+				android:id="@+id/background"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				>
-
+				android:layout_marginStart="-17dp"
+				android:layout_marginTop="0dp">
 
 
 			</RelativeLayout>
@@ -62,17 +64,17 @@
 
 			</RelativeLayout>
 
-			<TextView android:id="@+id/txtlogout"
-				android:layout_gravity="center_horizontal|center"
-				android:gravity="center"
-				android:textSize="18sp"
-				android:textColor="@color/txtlogout_color"
-				android:layout_marginLeft="74dp"
-				android:layout_marginTop="679dp"
+			<TextView
+				android:id="@+id/txtlogout"
 				android:layout_width="92dp"
 				android:layout_height="36dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginLeft="74dp"
+				android:layout_marginTop="679dp"
+				android:gravity="center"
 				android:text="@string/txtlogout_string"
-				 />
+				android:textColor="#AD1457"
+				android:textSize="18sp" />
 
 			<View   android:id="@+id/line3"
 				android:background="@drawable/shape_line"
@@ -81,17 +83,17 @@
 				android:layout_width="328dp"
 				android:layout_height="1dp" />
 
-			<TextView android:id="@+id/txtaboutus"
-				android:layout_gravity="center_horizontal|center"
-				android:gravity="center"
-				android:textSize="18sp"
-				android:textColor="@color/txtaboutus_color"
-				android:layout_marginLeft="74dp"
-				android:layout_marginTop="592dp"
+			<TextView
+				android:id="@+id/txtaboutus"
 				android:layout_width="117dp"
 				android:layout_height="36dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginLeft="74dp"
+				android:layout_marginTop="592dp"
+				android:gravity="center"
 				android:text="@string/txtaboutus_string"
-				 />
+				android:textColor="#006064"
+				android:textSize="18sp" />
 
 
 			<RelativeLayout android:id="@+id/about_us"
@@ -101,27 +103,29 @@
 				android:layout_height="wrap_content"
 				>
 
-				<ImageView android:id="@+id/groups"
-					android:src="@drawable/icon_aboutus"
-					android:contentDescription="groups"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<ImageView
+					android:id="@+id/groups"
 					android:layout_width="36dp"
-					android:layout_height="18dp" />
+					android:layout_height="18dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:contentDescription="groups"
+					android:src="@drawable/icon_aboutus"
+					tools:ignore="ImageContrastCheck" />
 
 			</RelativeLayout>
 
-			<TextView android:id="@+id/txthelp"
-				android:layout_gravity="center_horizontal|center"
-				android:gravity="center"
-				android:textSize="18sp"
-				android:textColor="@color/txtaboutus_color"
-				android:layout_marginLeft="74dp"
-				android:layout_marginTop="538dp"
+			<TextView
+				android:id="@+id/txthelp"
 				android:layout_width="65dp"
 				android:layout_height="36dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginLeft="74dp"
+				android:layout_marginTop="538dp"
+				android:gravity="center"
 				android:text="@string/txthelp_string"
-				 />
+				android:textColor="#6D4C41"
+				android:textSize="18sp" />
 
 
 			<RelativeLayout android:id="@+id/help"
@@ -131,27 +135,29 @@
 				android:layout_height="wrap_content"
 				>
 
-				<ImageView android:id="@+id/info"
-					android:src="@drawable/icon_info"
-					android:contentDescription="info"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<ImageView
+					android:id="@+id/info"
 					android:layout_width="30dp"
-					android:layout_height="28.33dp" />
+					android:layout_height="28.33dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:contentDescription="info"
+					android:src="@drawable/icon_info"
+					tools:ignore="ImageContrastCheck" />
 
 			</RelativeLayout>
 
-			<TextView android:id="@+id/txtsettings"
-				android:layout_gravity="center_horizontal|center"
-				android:gravity="center"
-				android:textSize="18sp"
-				android:textColor="@color/txtaboutus_color"
-				android:layout_marginLeft="74dp"
-				android:layout_marginTop="493dp"
+			<TextView
+				android:id="@+id/txtsettings"
 				android:layout_width="109dp"
 				android:layout_height="36dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginLeft="74dp"
+				android:layout_marginTop="493dp"
+				android:gravity="center"
 				android:text="@string/txtsettings_string"
-				 />
+				android:textColor="#6D4C41"
+				android:textSize="18sp" />
 
 
 			<RelativeLayout android:id="@+id/settings"
@@ -161,13 +167,15 @@
 				android:layout_height="wrap_content"
 				>
 
-				<ImageView android:id="@+id/logosettings"
-					android:src="@drawable/icon_settings"
-					android:contentDescription="logosettings"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<ImageView
+					android:id="@+id/logosettings"
 					android:layout_width="30.15dp"
-					android:layout_height="28.33dp" />
+					android:layout_height="28.33dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:contentDescription="logosettings"
+					android:src="@drawable/icon_settings"
+					tools:ignore="ImageContrastCheck" />
 
 			</RelativeLayout>
 
@@ -186,27 +194,29 @@
 				android:layout_height="wrap_content"
 				>
 
-				<ImageView android:id="@+id/mail"
-					android:src="@drawable/icon_mail"
-					android:contentDescription="mail"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<ImageView
+					android:id="@+id/mail"
 					android:layout_width="30dp"
-					android:layout_height="24dp" />
+					android:layout_height="24dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:contentDescription="mail"
+					android:src="@drawable/icon_mail"
+					tools:ignore="ImageContrastCheck,ImageContrastCheck" />
 
 			</RelativeLayout>
 
-			<TextView android:id="@+id/txtmessages"
-				android:layout_gravity="center_horizontal|center"
-				android:gravity="center"
-				android:textSize="18sp"
-				android:textColor="@color/txtaboutus_color"
-				android:layout_marginLeft="74dp"
-				android:layout_marginTop="419dp"
+			<TextView
+				android:id="@+id/txtmessages"
 				android:layout_width="127dp"
 				android:layout_height="36dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginLeft="74dp"
+				android:layout_marginTop="419dp"
+				android:gravity="center"
 				android:text="@string/txtmessages_string"
-				 />
+				android:textColor="#6D4C41"
+				android:textSize="18sp" />
 
 
 			<RelativeLayout android:id="@+id/notifications"
@@ -216,13 +226,15 @@
 				android:layout_height="wrap_content"
 				>
 
-				<ImageView android:id="@+id/logonotifications"
-					android:src="@drawable/icon_notifications"
-					android:contentDescription="logonotifications"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<ImageView
+					android:id="@+id/logonotifications"
 					android:layout_width="23.83dp"
-					android:layout_height="26.67dp" />
+					android:layout_height="26.67dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:contentDescription="logonotifications"
+					android:src="@drawable/icon_notifications"
+					tools:ignore="ImageContrastCheck,ImageContrastCheck" />
 
 			</RelativeLayout>
 
@@ -246,13 +258,15 @@
 				android:layout_height="wrap_content"
 				>
 
-				<ImageView android:id="@+id/social_leaderboard"
-					android:src="@drawable/icon_leaderboard"
-					android:contentDescription="social_leaderboard"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<ImageView
+					android:id="@+id/social_leaderboard"
 					android:layout_width="30dp"
-					android:layout_height="31.67dp" />
+					android:layout_height="31.67dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:contentDescription="@string/leaderboards"
+					android:src="@drawable/icon_leaderboard"
+					tools:ignore="ImageContrastCheck" />
 
 			</RelativeLayout>
 
@@ -261,7 +275,7 @@
 				android:gravity="center"
 				android:textSize="18sp"
 				android:textColor="@color/txtaboutus_color"
-				android:layout_marginLeft="74dp"
+				android:layout_marginStart="74dp"
 				android:layout_marginTop="318dp"
 				android:layout_width="160dp"
 				android:layout_height="36dp"
@@ -276,27 +290,29 @@
 				android:layout_height="wrap_content"
 				>
 
-				<ImageView android:id="@+id/auto_stories"
-					android:src="@drawable/icon_classes"
-					android:contentDescription="auto_stories"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
+				<ImageView
+					android:id="@+id/auto_stories"
 					android:layout_width="33dp"
-					android:layout_height="31.69dp" />
+					android:layout_height="31.69dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:contentDescription="@string/classes"
+					android:src="@drawable/icon_classes"
+					tools:ignore="ImageContrastCheck" />
 
 			</RelativeLayout>
 
-			<TextView android:id="@+id/txtmyclasses"
-				android:layout_gravity="center_horizontal|center"
-				android:gravity="center"
-				android:textSize="18sp"
-				android:textColor="@color/txtaboutus_color"
-				android:layout_marginLeft="74dp"
-				android:layout_marginTop="261dp"
+			<TextView
+				android:id="@+id/txtmyclasses"
 				android:layout_width="143dp"
 				android:layout_height="36dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="74dp"
+				android:layout_marginTop="261dp"
+				android:gravity="center"
 				android:text="@string/txtmyclasses_string"
-				 />
+				android:textColor="#00838F"
+				android:textSize="18sp" />
 
 			<View   android:id="@+id/line1"
 				android:background="@drawable/shape_line"
@@ -309,50 +325,47 @@
 				android:textStyle="bold"
 				android:textSize="15sp"
 				android:textColor="@color/txtviewprofile_color"
-				android:layout_marginLeft="141dp"
+				android:layout_marginStart="141dp"
 				android:layout_marginTop="145dp"
 				android:layout_width="265.5dp"
 				android:layout_height="30.5dp"
 				android:text="@string/txtviewprofile_string"
 				 />
 
-			<TextView android:id="@+id/txtnameofstudent"
-				android:textStyle="bold"
-				android:layout_gravity="center_horizontal|center"
-				android:gravity="center"
-				android:textSize="18sp"
-				android:textColor="@color/txtaboutus_color"
-				android:layout_marginLeft="138dp"
-				android:layout_marginTop="118dp"
+			<TextView
+				android:id="@+id/txtnameofstudent"
 				android:layout_width="227dp"
 				android:layout_height="36dp"
+				android:layout_gravity="center_horizontal|center"
+				android:layout_marginStart="138dp"
+				android:layout_marginTop="118dp"
+				android:gravity="center"
 				android:text="@string/txtnameofstudent_string"
-				 />
+				android:textColor="@color/txtaboutus_color"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				tools:ignore="TextSizeCheck,TextSizeCheck" />
 
 
-			<RelativeLayout android:id="@+id/student"
-				android:layout_marginTop="85dp"
-				android:layout_marginStart="11dp"
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/student"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				>
+				android:layout_marginStart="11dp"
+				android:layout_marginTop="85dp"/>
 
-				<View   android:id="@+id/shapecircle"
-					android:background="@drawable/shape_circle"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:layout_width="123dp"
-					android:layout_height="120.49dp" />
-
-				<ImageView android:id="@+id/imgstudent"
-					android:src="@drawable/img_student_log_in"
-					android:contentDescription="imgstudent"
-					 android:layout_marginStart="10dp"
-					android:layout_marginTop="13dp"
-					android:layout_width="104.87dp"
-					android:layout_height="93.63dp" />
-
-			</RelativeLayout>
+			<ImageView
+				android:id="@+id/imgstudent"
+				android:layout_width="104.87dp"
+				android:layout_height="93.63dp"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="16dp"
+				android:background="#ECDDDD"
+				android:contentDescription="@string/imgstudent"
+				android:src="@drawable/img_student_log_in"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:ignore="ImageContrastCheck" />
 
 		</RelativeLayout>
 
