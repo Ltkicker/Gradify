@@ -29,8 +29,8 @@
     <string name="first_name">   First Name:</string>
     <string name="middle_name">   Middle Name:</string>
     <string name="suffix">   Suffix:</string>
-    <string name="username">       Username:</string>
-    <string name="password">       Password:</string>
+    <string name="username">    Username:</string>
+    <string name="password">    Password:</string>
     <string name="email">     Email:</string>
     <string name="allterms"> I accepted all Terms &amp; Conditions</string>
     <string name="welcome">W E L C O M E</string>

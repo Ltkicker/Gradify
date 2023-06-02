@@ -5,6 +5,8 @@
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	android:background="@drawable/round_corner"
+	android:backgroundTint="@color/shapesignin_color"
+	android:backgroundTintMode="src_over"
 	android:filterTouchesWhenObscured="true"
 	android:textAlignment="center">
 
@@ -29,7 +31,8 @@
 		android:layout_width="201dp"
 		android:layout_height="61dp"
 		android:layout_marginBottom="60dp"
-		android:background="@drawable/shapepassword_shape"
+		android:background="@drawable/shape_signin"
+		android:backgroundTint="@color/shapesignin_color"
 		android:backgroundTintMode="src_over"
 		android:clickable="true"
 		android:ellipsize="middle"
@@ -42,8 +45,8 @@
 		android:textColor="@color/sign_in"
 		android:textDirection="inherit"
 		android:textSize="20sp"
-		android:textStyle="bold"
 
+		android:textStyle="bold"
 		android:visibility="visible"
 		app:drawableBottomCompat="@drawable/round_corner"
 		app:layout_constraintBottom_toBottomOf="parent"
@@ -85,16 +88,18 @@
 		tools:ignore="TextContrastCheck,UnknownIdInLayout" />
 
 	<ImageView
-		android:id="@+id/iconback"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:id="@+id/iconback2"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
 		android:layout_marginStart="39dp"
 		android:layout_marginTop="58dp"
+		android:background="@drawable/iconback2"
+		android:clickable="true"
 		android:contentDescription="@string/background_desc"
-		android:src="@drawable/iconback"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:ignore="ImageContrastCheck" />
+		tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
+		android:focusable="true" />
 
 	<com.google.android.material.textfield.TextInputLayout
 		android:id="@+id/textInputLayout2"
@@ -114,10 +119,10 @@
 		android:layout_width="336dp"
 		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
-		android:background="@drawable/shapesignin_shape"
-		android:backgroundTint="#36FFEBEE"
-		android:backgroundTintMode="src_over"
-		android:drawableTint="#36FFFFFF"
+		android:background="@drawable/shape_signin"
+		android:backgroundTint="@color/shapesignin_color"
+		android:backgroundTintMode="src_in"
+		android:drawableTint="@color/shapesignin_color"
 		android:fontFamily="@font/poppins"
 		android:hint="@string/password"
 		android:textColor="#FFFFFF"
@@ -135,10 +140,10 @@
 		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
 		android:layout_marginBottom="16dp"
-		android:background="@drawable/shapesignin_shape"
-		android:backgroundTint="#36FFEBEE"
-		android:backgroundTintMode="src_over"
-		android:drawableTint="#36FFFFFF"
+		android:background="@drawable/shape_signin"
+		android:backgroundTint="@color/shapesignin_color"
+		android:backgroundTintMode="src_in"
+		android:drawableTint="@color/shapesignin_color"
 		android:fontFamily="@font/poppins"
 		android:hint="@string/username"
 		android:textColor="#FFFFFF"
