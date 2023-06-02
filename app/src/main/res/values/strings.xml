@@ -29,8 +29,8 @@
     <string name="first_name">   First Name:</string>
     <string name="middle_name">   Middle Name:</string>
     <string name="suffix">   Suffix:</string>
-    <string name="username">    Username:</string>
-    <string name="password">    Password:</string>
+    <string name="username">       Username:</string>
+    <string name="password">       Password:</string>
     <string name="email">     Email:</string>
     <string name="allterms"> I accepted all Terms &amp; Conditions</string>
     <string name="welcome">W E L C O M E</string>
@@ -67,4 +67,8 @@
     <string name="all">All</string>
     <string name="your_classes">Your Classes</string>
 
+
+    <!-- leaderboard Popup -->
+    <string name="category">  </string>
+    <string name="category_others"> Others </string>
 </resources>
