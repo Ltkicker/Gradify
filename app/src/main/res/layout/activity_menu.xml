@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_MenuAddClass" />
+        app:srcCompat="@drawable/img_menu_add_class" />
 
     <ImageButton
         android:id="@+id/menu_moreinfo"
@@ -102,7 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_MenuAccntInfo" />
+        app:srcCompat="@drawable/img_menu_accnt_info" />
 
     <ImageButton
         android:id="@+id/menu_menuleaderbaord"
@@ -120,7 +120,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_MenuLeaderboard" />
+        app:srcCompat="@drawable/img_menu_leaderboard" />
 
     <ImageButton
         android:id="@+id/menu_homepage"
@@ -138,7 +138,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_MenuHome" />
+        app:srcCompat="@drawable/img_menu_home" />
 
     <ImageButton
         android:id="@+id/menu_message"
@@ -156,7 +156,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_MenuMessage" />
+        app:srcCompat="@drawable/img_menu_message" />
 
     <ImageButton
         android:id="@+id/menu_notif"
@@ -174,7 +174,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_MenuNotification" />
+        app:srcCompat="@drawable/img_menu_notification" />
 
     <ImageButton
         android:id="@+id/menu_gradesheet"
@@ -192,6 +192,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_MenuGradeSheet" />
+        app:srcCompat="@drawable/img_menu_grade_sheet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
