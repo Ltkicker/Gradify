@@ -13,7 +13,7 @@ public class Gradify extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // Sets the activity to loading screen
-        setContentView(R.layout.activity_loading);
+        //setContentView(R.layout.activity_loading);
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -21,9 +21,11 @@ public class Gradify extends AppCompatActivity {
         }
 
         // Sets the activity to authentication area
-        setContentView(R.layout.activity_authportal);
+        //setContentView(R.layout.activity_authportal);
+        setContentView(R.layout.activity_student_login);
 
-        ClassroomHandler.createClassroom("Testclass", "teachertest");
 
     }
+
+
 }
