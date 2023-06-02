@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_signin">
 
     <View
         android:id="@+id/background"
@@ -64,6 +65,7 @@
         android:id="@+id/imageView9"
         android:layout_width="261dp"
         android:layout_height="47dp"
+        android:background="@drawable/shape_signin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/round_corner"
@@ -77,5 +79,13 @@
         android:text="Leaderboard"
         tools:layout_editor_absoluteX="141dp"
         tools:layout_editor_absoluteY="291dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="12dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/icon_three_dots"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="344dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
