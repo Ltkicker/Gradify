@@ -177,7 +177,7 @@
 		app:layout_constraintEnd_toEndOf="@+id/studentLogIn"
 		app:layout_constraintStart_toStartOf="@+id/studentLogIn"
 		app:layout_constraintTop_toTopOf="parent"
-		app:srcCompat="@drawable/img_studentLogIn"
+		app:srcCompat="@drawable/img_student_log_in"
 		tools:ignore="ImageContrastCheck" />
 
 

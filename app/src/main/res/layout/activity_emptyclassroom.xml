@@ -266,7 +266,7 @@
 				>
 
 				<ImageView android:id="@+id/imglogo"
-					android:src="@drawable/img_smallGradifyLogo"
+					android:src="@drawable/img_small_gradify_logo"
 					android:contentDescription="imglogo"
 					android:layout_marginStart="109dp"
 					android:layout_marginTop="0dp"
