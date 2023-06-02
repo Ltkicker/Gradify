@@ -19,4 +19,12 @@
     <!-- Tags Colors -->
     <color name="tags_0">#89AEA6</color>
     <color name="tags_1">#61AE9F</color>
+
+    <!-- Log Out Colors -->
+    <color name="_bg__student_log_out_color">#E8AEB7</color>
+    <color name="txtlogout_color">#EE0707</color>
+    <color name="line3_color">#B4AEAE</color>
+    <color name="txtaboutus_color">#FFFFFF</color>
+    <color name="txtviewprofile_color">#060606</color>
+    <color name="shapecircle_color">#D9D9D9</color>
 </resources>

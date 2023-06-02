@@ -71,4 +71,17 @@
     <!-- leaderboard Popup -->
     <string name="category">  </string>
     <string name="category_others"> Others </string>
+
+    <!-- student_log_out strings -->
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="txtlogout_string">Logout</string>
+    <string name="txtaboutus_string">About Us</string>
+    <string name="txthelp_string">Help</string>
+    <string name="txtsettings_string">Settings</string>
+    <string name="txtmessages_string">Messages</string>
+    <string name="txtnotifications_string">Notifications</string>
+    <string name="txtleaderboard_string">Leaderboard</string>
+    <string name="txtmyclasses_string">My Classes</string>
+    <string name="txtviewprofile_string">View profile</string>
+    <string name="txtnameofstudent_string">Paolo Alexis Ellevera</string>
 </resources>
