@@ -15,6 +15,7 @@
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -33,13 +34,14 @@
 
     <TextView
         android:id="@+id/category"
-        android:layout_width="150dp"
-        android:layout_height="71dp"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/poppins"
         android:text="@string/category_others"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="187dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="161dp" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -81,5 +83,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_leaderboard"
         tools:layout_editor_absoluteY="101dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_leaderboard_botton"
+        tools:layout_editor_absoluteY="154dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
