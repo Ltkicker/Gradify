@@ -74,6 +74,11 @@
     <string name="delete"> Delete </string>
     <string name="create_class">  CREATE CLASS </string>
     <string name="your_students">  Your Students </string>
+    <string name="edit_class">  Edit Class </string>
+    <string name="grading_system">  Grading System </string>
+    <string name="category_grading_system">  Category Grading System </string>
+    <string name="category_percent_grading_system"> -- </string>
+
 
     <!-- leaderboard Popup -->
     <string name="category">  </string>
