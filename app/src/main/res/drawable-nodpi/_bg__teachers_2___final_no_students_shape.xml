@@ -2,6 +2,6 @@
 <!-- _bg__teachers_2___final_no_students from your XD file. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
 	android:shape="rectangle" >
-	<solid android:color="@color/_bg__teachers_2___final_no_students_color" />
+	<solid android:color="@color/white" />
 </shape>
 
