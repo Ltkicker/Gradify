@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/quiz_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="145dp"
@@ -60,7 +60,7 @@
         app:srcCompat="@drawable/img_gradifysmall" />
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/quiz_button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="182dp"
@@ -101,7 +101,7 @@
         tools:layout_editor_absoluteY="253dp" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/quiz_text_bkg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/icon_bookmainlogo"
