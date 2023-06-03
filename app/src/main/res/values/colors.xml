@@ -20,6 +20,13 @@
     <color name="tags_0">#89AEA6</color>
     <color name="tags_1">#61AE9F</color>
 
+    <!-- student_log_in colors -->
+    <color name="_bg__student_log_in_color">#E8AEB7</color>
+    <color name="txtstudentlogin_color">#FFFFFF</color>
+    <color name="checkbox_color">#C4C4C4</color>
+    <color name="txtsignin_color">#456C6B</color>
+    <color name="shaperectangle1_color">#D9D9D9</color>
+
     <!-- Log Out Colors -->
     <color name="_bg__student_log_out_color">#E8AEB7</color>
     <color name="txtlogout_color">#EE0707</color>

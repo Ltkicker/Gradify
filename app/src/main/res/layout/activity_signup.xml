@@ -12,13 +12,13 @@
 
 	<ImageView
 		android:id="@+id/background2"
-		android:layout_width="0dp"
-		android:layout_height="0dp"
+		android:layout_width="412dp"
+		android:layout_height="730dp"
 		android:contentDescription="@string/background_desc"
 		android:scaleType="centerCrop"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintHorizontal_bias="0.888"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
 		app:layout_constraintVertical_bias="0.0"
@@ -27,10 +27,28 @@
 
 	<TextView
 		android:id="@+id/textsignup"
+		
 		android:layout_width="201dp"
 		android:layout_height="61dp"
+<<<<<<< HEAD
+<<<<<<< HEAD
+		android:layout_marginTop="652dp"
+		android:layout_marginBottom="18dp"
+		android:background="@drawable/shape_signin"
+=======
+<<<<<<< HEAD
+		android:layout_marginTop="652dp"
+		android:layout_marginBottom="18dp"
+		android:background="@drawable/shape_signin"
+=======
 		android:layout_marginTop="696dp"
 		android:background="@drawable/shape_password"
+>>>>>>> b65ffd7af5b469e4b7da2e735a163ce38e4abc4f
+>>>>>>> c337d54b7359dc9a7de2b8861459759a822a3770
+=======
+		android:layout_marginTop="696dp"
+		android:background="@drawable/shape_password"
+>>>>>>> a7ebe1d083e4e3bb56eb2868fdc9211ab482f182
 		android:backgroundTintMode="src_over"
 		android:clickable="true"
 		android:ellipsize="middle"
@@ -76,7 +94,7 @@
 		android:layout_height="48dp"
 		android:layout_marginTop="204dp"
 		android:layout_marginEnd="26dp"
-		android:background="@drawable/shape_signin"
+		android:background="@drawable/shapesignin_shape"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
@@ -195,8 +213,19 @@
 		android:id="@+id/input_suffix"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 		android:layout_marginTop="415dp"
 		android:layout_marginEnd="27dp"
+>>>>>>> b65ffd7af5b469e4b7da2e735a163ce38e4abc4f
+>>>>>>> c337d54b7359dc9a7de2b8861459759a822a3770
+=======
+		android:layout_marginTop="415dp"
+		android:layout_marginEnd="27dp"
+>>>>>>> a7ebe1d083e4e3bb56eb2868fdc9211ab482f182
 		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
