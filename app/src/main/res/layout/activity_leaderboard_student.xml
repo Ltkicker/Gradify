@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/gradify_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="181dp"
@@ -37,7 +37,7 @@
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/gradify_logo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
@@ -52,7 +52,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView29"
+        android:id="@+id/category_bkg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
@@ -65,10 +65,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/img_leaderboard_categories" />
+        app:srcCompat="@drawable/img_leaderboard_categories"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/quiz_button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
@@ -85,7 +86,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/quiz_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
@@ -102,7 +103,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/quiz_button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
@@ -119,7 +120,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView27"
+        android:id="@+id/quiz_button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
@@ -136,7 +137,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView31"
+        android:id="@+id/category_select"
         android:layout_width="73dp"
         android:layout_height="27dp"
         android:layout_marginStart="54dp"
@@ -147,10 +148,67 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_leaderboard_text_bkg" />
+        app:srcCompat="@drawable/img_leaderboard_text_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
-        android:id="@+id/category"
+        android:id="@+id/category1"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="490dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category"
+        android:textColor="#1AC171"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/category2"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="487dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/category3"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="487dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/category4"
         android:layout_width="78dp"
         android:layout_height="39dp"
         android:layout_marginStart="302dp"
@@ -166,64 +224,8 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/category4"
-        android:layout_width="59dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="284dp"
-        android:layout_marginBottom="490dp"
-        android:clickable="true"
-        android:fontFamily="@font/poppins"
-        android:text="Quizzes"
-        android:textColor="#1AC171"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/category3"
-        android:layout_width="78dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="184dp"
-        android:layout_marginBottom="487dp"
-        android:clickable="true"
-        android:fontFamily="@font/poppins"
-        android:text="Exams"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/category2"
-        android:layout_width="83dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="206dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="122dp"
-        android:layout_marginBottom="487dp"
-        android:clickable="true"
-        android:fontFamily="@font/poppins"
-        android:text="Attendance"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,VisualLintOverlap,TextContrastCheck,TextSizeCheck" />
-
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/leaderboard_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
@@ -240,24 +242,7 @@
         tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="281dp"
-        android:layout_marginEnd="149dp"
-        android:layout_marginBottom="419dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/img_leaderboard_button3"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/quiz_text_bkg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
@@ -270,10 +255,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/img_leaderboard_button1" />
+        app:srcCompat="@drawable/img_leaderboard_button1"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView32"
+        android:id="@+id/quiz_text_bkg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="151dp"
@@ -286,10 +272,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_leaderboard_button1" />
+        app:srcCompat="@drawable/img_leaderboard_button1"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView33"
+        android:id="@+id/quiz_text_bkg3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="149dp"
@@ -302,10 +289,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_leaderboard_button1" />
+        app:srcCompat="@drawable/img_leaderboard_button1"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView34"
+        android:id="@+id/quiz_text_bkg4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="149dp"
@@ -318,10 +306,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_leaderboard_button1" />
+        app:srcCompat="@drawable/img_leaderboard_button1"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/quiz_text1"
         android:layout_width="77dp"
         android:layout_height="32dp"
         android:layout_marginStart="167dp"
@@ -329,7 +318,7 @@
         android:layout_marginEnd="167dp"
         android:layout_marginBottom="414dp"
         android:fontFamily="@font/poppins"
-        android:text="Lec 1 Quiz"
+        android:text="@string/sub_category"
         android:textColor="#1AC171"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -342,7 +331,7 @@
         tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/quiz_date1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
@@ -350,7 +339,7 @@
         android:layout_marginEnd="90dp"
         android:layout_marginBottom="399dp"
         android:fontFamily="@font/poppins"
-        android:text="May 2, 2023"
+        android:text="@string/sub_category_date"
         android:textSize="9sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -361,7 +350,7 @@
         tools:ignore="HardcodedText,SmallSp,VisualLintOverlap,TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/quiz_date2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
@@ -369,7 +358,7 @@
         android:layout_marginEnd="90dp"
         android:layout_marginBottom="286dp"
         android:fontFamily="@font/poppins"
-        android:text="May 2, 2023"
+        android:text="@string/sub_category_date"
         android:textSize="9sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -377,27 +366,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:ignore="HardcodedText,SmallSp,TextContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="392dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="308dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/img_leaderboard_button3"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        tools:ignore="HardcodedText,SmallSp,TextContrastCheck,VisualLintOverlap" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/quiz_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="166dp"
@@ -405,7 +377,7 @@
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="308dp"
         android:fontFamily="@font/poppins"
-        android:text="Lec 2 Quiz"
+        android:text="@string/sub_category"
         android:textColor="#1AC071"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -418,7 +390,7 @@
         tools:ignore="TextContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/coe124_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -429,25 +401,8 @@
         app:srcCompat="@drawable/img_coe124"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="503dp"
-        android:layout_marginEnd="149dp"
-        android:layout_marginBottom="197dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_leaderboard_button3"
-        tools:ignore="ImageContrastCheck" />
-
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/quiz_text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="182dp"
@@ -455,7 +410,7 @@
         android:layout_marginEnd="91dp"
         android:layout_marginBottom="197dp"
         android:fontFamily="@font/poppins"
-        android:text="Quiz 3"
+        android:text="@string/sub_category"
         android:textColor="#1ABF71"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -468,7 +423,7 @@
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/quiz_date3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
@@ -476,7 +431,7 @@
         android:layout_marginEnd="89dp"
         android:layout_marginBottom="175dp"
         android:fontFamily="@font/poppins"
-        android:text="May 6, 2023"
+        android:text="@string/sub_category_date"
         android:textSize="9sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -484,20 +439,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:ignore="SmallSp,TextContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_leaderboard_button3"
-        tools:ignore="ImageContrastCheck"
-        tools:layout_editor_absoluteY="621dp" />
+        tools:ignore="SmallSp,TextContrastCheck,VisualLintOverlap" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/quiz_text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="167dp"
@@ -505,7 +450,7 @@
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="79dp"
         android:fontFamily="@font/poppins"
-        android:text="Long Quiz"
+        android:text="@string/sub_category"
         android:textColor="#1ABE71"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -518,7 +463,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/quiz_date4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
@@ -526,7 +471,7 @@
         android:layout_marginEnd="89dp"
         android:layout_marginBottom="57dp"
         android:fontFamily="@font/poppins"
-        android:text="May 9, 2023"
+        android:text="@string/sub_category_date"
         android:textSize="9sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -537,7 +482,7 @@
         tools:ignore="SmallSp,TextContrastCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/option_threedots"
         android:layout_width="7dp"
         android:layout_height="24dp"
         android:layout_marginStart="380dp"
@@ -549,10 +494,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_threedots" />
+        app:srcCompat="@drawable/img_threedots"
+        tools:ignore="ContentDescription,ImageContrastCheck,TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/back_arrow_button"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -564,6 +510,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_backarrow" />
+        app:srcCompat="@drawable/img_backarrow"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
