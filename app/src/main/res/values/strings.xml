@@ -94,4 +94,14 @@
     <string name="imgstudent">imgstudent</string>
     <string name="classes">auto_stories</string>
     <string name="leaderboards">social_leaderboard</string>
+
+
+    <string name="grade_sheet_string">GRADE SHEET</string>
+    <string name="filter5_string">Filter</string>
+    <string name="magnifyingglass_string"/>
+    <string name="search_string">Search</string>
+    <string name="coe124_string">COE124 </string>
+    <string name="coe121_string">COE121.2 </string>
+    <string name="coe102_string">COE102.2 </string>
+
 </resources>
