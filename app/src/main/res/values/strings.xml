@@ -61,12 +61,18 @@
     <!-- Addclass Popup -->
     <string name="addclass">addclass</string>
     <string name="popup_desc">Interactive Grading System for Teachers</string>
-    <string name="create_class">CREATE CLASS</string>
     <string name="archive">Archived</string>
     <string name="ongoing">Ongoing</string>
     <string name="all">All</string>
     <string name="your_classes">Your Classes</string>
-
+    <string name="subject_code">  Subject Code</string>
+    <string name="subject_section">  Subject Section</string>
+    <string name="subject_description">  Subject Description</string>
+    <string name="room_number">  Room No.</string>
+    <string name="building">  Building</string>
+    <string name="manage_students"> MANAGE STUDENTS </string>
+    <string name="delete"> Delete </string>
+    <string name="create_class">  CREATE CLASS </string>
 
     <!-- leaderboard Popup -->
     <string name="category">  </string>
@@ -84,4 +90,9 @@
     <string name="txtmyclasses_string">My Classes</string>
     <string name="txtviewprofile_string">View profile</string>
     <string name="txtnameofstudent_string">Paolo Alexis Ellevera</string>
+
+    <!-- activity_add_class_file strings -->
+    <string name="font1_string">Your Students</string>
+    <string name="inserttext_string">Choose Excel File</string>
+    <string name="gradifysmalltext_string">GRADIFY </string>
 </resources>
