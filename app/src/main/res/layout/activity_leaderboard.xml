@@ -3,43 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+<<<<<<< HEAD
+    android:layout_height="match_parent">
+=======
     android:layout_height="match_parent"
     android:background="@drawable/shape_signin"
     tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="4dp">
+    tools:layout_editor_absoluteY="67dp">
+>>>>>>> 7a7df8a3dbe4ab9a5416076b70697d7ea2e94b6d
 
     <View
         android:id="@+id/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/img_background2"
-        android:contextClickable="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:contextClickable="false" />
 
-    <ImageView
-        android:id="@+id/iconback2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
-        android:contentDescription="@string/background_desc"
-        android:foregroundTint="#FFFFFF"
-        android:src="@drawable/iconback"
-        android:tint="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck" />
-
+<<<<<<< HEAD
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="150dp"
+        android:layout_height="71dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category_others"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="153dp" />
+=======
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_gradifysmalltext"
         tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="42dp" />
+        tools:layout_editor_absoluteY="49dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -47,7 +44,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_gradifysmall"
         tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="29dp" />
+        tools:layout_editor_absoluteY="36dp" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -57,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_leaderboard_button"
-        tools:layout_editor_absoluteY="198dp" />
+        tools:layout_editor_absoluteY="205dp" />
 
     <ImageView
         android:id="@+id/imageView17"
@@ -65,7 +62,7 @@
         android:layout_height="29dp"
         app:srcCompat="@drawable/img_leaderboard_category"
         tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="200dp" />
+        tools:layout_editor_absoluteY="207dp" />
 
     <TextView
         android:id="@+id/category"
@@ -76,7 +73,7 @@
         android:text="@string/category_others"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="206dp" />
+        tools:layout_editor_absoluteY="213dp" />
 
     <TextView
         android:id="@+id/category4"
@@ -90,7 +87,7 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="206dp" />
+        tools:layout_editor_absoluteY="213dp" />
 
     <TextView
         android:id="@+id/category3"
@@ -102,7 +99,7 @@
         android:text="Exams"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="206dp" />
+        tools:layout_editor_absoluteY="213dp" />
 
     <TextView
         android:id="@+id/category2"
@@ -113,7 +110,7 @@
         android:text="Attendance"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="206dp" />
+        tools:layout_editor_absoluteY="213dp" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -121,7 +118,7 @@
         android:layout_height="18dp"
         app:srcCompat="@drawable/icon_three_dots"
         tools:layout_editor_absoluteX="374dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteY="47dp" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -130,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_leaderboard"
-        tools:layout_editor_absoluteY="147dp" />
+        tools:layout_editor_absoluteY="154dp" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -141,7 +138,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_leaderboard_button2"
-        tools:layout_editor_absoluteY="253dp" />
+        tools:layout_editor_absoluteY="301dp" />
 
     <ImageView
         android:id="@+id/imageView19"
@@ -150,7 +147,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_leaderboard_button3"
-        tools:layout_editor_absoluteY="281dp" />
+        tools:layout_editor_absoluteY="329dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -163,7 +160,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="285dp" />
+        tools:layout_editor_absoluteY="333dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -177,7 +174,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintVertical_bias="0.506" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -188,19 +185,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_leaderboard_button2"
-        tools:layout_editor_absoluteY="365dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="May 2, 2023"
-        android:textSize="9sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="430dp" />
+        tools:layout_editor_absoluteY="422dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -209,21 +194,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_leaderboard_button3"
-        tools:layout_editor_absoluteY="392dp" />
+        tools:layout_editor_absoluteY="449dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
-        android:text="Lec 2 Quiz"
+        android:text="QUIZ GUD"
         android:textColor="#1AC071"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="396dp" />
+        tools:layout_editor_absoluteY="453dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="May __, 2023"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="487dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -232,96 +228,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_coe124"
-        tools:layout_editor_absoluteY="91dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_leaderboard_button2"
-        tools:layout_editor_absoluteY="477dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_leaderboard_button3"
-        tools:layout_editor_absoluteY="503dp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="Quiz 3"
-        android:textColor="#1ABF71"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="507dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="May 6, 2023"
-        android:textSize="9sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="541dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_leaderboard_button2" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_leaderboard_button3"
-        tools:layout_editor_absoluteY="621dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="Long Quiz"
-        android:textColor="#1ABE71"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="625dp" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="May 9, 2023"
-        android:textSize="9sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="659dp" />
+        tools:layout_editor_absoluteY="98dp" />
+>>>>>>> 7a7df8a3dbe4ab9a5416076b70697d7ea2e94b6d
 
 </androidx.constraintlayout.widget.ConstraintLayout>

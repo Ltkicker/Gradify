@@ -29,8 +29,8 @@
     <string name="first_name">   First Name:</string>
     <string name="middle_name">   Middle Name:</string>
     <string name="suffix">   Suffix:</string>
-    <string name="username">    Username:</string>
-    <string name="password">    Password:</string>
+    <string name="username">       Username:</string>
+    <string name="password">       Password:</string>
     <string name="email">     Email:</string>
     <string name="allterms"> I accepted all Terms &amp; Conditions</string>
     <string name="welcome">W E L C O M E</string>
@@ -79,8 +79,15 @@
     <string name="category">  </string>
     <string name="category_others"> Others </string>
 
+    <!-- student_log_in strings -->
+    <string name="txtstudentlogin_string">Student Log in:</string>
+    <string name="txtrememberme_string">Remember me</string>
+    <string name="txtnotamember_string">Not a member yet? Sign  up</string>
+    <string name="txtsignin_string">Sign in</string>
+    <string name="txtlogin_string">Login</string>
+    <string name="txtpassword_string">Password</string>
+
     <!-- student_log_out strings -->
-    <string name="ek_img_content">ExportKit Image</string>
     <string name="txtlogout_string">Logout</string>
     <string name="txtaboutus_string">About Us</string>
     <string name="txthelp_string">Help</string>
@@ -91,9 +98,15 @@
     <string name="txtmyclasses_string">My Classes</string>
     <string name="txtviewprofile_string">View profile</string>
     <string name="txtnameofstudent_string">Paolo Alexis Ellevera</string>
+<<<<<<< HEAD
+    <string name="imgstudent">imgstudent</string>
+    <string name="classes">auto_stories</string>
+    <string name="leaderboards">social_leaderboard</string>
+=======
 
     <!-- activity_add_class_file strings -->
     <string name="font1_string">Your Students</string>
     <string name="inserttext_string">Choose Excel File</string>
     <string name="gradifysmalltext_string">GRADIFY </string>
+>>>>>>> c337d54b7359dc9a7de2b8861459759a822a3770
 </resources>

@@ -27,8 +27,10 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/img_gradifytext"
@@ -66,18 +68,23 @@
         android:backgroundTint="#00FFFFFF"
         android:foreground="@drawable/iconback2"
         app:iconTint="#EDFFFFFF"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="153dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
 
     <Button
-        android:id="@+id/img_backbutton2"
+        android:id="@+id/img_home_button"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@drawable/img_menu_home"
         android:backgroundTint="#00FFFFFF"
         app:iconTint="#EDFFFFFF"
         tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="33dp" />
+        tools:layout_editor_absoluteY="33dp"
+        />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_subject_section"
@@ -94,9 +101,12 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#757575"
         android:textSize="16sp"
-        tools:ignore="MissingConstraints,TextContrastCheck,DuplicateSpeakableTextCheck"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_room_no"
@@ -113,9 +123,12 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#757575"
         android:textSize="16sp"
-        tools:ignore="MissingConstraints,TextContrastCheck,DuplicateSpeakableTextCheck"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="480dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_subject_code3"
@@ -132,9 +145,12 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#757575"
         android:textSize="16sp"
-        tools:ignore="MissingConstraints,TextContrastCheck,DuplicateSpeakableTextCheck"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="400dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_subject_code"
@@ -151,14 +167,21 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#757575"
         android:textSize="16sp"
-        tools:ignore="MissingConstraints,TextContrastCheck,DuplicateSpeakableTextCheck"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_building"
         android:layout_width="164dp"
         android:layout_height="59dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="246dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#00FFEBEE"
         android:backgroundTintMode="src_over"
@@ -170,14 +193,18 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#757575"
         android:textSize="16sp"
-        tools:ignore="MissingConstraints,TextContrastCheck,DuplicateSpeakableTextCheck"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="480dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/clickable_managestudent"
         android:layout_width="201dp"
         android:layout_height="61dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="568dp"
+        android:layout_marginEnd="48dp"
         android:layout_marginBottom="156dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#61AE9F"
@@ -190,16 +217,19 @@
         android:text="@string/manage_students"
         android:textAlignment="inherit"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
         android:textColor="@color/common_google_signin_btn_text_dark_pressed"
         android:textDirection="inherit"
         android:textSize="20sp"
-
         android:textStyle="bold"
         android:visibility="visible"
         app:drawableBottomCompat="@drawable/round_corner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:layout_marginBaseline="10dp"
         tools:ignore="MissingConstraints"
         tools:visibility="visible" />
@@ -216,10 +246,8 @@
         android:ellipsize="middle"
         android:focusable="true"
         android:fontFamily="@font/poppins"
-        android:gravity="center|center_horizontal|center_vertical"
         android:gravity="center"
         android:text="@string/create_class"
-        android:textAlignment="inherit"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/common_google_signin_btn_text_dark_pressed"
@@ -241,7 +269,10 @@
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:background="@drawable/img_default_profile"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="153dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
