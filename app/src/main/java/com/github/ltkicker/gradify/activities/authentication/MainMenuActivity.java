@@ -1,6 +1,4 @@
 package com.github.ltkicker.gradify.activities.authentication;
 
-public class
-
-MainMenuActivity {
+public class MainMenuActivity {
 }

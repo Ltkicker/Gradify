@@ -90,4 +90,9 @@
     <string name="txtmyclasses_string">My Classes</string>
     <string name="txtviewprofile_string">View profile</string>
     <string name="txtnameofstudent_string">Paolo Alexis Ellevera</string>
+
+    <!-- activity_add_class_file strings -->
+    <string name="font1_string">Your Students</string>
+    <string name="inserttext_string">Choose Excel File</string>
+    <string name="gradifysmalltext_string">GRADIFY </string>
 </resources>
