@@ -29,23 +29,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291"
+        app:layout_constraintVertical_bias="0.205"
         tools:ignore="VisualLintBounds" />
 
     <ImageView
         android:id="@+id/img_gradifytext"
         android:layout_width="126dp"
         android:layout_height="21dp"
-        android:layout_marginStart="163dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginBottom="721dp"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="671dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207"
         app:srcCompat="@drawable/img_gradifybigtext"
         tools:ignore="ContentDescription" />
 
@@ -53,19 +51,17 @@
         android:id="@+id/img_home_button"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="314dp"
-        android:layout_marginBottom="704dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="664dp"
         android:background="@drawable/img_menu_home"
         android:backgroundTint="#00FFFFFF"
         app:iconTint="#EDFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
