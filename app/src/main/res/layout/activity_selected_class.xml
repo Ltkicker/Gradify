@@ -13,7 +13,7 @@
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -28,7 +28,7 @@
         tools:layout_editor_absoluteY="124dp" />
 
     <Button
-        android:id="@+id/img_backbutton2"
+        android:id="@+id/img_homebutton1"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
@@ -40,6 +40,7 @@
         app:iconTint="#EDFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -85,8 +86,34 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/subject_description"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="243dp" />
+        android:text="@string/subject_code"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_students"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_bookmainlogo"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_bookopen"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="216dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
