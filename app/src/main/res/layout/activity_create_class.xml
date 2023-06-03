@@ -92,7 +92,8 @@
         android:layout_marginEnd="314dp"
         android:background="#00FFFFFF"
         android:backgroundTint="#00FFFFFF"
-        android:foreground="@drawable/iconback2"
+        android:foreground="@drawable/iconback"
+        android:foregroundTint="@color/white"
         app:iconTint="#EDFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,6 +101,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.183"
+        tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/img_barbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="689dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/icon_menuhamburger"
+        android:foregroundTint="@color/black"
+        app:iconTint="#EDFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -119,10 +139,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439" />
+        app:layout_constraintVertical_bias="0.438" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_subject_code3"
