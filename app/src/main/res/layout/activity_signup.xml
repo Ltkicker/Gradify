@@ -29,8 +29,9 @@
 		android:id="@+id/textsignup"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
-		android:layout_marginTop="696dp"
-		android:background="@drawable/shapepassword_shape"
+		android:layout_marginTop="652dp"
+		android:layout_marginBottom="18dp"
+		android:background="@drawable/shape_signin"
 		android:backgroundTintMode="src_over"
 		android:clickable="true"
 		android:ellipsize="middle"
@@ -42,11 +43,12 @@
 		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
 		android:textColor="@color/sign_in"
 		android:textDirection="inherit"
-		android:textSize="20sp"
 
+		android:textSize="20sp"
 		android:textStyle="bold"
 		android:visibility="visible"
 		app:drawableBottomCompat="@drawable/round_corner"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
@@ -74,7 +76,7 @@
 		android:id="@+id/input_last_name"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
-		android:layout_marginTop="204dp"
+		android:layout_marginTop="184dp"
 		android:layout_marginEnd="26dp"
 		android:background="@drawable/shapesignin_shape"
 		android:backgroundTint="#36FFEBEE"
@@ -86,7 +88,7 @@
 		android:textColorHint="#757575"
 		android:textSize="16sp"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintHorizontal_bias="0.804"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
 		tools:ignore="MissingConstraints,TextContrastCheck,DuplicateSpeakableTextCheck" />
@@ -95,7 +97,7 @@
 		android:id="@+id/input_first_name"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
-		android:background="@drawable/shapesignin_shape"
+		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
@@ -105,10 +107,10 @@
 		android:textColorHint="#757575"
 		android:textSize="16sp"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.518"
+		app:layout_constraintHorizontal_bias="0.513"
 		app:layout_constraintStart_toStartOf="parent"
 		tools:ignore="MissingConstraints,TextContrastCheck"
-		tools:layout_editor_absoluteY="275dp" />
+		tools:layout_editor_absoluteY="247dp" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/input_mddle_name"
@@ -127,14 +129,14 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.464"
+		app:layout_constraintVertical_bias="0.456"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/input_username"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
-		android:background="@drawable/shapesignin_shape"
+		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
@@ -145,17 +147,17 @@
 		android:textSize="16sp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.518"
+		app:layout_constraintHorizontal_bias="0.513"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.74"
+		app:layout_constraintVertical_bias="0.743"
 		tools:ignore="MissingConstraints,TextContrastCheck,EditableContentDescCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/input_email"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
-		android:background="@drawable/shapesignin_shape"
+		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
@@ -166,16 +168,17 @@
 		android:textSize="16sp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.513"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.651"
+		app:layout_constraintVertical_bias="0.644"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/input_password"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
-		android:background="@drawable/shapesignin_shape"
+		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
@@ -188,16 +191,14 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.825"
+		app:layout_constraintVertical_bias="0.841"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/input_suffix"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
-		android:layout_marginTop="415dp"
-		android:layout_marginEnd="27dp"
-		android:background="@drawable/shapesignin_shape"
+		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
@@ -206,13 +207,9 @@
 		android:textColor="#FFFFFF"
 		android:textColorHint="#757575"
 		android:textSize="16sp"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.0"
-		tools:ignore="MissingConstraints,TextContrastCheck" />
+		tools:ignore="MissingConstraints,TextContrastCheck"
+		tools:layout_editor_absoluteX="36dp"
+		tools:layout_editor_absoluteY="375dp" />
 
 	<CheckBox
 		android:id="@+id/cb_accept_terms"
@@ -224,8 +221,8 @@
 		android:textColor="#FFFCFC"
 		android:textSize="14sp"
 		tools:ignore="MissingConstraints,TextContrastCheck"
-		tools:layout_editor_absoluteX="28dp"
-		tools:layout_editor_absoluteY="648dp" />
+		tools:layout_editor_absoluteX="37dp"
+		tools:layout_editor_absoluteY="612dp" />
 
 	<ImageView
 		android:id="@+id/img_gradifybiglogo"

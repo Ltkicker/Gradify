@@ -25,7 +25,7 @@
     <string name="not_a_member_yet">Not a member yet? Sign up</string>
     <string name="teacher_login">Teacher Log in:</string>
     <string name="student_login">Student Log in:</string>
-    <string name="last_name">   Last Name:</string>
+    <string name="last_name">     Last Name:</string>
     <string name="first_name">   First Name:</string>
     <string name="middle_name">   Middle Name:</string>
     <string name="suffix">   Suffix:</string>
