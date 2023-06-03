@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/img_GradifyLogoSymbol"
+        android:id="@+id/quiz_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="145dp"
@@ -49,7 +49,7 @@
         app:srcCompat="@drawable/img_gradifysmall" />
 
     <ImageView
-        android:id="@+id/img_GradifyLogoText"
+        android:id="@+id/quiz_button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="182dp"
@@ -149,21 +149,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/img_yourstudentsymbol"
-        android:layout_width="30dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="182dp"
-        android:layout_marginTop="253dp"
-        android:layout_marginEnd="199dp"
-        android:layout_marginBottom="447dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_students" />
-
-    <TextView
-        android:id="@+id/text_student"
+        android:id="@+id/quiz_text_bkg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="233dp"
