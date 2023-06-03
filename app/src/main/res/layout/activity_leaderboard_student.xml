@@ -52,7 +52,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/category_bkg"
+        android:id="@+id/img_subjectcodesymbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
@@ -86,7 +86,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/quiz_button2"
+        android:id="@+id/img_GradifyLogoSymbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
@@ -103,7 +103,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/quiz_button3"
+        android:id="@+id/img_GradifyLogoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
