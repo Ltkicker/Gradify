@@ -109,11 +109,19 @@
         tools:layout_editor_absoluteY="198dp" />
 
     <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_bookopen"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <ImageView
         android:id="@+id/imageView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/icon_bookopen"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="216dp" />
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="329dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
