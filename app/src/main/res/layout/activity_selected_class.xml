@@ -13,8 +13,11 @@
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"
+        tools:ignore="VisualLintBounds" />
 
     <Button
         android:id="@+id/img_homebutton1"
@@ -32,7 +35,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/img_GradifyLogoSymbol"
@@ -46,7 +50,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifysmall" />
+        app:srcCompat="@drawable/img_gradifysmall"
+        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/img_GradifyLogoText"
@@ -60,7 +65,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifysmalltext" />
+        app:srcCompat="@drawable/img_gradifysmalltext"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/img_backbutton_selectedclass"
@@ -75,7 +81,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconback" />
+        app:srcCompat="@drawable/iconback"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/text_mainsubjectcode"
@@ -90,7 +97,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/img_menu_sc"
@@ -104,7 +112,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -131,7 +140,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_bookopen" />
+        app:srcCompat="@drawable/icon_bookopen"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/text_subjectcode"
@@ -146,7 +156,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/img_yourstudentsymbol"
@@ -160,7 +171,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_students" />
+        app:srcCompat="@drawable/icon_students"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/text_student"
@@ -175,7 +187,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
 
     <ImageButton
         android:id="@+id/img_editclass"
@@ -188,7 +201,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_editclass" />
+        app:srcCompat="@drawable/img_editclass"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/text_gradingsystem"
@@ -206,7 +220,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck,UnknownIdInLayout" />
+        tools:ignore="TextContrastCheck,UnknownIdInLayout,VisualLintOverlap" />
 
     <ImageView
         android:id="@+id/img_tableheader"
@@ -219,10 +233,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_tableheader" />
+        app:srcCompat="@drawable/img_tableheader"
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/img_subjectcodeoutputbackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="495dp"
@@ -232,7 +247,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradingsystem_category" />
+        app:srcCompat="@drawable/img_gradingsystem_category"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/text_subjectcode2"
@@ -243,12 +259,13 @@
         android:layout_marginEnd="211dp"
         android:layout_marginBottom="212dp"
         android:text="@string/subject_code"
-        android:textColor="#FFFFFF"
+        android:textColor="#795548"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintOverlap" />
 
     <TextView
         android:id="@+id/text_subjectcodepercent"
@@ -264,7 +281,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
 
     <ImageButton
         android:id="@+id/img_addmore"
@@ -278,7 +296,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_gradingsystem_addmore" />
+        app:srcCompat="@drawable/img_gradingsystem_addmore"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,VisualLintBounds" />
 
     <ImageButton
         android:id="@+id/img_save"
@@ -291,6 +310,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_savebutton" />
+        app:srcCompat="@drawable/img_savebutton"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
