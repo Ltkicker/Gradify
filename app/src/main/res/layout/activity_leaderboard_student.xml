@@ -52,6 +52,15 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_leaderboard_categories"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <ImageView
         android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,78 +103,62 @@
         tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteY="602dp" />
 
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="73dp"
+        android:layout_height="27dp"
+        app:srcCompat="@drawable/img_leaderboard_text_bkg"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="201dp" />
+
     <TextView
         android:id="@+id/category"
         android:layout_width="78dp"
         android:layout_height="39dp"
-        android:layout_marginStart="309dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="486dp"
         android:fontFamily="@font/poppins"
         android:text="@string/category_others"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="206dp" />
 
     <TextView
         android:id="@+id/category4"
         android:layout_width="59dp"
         android:layout_height="35dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="280dp"
-        android:layout_marginBottom="490dp"
         android:clickable="true"
         android:fontFamily="@font/poppins"
         android:text="Quizzes"
         android:textColor="#1AC171"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck" />
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="206dp" />
 
     <TextView
         android:id="@+id/category3"
         android:layout_width="78dp"
         android:layout_height="38dp"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="487dp"
         android:clickable="true"
         android:fontFamily="@font/poppins"
         android:text="Exams"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck" />
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="206dp" />
 
     <TextView
         android:id="@+id/category2"
         android:layout_width="83dp"
         android:layout_height="38dp"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="487dp"
         android:clickable="true"
         android:fontFamily="@font/poppins"
         android:text="Attendance"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,VisualLintOverlap,TextContrastCheck,TextSizeCheck" />
+        tools:ignore="HardcodedText,VisualLintOverlap,TextContrastCheck,TextSizeCheck"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="206dp" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -396,5 +389,24 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SmallSp,TextContrastCheck"
         tools:layout_editor_absoluteY="659dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="7dp"
+        android:layout_height="24dp"
+        android:backgroundTint="#00FFFFFF"
+        app:srcCompat="@drawable/img_threedots"
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_backarrow"
+        tools:layout_editor_absoluteY="29dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
