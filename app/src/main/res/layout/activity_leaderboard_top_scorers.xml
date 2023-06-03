@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/background4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_background2"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/leaderboard_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_leaderboard"
+        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/category5"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/category6"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/category7"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category"
+        android:textColor="#1AC171"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <ImageView
+        android:id="@+id/category_bkg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_leaderboard_categories"
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <ImageView
+        android:id="@+id/category_select2"
+        android:layout_width="73dp"
+        android:layout_height="27dp"
+        app:srcCompat="@drawable/img_leaderboard_text_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category_others"
+        android:textColor="#80596F6B"
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <ImageButton
+        android:id="@+id/option_threedots2"
+        android:layout_width="7dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="673dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_threedots"
+        tools:ignore="ContentDescription,ImageContrastCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/gradify_logo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="673dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_gradifysmalltext"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/gradify_logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginBottom="666dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_gradifysmall"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/back_arrow_button2"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="347dp"
+        android:layout_marginBottom="661dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_backarrow"
+        tools:ignore="ContentDescription,ImageContrastCheck,TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
