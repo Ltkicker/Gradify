@@ -32,7 +32,7 @@
         app:srcCompat="@drawable/img_gradifysmalltext" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/img_gradifylogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="145dp"
@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <Button
-        android:id="@+id/img_backbutton3"
+        android:id="@+id/img_homebutton"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
