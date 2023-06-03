@@ -17,6 +17,20 @@
         app:srcCompat="@drawable/img_background2" />
 
     <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="132dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginBottom="534dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_student_log_in" />
+
+    <ImageButton
         android:id="@+id/back"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -30,20 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iconback" />
-
-    <ImageButton
-        android:id="@+id/profile"
-        android:layout_width="132dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="77dp"
-        android:layout_marginEnd="235dp"
-        android:layout_marginBottom="534dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_student_log_in" />
 
     <TextView
         android:id="@+id/nameofstudent"
@@ -370,6 +370,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/iconback"
+        android:layout_width="wrap_content"
+        android:layout_height=""
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
