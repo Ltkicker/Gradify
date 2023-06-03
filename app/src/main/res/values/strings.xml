@@ -103,6 +103,9 @@
     <string name="leaderboards">social_leaderboard</string>
 =======
 
+    <!-- gradesheet strings -->
+    <string name="txtsearch_string">Search Name</string>
+
     <!-- activity_add_class_file strings -->
     <string name="font1_string">Your Students</string>
     <string name="inserttext_string">Choose Excel File</string>
