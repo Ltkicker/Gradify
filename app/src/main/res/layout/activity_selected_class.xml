@@ -6,26 +6,17 @@
     android:layout_height="match_parent">
 
     <View
-        android:id="@+id/background3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/background_selectedclass"
+        android:layout_width="409dp"
+        android:layout_height="757dp"
         android:background="@drawable/img_background2"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/img_burger3"
-        android:layout_width="53dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/icon_menuhamburger"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="124dp" />
 
     <Button
         android:id="@+id/img_homebutton1"
@@ -46,7 +37,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/img_GradifyLogoSymbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="145dp"
@@ -60,7 +51,7 @@
         app:srcCompat="@drawable/img_gradifysmall" />
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/img_GradifyLogoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="182dp"
@@ -74,16 +65,57 @@
         app:srcCompat="@drawable/img_gradifysmalltext" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/img_backbutton_selectedclass"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:backgroundTint="#00FFFFFF"
         app:srcCompat="@drawable/iconback"
         tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="124dp" />
+        tools:layout_editor_absoluteY="99dp" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/text_mainsubjectcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject_code"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <ImageView
+        android:id="@+id/img_menu_sc"
+        android:layout_width="53dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_menuhamburger"
+        tools:layout_editor_absoluteX="342dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:background="@drawable/img_default_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/img_subjectcodesymbol"
+        android:layout_width="33dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/icon_bookopen"
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:id="@+id/text_subjectcode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/subject_code"
@@ -91,37 +123,107 @@
         tools:layout_editor_absoluteX="233dp"
         tools:layout_editor_absoluteY="216dp" />
 
+    <ImageView
+        android:id="@+id/img_yourstudentsymbol"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        app:srcCompat="@drawable/icon_students"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="253dp" />
+
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/text_student"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/your_students"
         android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="253dp" />
+        tools:layout_editor_absoluteY="259dp" />
 
-    <ImageView
-        android:id="@+id/imageView8"
+    <ImageButton
+        android:id="@+id/img_editclass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="198dp" />
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_editclass"
+        tools:layout_editor_absoluteY="362dp" />
 
-    <ImageView
-        android:id="@+id/imageView29"
+    <TextView
+        android:id="@+id/text_gradingsystem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/icon_bookopen"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="253dp" />
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/grading_system"
+        android:textColor="@color/shapesignin_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,UnknownIdInLayout"
+        tools:layout_editor_absoluteY="443dp" />
 
     <ImageView
-        android:id="@+id/imageView28"
+        android:id="@+id/img_tableheader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/icon_bookopen"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_tableheader"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_gradingsystem_category"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <TextView
+        android:id="@+id/text_subjectcode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject_code"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <TextView
+        android:id="@+id/text_subjectcodepercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_percent_grading_system"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <ImageButton
+        android:id="@+id/img_addmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_gradingsystem_addmore"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <ImageButton
+        android:id="@+id/img_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_savebutton"
+        tools:layout_editor_absoluteY="582dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
