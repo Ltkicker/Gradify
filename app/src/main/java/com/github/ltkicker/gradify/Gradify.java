@@ -23,7 +23,5 @@ public class Gradify extends AppCompatActivity {
         // Sets the activity to authentication area
         setContentView(R.layout.activity_authportal);
 
-        ClassroomHandler.createClassroom("Testclass", "teachertest");
-
     }
 }
