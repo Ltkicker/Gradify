@@ -73,6 +73,7 @@
     <string name="manage_students"> MANAGE STUDENTS </string>
     <string name="delete"> Delete </string>
     <string name="create_class">  CREATE CLASS </string>
+    <string name="your_students">  Your Students </string>
 
     <!-- leaderboard Popup -->
     <string name="category">  </string>
