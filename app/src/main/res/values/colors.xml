@@ -34,4 +34,10 @@
     <color name="txtaboutus_color">#FFFFFF</color>
     <color name="txtviewprofile_color">#060606</color>
     <color name="shapecircle_color">#D9D9D9</color>
+
+    <!-- activity_add_class_file colors -->
+    <color name="frame31_color">#CCC8C8</color>
+    <color name="frame2_color">#95C3BA</color>
+    <color name="greenbg_color">#61AE9F</color>
+    <color name="gradifysmalltext_color">#000000</color>
 </resources>
