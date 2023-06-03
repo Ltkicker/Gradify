@@ -217,6 +217,7 @@
         android:layout_marginBottom="486dp"
         android:fontFamily="@font/poppins"
         android:text="@string/category_others"
+        android:textColor="#80596F6B"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -389,18 +390,6 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/coe124_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128"
-        app:srcCompat="@drawable/img_coe124"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
     <TextView
         android:id="@+id/quiz_text3"
         android:layout_width="wrap_content"
@@ -512,5 +501,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_backarrow"
         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/subject_code"
+        android:textColor="#80506D68"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/subject_section"
+        android:textColor="#80516E69"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject_description"
+        android:textColor="#80506D69"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="109dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
