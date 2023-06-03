@@ -390,8 +390,8 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/quiz_text3"
+    <ImageView
+        android:id="@+id/bg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="182dp"
@@ -411,8 +411,8 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/quiz_date3"
+    <ImageView
+        android:id="@+id/avatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
@@ -431,7 +431,7 @@
         tools:ignore="SmallSp,TextContrastCheck,VisualLintOverlap" />
 
     <TextView
-        android:id="@+id/quiz_text4"
+        android:id="@+id/nameofstudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="167dp"
@@ -452,7 +452,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/quiz_date4"
+        android:id="@+id/viewprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
@@ -516,7 +516,7 @@
         tools:layout_editor_absoluteY="77dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/myClasses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
@@ -529,7 +529,7 @@
         tools:layout_editor_absoluteY="93dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/leaderBoard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/subject_description"
