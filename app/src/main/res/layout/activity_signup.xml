@@ -25,7 +25,7 @@
 		app:srcCompat="@drawable/img_background2"
 		tools:ignore="ImageContrastCheck" />
 
-	<TextView
+	<Button
 		android:id="@+id/textsignup"
 
 		android:layout_width="201dp"
@@ -39,7 +39,7 @@
 		android:focusable="true"
 		android:fontFamily="@font/poppins"
 		android:gravity="center|center_horizontal|center_vertical"
-		android:text="@string/sign_in"
+		android:text="@string/sign_up"
 		android:textAlignment="inherit"
 		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
 		android:textColor="@color/sign_in"
@@ -87,6 +87,7 @@
 		android:textColor="#FFFFFF"
 		android:textColorHint="#757575"
 		android:textSize="16sp"
+		app:layout_constraintBottom_toTopOf="@+id/input_first_name"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.804"
 		app:layout_constraintStart_toStartOf="parent"
@@ -106,6 +107,8 @@
 		android:textColor="#FFFFFF"
 		android:textColorHint="#757575"
 		android:textSize="16sp"
+		android:layout_marginTop="10dp"
+		app:layout_constraintTop_toBottomOf="@id/input_last_name"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.513"
 		app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +116,7 @@
 		tools:layout_editor_absoluteY="259dp" />
 
 	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/input_mddle_name"
+		android:id="@+id/input_middle_name"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
 		android:background="@drawable/shape_signin"
@@ -125,10 +128,10 @@
 		android:textColor="#FFFFFF"
 		android:textColorHint="#757575"
 		android:textSize="16sp"
-		app:layout_constraintBottom_toBottomOf="parent"
+		android:layout_marginTop="10dp"
+		app:layout_constraintTop_toBottomOf="@id/input_first_name"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
 		app:layout_constraintVertical_bias="0.464"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
@@ -177,6 +180,7 @@
 		android:id="@+id/input_password"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
+		android:inputType="textPassword"
 		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
@@ -206,6 +210,8 @@
 		android:textColor="#FFFFFF"
 		android:textColorHint="#757575"
 		android:textSize="16sp"
+		android:layout_marginTop="10dp"
+		app:layout_constraintTop_toBottomOf="@id/input_middle_name"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		tools:ignore="MissingConstraints,TextContrastCheck"
@@ -234,8 +240,9 @@
 		android:adjustViewBounds="false"
 		android:backgroundTint="#59FFFDE7"
 		android:scaleType="fitCenter"
+		app:layout_constraintBottom_toTopOf="@+id/input_last_name"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintHorizontal_bias="0.816"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
 		app:srcCompat="@drawable/img_gradifybiglogo"
