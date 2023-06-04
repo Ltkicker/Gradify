@@ -12,11 +12,18 @@
         android:theme="@style/Theme.Gradify"
         tools:targetApi="31">
         <activity
+            android:name=".homepage"
+            android:exported="false" />
+        <activity
+            android:name=".logOutToHome"
+            android:exported="false" />
+        <activity
             android:name=".activities.authentication.AuthPortalActivity"
             android:exported="true"
             android:theme="@style/Theme.Gradify.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -24,4 +31,5 @@
         <activity android:name=".activities.authentication.LoginActivity"/>
         <activity android:name=".activities.MenuActivity"/>
     </application>
+
 </manifest>
