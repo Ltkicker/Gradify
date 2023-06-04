@@ -74,12 +74,19 @@
     <string name="delete"> Delete </string>
     <string name="create_class">  CREATE CLASS </string>
     <string name="your_students">  Your Students </string>
+    <string name="edit_class">  Edit Class </string>
+    <string name="grading_system">  Grading System </string>
+    <string name="category_grading_system">  Category Grading System </string>
+    <string name="category_percent_grading_system"> -- </string>
+
 
     <!-- leaderboard Popup -->
     <string name="category">  </string>
     <string name="category_others"> Others </string>
-    <string name="sub_category">  </string>
+    <string name="sub_category"> SubCat </string>
     <string name="sub_category_date">  </string>
+    <string name="sub_category_rank"> RNK </string>
+    <string name="student_name_top1"> Name </string>
 
 
     <!-- student_log_in strings -->
@@ -104,11 +111,12 @@
     <string name="imgstudent">imgstudent</string>
     <string name="classes">auto_stories</string>
     <string name="leaderboards">social_leaderboard</string>
-=======
+
+    <!-- gradesheet strings -->
+    <string name="txtsearch_string">Search Name</string>
 
     <!-- activity_add_class_file strings -->
     <string name="font1_string">Your Students</string>
     <string name="inserttext_string">Choose Excel File</string>
     <string name="gradifysmalltext_string">GRADIFY </string>
->>>>>>> c337d54b7359dc9a7de2b8861459759a822a3770
 </resources>
