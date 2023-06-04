@@ -8,18 +8,22 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.activities.MenuActivity;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class AuthPortalActivity extends AppCompatActivity {
 
+    FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+        mAuth = FirebaseAuth.getInstance();
+        if (mAuth.getCurrentUser() != null) {
+            showMenu();
+            finish();
+            return;
         }
 
         setContentView(R.layout.activity_authportal);
@@ -30,6 +34,7 @@ public class AuthPortalActivity extends AppCompatActivity {
                 Intent intent = new Intent(AuthPortalActivity.this, LoginActivity.class);
                 intent.putExtra("demographic", "student");
                 startActivity(intent);
+                finish();
             }
         });
         ImageButton teacherBtn = findViewById(R.id.imgteacher);
@@ -39,7 +44,13 @@ public class AuthPortalActivity extends AppCompatActivity {
                 Intent intent = new Intent(AuthPortalActivity.this, LoginActivity.class);
                 intent.putExtra("demographic", "teacher");
                 startActivity(intent);
+                finish();
             }
         });
+    }
+    private void showMenu() {
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
