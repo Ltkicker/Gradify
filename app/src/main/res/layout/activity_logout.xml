@@ -13,14 +13,31 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_background2" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/profile"
+        android:layout_width="132dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginBottom="534dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_student_log_in" />
+
+    <ImageButton
+        android:id="@+id/back"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="363dp"
-        android:layout_marginBottom="683dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="667dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,30 +45,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iconback" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="136dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="259dp"
-        android:layout_marginBottom="523dp"
-        android:backgroundTint="#878787"
-        android:backgroundTintMode="src_over"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_student_log_in" />
-
     <TextView
         android:id="@+id/quiz_text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="123dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="578dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="592dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtnameofstudent_string"
         android:textColor="#FFFFFF"
@@ -60,17 +61,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/quiz_date3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="161dp"
-        android:layout_marginBottom="550dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="565dp"
         android:text="@string/txtviewprofile_string"
         android:textColor="#000000"
         android:textSize="15sp"
@@ -81,23 +82,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="390dp"
-        android:layout_height="3dp"
-        android:layout_marginTop="234dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/line"
+        android:layout_width="378dp"
+        android:layout_height="7dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="494dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_line" />
 
     <ImageView
-        android:id="@+id/imageView24"
+        android:id="@+id/classes"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="255dp"
-        android:layout_marginEnd="335dp"
-        android:layout_marginBottom="440dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="334dp"
+        android:layout_marginBottom="449dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,10 +113,10 @@
         android:id="@+id/quiz_text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="261dp"
-        android:layout_marginEnd="218dp"
-        android:layout_marginBottom="440dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="449dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtmyclasses_string"
         android:textColor="#FFFFFF"
@@ -122,26 +127,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="333dp"
+        android:id="@+id/leaderboard"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="334dp"
+        android:layout_marginBottom="399dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44"
         app:srcCompat="@drawable/icon_leaderboard" />
 
     <TextView
         android:id="@+id/quiz_date4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="313dp"
-        android:layout_marginEnd="201dp"
-        android:layout_marginBottom="388dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="399dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtleaderboard_string"
         android:textColor="#FFFFFF"
@@ -152,13 +158,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="39dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="355dp"
-        android:layout_marginEnd="331dp"
-        android:layout_marginBottom="337dp"
+        android:id="@+id/notif"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="346dp"
+        android:layout_marginEnd="332dp"
+        android:layout_marginBottom="349dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -166,13 +172,13 @@
         app:srcCompat="@drawable/icon_notifications" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/notifications"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="364dp"
-        android:layout_marginEnd="205dp"
-        android:layout_marginBottom="336dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="349dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtnotifications_string"
         android:textColor="#FFFFFF"
@@ -183,13 +189,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="38dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="406dp"
-        android:layout_marginEnd="333dp"
-        android:layout_marginBottom="292dp"
+        android:id="@+id/message"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="397dp"
+        android:layout_marginEnd="334dp"
+        android:layout_marginBottom="298dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -197,13 +203,13 @@
         app:srcCompat="@drawable/icon_mail" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/messages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="409dp"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="292dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="397dp"
+        android:layout_marginEnd="227dp"
+        android:layout_marginBottom="304dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtmessages_string"
         android:textColor="#FFFFFF"
@@ -214,23 +220,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="390dp"
-        android:layout_height="3dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/line2"
+        android:layout_width="378dp"
+        android:layout_height="7dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="276dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_line" />
 
     <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
+        android:id="@+id/setting"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="473dp"
-        android:layout_marginEnd="330dp"
-        android:layout_marginBottom="218dp"
+        android:layout_marginTop="474dp"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="221dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -238,13 +248,13 @@
         app:srcCompat="@drawable/icon_settings" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
-        android:layout_marginTop="483dp"
+        android:layout_marginTop="480dp"
         android:layout_marginEnd="245dp"
-        android:layout_marginBottom="218dp"
+        android:layout_marginBottom="221dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtsettings_string"
         android:textColor="#FFFFFF"
@@ -255,12 +265,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="35dp"
+        android:id="@+id/info"
+        android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="523dp"
-        android:layout_marginEnd="336dp"
+        android:layout_marginEnd="335dp"
         android:layout_marginBottom="172dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -269,12 +279,12 @@
         app:srcCompat="@drawable/icon_info" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
+        android:layout_marginStart="95dp"
         android:layout_marginTop="523dp"
-        android:layout_marginEnd="277dp"
+        android:layout_marginEnd="276dp"
         android:layout_marginBottom="178dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txthelp_string"
@@ -286,12 +296,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="41dp"
-        android:layout_height="37dp"
+        android:id="@+id/about"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="569dp"
-        android:layout_marginEnd="330dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="335dp"
         android:layout_marginBottom="125dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -300,7 +310,7 @@
         app:srcCompat="@drawable/icon_aboutus" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/aboutUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
@@ -317,17 +327,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="390dp"
-        android:layout_height="3dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/lastLine"
+        android:layout_width="378dp"
+        android:layout_height="7dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="617dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_line" />
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/logouticn"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="41dp"
@@ -341,7 +355,7 @@
         app:srcCompat="@drawable/icon_logout" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
@@ -356,5 +370,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/iconback"
+        android:layout_width="wrap_content"
+        android:layout_height=""
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
