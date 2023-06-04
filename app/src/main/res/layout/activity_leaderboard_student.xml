@@ -390,8 +390,8 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/bg"
+    <TextView
+        android:id="@+id/quiz_text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="182dp"
@@ -411,8 +411,8 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/avatar"
+    <TextView
+        android:id="@+id/quiz_date3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
@@ -431,7 +431,7 @@
         tools:ignore="SmallSp,TextContrastCheck,VisualLintOverlap" />
 
     <TextView
-        android:id="@+id/nameofstudent"
+        android:id="@+id/quiz_text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="167dp"
@@ -452,7 +452,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/viewprofile"
+        android:id="@+id/quiz_date4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
@@ -489,11 +489,11 @@
     <ImageButton
         android:id="@+id/back_arrow_button"
         android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_height="42dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="347dp"
-        android:layout_marginBottom="654dp"
+        android:layout_marginBottom="661dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -503,7 +503,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/subject_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
@@ -516,7 +516,7 @@
         tools:layout_editor_absoluteY="77dp" />
 
     <TextView
-        android:id="@+id/myClasses"
+        android:id="@+id/subject_section"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
@@ -529,7 +529,7 @@
         tools:layout_editor_absoluteY="93dp" />
 
     <TextView
-        android:id="@+id/leaderBoard"
+        android:id="@+id/subject_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/subject_description"

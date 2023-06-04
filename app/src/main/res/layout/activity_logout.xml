@@ -7,7 +7,7 @@
     android:backgroundTint="#00FFFFFF">
 
     <ImageView
-        android:id="@+id/bg"
+        android:id="@+id/coe124_title"
         android:layout_width="563dp"
         android:layout_height="968dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,7 +46,7 @@
         app:srcCompat="@drawable/iconback" />
 
     <TextView
-        android:id="@+id/nameofstudent"
+        android:id="@+id/quiz_text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="194dp"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/viewprofile"
+        android:id="@+id/quiz_date3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="194dp"
@@ -110,7 +110,7 @@
         app:srcCompat="@drawable/icon_classes" />
 
     <TextView
-        android:id="@+id/myClasses"
+        android:id="@+id/quiz_text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
@@ -141,7 +141,7 @@
         app:srcCompat="@drawable/icon_leaderboard" />
 
     <TextView
-        android:id="@+id/leaderBoard"
+        android:id="@+id/quiz_date4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
