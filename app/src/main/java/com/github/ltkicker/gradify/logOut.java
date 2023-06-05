@@ -2,6 +2,7 @@ package com.github.ltkicker.gradify;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
@@ -13,15 +14,16 @@ public class logOut extends AppCompatActivity {
     public TextView button_text;
     public ImageButton button;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logout);
 
         button = (ImageButton) findViewById(R.id.back);
+        button_text = (TextView) findViewById(R.id.Myclasses);
+        button_text = (TextView) findViewById(R.id.txtleaderboards_string);
         button_text = (TextView) findViewById(R.id.viewprofile);
-        button_text = (TextView) findViewById(R.id.myClasses);
-        button_text = (TextView) findViewById(R.id.leaderBoard);
         button_text = (TextView) findViewById(R.id.notifications);
         button_text = (TextView) findViewById(R.id.messages);
         button_text = (TextView) findViewById(R.id.settings);

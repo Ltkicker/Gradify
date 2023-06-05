@@ -65,7 +65,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/quiz_date3"
+        android:id="@+id/viewprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="194dp"
@@ -110,7 +110,7 @@
         app:srcCompat="@drawable/icon_classes" />
 
     <TextView
-        android:id="@+id/quiz_text4"
+        android:id="@+id/Myclasses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
@@ -141,7 +141,7 @@
         app:srcCompat="@drawable/icon_leaderboard" />
 
     <TextView
-        android:id="@+id/quiz_date4"
+        android:id="@+id/txtleaderboards_string"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
