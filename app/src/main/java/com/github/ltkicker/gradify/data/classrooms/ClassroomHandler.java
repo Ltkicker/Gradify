@@ -1,4 +1,4 @@
-package com.github.ltkicker.gradify.data;
+package com.github.ltkicker.gradify.data.classrooms;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;

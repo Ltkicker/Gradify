@@ -1,4 +1,4 @@
-package com.github.ltkicker.gradify.data;
+package com.github.ltkicker.gradify.data.users;
 
 public class User {
     public String lastName;
