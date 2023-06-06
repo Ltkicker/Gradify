@@ -5,6 +5,9 @@ package com.github.ltkicker.gradify.activities;
         import androidx.appcompat.app.AppCompatActivity;
 
         import com.github.ltkicker.gradify.R;
+        import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
+
+        import android.content.Intent;
 
 public class loading extends AppCompatActivity {
 
@@ -14,11 +17,15 @@ public class loading extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.activity_loadingpage);
-        //ImageButton studentBtn = findViewById(R.id.imgstudent);
+//<<<<<<< Updated upstream
+        Intent intent = new Intent(loading.this, AuthPortalActivity.class);
+        startActivity(intent);
+//=======
 
 
+
+//>>>>>>> //Stashed changes
 
     }
 }

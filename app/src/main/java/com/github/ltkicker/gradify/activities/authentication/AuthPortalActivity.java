@@ -1,5 +1,6 @@
 package com.github.ltkicker.gradify.activities.authentication;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +28,15 @@ public class AuthPortalActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_authportal);
+
         ImageButton studentBtn = findViewById(R.id.imgstudent);
+
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         studentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
