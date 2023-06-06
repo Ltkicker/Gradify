@@ -34,7 +34,7 @@
         android:id="@+id/loadinglogo"
         android:layout_width="200dp"
         android:layout_height="147dp"
-        android:src="@drawable/img_loadingLogo"
+        android:src="@drawable/img_loadinglogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
