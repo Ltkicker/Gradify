@@ -111,7 +111,7 @@
     <string name="imgstudent">imgstudent</string>
     <string name="txtclasses_string">auto_stories</string>
     <string name="txtleaderboards_string">social_leaderboard</string>
-  
+
     <!-- gradesheet strings -->
     <string name="txtsearch_string">Search Name</string>
 
@@ -119,4 +119,6 @@
     <string name="font1_string">Your Students</string>
     <string name="inserttext_string">Choose Excel File</string>
     <string name="gradifysmalltext_string">GRADIFY </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
