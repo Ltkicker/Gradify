@@ -81,10 +81,10 @@
 
 
     <!-- leaderboard Popup -->
-    <string name="category">  </string>
+    <string name="category"> CAT </string>
     <string name="category_others"> Others </string>
-    <string name="sub_category"> SubCat </string>
-    <string name="sub_category_date">  </string>
+    <string name="sub_category"> Sub Category Title </string>
+    <string name="sub_category_date"> Date </string>
     <string name="sub_category_rank"> RNK </string>
     <string name="student_name_top1"> Name </string>
 
