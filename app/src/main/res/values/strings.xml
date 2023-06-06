@@ -85,6 +85,15 @@
     <string name="category_others"> Others </string>
     <string name="sub_category">  </string>
     <string name="sub_category_date">  </string>
+    <string name="subject_code_name">  Subject </string>
+    <string name="quiz_title">  Quiz Title </string>
+    <string name="quiz_date">  Date </string>
+    <string name="quiz_total_points">  Total Points </string>
+    <string name="quiz_number_of_students">  Number of Students </string>
+    <string name="quizzes">  Number of Students </string>
+    <string name="category_name"> category </string>
+    <string name="add_category"> Add </string>
+    <string name="student_passed"> Show only those who have passed </string>
 
 
     <!-- student_log_in strings -->
