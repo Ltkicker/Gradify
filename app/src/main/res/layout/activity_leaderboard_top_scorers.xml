@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/points_bkg2"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -81,13 +82,14 @@
         tools:ignore="ContentDescription,ImageContrastCheck,TouchTargetSizeCheck" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/top3_bkg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_top_scorers_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteY="85dp" />
 
     <ImageView
@@ -100,18 +102,6 @@
         tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
         tools:layout_editor_absoluteY="99dp" />
 
-    <TextView
-        android:id="@+id/category5"
-        android:layout_width="83dp"
-        android:layout_height="38dp"
-        android:clickable="true"
-        android:fontFamily="@font/poppins"
-        android:text="@string/category"
-        android:textSize="12sp"
-        tools:ignore="HardcodedText,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="148dp" />
-
     <ImageView
         android:id="@+id/category_select2"
         android:layout_width="73dp"
@@ -120,32 +110,6 @@
         tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteX="54dp"
         tools:layout_editor_absoluteY="143dp" />
-
-    <TextView
-        android:id="@+id/category6"
-        android:layout_width="78dp"
-        android:layout_height="38dp"
-        android:clickable="true"
-        android:fontFamily="@font/poppins"
-        android:text="@string/category"
-        android:textSize="12sp"
-        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="148dp" />
-
-    <TextView
-        android:id="@+id/category7"
-        android:layout_width="59dp"
-        android:layout_height="35dp"
-        android:clickable="true"
-        android:fontFamily="@font/poppins"
-        android:text="@string/category"
-        android:textColor="#1AC171"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="148dp" />
 
     <ImageView
         android:id="@+id/category_bkg2"
@@ -158,25 +122,92 @@
         tools:layout_editor_absoluteY="140dp" />
 
     <TextView
-        android:id="@+id/category"
-        android:layout_width="78dp"
-        android:layout_height="39dp"
+        android:id="@+id/category11"
+        android:layout_width="70dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="293dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="544dp"
         android:fontFamily="@font/poppins"
         android:text="@string/category_others"
+        android:textAlignment="center"
         android:textColor="#80596F6B"
         android:textSize="12sp"
-        tools:ignore="TextContrastCheck"
-        tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="148dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/category10"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="543dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/category9"
+        android:layout_width="64dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="214dp"
+        android:layout_marginBottom="543dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/category8"
+        android:layout_width="73dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="553dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/category"
+        android:textAlignment="center"
+        android:textColor="#1AC171"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/stage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_stage"
+        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck"
         tools:layout_editor_absoluteY="131dp" />
 
     <ImageView
@@ -186,6 +217,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_circle_frame2"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteY="187dp" />
 
     <ImageView
@@ -193,6 +225,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_circle_frame1"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteX="95dp"
         tools:layout_editor_absoluteY="211dp" />
 
@@ -201,43 +234,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_circle_frame3"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteX="247dp"
         tools:layout_editor_absoluteY="211dp" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="18dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_student_top1"
-        tools:layout_editor_absoluteY="194dp" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="53dp"
-        android:layout_height="57dp"
-        app:srcCompat="@drawable/img_student_top2"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="213dp" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        app:srcCompat="@drawable/img_student_top3"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="214dp" />
-
     <TextView
         android:id="@+id/student_rank2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="45dp"
+        android:layout_height="31dp"
         android:fontFamily="@font/poppins"
         android:text="@string/sub_category_rank"
+        android:textAlignment="center"
         android:textColor="#94FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
+        tools:ignore="TextContrastCheck"
         tools:layout_editor_absoluteX="105dp"
         tools:layout_editor_absoluteY="316dp" />
 
@@ -247,12 +258,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:text="@string/sub_category_rank"
+        android:textAlignment="center"
         android:textColor="#A6FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck"
         tools:layout_editor_absoluteY="309dp" />
 
     <TextView
@@ -261,14 +274,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:text="@string/sub_category_rank"
+        android:textAlignment="center"
         android:textColor="#9FFFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
+        tools:ignore="TextContrastCheck"
         tools:layout_editor_absoluteX="259dp"
         tools:layout_editor_absoluteY="313dp" />
 
     <TextView
-        android:id="@+id/student_name_top1"
+        android:id="@+id/student_firstname_top1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/student_name_top1"
@@ -278,21 +293,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck"
         tools:layout_editor_absoluteY="254dp" />
 
     <TextView
-        android:id="@+id/student_name_top2"
+        android:id="@+id/student_firstname_top3"
         android:layout_width="38dp"
         android:layout_height="19dp"
         android:text="@string/student_name_top1"
         android:textColor="#803C6C4B"
         android:textSize="12sp"
         android:textStyle="bold"
+        tools:ignore="TextContrastCheck"
         tools:layout_editor_absoluteX="259dp"
         tools:layout_editor_absoluteY="277dp" />
 
     <TextView
-        android:id="@+id/student_name_top"
+        android:id="@+id/student_firstname_top2"
         android:layout_width="38dp"
         android:layout_height="19dp"
         android:text="@string/student_name_top1"
@@ -302,6 +319,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.297"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck"
         tools:layout_editor_absoluteY="277dp" />
 
     <ImageView
@@ -309,31 +327,34 @@
         android:layout_width="34dp"
         android:layout_height="12dp"
         app:srcCompat="@drawable/img_top3_points_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="292dp" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/points_bkg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_top3_points_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteY="270dp" />
 
     <ImageView
-        android:id="@+id/imageView17"
+        android:id="@+id/points_bkg3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_top3_points_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteX="259dp"
         tools:layout_editor_absoluteY="292dp" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="63dp"
-        android:layout_height="21dp"
+        android:id="@+id/sub_category_title"
+        android:layout_width="232dp"
+        android:layout_height="20dp"
         android:fontFamily="@font/poppins"
         android:text="@string/sub_category"
         android:textAlignment="center"
@@ -342,7 +363,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="367dp" />
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteY="368dp" />
 
     <ImageView
         android:id="@+id/imageView25"
@@ -352,6 +374,7 @@
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_scorers_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteY="390dp" />
 
     <ImageView
@@ -361,6 +384,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_rank_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteY="433dp" />
 
     <ImageView
@@ -371,6 +395,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_rank_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteY="502dp" />
 
     <ImageView
@@ -381,6 +406,7 @@
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_rank_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteY="569dp" />
 
     <ImageView
@@ -390,6 +416,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_rank_bkg"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteY="637dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
