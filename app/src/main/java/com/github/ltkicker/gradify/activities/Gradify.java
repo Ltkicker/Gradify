@@ -9,16 +9,19 @@ import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
 
 import android.content.Intent;
 
-public class LoadingActivity extends AppCompatActivity {
-
+public class Gradify extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loadingpage);
-        Intent intent = new Intent(LoadingActivity.this, AuthPortalActivity.class);
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Intent intent = new Intent(Gradify.this, AuthPortalActivity.class);
         startActivity(intent);
-
+        finish();
     }
 }

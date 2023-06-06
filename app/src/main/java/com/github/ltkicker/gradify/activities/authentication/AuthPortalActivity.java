@@ -30,11 +30,6 @@ public class AuthPortalActivity extends AppCompatActivity {
 
         ImageButton studentBtn = findViewById(R.id.imgstudent);
 
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
 
         studentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
