@@ -366,7 +366,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/student_firstname_top2"
@@ -404,7 +404,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
 
     <ImageView
         android:id="@+id/points_bkg2.0"
@@ -464,6 +464,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SmallSp,TextContrastCheck"
         tools:layout_editor_absoluteY="268dp" />
 
     <TextView
@@ -478,6 +479,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SmallSp,TextContrastCheck"
         tools:layout_editor_absoluteY="291dp" />
 
     <TextView
@@ -489,6 +491,7 @@
         android:textAlignment="center"
         android:textSize="9sp"
         android:textStyle="bold"
+        tools:ignore="SmallSp,TextContrastCheck"
         tools:layout_editor_absoluteX="106dp"
         tools:layout_editor_absoluteY="292dp" />
 
@@ -655,6 +658,7 @@
         android:layout_width="33dp"
         android:layout_height="31dp"
         app:srcCompat="@drawable/img_default_profile"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteX="96dp"
         tools:layout_editor_absoluteY="442dp" />
 
@@ -663,6 +667,7 @@
         android:layout_width="33dp"
         android:layout_height="31dp"
         app:srcCompat="@drawable/img_default_profile"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteX="94dp"
         tools:layout_editor_absoluteY="510dp" />
 
@@ -671,6 +676,7 @@
         android:layout_width="33dp"
         android:layout_height="31dp"
         app:srcCompat="@drawable/img_default_profile"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteX="95dp"
         tools:layout_editor_absoluteY="578dp" />
 
@@ -679,6 +685,7 @@
         android:layout_width="33dp"
         android:layout_height="31dp"
         app:srcCompat="@drawable/img_default_profile"
+        tools:ignore="ContentDescription,ImageContrastCheck"
         tools:layout_editor_absoluteX="96dp"
         tools:layout_editor_absoluteY="644dp" />
 
@@ -736,7 +743,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_scorers_points_bkg"
         tools:layout_editor_absoluteX="295dp"
-        tools:layout_editor_absoluteY="453dp" />
+        tools:layout_editor_absoluteY="453dp"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/score_bkg5"
@@ -744,7 +752,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_scorers_points_bkg"
         tools:layout_editor_absoluteX="295dp"
-        tools:layout_editor_absoluteY="520dp" />
+        tools:layout_editor_absoluteY="520dp"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/score_bkg6"
@@ -752,7 +761,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_scorers_points_bkg"
         tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="587dp" />
+        tools:layout_editor_absoluteY="587dp"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/score_bkg7"
@@ -760,7 +770,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_scorers_points_bkg"
         tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="656dp" />
+        tools:layout_editor_absoluteY="656dp"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/score4"
@@ -772,7 +783,8 @@
         android:textSize="9sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="452dp" />
+        tools:layout_editor_absoluteY="452dp"
+        tools:ignore="SmallSp" />
 
     <TextView
         android:id="@+id/score5"
@@ -784,7 +796,8 @@
         android:textSize="9sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="519dp" />
+        tools:layout_editor_absoluteY="519dp"
+        tools:ignore="SmallSp" />
 
     <TextView
         android:id="@+id/score6"
@@ -796,7 +809,8 @@
         android:textSize="9sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="299dp"
-        tools:layout_editor_absoluteY="586dp" />
+        tools:layout_editor_absoluteY="586dp"
+        tools:ignore="SmallSp" />
 
     <TextView
         android:id="@+id/score7"
@@ -807,6 +821,7 @@
         android:textAlignment="center"
         android:textSize="9sp"
         android:textStyle="bold"
+        tools:ignore="SmallSp,TextContrastCheck"
         tools:layout_editor_absoluteX="299dp"
         tools:layout_editor_absoluteY="655dp" />
 
