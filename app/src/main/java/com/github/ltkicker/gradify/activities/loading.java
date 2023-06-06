@@ -18,8 +18,14 @@ public class loading extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_loadingpage);
+//<<<<<<< Updated upstream
         Intent intent = new Intent(loading.this, AuthPortalActivity.class);
         startActivity(intent);
+//=======
+
+
+
+//>>>>>>> //Stashed changes
 
     }
 }
