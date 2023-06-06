@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Gradify">
+    tools:context=".activities.authentication.AuthPortalActivity">
 
     <androidx.appcompat.widget.SearchView
         android.id = "@+id/filter_bar"

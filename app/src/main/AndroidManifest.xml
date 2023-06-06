@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Gradify"
         tools:targetApi="31">
         <activity
-            android:name=".Gradify"
+            android:name=".activities.authentication.AuthPortalActivity"
             android:exported="true"
             android:theme="@style/Theme.Gradify.NoActionBar">
             <intent-filter>
@@ -20,5 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.authentication.SignupActivity"/>
+        <activity android:name=".activities.authentication.LoginActivity"/>
     </application>
 </manifest>
