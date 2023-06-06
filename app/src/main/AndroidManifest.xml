@@ -12,6 +12,11 @@
         android:theme="@style/Theme.Gradify"
         tools:targetApi="31">
         <activity
+            android:name=".activities.loading"
+            android:exported="true"
+
+            />
+        <activity
             android:name=".homepage"
             android:exported="false" />
         <activity
