@@ -64,8 +64,8 @@
     <string name="archive">Archived</string>
     <string name="ongoing">Ongoing</string>
     <string name="all">All</string>
-    <string name="your_classes">Your Classes</string>
-    <string name="subject_code">  Subject Code</string>
+    <string name="your_classes"> Your Classes </string>
+    <string name="subject_code"> Subject Code </string>
     <string name="subject_section">  Subject Section</string>
     <string name="subject_description">  Subject Description</string>
     <string name="room_number">  Room No.</string>
@@ -80,14 +80,15 @@
     <string name="category_percent_grading_system"> -- </string>
 
 
-    <!-- leaderboard Popup -->
+    <!-- Leaderboard Popup -->
     <string name="category"> CAT </string>
     <string name="category_others"> Others </string>
     <string name="sub_category"> Sub Category Title </string>
     <string name="sub_category_date"> Date </string>
-    <string name="sub_category_rank"> RNK </string>
-    <string name="student_name_top1"> Name </string>
-
+    <string name="sub_category_rank"> # </string>
+    <string name="student_firstname"> Name </string>
+    <string name="student_fullname"> Full Name </string>
+    <string name="student_score_points"> Score </string>
 
     <!-- student_log_in strings -->
     <string name="txtstudentlogin_string">Student Log in:</string>
