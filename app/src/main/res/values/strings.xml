@@ -80,7 +80,7 @@
     <string name="category_percent_grading_system"> -- </string>
 
 
-    <!-- leaderboard Popup -->
+    <!-- Leaderboard Popup -->
     <string name="category"> CAT </string>
     <string name="category_others"> Others </string>
     <string name="sub_category"> Sub Category Title </string>
