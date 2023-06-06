@@ -2,18 +2,15 @@ package com.github.ltkicker.gradify.activities.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.ComponentActivity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
-import com.github.ltkicker.gradify.activities.MenuActivity;
-import com.github.ltkicker.gradify.data.User;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
+import com.github.ltkicker.gradify.data.users.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -37,12 +34,7 @@ public class SignupActivity extends AppCompatActivity {
         }
 
         Button signup = findViewById(R.id.textsignup);
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                registerUser();
-            }
-        });
+        signup.setOnClickListener(view -> registerUser());
     }
 
     private void registerUser() {

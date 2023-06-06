@@ -41,88 +41,7 @@
 			</RelativeLayout>
 
 
-			<RelativeLayout android:id="@+id/popup"
-				android:layout_marginTop="267dp"
-				android:layout_marginStart="23dp"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				>
 
-				<View   android:id="@+id/container"
-					android:background="@drawable/shape_popupbox"
-					android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:layout_width="313dp"
-					android:layout_height="266dp" />
-
-				<TextView android:id="@+id/txtdesc"
-					android:layout_gravity="center_horizontal|center"
-					android:gravity="center"
-					android:textSize="20sp"
-					android:textColor="@color/white"
-					android:layout_marginStart="33dp"
-					android:layout_marginTop="79dp"
-					android:layout_width="257dp"
-					android:layout_height="181dp"
-					android:text="@string/popup_desc"
-					/>
-
-				<TextView android:id="@+id/txtcubix2"
-					android:textStyle="bold"
-					android:layout_gravity="center_horizontal|center"
-					android:gravity="center"
-					android:textSize="55sp"
-					android:textColor="@color/black"
-					android:layout_marginStart="65dp"
-					android:layout_marginTop="25dp"
-					android:layout_width="179dp"
-					android:layout_height="102.5dp"
-					android:text="@string/cubix_text_full"
-					/>
-
-				<TextView android:id="@+id/txtplus2"
-					android:textStyle="bold"
-					android:layout_gravity="center_horizontal|center"
-					android:gravity="center"
-					android:textSize="55sp"
-					android:textColor="@color/black"
-					android:layout_marginStart="211dp"
-					android:layout_marginTop="8dp"
-					android:layout_width="58dp"
-					android:layout_height="102.5dp"
-					android:text="@string/cubix_text_3"
-					/>
-
-
-				<RelativeLayout android:id="@+id/create_class"
-					android:layout_marginTop="165dp"
-					android:layout_marginStart="38dp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					>
-
-					<View   android:id="@+id/shape"
-						android:background="@drawable/shape_rectangle2"
-						android:layout_marginStart="15dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="204dp"
-						android:layout_height="52dp" />
-
-					<TextView android:id="@+id/text"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textSize="20sp"
-						android:textColor="@color/white"
-						android:layout_marginStart="-3dp"
-						android:layout_marginTop="3dp"
-						android:layout_width="257dp"
-						android:layout_height="181dp"
-						android:text="@string/create_class"
-						/>
-
-				</RelativeLayout>
-
-			</RelativeLayout>
 
 
 			<RelativeLayout android:id="@+id/tags"
@@ -132,6 +51,13 @@
 				android:layout_height="wrap_content"
 				>
 
+
+				<FrameLayout
+					android:id="@+id/popuptemp"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+				</FrameLayout>
 
 				<RelativeLayout android:id="@+id/btnarchive"
 					android:layout_marginTop="0dp"

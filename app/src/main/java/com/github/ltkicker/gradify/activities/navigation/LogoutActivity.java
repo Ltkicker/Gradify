@@ -1,4 +1,4 @@
-package com.github.ltkicker.gradify;
+package com.github.ltkicker.gradify.activities.navigation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,9 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class logOut extends AppCompatActivity {
+import com.github.ltkicker.gradify.R;
+
+public class LogoutActivity extends AppCompatActivity {
 
     public TextView button_text;
     public ImageButton button;
@@ -35,7 +37,7 @@ public class logOut extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(logOut.this,homepage.class);
+                Intent intent = new Intent(LogoutActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });

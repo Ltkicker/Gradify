@@ -1,6 +1,5 @@
 package com.github.ltkicker.gradify.activities.authentication;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +8,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
-import com.github.ltkicker.gradify.activities.MenuActivity;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AuthPortalActivity extends AppCompatActivity {

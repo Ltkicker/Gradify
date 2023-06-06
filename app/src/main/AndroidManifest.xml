@@ -12,12 +12,6 @@
         android:theme="@style/Theme.Gradify"
         tools:targetApi="31">
         <activity
-            android:name=".homepage"
-            android:exported="false" />
-        <activity
-            android:name=".logOutToHome"
-            android:exported="false" />
-        <activity
             android:name=".activities.authentication.AuthPortalActivity"
             android:exported="true"
             android:theme="@style/Theme.Gradify.NoActionBar">
@@ -29,7 +23,9 @@
         </activity>
         <activity android:name=".activities.authentication.SignupActivity"/>
         <activity android:name=".activities.authentication.LoginActivity"/>
-        <activity android:name=".activities.MenuActivity"/>
+        <activity android:name=".activities.navigation.MenuActivity"/>
+        <activity android:name=".activities.classroom.ClassDashboardActivity"/>
+        <activity android:name=".activities.navigation.LogoutActivity"/>
     </application>
 
 </manifest>
