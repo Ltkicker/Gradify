@@ -88,7 +88,14 @@
     <string name="sub_category_rank"> # </string>
     <string name="student_firstname"> Name </string>
     <string name="student_fullname"> Full Name </string>
-    <string name="student_score_points"> Score </string>
+    <string name="student_score"> Score </string>
+    <string name="overall_percentage">0%</string>
+    <string name="text_equivalent_grade">Grade Equivalent:</string>
+    <string name="value_equivalent_grade">0.00</string>
+    <string name="text_grade_system_breakdown">Grade System Breakdown</string>
+    <string name="breakdown_title">Breakdown</string>
+    <string name="breakdown_percentage_total">%</string>
+    <string name="breakdown_percentage_current">0%</string>
 
     <!-- student_log_in strings -->
     <string name="txtstudentlogin_string">Student Log in:</string>
