@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
 
     <View
         android:id="@+id/img_background"
@@ -20,9 +21,9 @@
 
     <View
         android:id="@+id/img_background_overlay"
-        android:layout_width="411dp"
-        android:layout_height="833dp"
-        android:layout_marginTop="137dp"
+        android:layout_width="415dp"
+        android:layout_height="673dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/img_background3"
         android:gravity="center"
         android:textAlignment="center"
@@ -36,10 +37,10 @@
         android:id="@+id/img_gradifytext"
         android:layout_width="126dp"
         android:layout_height="21dp"
-        android:layout_marginStart="189dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="671dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="669dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,26 +53,27 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="664dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="331dp"
+        android:layout_marginBottom="654dp"
         android:background="@drawable/img_menu_home"
         android:backgroundTint="#00FFFFFF"
+        android:clickable="true"
         app:iconTint="#EDFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/img_gradify_logo"
         android:layout_width="77dp"
         android:layout_height="58dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="211dp"
-        android:layout_marginBottom="701dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="654dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.944"
@@ -85,7 +87,10 @@
         android:id="@+id/img_backbutton"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginStart="48dp"
         android:layout_marginEnd="314dp"
+        android:layout_marginBottom="550dp"
         android:background="#00FFFFFF"
         android:backgroundTint="#00FFFFFF"
         android:foreground="@drawable/iconback"
@@ -99,29 +104,11 @@
         app:layout_constraintVertical_bias="0.183"
         tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
-    <Button
-        android:id="@+id/img_barbutton"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="316dp"
-        android:layout_marginTop="154dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="689dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF"
-        android:foreground="@drawable/icon_menuhamburger"
-        android:foregroundTint="@color/black"
-        app:iconTint="#EDFFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_subject_section"
         android:layout_width="164dp"
         android:layout_height="59dp"
+        android:layout_marginEnd="5dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#00FFEBEE"
         android:backgroundTintMode="src_over"
@@ -142,8 +129,10 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_subject_code3"
-        android:layout_width="352dp"
+        android:layout_width="336dp"
         android:layout_height="61dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#00FFEBEE"
         android:backgroundTintMode="src_over"
@@ -157,16 +146,17 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546"
+        app:layout_constraintVertical_bias="0.55"
         tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_subject_code"
         android:layout_width="164dp"
         android:layout_height="59dp"
+        android:layout_marginStart="5dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#00FFEBEE"
         android:backgroundTintMode="src_over"
@@ -190,10 +180,7 @@
         android:id="@+id/input_building"
         android:layout_width="164dp"
         android:layout_height="59dp"
-        android:layout_marginStart="206dp"
-        android:layout_marginTop="480dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="246dp"
+        android:layout_marginEnd="5dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#00FFEBEE"
         android:backgroundTintMode="src_over"
@@ -207,16 +194,17 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613"
+        app:layout_constraintVertical_bias="0.666"
         tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_room_no"
         android:layout_width="164dp"
         android:layout_height="59dp"
+        android:layout_marginStart="5dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#00FFEBEE"
         android:backgroundTintMode="src_over"
@@ -230,10 +218,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655"
+        app:layout_constraintVertical_bias="0.666"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -264,10 +252,10 @@
         app:drawableBottomCompat="@drawable/round_corner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981"
+        app:layout_constraintVertical_bias="0.722"
         app:layout_marginBaseline="10dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:visibility="visible" />
@@ -276,7 +264,7 @@
         android:id="@+id/clickable_createclass"
         android:layout_width="201dp"
         android:layout_height="61dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="@color/sign_in"
         android:backgroundTintMode="src_over"
@@ -297,9 +285,10 @@
         app:drawableBottomCompat="@drawable/round_corner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_marginBaseline="10dp"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,TextSizeCheck"
         tools:visibility="visible" />
 
     <ImageButton
