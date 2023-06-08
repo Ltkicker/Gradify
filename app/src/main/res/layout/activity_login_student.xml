@@ -21,7 +21,8 @@
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
 		app:layout_constraintVertical_bias="0.0"
-		app:srcCompat="@drawable/img_background2" />
+		app:srcCompat="@drawable/img_background2"
+		tools:ignore="ImageContrastCheck" />
 
 	<TextView
 		android:id="@+id/clickable_signup"
@@ -73,24 +74,24 @@
 		android:layout_marginBottom="42dp"
 		android:fontFamily="@font/poppins"
 		android:gravity="center"
-		android:text="@string/teacher_login"
+		android:text="@string/student_login"
 		android:textColor="@color/shapesignin_color"
 		android:textSize="24sp"
 		app:layout_constraintBottom_toTopOf="@+id/textsignup"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.497"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/img_teacher"
+		app:layout_constraintTop_toBottomOf="@+id/img_student"
 		tools:ignore="TextContrastCheck" />
 
 	<ImageView
-		android:id="@+id/img_teacher"
+		android:id="@+id/img_student"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="157dp"
 		android:layout_marginBottom="14dp"
 		android:contentDescription="@string/background_desc"
-		android:src="@drawable/img_teacher_2"
+		android:src="@drawable/img_student_log_in"
 		app:layout_constraintBottom_toTopOf="@+id/studentLogIn"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.496"
@@ -100,15 +101,19 @@
 
 	<ImageView
 		android:id="@+id/iconback"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="39dp"
-		android:layout_marginTop="58dp"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
+		android:layout_marginStart="48dp"
+		android:layout_marginTop="48dp"
+		android:clickable="true"
+		android:enabled="true"
+		android:importantForAccessibility="yes"
 		android:contentDescription="@string/background_desc"
 		android:src="@drawable/iconback"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:ignore="ImageContrastCheck" />
+		tools:ignore="ImageContrastCheck"
+		/>
 
 	<com.google.android.material.textfield.TextInputLayout
 		android:id="@+id/textInputLayout2"
