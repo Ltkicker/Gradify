@@ -366,12 +366,14 @@
         android:id="@+id/img_recordscorebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="648dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#00FFFFFF"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_leaderboardrecordscore"
         tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
 
@@ -379,8 +381,15 @@
         android:id="@+id/img_savebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_recordquiz_savebutton"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="600dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
