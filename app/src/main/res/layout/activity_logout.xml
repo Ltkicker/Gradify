@@ -7,21 +7,19 @@
     android:backgroundTint="#00FFFFFF">
 
     <ImageView
-        android:id="@+id/backlog_out_ground"
+        android:id="@+id/coe124_title"
         android:layout_width="563dp"
         android:layout_height="968dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502"
-        app:srcCompat="@drawable/img_background2"
-        tools:ignore="ContentDescription" />
+        app:srcCompat="@drawable/img_background2" />
 
     <ImageButton
         android:id="@+id/profile"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
+        android:layout_width="132dp"
+        android:layout_height="120dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="77dp"
         android:layout_marginEnd="235dp"
@@ -30,9 +28,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_student_log_in"
-        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/img_student_log_in" />
 
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="667dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconback" />
+
+    <TextView
+        android:id="@+id/quiz_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="592dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/txtnameofstudent_string"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/viewprofile"
@@ -45,30 +75,6 @@
         android:text="@string/txtviewprofile_string"
         android:textColor="#000000"
         android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/full_name"
-        android:layout_width="201dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="194dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="592dp"
-        android:background="@drawable/frame2_shape"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/fullname_student"
-        android:text="@string/fullname_student"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#F1E4E4"
-        android:textColorLink="#FFFFFF"
-        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,8 +93,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_line"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/img_line" />
 
     <ImageView
         android:id="@+id/classes"
@@ -102,8 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_classes"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/icon_classes" />
 
     <TextView
         android:id="@+id/Myclasses"
@@ -120,28 +124,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
-
-    <ImageView
-        android:id="@+id/iconback7"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="664dp"
-        android:background="@drawable/iconback"
-        android:backgroundTint="#FFFEFE"
-        android:clickable="true"
-        android:contentDescription="@string/background_desc"
-        android:focusable="true"
-        android:foregroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/leaderboard"
@@ -155,8 +138,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_leaderboard"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/icon_leaderboard" />
 
     <TextView
         android:id="@+id/txtleaderboards_string"
@@ -173,8 +155,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/notif"
@@ -188,8 +169,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_notifications"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/icon_notifications" />
 
     <TextView
         android:id="@+id/notifications"
@@ -206,8 +186,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/message"
@@ -221,8 +200,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_mail"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/icon_mail" />
 
     <TextView
         android:id="@+id/messages"
@@ -239,8 +217,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/line2"
@@ -254,8 +231,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_line"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/img_line" />
 
     <ImageView
         android:id="@+id/setting"
@@ -269,8 +245,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_settings"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/icon_settings" />
 
     <TextView
         android:id="@+id/settings"
@@ -287,8 +262,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/info"
@@ -302,8 +276,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_info"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/icon_info" />
 
     <TextView
         android:id="@+id/help"
@@ -320,8 +293,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/about"
@@ -335,8 +307,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_aboutus"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/icon_aboutus" />
 
     <TextView
         android:id="@+id/aboutUs"
@@ -353,8 +324,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/lastLine"
@@ -368,8 +338,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_line"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/img_line" />
 
     <ImageView
         android:id="@+id/logouticn"
@@ -383,8 +352,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_logout"
-        tools:ignore="ContentDescription" />
+        app:srcCompat="@drawable/icon_logout" />
 
     <TextView
         android:id="@+id/logout"
@@ -401,8 +369,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

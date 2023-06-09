@@ -20,12 +20,12 @@
 
     <ImageView
         android:id="@+id/gradify_logo4"
-        android:layout_width="126dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="669dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="673dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,14 +33,31 @@
         app:srcCompat="@drawable/img_gradifysmalltext"
         tools:ignore="ContentDescription" />
 
+    <ImageButton
+        android:id="@+id/back_arrow_button3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="347dp"
+        android:layout_marginBottom="661dp"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_backarrow"
+        tools:ignore="ContentDescription,ImageContrastCheck,KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
+
     <ImageView
         android:id="@+id/gradify_logo5"
-        android:layout_width="77dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="654dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginBottom="666dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,25 +65,21 @@
         app:srcCompat="@drawable/img_gradifysmall"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <ImageView
-        android:id="@+id/iconback4"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="664dp"
-        android:background="@drawable/iconback"
-        android:backgroundTint="#FFFEFE"
-        android:clickable="true"
-        android:contentDescription="@string/background_desc"
-        android:focusable="true"
-        android:foregroundTint="#FFFFFF"
+    <ImageButton
+        android:id="@+id/option_threedots3"
+        android:layout_width="7dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="673dp"
+        android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+        app:srcCompat="@drawable/img_threedots"
+        tools:ignore="ContentDescription,ImageContrastCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/top3_bkg2"
@@ -119,22 +132,22 @@
         app:srcCompat="@drawable/img_ellipse2"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="@style/Widget.AppCompat.ProgressBar"
-        android:layout_width="194dp"
-        android:layout_height="232dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="383dp"
-        android:indeterminateTint="#63FD88"
+    <ImageView
+        android:id="@+id/ellipse_bkg"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="403dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_ellipse1"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/breakdown_bkg1"
@@ -333,7 +346,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/img_ellipse3"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/overall_percentage"
