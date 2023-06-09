@@ -101,6 +101,10 @@
     <string name="recordscores"> Score </string>
     <string name="recordnumbering"> No. </string>
     <string name="main_add"> + Add </string>
+    <string name="main_floatedit"> edit </string>
+    <string name="main_floatrename"> rename </string>
+    <string name="main_floatdelete"> delete </string>
+
 
 
 
