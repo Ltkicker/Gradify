@@ -9,7 +9,7 @@
     <!-- <include layout="@layout/content_main" /> -->
 
     <ImageView
-        android:id="@+id/background"
+        android:id="@+id/img_main_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/background_desc"
