@@ -61,7 +61,7 @@
 		android:fontFamily="@font/poppins"
 		android:text="@string/not_a_member_yet"
 		android:textColor="@color/shapesignin_color"
-		android:textSize="13sp"
+		android:textSize="15sp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintStart_toStartOf="@+id/input_last_name"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
@@ -107,13 +107,14 @@
 		android:layout_marginStart="48dp"
 		android:layout_marginTop="48dp"
 		android:clickable="true"
+		android:contentDescription="@string/background_desc"
 		android:enabled="true"
 		android:importantForAccessibility="yes"
-		android:contentDescription="@string/background_desc"
 		android:src="@drawable/iconback"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:ignore="ImageContrastCheck" />
+		tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
+		android:focusable="true" />
 
 	<com.google.android.material.textfield.TextInputLayout
 		android:id="@+id/textInputLayout2"
