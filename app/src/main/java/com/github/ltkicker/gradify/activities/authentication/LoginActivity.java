@@ -21,8 +21,9 @@ public class LoginActivity extends AppCompatActivity {
             finish();
             return;
         }
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login_student);
         String demographic = getIntent().getStringExtra("demographic");
+
         TextView signup = findViewById(R.id.textsignup);
         signup.setOnClickListener(view -> {
             Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
@@ -30,6 +31,8 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+
+
     }
     private void showMenu() {
         Intent intent = new Intent(this, MenuActivity.class);
