@@ -8,8 +8,8 @@
 
     <View
         android:id="@+id/background4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="438dp"
+        android:layout_height="737dp"
         android:background="@drawable/img_background2"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,12 +21,12 @@
 
     <ImageView
         android:id="@+id/gradify_logo3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="181dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="147dp"
-        android:layout_marginBottom="673dp"
+        android:layout_width="126dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="669dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,31 +34,14 @@
         app:srcCompat="@drawable/img_gradifysmalltext"
         tools:ignore="ContentDescription" />
 
-    <ImageButton
-        android:id="@+id/back_arrow_button2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="347dp"
-        android:layout_marginBottom="661dp"
-        android:backgroundTint="#00FFFFFF"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_backarrow"
-        tools:ignore="ContentDescription,ImageContrastCheck,KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
-
     <ImageView
         android:id="@+id/gradify_logo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="237dp"
-        android:layout_marginBottom="666dp"
+        android:layout_width="77dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="654dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,21 +49,25 @@
         app:srcCompat="@drawable/img_gradifysmall"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <ImageButton
-        android:id="@+id/option_threedots2"
-        android:layout_width="7dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="380dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="673dp"
-        android:backgroundTint="#00FFFFFF"
+    <ImageView
+        android:id="@+id/iconback6"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="664dp"
+        android:background="@drawable/iconback"
+        android:backgroundTint="#FFFEFE"
+        android:clickable="true"
+        android:contentDescription="@string/background_desc"
+        android:focusable="true"
+        android:foregroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_threedots"
-        tools:ignore="ContentDescription,ImageContrastCheck,TouchTargetSizeCheck" />
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/top3_bkg"
@@ -104,6 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_leaderboard"
         tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
@@ -270,23 +258,6 @@
         app:srcCompat="@drawable/img_default_profile"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <ImageView
-        android:id="@+id/dp_top3"
-        android:layout_width="64dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginTop="211dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="457dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_default_profile"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
     <TextView
         android:id="@+id/top3_rank1"
         android:layout_width="21dp"
@@ -309,6 +280,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/dp_top3"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="211dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="457dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_default_profile"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/top3_rank2"
@@ -409,114 +397,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck,VisualLintOverlap" />
-
-    <ImageView
-        android:id="@+id/points_bkg2.0"
-        android:layout_width="34dp"
-        android:layout_height="12dp"
-        android:layout_marginStart="114dp"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="263dp"
-        android:layout_marginBottom="427dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_top3_points_bkg"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/points_bkg1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginEnd="189dp"
-        android:layout_marginBottom="451dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_top3_points_bkg"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/points_bkg3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="259dp"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="118dp"
-        android:layout_marginBottom="429dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_top3_points_bkg"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <TextView
-        android:id="@+id/score1"
-        android:layout_width="51dp"
-        android:layout_height="12dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginBottom="451dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/student_score_points"
-        android:textAlignment="center"
-        android:textSize="9sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="SmallSp,TextContrastCheck,VisualLintOverlap" />
-
-    <TextView
-        android:id="@+id/score3"
-        android:layout_width="44dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="253dp"
-        android:layout_marginTop="291dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="427dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/student_score_points"
-        android:textAlignment="center"
-        android:textSize="9sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="SmallSp,TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/score2"
-        android:layout_width="51dp"
-        android:layout_height="12dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="254dp"
-        android:layout_marginBottom="427dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/student_score_points"
-        android:textAlignment="center"
-        android:textSize="9sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SmallSp,TextContrastCheck" />
 
     <TextView
         android:id="@+id/sub_category_title"
@@ -885,141 +765,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/score_bkg4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="295dp"
-        android:layout_marginTop="453dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="267dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_scorers_points_bkg"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/score_bkg5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="295dp"
-        android:layout_marginTop="520dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="200dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_scorers_points_bkg"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/score_bkg6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="297dp"
-        android:layout_marginTop="587dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="133dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_scorers_points_bkg"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/score_bkg7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="297dp"
-        android:layout_marginTop="656dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_scorers_points_bkg"
-        tools:ignore="ContentDescription" />
-
-    <TextView
-        android:id="@+id/score4"
-        android:layout_width="52dp"
-        android:layout_height="12dp"
-        android:layout_marginStart="297dp"
-        android:layout_marginTop="452dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="267dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/student_score_points"
-        android:textAlignment="center"
-        android:textSize="9sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SmallSp" />
-
-    <TextView
-        android:id="@+id/score5"
-        android:layout_width="52dp"
-        android:layout_height="12dp"
-        android:layout_marginStart="297dp"
-        android:layout_marginTop="519dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="200dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/student_score_points"
-        android:textAlignment="center"
-        android:textSize="9sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SmallSp" />
-
-    <TextView
-        android:id="@+id/score6"
-        android:layout_width="52dp"
-        android:layout_height="12dp"
-        android:layout_marginStart="299dp"
-        android:layout_marginTop="586dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="133dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/student_score_points"
-        android:textAlignment="center"
-        android:textSize="9sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SmallSp" />
-
-    <TextView
-        android:id="@+id/score7"
-        android:layout_width="52dp"
-        android:layout_height="12dp"
-        android:layout_marginStart="299dp"
-        android:layout_marginTop="655dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="64dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/student_score_points"
-        android:textAlignment="center"
-        android:textSize="9sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SmallSp,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
