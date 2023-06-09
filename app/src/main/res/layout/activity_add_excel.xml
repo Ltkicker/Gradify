@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/img"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#61AE9F">
+    android:layout_height="match_parent">
 
     <View
-        android:id="@+id/main_background"
+        android:id="@+id/background_overlay2"
         android:layout_width="426dp"
         android:layout_height="750dp"
         android:background="@drawable/img_background1"
@@ -23,8 +22,6 @@
         android:layout_width="419dp"
         android:layout_height="740dp"
         android:layout_marginTop="96dp"
-        android:layout_marginEnd="48dp"
-
         android:background="@drawable/img_background1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,9 +63,7 @@
         android:id="@+id/img_home_button2"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
         android:layout_marginTop="29dp"
-        android:layout_marginEnd="331dp"
         android:layout_marginBottom="654dp"
         android:background="@drawable/img_menu_home"
         android:backgroundTint="#00FFFFFF"
@@ -84,7 +79,7 @@
         android:id="@+id/iconback3"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="133dp"
         android:layout_marginEnd="331dp"
         android:layout_marginBottom="550dp"
@@ -105,38 +100,35 @@
         android:layout_width="211dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal|center"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="131dp"
-        android:layout_marginEnd="212dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="100dp"
         android:layout_marginBottom="551dp"
-        android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text="@string/your_students"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="TextSizeCheck" />
 
     <ImageView
-        android:id="@+id/BT_addexcel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:clickable="true"
-        android:focusable="true"
+        android:id="@+id/img_burger2"
+        android:layout_width="53dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="556dp"
+        android:src="@drawable/icon_menuhamburger"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_choose_excelfile_button"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+        tools:ignore="ContentDescription" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

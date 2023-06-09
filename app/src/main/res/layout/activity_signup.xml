@@ -23,7 +23,38 @@
 		app:layout_constraintTop_toTopOf="parent"
 		app:layout_constraintVertical_bias="0.0"
 		app:srcCompat="@drawable/img_background2"
-		tools:ignore="ImageContrastCheck,VisualLintBounds" />
+		tools:ignore="ImageContrastCheck" />
+
+	<Button
+		android:id="@+id/textsignup"
+
+		android:layout_width="201dp"
+		android:layout_height="61dp"
+		android:layout_marginTop="656dp"
+		android:layout_marginBottom="18dp"
+		android:background="@drawable/shape_password"
+		android:backgroundTintMode="src_over"
+		android:clickable="true"
+		android:ellipsize="middle"
+		android:focusable="true"
+		android:fontFamily="@font/poppins"
+		android:gravity="center|center_horizontal|center_vertical"
+		android:text="@string/sign_up"
+		android:textAlignment="inherit"
+		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+		android:textColor="@color/sign_in"
+		android:textDirection="inherit"
+		android:textSize="20sp"
+
+		android:textStyle="bold"
+		android:visibility="visible"
+		app:drawableBottomCompat="@drawable/round_corner"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_marginBaseline="10dp"
+		tools:ignore="MissingConstraints"
+		tools:visibility="visible" />
 
 	<ImageView
 		android:id="@+id/iconback"
@@ -40,35 +71,6 @@
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
 		tools:ignore="ImageContrastCheck" />
-
-	<TextView
-		android:id="@+id/clickable_signup2"
-		android:layout_width="201dp"
-		android:layout_height="61dp"
-		android:layout_marginBottom="16dp"
-		android:background="@drawable/shape_password"
-		android:backgroundTintMode="src_over"
-		android:clickable="true"
-		android:ellipsize="middle"
-		android:focusable="true"
-		android:fontFamily="@font/poppins"
-		android:gravity="center|center_horizontal|center_vertical"
-		android:text="@string/sign_up"
-		android:textAlignment="inherit"
-		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-		android:textColor="@color/sign_in"
-		android:textDirection="inherit"
-		android:textSize="20sp"
-		android:textStyle="bold"
-
-		android:visibility="visible"
-		app:drawableBottomCompat="@drawable/round_corner"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_marginBaseline="10dp"
-		tools:ignore="MissingConstraints"
-		tools:visibility="visible" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/input_last_name"
@@ -148,10 +150,10 @@
 		android:textSize="16sp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.513"
+		app:layout_constraintHorizontal_bias="0.518"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.723"
+		app:layout_constraintVertical_bias="0.74"
 		tools:ignore="MissingConstraints,TextContrastCheck,EditableContentDescCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
@@ -171,30 +173,29 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.633"
+		app:layout_constraintVertical_bias="0.651"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/input_password"
 		android:layout_width="339dp"
 		android:layout_height="48dp"
+		android:inputType="textPassword"
 		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
 		android:fontFamily="@font/poppins"
 		android:hint="@string/password"
-		android:inputType="textPassword"
 		android:textColor="#FFFFFF"
 		android:textColorHint="#757575"
 		android:textSize="16sp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.513"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.812"
-		tools:ignore="MissingConstraints,TextContrastCheck,VisualLintOverlap" />
+		app:layout_constraintVertical_bias="0.825"
+		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/input_suffix"
