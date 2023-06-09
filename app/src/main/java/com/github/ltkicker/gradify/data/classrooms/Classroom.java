@@ -1,98 +1,39 @@
 package com.github.ltkicker.gradify.data.classrooms;
 
-import com.github.ltkicker.gradify.data.users.Student;
-import com.github.ltkicker.gradify.data.users.Teacher;
-
-import java.util.List;
-
 public class Classroom {
 
-    private String code;
-    private String title;
-    private String section;
-    private Teacher teacher;
-    private List<Student> students;
-    private List<String> days;
-    private List<String> time;
-    private List<String> room;
-    //    private int lab;
-//    private int lec;
-    private int units;
+    private String classroomId;
+    private String className;
+    private String instructorName;
 
 
-    public Classroom() {
+    public Classroom(String classroomId, String className, String instructorName) {
+        this.classroomId = classroomId;
+        this.className = className;
+        this.instructorName = instructorName;
     }
 
-    public String getCode() {
-        return code;
+    public String getClassroomId() {
+        return classroomId;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setClassroomId(String classroomId) {
+        this.classroomId = classroomId;
     }
 
-    public String getTitle() {
-        return title;
+    public String getClassName() {
+        return className;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setClassName(String className) {
+        this.className = className;
     }
 
-    public String getSection() {
-        return section;
+    public String getInstructorName() {
+        return instructorName;
     }
 
-    public void setSection(String section) {
-        this.section = section;
-    }
-
-    public Teacher getTeacher() {
-        return teacher;
-    }
-
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
-
-    public List<Student> getStudents() {
-        return students;
-    }
-
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
-
-    public List<String> getDays() {
-        return days;
-    }
-
-    public void setDays(List<String> days) {
-        this.days = days;
-    }
-
-    public List<String> getTime() {
-        return time;
-    }
-
-    public void setTime(List<String> time) {
-        this.time = time;
-    }
-
-    public List<String> getRoom() {
-        return room;
-    }
-
-    public void setRoom(List<String> room) {
-        this.room = room;
-    }
-
-
-    public int getUnits() {
-        return units;
-    }
-
-    public void setUnits(int units) {
-        this.units = units;
+    public void setInstructorName(String instructorName) {
+        this.instructorName = instructorName;
     }
 }
