@@ -60,16 +60,15 @@ public class SignupActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-//                            User user = new User(lastName, firstName, middleName, suffixName, email, username);
-//                            FirebaseDatabase.getInstance().getReference("users")
-//                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-//                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-//                                        @Override
-//                                        public void onComplete(@NonNull Task<Void> task) {
-//                                            showMenu();
-//                                        }
-//                                    });
-                            showMenu();
+                            User user = new User(lastName, firstName, middleName, suffixName, email, username);
+                            FirebaseDatabase.getInstance().getReference("users")
+                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            showMenu();
+                                        }
+                                    });
                         } else {
                             Toast.makeText(SignupActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
