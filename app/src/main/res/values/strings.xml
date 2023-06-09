@@ -94,18 +94,6 @@
     <string name="category_name"> category </string>
     <string name="add_category"> Add </string>
     <string name="student_passed"> Show only those who have passed </string>
-    <string name="recordtext"> Record </string>
-    <string name="recordscorestext"> Scores </string>
-    <string name="recordname"> Name </string>
-    <string name="recordidno"> ID No. </string>
-    <string name="recordscores"> Score </string>
-    <string name="recordnumbering"> No. </string>
-    <string name="main_add"> + Add </string>
-    <string name="main_floatedit"> edit </string>
-    <string name="main_floatrename"> rename </string>
-    <string name="main_floatdelete"> delete </string>
-
-
 
 
     <!-- student_log_in strings -->
