@@ -102,6 +102,25 @@
     <string name="breakdown_percentage_current">0%</string>
     <string name="text_overall_standing">Overall Standing</string>
     <string name="others_category">Others Category</string>
+    <string name="main_floatedit"> Edit </string>
+    <string name="main_floatrename"> Rename </string>
+    <string name="main_floatdelete"> Delete </string>
+    <string name="subject_code_name">  Subject </string>
+    <string name="quiz_title">  Quiz Title </string>
+    <string name="quiz_date">  Date </string>
+    <string name="quiz_total_points">  Total Points </string>
+    <string name="quiz_number_of_students">  Number of Students </string>
+    <string name="quizzes">  Number of Students </string>
+    <string name="Add_cat"> + Add Category </string>
+    <string name="add_category"> Add </string>
+    <string name="student_passed"> Show only those who have passed </string>
+    <string name="recordtext"> Record </string>
+    <string name="recordscorestext"> Scores </string>
+    <string name="recordname"> Name </string>
+    <string name="recordidno"> ID No. </string>
+    <string name="recordscores"> Score </string>
+    <string name="recordnumbering"> No. </string>
+
 
     <!-- student_log_in strings -->
     <string name="txtstudentlogin_string">Student Log in:</string>
