@@ -49,23 +49,25 @@
         app:srcCompat="@drawable/img_gradifybigtext"
         tools:ignore="ContentDescription" />
 
-    <ImageButton
-        android:id="@+id/back_arrow_button4"
+    <ImageView
+        android:id="@+id/iconback10"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="347dp"
-        android:layout_marginBottom="661dp"
-        android:backgroundTint="#00FFFFFF"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="664dp"
+        android:background="@drawable/iconback"
+        android:backgroundTint="#FFFEFE"
         android:clickable="true"
+        android:contentDescription="@string/background_desc"
+        android:focusable="true"
+        android:foregroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_backarrow"
-        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck"
-        android:focusable="true" />
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/category_bkg3"
