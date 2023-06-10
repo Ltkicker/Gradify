@@ -2,7 +2,6 @@
     <!-- General Messages -->
     <string name="app_name">Gradify</string>
     <string name="action_settings">Settings</string>
-    <string name="_vector4">_vector4</string>
 
 
     <!-- Cubix Text Logo -->
@@ -26,7 +25,7 @@
     <string name="not_a_member_yet">Not a member yet? Sign up</string>
     <string name="teacher_login">Teacher Log in:</string>
     <string name="student_login">Student Log in:</string>
-    <string name="last_name">   Last Name:</string>
+    <string name="last_name">     Last Name:</string>
     <string name="first_name">   First Name:</string>
     <string name="middle_name">   Middle Name:</string>
     <string name="suffix">   Suffix:</string>
@@ -62,16 +61,45 @@
     <!-- Addclass Popup -->
     <string name="addclass">addclass</string>
     <string name="popup_desc">Interactive Grading System for Teachers</string>
-    <string name="create_class">CREATE CLASS</string>
     <string name="archive">Archived</string>
     <string name="ongoing">Ongoing</string>
     <string name="all">All</string>
-    <string name="your_classes">Your Classes</string>
+    <string name="your_classes"> Your Classes </string>
+    <string name="subject_code"> Subject Code </string>
+    <string name="subject_section">  Subject Section</string>
+    <string name="subject_description">  Subject Description</string>
+    <string name="room_number">  Room No.</string>
+    <string name="building">  Building</string>
+    <string name="manage_students"> MANAGE STUDENTS </string>
+    <string name="delete"> Delete </string>
+    <string name="create_class">  CREATE CLASS </string>
+    <string name="your_students">  Your Students </string>
+    <string name="edit_class">  Edit Class </string>
+    <string name="grading_system">  Grading System </string>
+    <string name="category_grading_system">  Category Grading System </string>
+    <string name="category_percent_grading_system"> -- </string>
+    <string name="add_excel">Choose Excel File</string>
+    <string name="add_more_category" > Add Category </string>
+    <string name="save" > Save </string>
 
 
-    <!-- leaderboard Popup -->
-    <string name="category">  </string>
+
+    <!-- Leaderboard Popup -->
+    <string name="category"> CAT </string>
     <string name="category_others"> Others </string>
+    <string name="sub_category"> Sub Category Title </string>
+    <string name="sub_category_date"> Date </string>
+    <string name="sub_category_rank"> # </string>
+    <string name="student_firstname"> Name </string>
+    <string name="student_fullname"> Full Name </string>
+    <string name="student_score"> Score </string>
+    <string name="overall_percentage">0%</string>
+    <string name="text_equivalent_grade">Grade Equivalent:</string>
+    <string name="value_equivalent_grade">0.00</string>
+    <string name="text_grade_system_breakdown">Grade System Breakdown</string>
+    <string name="breakdown_title">Breakdown</string>
+    <string name="breakdown_percentage_total">%</string>
+    <string name="breakdown_percentage_current">0%</string>
 
     <!-- student_log_in strings -->
     <string name="txtstudentlogin_string">Student Log in:</string>
@@ -91,18 +119,19 @@
     <string name="txtleaderboard_string">Leaderboard</string>
     <string name="txtmyclasses_string">My Classes</string>
     <string name="txtviewprofile_string">View profile</string>
-    <string name="txtnameofstudent_string">Paolo Alexis Ellevera</string>
+    <string name="fullname_student"> Fullname </string>
     <string name="imgstudent">imgstudent</string>
-    <string name="classes">auto_stories</string>
-    <string name="leaderboards">social_leaderboard</string>
+    <string name="txtclasses_string">auto_stories</string>
+    <string name="txtleaderboards_string">social_leaderboard</string>
 
+    <!-- gradesheet strings -->
+    <string name="txtsearch_string">Search Name</string>
 
-    <string name="grade_sheet_string">GRADE SHEET</string>
-    <string name="filter5_string">Filter</string>
-    <string name="magnifyingglass_string"/>
-    <string name="search_string">Search</string>
-    <string name="coe124_string">COE124 </string>
-    <string name="coe121_string">COE121.2 </string>
-    <string name="coe102_string">COE102.2 </string>
-
+    <!-- activity_add_class_file strings -->
+    <string name="font1_string">Your Students</string>
+    <string name="inserttext_string">Choose Excel File</string>
+    <string name="gradifysmalltext_string">GRADIFY </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_bar">Search</string>
 </resources>

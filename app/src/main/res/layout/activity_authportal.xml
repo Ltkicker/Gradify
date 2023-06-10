@@ -80,12 +80,14 @@
 
 	</LinearLayout>
 
-	<ImageView
+
+	<ImageButton
 		android:id="@+id/imgstudent"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="41dp"
+		android:layout_marginTop="12dp"
 		android:layout_marginEnd="7dp"
+		android:backgroundTint="#00FFFFFF"
 		android:contentDescription="@string/student_img_desc"
 		android:src="@drawable/img_student"
 		app:layout_constraintEnd_toEndOf="parent"
@@ -93,13 +95,13 @@
 		app:layout_constraintTop_toBottomOf="@+id/textchoose"
 		tools:ignore="ImageContrastCheck" />
 
-
-	<ImageView
+	<ImageButton
 		android:id="@+id/imgteacher"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="41dp"
+		android:layout_marginTop="12dp"
 		android:layout_marginEnd="19dp"
+		android:backgroundTint="#00FFFFFF"
 		android:contentDescription="@string/teacher_img_desc"
 		android:src="@drawable/img_teacher"
 		app:layout_constraintEnd_toStartOf="@+id/imgstudent"
@@ -113,6 +115,7 @@
 		android:layout_height="wrap_content"
 		android:layout_marginTop="11dp"
 		android:layout_marginEnd="2dp"
+		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/student_txt"
 		android:textColor="@color/white"
@@ -128,6 +131,7 @@
 		android:layout_height="wrap_content"
 		android:layout_marginTop="12dp"
 		android:layout_marginEnd="19dp"
+		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/teacher_txt"
 		android:textColor="@color/white"
@@ -141,10 +145,11 @@
 		android:id="@+id/textchoose"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="31dp"
 		android:gravity="center"
 		android:text="@string/menu_choose_portal"
 		android:textColor="@color/white"
+		android:layout_marginTop="31dp"
+		android:fontFamily="@font/poppins"
 		android:textSize="24sp"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
