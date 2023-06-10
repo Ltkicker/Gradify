@@ -25,7 +25,7 @@ public class AuthPortalActivity extends AppCompatActivity {
             return;
         }
 
-        setContentView(R.layout.activity_authportal);
+        setContentView(R.layout.activity3_authportal);
 
         ImageButton studentBtn = findViewById(R.id.imgstudent);
 
