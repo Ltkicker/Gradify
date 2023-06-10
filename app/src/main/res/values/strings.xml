@@ -100,6 +100,8 @@
     <string name="breakdown_title">Breakdown</string>
     <string name="breakdown_percentage_total">%</string>
     <string name="breakdown_percentage_current">0%</string>
+    <string name="text_overall_standing">Overall Standing</string>
+    <string name="others_category">Others Category</string>
 
     <!-- student_log_in strings -->
     <string name="txtstudentlogin_string">Student Log in:</string>
