@@ -28,7 +28,7 @@ public class MenuActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");
 
-        myRef.setValue("Hello, World!");
+        myRef.child("test.test").setValue("Hello, World!");
     }
 
     private void navigate(String temp) {
