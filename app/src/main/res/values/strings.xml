@@ -87,7 +87,7 @@
     <!-- Leaderboard Popup -->
     <string name="category"> CAT </string>
     <string name="category_others"> Others </string>
-    <string name="sub_category"> Sub Category Title </string>
+    <string name="sub_category"> SubCategory Title </string>
     <string name="sub_category_date"> Date </string>
     <string name="sub_category_rank"> # </string>
     <string name="student_firstname"> Name </string>
@@ -106,15 +106,13 @@
     <string name="main_floatrename"> Rename </string>
     <string name="main_floatdelete"> Delete </string>
     <string name="subject_code_name">  Subject </string>
-    <string name="quiz_title">  Quiz Title </string>
-    <string name="quiz_date">  Date </string>
-    <string name="quiz_total_points">  Total Points </string>
-    <string name="quiz_number_of_students">  Number of Students </string>
+    <string name="subcategory_title">   Title </string>
+    <string name="subcategory_total_points">  Total Points </string>
     <string name="quizzes">  Number of Students </string>
     <string name="Add_cat"> + Add Category </string>
     <string name="add_category"> Add </string>
     <string name="student_passed"> Show only those who have passed </string>
-    <string name="recordtext"> Record </string>
+    <string name="recordtext"> Record Score </string>
     <string name="recordscorestext"> Scores </string>
     <string name="recordname"> Name </string>
     <string name="recordidno"> ID No. </string>
