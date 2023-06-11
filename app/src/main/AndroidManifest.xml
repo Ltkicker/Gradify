@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -27,6 +30,7 @@
         <activity android:name=".activities.navigation.MenuActivity"/>
         <activity android:name=".activities.classroom.ClassDashboardActivity"/>
         <activity android:name=".activities.navigation.LogoutActivity"/>
+        <activity android:name=".activities.excel.ExcelUploadActivity"/>
     </application>
 
 </manifest>

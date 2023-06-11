@@ -3,6 +3,7 @@ package com.github.ltkicker.gradify.activities.authentication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -33,7 +34,7 @@ public class SignupActivity extends AppCompatActivity {
             return;
         }
 
-        Button signup = findViewById(R.id.textsignup);
+        TextView signup = findViewById(R.id.clickable_signup2);
         signup.setOnClickListener(view -> registerUser());
     }
 
@@ -60,15 +61,15 @@ public class SignupActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-//                            User user = new User(lastName, firstName, middleName, suffixName, email, username);
-//                            FirebaseDatabase.getInstance().getReference("users")
-//                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-//                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-//                                        @Override
-//                                        public void onComplete(@NonNull Task<Void> task) {
-//                                            showMenu();
-//                                        }
-//                                    });
+                            User user = new User(lastName, firstName, middleName, suffixName, email, username);
+                            FirebaseDatabase.getInstance().getReference("users")
+                                    .child(username)
+                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            showMenu();
+                                        }
+                                    });
                             showMenu();
                         } else {
                             Toast.makeText(SignupActivity.this, "Authentication failed.",

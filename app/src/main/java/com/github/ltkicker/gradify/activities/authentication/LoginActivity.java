@@ -17,26 +17,26 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser() != null) {
-            showMenu();
+            Intent intent = new Intent(this, MenuActivity.class);
+            startActivity(intent);
             finish();
             return;
         }
-        setContentView(R.layout.activity_login_student);
         String demographic = getIntent().getStringExtra("demographic");
+        if (demographic.equals("student")){
+            setContentView(R.layout.activity_login_student);
+        } else {
+            setContentView(R.layout.activity_login_teacher);
+        }
 
         TextView signup = findViewById(R.id.textsignup);
         signup.setOnClickListener(view -> {
             Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
             intent.putExtra("demographic", demographic);
             startActivity(intent);
-            finish();
         });
 
 
     }
-    private void showMenu() {
-        Intent intent = new Intent(this, MenuActivity.class);
-        startActivity(intent);
-        finish();
-    }
+
 }

@@ -21,7 +21,7 @@ public class Gradify extends AppCompatActivity {
 //        } catch (InterruptedException e) {
 //            e.printStackTrace();
 //        }
-        Intent intent = new Intent(Gradify.this, MenuActivity.class);
+        Intent intent = new Intent(Gradify.this, AuthPortalActivity.class);
         startActivity(intent);
         finish();
     }
