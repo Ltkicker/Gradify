@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/img_background2"
+        tools:ignore="VisualLintBounds"
+        android:layout_width="423dp"
+        android:layout_height="910dp"
+        android:background="@drawable/img_background3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/img_background_overlay2"
+        tools:ignore="VisualLintBounds"
+        android:layout_width="415dp"
+        android:layout_height="673dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/img_background3"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <ImageView
+        android:id="@+id/img_gradifytext3"
+        tools:ignore="ContentDescription"
+        android:layout_width="126dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="669dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_gradifybigtext" />
+
+    <Button
+        android:id="@+id/img_home_button3"
+        tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="331dp"
+        android:layout_marginBottom="654dp"
+        android:background="@drawable/img_menu_home"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="true"
+        app:iconTint="#EDFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_gradify_logo3"
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        android:layout_width="77dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="654dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141"
+        app:srcCompat="@drawable/img_gradifybiglogo" />
+
+    <Button
+        android:id="@+id/img_backbutton2"
+        tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="314dp"
+        android:layout_marginBottom="550dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/iconback"
+        android:foregroundTint="@color/white"
+        app:iconTint="#EDFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+</androidx.constraintlayout.widget.ConstraintLayout>

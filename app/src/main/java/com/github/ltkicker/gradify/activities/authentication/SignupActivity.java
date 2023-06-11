@@ -11,13 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
-import com.github.ltkicker.gradify.data.users.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -26,7 +24,7 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity6_signup);
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser() != null) {
             showMenu();

@@ -23,7 +23,7 @@ public class LogoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_logout);
+        setContentView(R.layout.activity8_if_homebuttonicon_goto_logout);
 
         button = (ImageView) findViewById(R.id.backlog_out_ground);
         button_text = (TextView) findViewById(R.id.Myclasses);
