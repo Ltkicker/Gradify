@@ -1,5 +1,6 @@
 package com.github.ltkicker.gradify.data.classrooms;
 
+import com.github.ltkicker.gradify.data.grades.GradingSystem;
 import com.github.ltkicker.gradify.data.users.Student;
 import com.github.ltkicker.gradify.data.users.Teacher;
 
@@ -14,13 +15,21 @@ public class Classroom {
     private List<Student> students;
     private List<String> days;
     private List<String> time;
-    private List<String> room;
+    private String room;
+    private String building;
+
+    private GradingSystem gradingSystem;
     //    private int lab;
 //    private int lec;
     private int units;
 
 
-    public Classroom() {
+    public Classroom(String code, String section, String title, String room, String building) {
+        this.code = code;
+        this.section = section;
+        this.title = title;
+        this.room = room;
+        this.building = building;
     }
 
     public String getCode() {
@@ -79,11 +88,11 @@ public class Classroom {
         this.time = time;
     }
 
-    public List<String> getRoom() {
+    public String getRoom() {
         return room;
     }
 
-    public void setRoom(List<String> room) {
+    public void setRoom(String room) {
         this.room = room;
     }
 

@@ -33,7 +33,7 @@ public class GradeSheet extends AppCompatActivity {
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gradesheet);
-        recyclerView=findViewById(R.id.recyclerView);
+        //recyclerView=findViewById(R.id.recyclerView);
         searchView=findViewById(R.id.searchView);
 
         for (int i = 0; i < studentList.length; i++) {
