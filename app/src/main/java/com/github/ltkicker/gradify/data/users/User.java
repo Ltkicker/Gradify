@@ -10,11 +10,13 @@ public class User {
     private String username;
     private String gender;
 
+    private boolean isTeacher;
+
 
     public User() {
     }
 
-    public User(String lastName, String firstName, String middleName, String suffixName, String email, String username) {
+    public User(boolean isTeacher, String lastName, String firstName, String middleName, String suffixName, String email, String username) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.middleName = middleName;
@@ -22,8 +24,16 @@ public class User {
         this.email = email;
         this.username = username;
         this.gender = gender;
+        this.isTeacher = isTeacher;
     }
 
+    public boolean isTeacher() {
+        return isTeacher;
+    }
+
+    public void setTeacher(boolean teacher) {
+        isTeacher = teacher;
+    }
     public String getLastName() {
         return lastName;
     }

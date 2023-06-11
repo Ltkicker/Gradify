@@ -7,6 +7,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
 import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
 import com.github.ltkicker.gradify.data.users.User;
 import com.google.firebase.auth.FirebaseAuth;
@@ -17,14 +18,14 @@ public class MenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
-        if (mAuth.getCurrentUser() != null) {
-            Intent intent = new Intent(this, MenuActivity.class);
+        if (mAuth.getCurrentUser() == null) {
+            Intent intent = new Intent(this, AuthPortalActivity.class);
             startActivity(intent);
             finish();
             return;
         }
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity7_main_menu);
 
         ImageButton classDashboard = findViewById(R.id.menu_addclass);
         classDashboard.setOnClickListener(view -> navigate("CLASSDASH"));

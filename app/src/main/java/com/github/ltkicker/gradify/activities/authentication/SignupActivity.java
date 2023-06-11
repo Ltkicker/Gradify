@@ -11,21 +11,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
+import com.github.ltkicker.gradify.data.users.Teacher;
+import com.github.ltkicker.gradify.data.users.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignupActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
+    String demographic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity6_signup);
         mAuth = FirebaseAuth.getInstance();
+
+        demographic = getIntent().getStringExtra("demographic");
+
         if (mAuth.getCurrentUser() != null) {
             showMenu();
             finish();
@@ -54,14 +61,22 @@ public class SignupActivity extends AppCompatActivity {
         String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
 
+        boolean isTeacher;
+
+        if(demographic.equals("teacher")) {
+            isTeacher = true;
+        } else {
+            isTeacher = false;
+        }
+
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            User user = new User(lastName, firstName, middleName, suffixName, email, username);
+                            User user = new User(isTeacher, lastName, firstName, middleName, suffixName, email, username);
                             FirebaseDatabase.getInstance().getReference("users")
-                                    .child(username)
+                                    .child(FirebaseAuth.getInstance().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {

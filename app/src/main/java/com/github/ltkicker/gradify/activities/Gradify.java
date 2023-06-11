@@ -15,7 +15,7 @@ public class Gradify extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loading);
+        setContentView(R.layout.activity1_main_loading);
 //        try {
 //            Thread.sleep(60000);
 //        } catch (InterruptedException e) {
