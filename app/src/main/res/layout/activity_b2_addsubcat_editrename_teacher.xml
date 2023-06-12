@@ -160,7 +160,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483"
+        app:layout_constraintVertical_bias="0.467"
         tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -185,7 +185,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.756"
+        app:layout_constraintVertical_bias="0.698"
         tools:ignore="TextContrastCheck" />
 
     <EditText
@@ -213,14 +213,14 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.619"
+        app:layout_constraintVertical_bias="0.58"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/clickable_record_subcategory"
         android:layout_width="201dp"
         android:layout_height="61dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/shape_password"
         android:backgroundTintMode="src_over"
         android:clickable="true"
@@ -243,6 +243,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_marginBaseline="10dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/clickable_save"
+        android:layout_width="201dp"
+        android:layout_height="61dp"
+        android:background="@drawable/shape_signin"
+        android:backgroundTint="@color/sign_in"
+        android:backgroundTintMode="src_over"
+        android:clickable="true"
+        android:ellipsize="middle"
+        android:focusable="true"
+        android:fontFamily="@font/poppins"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/save"
+        android:textAlignment="inherit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textDirection="inherit"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:drawableBottomCompat="@drawable/round_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_marginBaseline="10dp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteY="549dp"
         tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

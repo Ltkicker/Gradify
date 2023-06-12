@@ -86,6 +86,7 @@
 		android:drawableTint="#36FFFFFF"
 		android:fontFamily="@font/poppins"
 		android:hint="@string/last_name"
+		android:textAlignment="viewStart"
 		android:textColor="#FFFFFF"
 		android:textColorHint="#757575"
 		android:textSize="16sp"
