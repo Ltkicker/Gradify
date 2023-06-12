@@ -102,22 +102,23 @@
         android:layout_width="211dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal|center"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="131dp"
-        android:layout_marginEnd="212dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="131dp"
         android:layout_marginBottom="551dp"
         android:fontFamily="@font/poppins"
         android:gravity="center"
-        android:text="@string/your_students"
+        android:text="@string/your_classes"
         android:textColor="@color/white"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+        app:layout_constraintVertical_bias="0.941"
+        tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/create_class_bkg"
@@ -127,7 +128,6 @@
         android:layout_marginTop="264dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="161dp"
-        android:tint="@color/popup_box"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -135,7 +135,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/img_rectangle"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        app:tint="@color/popup_box" />
 
     <ImageButton
         android:id="@+id/create_class_button"

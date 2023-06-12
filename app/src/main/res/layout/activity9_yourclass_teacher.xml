@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/p"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,7 +10,7 @@
         android:id="@+id/background_selectedclass5"
         android:layout_width="502dp"
         android:layout_height="794dp"
-        android:background="@drawable/img_background4"
+        android:background="@drawable/img_background1"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,16 +20,17 @@
 
     <View
         android:id="@+id/background_selectedclass7"
-        android:layout_width="473dp"
-        android:layout_height="781dp"
+        android:layout_width="413dp"
+        android:layout_height="759dp"
         android:layout_marginTop="108dp"
-        android:background="@drawable/img_background4"
+        android:background="@drawable/img_background1"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="VisualLintBounds" />
 
     <ImageView
@@ -65,10 +67,10 @@
         android:id="@+id/iconback14"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="387dp"
-        android:layout_marginBottom="662dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="664dp"
         android:background="@drawable/iconback"
         android:backgroundTint="#FFFEFE"
         android:clickable="true"
@@ -77,12 +79,14 @@
         android:foregroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:id="@+id/txtyourclasses"
+        android:id="@+id/text_yourstudent"
         android:layout_width="211dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal|center"
@@ -95,13 +99,65 @@
         android:text="@string/your_classes"
         android:textColor="@color/white"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="492dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/btn_all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_ongoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="492dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/btn_ongoing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_archived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="241dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="492dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/btn_archived"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/yourclass_select_button"
@@ -112,7 +168,6 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="369dp"
         android:backgroundTint="#00FFFFFF"
-        android:tint="#54CBCBCB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -120,10 +175,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/round_corner"
-        tools:ignore="ContentDescription,VisualLintBounds,DuplicateSpeakableTextCheck" />
+        app:tint="#54CBCBCB"
+        tools:ignore="ContentDescription,VisualLintBounds,DuplicateSpeakableTextCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/yourclass_img"
+        android:id="@+id/yourstudent_img"
         android:layout_width="103dp"
         android:layout_height="98dp"
         android:layout_marginStart="51dp"
@@ -139,7 +195,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/yourclass_img1"
+        android:id="@+id/yourstudent1"
         android:layout_width="103dp"
         android:layout_height="98dp"
         android:layout_marginStart="51dp"
@@ -155,7 +211,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/yourclass_img2"
+        android:id="@+id/yourstudent3"
         android:layout_width="103dp"
         android:layout_height="98dp"
         android:layout_marginStart="51dp"
@@ -187,7 +243,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
     <TextView
-        android:id="@+id/subjectcode"
+        android:id="@+id/fullname"
         android:layout_width="114dp"
         android:layout_height="24dp"
         android:layout_marginStart="200dp"
@@ -205,7 +261,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subjectdescription"
+        android:id="@+id/id_no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
@@ -236,7 +292,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/subjectcode2"
@@ -254,7 +311,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/subjectcode3"
@@ -272,7 +330,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/subjectdescription2"
@@ -284,6 +343,7 @@
         android:layout_marginBottom="176dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/subject_description"
+        android:textColorHint="#212121"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -324,6 +384,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="311dp"
+        android:layout_marginTop="585dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="74dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
