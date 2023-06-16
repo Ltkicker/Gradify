@@ -1,5 +1,9 @@
 package com.github.ltkicker.gradify.data.users;
 
+import com.github.ltkicker.gradify.data.classrooms.Classroom;
+
+import java.util.ArrayList;
+
 public class User {
 
     private String lastName;
@@ -10,7 +14,11 @@ public class User {
     private String username;
     private String gender;
 
+    private ArrayList<Classroom> classrooms;
+
     private boolean isTeacher;
+
+    private boolean hasClassrooms;
 
 
     public User() {
@@ -23,8 +31,9 @@ public class User {
         this.suffixName = suffixName;
         this.email = email;
         this.username = username;
-        this.gender = gender;
         this.isTeacher = isTeacher;
+        //this.gender = gender;
+        this.hasClassrooms = false;
     }
 
     public boolean isTeacher() {
@@ -90,5 +99,12 @@ public class User {
         this.gender = gender;
     }
 
+    public ArrayList<Classroom> getClassrooms() {
+        return classrooms;
+    }
+
+    public void setClassrooms(ArrayList<Classroom> classrooms) {
+        this.classrooms = classrooms;
+    }
 
 }

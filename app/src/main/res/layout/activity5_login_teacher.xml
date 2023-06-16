@@ -25,7 +25,7 @@
 		app:srcCompat="@drawable/img_background2" />
 
 	<TextView
-		android:id="@+id/clickable_signup"
+		android:id="@+id/clickable_signup12"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
 		android:layout_marginBottom="60dp"
@@ -130,7 +130,7 @@
 	</com.google.android.material.textfield.TextInputLayout>
 
 	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/InputPassword"
+		android:id="@+id/Input_Password"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
@@ -167,7 +167,7 @@
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
 		android:textStyle="bold"
-		app:layout_constraintBottom_toTopOf="@+id/InputPassword"
+		app:layout_constraintBottom_toTopOf="@+id/Input_Password"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/textsignup"
@@ -182,8 +182,8 @@
 		android:text="@string/remember_me"
 		android:textColor="#FFFCFC"
 		android:textSize="13sp"
-		app:layout_constraintStart_toStartOf="@+id/InputPassword"
-		app:layout_constraintTop_toBottomOf="@+id/InputPassword"
+		app:layout_constraintStart_toStartOf="@+id/Input_Password"
+		app:layout_constraintTop_toBottomOf="@+id/Input_Password"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 

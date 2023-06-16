@@ -10,6 +10,9 @@ public class Teacher extends User {
 //    private String department;
 //    private String levelofwork; // assistant prof, prof, lecturer, instructor
 //    private String id;
+    public Teacher() {
+    }
+
     private List <Classroom> classroom;
 
     public List<Classroom> getClassroom() {

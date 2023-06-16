@@ -1,61 +1,44 @@
 package com.github.ltkicker.gradify.activities.classroom;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.github.ltkicker.gradify.R;
-import com.github.ltkicker.gradify.data.classrooms.Classroom;
-import com.github.ltkicker.gradify.data.users.Teacher;
-import com.github.ltkicker.gradify.fragments.PopupFragment;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.GenericTypeIndicator;
+import com.google.firebase.database.ValueEventListener;
 
 public class ClassDashboardActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity9b_class_info_teacher);
+        DatabaseReference dRef = FirebaseDatabase.getInstance().getReference().child("users").child(FirebaseAuth.getInstance().getUid()).child("classrooms").child("asTeacher");
+        dRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.getChildrenCount() > 0) {
+                    setContentView(R.layout.activity9_yourclass_teacher);
+                } else {
+                    Intent intent = new Intent(ClassDashboardActivity.this, ClassEditActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }
 
-        TextView createClass = findViewById(R.id.clickable_createclass);
-        createClass.setOnClickListener(view -> registerClass());
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
-    }
-
-    private void showPopup() {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        //fragmentTransaction.replace(R.id.popuptemp, new PopupFragment());
-        fragmentTransaction.commit();
-    }
-
-    private void registerClass() {
-        TextInputEditText etClassCode = findViewById(R.id.input_subject_code);
-        TextInputEditText etClassSection = findViewById(R.id.input_subject_section);
-        TextInputEditText etClassDesc = findViewById(R.id.input_subject_code3);
-        TextInputEditText etRoomNo = findViewById(R.id.input_room_no);
-        TextInputEditText etBuilding = findViewById(R.id.input_building);
-
-        String classCode = etClassCode.getText().toString();
-        String classSection = etClassSection.getText().toString();
-        String classDesc = etClassDesc.getText().toString();
-        String roomNo = etRoomNo.getText().toString();
-        String building = etBuilding.getText().toString();
+            }
+        });
 
 
-        Classroom newClass = new Classroom(classCode, classSection, classDesc, roomNo, building);
-
-        DatabaseReference classrooms = FirebaseDatabase.getInstance().getReference("classrooms");
-        String key = classrooms.push().getKey();
-        classrooms.child(key).setValue(newClass);
     }
 }
-
-
-

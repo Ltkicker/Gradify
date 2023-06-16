@@ -11,8 +11,8 @@ public class Classroom {
     private String code;
     private String title;
     private String section;
-    private Teacher teacher;
-    private List<Student> students;
+    private String teacher;
+    private List<String> students;
     private List<String> days;
     private List<String> time;
     private String room;
@@ -24,12 +24,13 @@ public class Classroom {
     private int units;
 
 
-    public Classroom(String code, String section, String title, String room, String building) {
+    public Classroom(String code, String section, String title, String room, String building, String teacher) {
         this.code = code;
         this.section = section;
         this.title = title;
         this.room = room;
         this.building = building;
+        this.teacher = teacher;
     }
 
     public String getCode() {
@@ -56,19 +57,19 @@ public class Classroom {
         this.section = section;
     }
 
-    public Teacher getTeacher() {
+    public String getTeacher() {
         return teacher;
     }
 
-    public void setTeacher(Teacher teacher) {
+    public void setTeacher(String teacher) {
         this.teacher = teacher;
     }
 
-    public List<Student> getStudents() {
+    public List<String> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
+    public void setStudents(List<String> students) {
         this.students = students;
     }
 
