@@ -1,5 +1,6 @@
 package com.github.ltkicker.gradify.data.classrooms;
 
+import com.github.ltkicker.gradify.data.grades.GradingSystem;
 import com.github.ltkicker.gradify.data.users.Student;
 import com.github.ltkicker.gradify.data.users.Teacher;
 
@@ -10,17 +11,26 @@ public class Classroom {
     private String code;
     private String title;
     private String section;
-    private Teacher teacher;
-    private List<Student> students;
+    private String teacher;
+    private List<String> students;
     private List<String> days;
     private List<String> time;
-    private List<String> room;
+    private String room;
+    private String building;
+
+    private GradingSystem gradingSystem;
     //    private int lab;
 //    private int lec;
     private int units;
 
 
-    public Classroom() {
+    public Classroom(String code, String section, String title, String room, String building, String teacher) {
+        this.code = code;
+        this.section = section;
+        this.title = title;
+        this.room = room;
+        this.building = building;
+        this.teacher = teacher;
     }
 
     public String getCode() {
@@ -47,19 +57,19 @@ public class Classroom {
         this.section = section;
     }
 
-    public Teacher getTeacher() {
+    public String getTeacher() {
         return teacher;
     }
 
-    public void setTeacher(Teacher teacher) {
+    public void setTeacher(String teacher) {
         this.teacher = teacher;
     }
 
-    public List<Student> getStudents() {
+    public List<String> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
+    public void setStudents(List<String> students) {
         this.students = students;
     }
 
@@ -79,11 +89,11 @@ public class Classroom {
         this.time = time;
     }
 
-    public List<String> getRoom() {
+    public String getRoom() {
         return room;
     }
 
-    public void setRoom(List<String> room) {
+    public void setRoom(String room) {
         this.room = room;
     }
 

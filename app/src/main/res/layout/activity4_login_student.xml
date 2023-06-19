@@ -129,7 +129,7 @@
 	</com.google.android.material.textfield.TextInputLayout>
 
 	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/InputPassword"
+		android:id="@+id/input_password"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
@@ -164,7 +164,7 @@
 		android:textColor="#FFFFFF"
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
-		app:layout_constraintBottom_toTopOf="@+id/InputPassword"
+		app:layout_constraintBottom_toTopOf="@+id/Input_Password"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/textsignup"
@@ -179,8 +179,8 @@
 		android:text="@string/remember_me"
 		android:textColor="#FFFCFC"
 		android:textSize="14sp"
-		app:layout_constraintStart_toStartOf="@+id/InputPassword"
-		app:layout_constraintTop_toBottomOf="@+id/InputPassword"
+		app:layout_constraintStart_toStartOf="@+id/Input_Password"
+		app:layout_constraintTop_toBottomOf="@+id/Input_Password"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 
