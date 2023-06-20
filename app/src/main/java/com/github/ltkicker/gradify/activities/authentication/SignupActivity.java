@@ -74,30 +74,27 @@ public class SignupActivity extends AppCompatActivity {
         }
 
         mAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            User user = new User(isTeacher, lastName, firstName, middleName, suffixName, email, username);
-                            FirebaseDatabase.getInstance().getReference("users")
-                                    .child(FirebaseAuth.getInstance().getUid())
-                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-                                            showMenu();
-                                        }
-                                    });
-                            showMenu();
-                        } else {
-                            Toast.makeText(SignupActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
+                .addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        User user = new User(isTeacher, lastName, firstName, middleName, suffixName, email, username);
+                        FirebaseDatabase.getInstance().getReference("users")
+                                .child(username)
+                                .setValue(user).addOnCompleteListener(t -> showMenu());
+                        showMenu();
+                    } else {
+                        Toast.makeText(SignupActivity.this, "Authentication failed.",
+                                Toast.LENGTH_SHORT).show();
                     }
                 });
     }
 
     private void showMenu() {
         Intent intent = new Intent(this, MenuActivity.class);
+        if (demographic.equals("student")){
+            intent.putExtra("demographic", "student");
+        } else {
+            intent.putExtra("demographic", "teacher");
+        }
         startActivity(intent);
         finish();
     }

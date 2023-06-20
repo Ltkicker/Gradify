@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -17,28 +18,34 @@ import com.google.firebase.database.GenericTypeIndicator;
 import com.google.firebase.database.ValueEventListener;
 
 public class ClassDashboardActivity extends AppCompatActivity {
+
+    String demographic;
+    DatabaseReference dRef;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        DatabaseReference dRef = FirebaseDatabase.getInstance().getReference().child("users").child(FirebaseAuth.getInstance().getUid()).child("classrooms").child("asTeacher");
-        dRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.getChildrenCount() > 0) {
-                    setContentView(R.layout.activity9_yourclass_teacher);
-                } else {
-                    Intent intent = new Intent(ClassDashboardActivity.this, ClassEditActivity.class);
-                    startActivity(intent);
-                    finish();
+        demographic = getIntent().getStringExtra("demographic");
+        if(demographic.equals("teacher")) {
+            dRef = FirebaseDatabase.getInstance().getReference().child("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
+            dRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if(snapshot.getChildrenCount() > 0) {
+                        setContentView(R.layout.activity9_yourclass_teacher);
+                    } else {
+                        Intent intent = new Intent(ClassDashboardActivity.this, ClassEditActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
 
-            }
-        });
-
-
+                }
+            });
+        } else {
+            setContentView(R.layout.activity9_yourclass_teacher);
+        }
     }
 }

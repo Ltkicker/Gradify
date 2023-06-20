@@ -2,6 +2,7 @@ package com.github.ltkicker.gradify.activities.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -10,18 +11,24 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
+import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
     FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    String demographic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String demographic = getIntent().getStringExtra("demographic");
+        demographic = getIntent().getStringExtra("demographic");
         if (demographic.equals("student")){
             setContentView(R.layout.activity4_login_student);
         } else {
@@ -48,22 +55,39 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginUser() {
-        TextInputEditText etEmail = findViewById(R.id.input_last_name);
+        TextInputEditText etUsername = findViewById(R.id.input_last_name);
         TextInputEditText etPassword = findViewById(R.id.input_password);
-        String email = etEmail.getText().toString();
+        String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
+        FirebaseDatabase.getInstance().getReference("users").child(username).child("email").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()) {
+                    String email = snapshot.getValue(String.class);
+                    mAuth.signInWithEmailAndPassword(email, password)
+                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+                                        intent.putExtra("demographic", demographic);
+                                        startActivity(intent);
+                                        finish();
+                                    } else {
+                                        // Handle login errors
+                                        Toast.makeText(LoginActivity.this, "Login failed", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
+                }
+            }
 
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, task -> {
-                    if (task.isSuccessful()) {
-                        Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(this, MenuActivity.class);
-                        startActivity(intent);
-                        finish();
-                    } else {
-                        Toast.makeText(LoginActivity.this, "Wrong credentials or no internet", Toast.LENGTH_SHORT).show();
-                    }
-                });
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
 }
