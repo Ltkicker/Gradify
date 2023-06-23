@@ -1,5 +1,6 @@
 package com.github.ltkicker.gradify.activities;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.view.View;
@@ -7,11 +8,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Handler;
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
-import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 
 import android.content.Intent;
 
+import java.util.ArrayList;
+
 public class Gradify extends AppCompatActivity {
+
+
+    private static final ArrayList<Activity> visitedAuthActivities = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +40,7 @@ public class Gradify extends AppCompatActivity {
                 loading1.setVisibility(View.GONE);
                 loading2.setVisibility(View.VISIBLE);
             }
-        }, 2000); // 2000 milliseconds delay
+        }, 5000); // 2000 milliseconds delay
 
         handler.postDelayed(new Runnable() {
             @Override
@@ -43,11 +48,28 @@ public class Gradify extends AppCompatActivity {
                 loading2.setVisibility(View.GONE);
                 loading3.setVisibility(View.VISIBLE);
             }
-        }, 4000); // 4000 milliseconds delay
+        }, 10000); // 4000 milliseconds delay
 
-        Intent intent = new Intent(Gradify.this, AuthPortalActivity.class);
-        startActivity(intent);
-        finish();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(Gradify.this, AuthPortalActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 10000); // 4000 milliseconds delay
+
+    }
+
+    public static void addVisitedAuthActivity(Activity activity) {
+        visitedAuthActivities.add(activity);
+    }
+
+    public static void clearAuthActivity() {
+        for (Activity activity : visitedAuthActivities) {
+            activity.finish();
+        }
+
     }
 
 

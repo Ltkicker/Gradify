@@ -25,7 +25,7 @@
 		app:srcCompat="@drawable/img_background2" />
 
 	<TextView
-		android:id="@+id/clickable_signup12"
+		android:id="@+id/clickable_signup"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
 		android:layout_marginBottom="60dp"
@@ -63,11 +63,11 @@
 		android:textColor="@color/shapesignin_color"
 		android:textSize="15sp"
 		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintStart_toStartOf="@+id/input_last_name"
+		app:layout_constraintStart_toStartOf="@+id/login_email"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<TextView
-		android:id="@+id/studentLogIn"
+		android:id="@+id/loginBigTxt"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginBottom="42dp"
@@ -80,11 +80,11 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.497"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/img_student"
+		app:layout_constraintTop_toBottomOf="@+id/loginImg"
 		tools:ignore="TextContrastCheck" />
 
 	<ImageView
-		android:id="@+id/img_student"
+		android:id="@+id/loginImg"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		tools:ignore="ImageContrastCheck"
@@ -93,7 +93,7 @@
 		android:layout_marginBottom="14dp"
 		android:contentDescription="@string/background_desc"
 		android:src="@drawable/img_teacher_2"
-		app:layout_constraintBottom_toTopOf="@+id/studentLogIn"
+		app:layout_constraintBottom_toTopOf="@+id/loginBigTxt"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.496"
 		app:layout_constraintStart_toStartOf="parent"
@@ -124,13 +124,13 @@
 		android:layout_marginTop="19dp"
 		android:orientation="vertical"
 		app:layout_constraintStart_toStartOf="@+id/background2"
-		app:layout_constraintTop_toTopOf="@+id/input_last_name"
+		app:layout_constraintTop_toTopOf="@+id/login_email"
 		tools:ignore="MissingConstraints">
 
 	</com.google.android.material.textfield.TextInputLayout>
 
 	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/Input_Password"
+		android:id="@+id/login_password"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
@@ -148,11 +148,11 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.493"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/input_last_name"
+		app:layout_constraintTop_toBottomOf="@+id/login_email"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/input_last_name"
+		android:id="@+id/login_email"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
