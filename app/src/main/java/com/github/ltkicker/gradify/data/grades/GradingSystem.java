@@ -1,19 +1,25 @@
 package com.github.ltkicker.gradify.data.grades;
 
-import com.github.ltkicker.gradify.calculator.GradeCategory;
-import com.github.ltkicker.gradify.data.classrooms.Classroom;
+import androidx.annotation.NonNull;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-import java.util.List;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class GradingSystem {
+    private HashMap<String, String> categories; // Plural, Singular
+    private HashMap<String, ArrayList<GradingInstanceData>> history; // Category, GradeInstance
 
-    Classroom classroom;
-    List<GradeCategory> categories;
 
-    public GradingSystem(Classroom classroom, List<GradeCategory> categories){
-        this.classroom = classroom;
-        this.categories = categories;
+    public GradingSystem(){
     }
+
+
 }
