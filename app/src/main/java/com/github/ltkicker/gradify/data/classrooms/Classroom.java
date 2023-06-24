@@ -40,6 +40,7 @@ public class Classroom {
         this.teacher = teacher;
 
         FirebaseDatabase.getInstance().getReference("grades").child(key).setValue(new GradingSystem());
+        //ang reason ani nga database kay tungod sa usa ka specific classroom, wherein i store sa grades under ana  
     }
 
     public void getData(Classroom classroom) {
