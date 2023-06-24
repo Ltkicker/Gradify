@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReferenceArray;
 
-public class GradingSystemManager {
+public class  GradingSystemManager {
     private String classroomId;
     private DatabaseReference gsDRef = FirebaseDatabase.getInstance().getReference("grades");
 

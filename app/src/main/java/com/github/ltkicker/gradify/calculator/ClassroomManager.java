@@ -13,15 +13,15 @@ import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ClassroomManager {
-    private DatabaseReference classDRef = FirebaseDatabase.getInstance().getReference("classrooms");
+    private DatabaseReference classDRef = FirebaseDatabase.getInstance().getReference("classrooms"); .//mao ni tung firebase para sa classrooms in case daghan na ug classroom i add
     private Classroom classroom;
 
-    private String classroomId;
+    private String classroomId; //diri mag set ug keys and values for each classroom.
     HashMap<String, String> gradeCategories;
 
     public ClassroomManager(String classroomId) {
         this.classroomId = classroomId;
-    }
+    } // mao ni tung sa root, maka stick ta sa usa ka root kay tungod ani nga classroomId
 
 
 }
