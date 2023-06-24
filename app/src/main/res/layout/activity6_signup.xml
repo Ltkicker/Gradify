@@ -26,20 +26,24 @@
 		tools:ignore="ImageContrastCheck,VisualLintBounds" />
 
 	<ImageView
-		android:id="@+id/iconback"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="39dp"
-		android:layout_marginTop="58dp"
-		android:layout_marginEnd="326dp"
-		android:layout_marginBottom="698dp"
+		android:id="@+id/iconback12"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
+		android:layout_marginStart="48dp"
+		android:layout_marginTop="19dp"
+		android:layout_marginEnd="315dp"
+		android:layout_marginBottom="664dp"
+		android:background="@drawable/iconback"
+		android:backgroundTint="#FFFEFE"
+		android:clickable="true"
 		android:contentDescription="@string/background_desc"
-		android:src="@drawable/iconback"
+		android:focusable="true"
+		android:foregroundTint="#FFFFFF"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:ignore="ImageContrastCheck" />
+		tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
 	<TextView
 		android:id="@+id/clickable_signup2"
@@ -82,6 +86,7 @@
 		android:drawableTint="#36FFFFFF"
 		android:fontFamily="@font/poppins"
 		android:hint="@string/last_name"
+		android:textAlignment="viewStart"
 		android:textColor="#FFFFFF"
 		android:textColorHint="#757575"
 		android:textSize="16sp"

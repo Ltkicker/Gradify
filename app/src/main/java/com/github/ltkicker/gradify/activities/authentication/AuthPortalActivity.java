@@ -20,12 +20,13 @@ public class AuthPortalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser() != null) {
-            showMenu();
+            Intent intent = new Intent(this, MenuActivity.class);
+            startActivity(intent);
             finish();
             return;
         }
 
-        setContentView(R.layout.activity_authportal);
+        setContentView(R.layout.activity3_authportal);
 
         ImageButton studentBtn = findViewById(R.id.imgstudent);
 
@@ -36,7 +37,6 @@ public class AuthPortalActivity extends AppCompatActivity {
                 Intent intent = new Intent(AuthPortalActivity.this, LoginActivity.class);
                 intent.putExtra("demographic", "student");
                 startActivity(intent);
-                finish();
             }
         });
         ImageButton teacherBtn = findViewById(R.id.imgteacher);
@@ -46,13 +46,8 @@ public class AuthPortalActivity extends AppCompatActivity {
                 Intent intent = new Intent(AuthPortalActivity.this, LoginActivity.class);
                 intent.putExtra("demographic", "teacher");
                 startActivity(intent);
-                finish();
             }
         });
     }
-    private void showMenu() {
-        Intent intent = new Intent(this, MenuActivity.class);
-        startActivity(intent);
-        finish();
-    }
+
 }

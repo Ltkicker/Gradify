@@ -6,7 +6,8 @@
 	android:layout_height="wrap_content"
 	android:background="@drawable/round_corner"
 	android:filterTouchesWhenObscured="true"
-	android:textAlignment="center">
+	android:textAlignment="center"
+	tools:ignore="ExtraText">
 
 
 	<ImageView
@@ -21,18 +22,16 @@
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
 		app:layout_constraintVertical_bias="0.0"
-		app:srcCompat="@drawable/img_background2"
-		tools:ignore="ImageContrastCheck" />
+		app:srcCompat="@drawable/img_background2" />
 
 	<TextView
-		android:id="@+id/clickable_signup"
+		android:id="@+id/clickable_signup12"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
 		android:layout_marginBottom="60dp"
 		android:background="@drawable/shape_password"
 		android:backgroundTintMode="src_over"
 		android:clickable="true"
-		android:ellipsize="middle"
 		android:fontFamily="@font/poppins"
 		android:gravity="center|center_horizontal|center_vertical"
 		android:text="@string/sign_in"
@@ -40,10 +39,8 @@
 		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
 		android:textColor="@color/sign_in"
 		android:textDirection="inherit"
-		android:textSize="20sp"
+		android:textSize="24sp"
 		android:textStyle="bold"
-		android:visibility="visible"
-
 		app:drawableBottomCompat="@drawable/round_corner"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
@@ -53,12 +50,14 @@
 		tools:ignore="MissingConstraints"
 		tools:visibility="visible"
 		android:focusable="true" />
+		" />
 
 	<TextView
 		android:id="@+id/textsignup"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginBottom="334dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginBottom="328dp"
 		android:fontFamily="@font/poppins"
 		android:text="@string/not_a_member_yet"
 		android:textColor="@color/shapesignin_color"
@@ -74,7 +73,7 @@
 		android:layout_marginBottom="42dp"
 		android:fontFamily="@font/poppins"
 		android:gravity="center"
-		android:text="@string/student_login"
+		android:text="@string/teacher_login"
 		android:textColor="@color/shapesignin_color"
 		android:textSize="24sp"
 		app:layout_constraintBottom_toTopOf="@+id/textsignup"
@@ -88,16 +87,18 @@
 		android:id="@+id/img_student"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
+		tools:ignore="ImageContrastCheck"
+		android:scaleType="centerCrop"
 		android:layout_marginTop="157dp"
 		android:layout_marginBottom="14dp"
 		android:contentDescription="@string/background_desc"
-		android:src="@drawable/img_student_log_in"
+		android:src="@drawable/img_teacher_2"
 		app:layout_constraintBottom_toTopOf="@+id/studentLogIn"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.496"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:ignore="ImageContrastCheck" />
+		 />
 
 	<ImageView
 		android:id="@+id/iconback"
@@ -108,12 +109,12 @@
 		android:clickable="true"
 		android:contentDescription="@string/background_desc"
 		android:enabled="true"
-		android:focusable="true"
 		android:importantForAccessibility="yes"
 		android:src="@drawable/iconback"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+		tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
+		android:focusable="true" />
 
 	<com.google.android.material.textfield.TextInputLayout
 		android:id="@+id/textInputLayout2"
@@ -129,7 +130,7 @@
 	</com.google.android.material.textfield.TextInputLayout>
 
 	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/InputPassword"
+		android:id="@+id/Input_Password"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
@@ -143,6 +144,7 @@
 		android:textColor="#FFFFFF"
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
+		android:textStyle="bold"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.493"
 		app:layout_constraintStart_toStartOf="parent"
@@ -164,7 +166,8 @@
 		android:textColor="#FFFFFF"
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
-		app:layout_constraintBottom_toTopOf="@+id/InputPassword"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/Input_Password"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/textsignup"
@@ -178,9 +181,9 @@
 		android:fontFamily="@font/poppins"
 		android:text="@string/remember_me"
 		android:textColor="#FFFCFC"
-		android:textSize="14sp"
-		app:layout_constraintStart_toStartOf="@+id/InputPassword"
-		app:layout_constraintTop_toBottomOf="@+id/InputPassword"
+		android:textSize="13sp"
+		app:layout_constraintStart_toStartOf="@+id/Input_Password"
+		app:layout_constraintTop_toBottomOf="@+id/Input_Password"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 

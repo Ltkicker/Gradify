@@ -65,7 +65,7 @@
         android:fontFamily="@font/poppins"
         android:hint="@string/fullname_student"
         android:text="@string/fullname_student"
-        android:textColor="#FFFFFF"
+        android:textColor="#616161"
         android:textColorHint="#F1E4E4"
         android:textColorLink="#FFFFFF"
         android:textSize="18sp"
@@ -73,7 +73,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/line"

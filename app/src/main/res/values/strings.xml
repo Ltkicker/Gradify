@@ -81,13 +81,21 @@
     <string name="add_excel">Choose Excel File</string>
     <string name="add_more_category" > Add Category </string>
     <string name="save" > Save </string>
+    <!-- activity_add_class_file strings -->
+    <string name="font1_string">Your Students</string>
+    <string name="inserttext_string">Choose Excel File</string>
+    <string name="gradifysmalltext_string">GRADIFY </string>
+    <string name = "add_student_desc">Beep! You have no students in this class.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_bar">Search</string>
 
 
 
     <!-- Leaderboard Popup -->
     <string name="category"> CAT </string>
     <string name="category_others"> Others </string>
-    <string name="sub_category"> Sub Category Title </string>
+    <string name="sub_category"> SubCategory Title </string>
     <string name="sub_category_date"> Date </string>
     <string name="sub_category_rank"> # </string>
     <string name="student_firstname"> Name </string>
@@ -100,6 +108,25 @@
     <string name="breakdown_title">Breakdown</string>
     <string name="breakdown_percentage_total">%</string>
     <string name="breakdown_percentage_current">0%</string>
+    <string name="text_overall_standing">Overall Standing</string>
+    <string name="others_category">Others Category</string>
+    <string name="main_floatedit"> Edit </string>
+    <string name="main_floatrename"> Rename </string>
+    <string name="main_floatdelete"> Delete </string>
+    <string name="subject_code_name">  Subject </string>
+    <string name="subcategory_title">   Title </string>
+    <string name="subcategory_total_points">  Total Points </string>
+    <string name="quizzes">  Number of Students </string>
+    <string name="Add_cat"> + Add Category </string>
+    <string name="add_category"> Add </string>
+    <string name="student_passed"> Show only those who have passed </string>
+    <string name="recordtext"> Record Score </string>
+    <string name="recordscorestext"> Scores </string>
+    <string name="recordname"> Name </string>
+    <string name="recordidno"> ID No. </string>
+    <string name="recordscores"> Score </string>
+    <string name="recordnumbering"> No. </string>
+
 
     <!-- student_log_in strings -->
     <string name="txtstudentlogin_string">Student Log in:</string>
@@ -127,11 +154,14 @@
     <!-- gradesheet strings -->
     <string name="txtsearch_string">Search Name</string>
 
-    <!-- activity_add_class_file strings -->
-    <string name="font1_string">Your Students</string>
-    <string name="inserttext_string">Choose Excel File</string>
-    <string name="gradifysmalltext_string">GRADIFY </string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="search_bar">Search</string>
+    <!-- about gradify strings -->
+    <string name="text_version">Version</string>
+    <string name="number_version">1.0</string>
+    <string name="text_send_reports"> Send Crash Reports</string>
+    <string name="text_mesage"> Automatically send crash reports to Cubix+’s service provider to help improve this application</string>
+    <string name="help_center">Help Center</string>
+    <string name="terms_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="cookies_use">Cookies Use</string>
+    <string name="legal_notices">Legal Notices</string>
 </resources>
