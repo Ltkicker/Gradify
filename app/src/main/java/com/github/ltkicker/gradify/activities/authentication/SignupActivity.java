@@ -2,22 +2,17 @@ package com.github.ltkicker.gradify.activities.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
-import com.github.ltkicker.gradify.data.users.Teacher;
 import com.github.ltkicker.gradify.data.users.User;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -25,18 +20,12 @@ import java.util.ArrayList;
 
 public class SignupActivity extends AppCompatActivity {
 
-    FirebaseAuth mAuth;
-    String demographic;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity6_signup);
-        mAuth = FirebaseAuth.getInstance();
 
-        demographic = getIntent().getStringExtra("demographic");
-
-        if (mAuth.getCurrentUser() != null) {
+        if (UserCacheData.isAuthenticated()) {
             showMenu();
             finish();
             return;
@@ -48,7 +37,7 @@ public class SignupActivity extends AppCompatActivity {
 
     private void registerUser() {
 
-        TextInputEditText etLastName = findViewById(R.id.input_last_name);
+        TextInputEditText etLastName = findViewById(R.id.login_email);
         TextInputEditText etFirstName = findViewById(R.id.input_first_name);
         TextInputEditText etMiddleName = findViewById(R.id.input_middle_name);
         TextInputEditText etSuffixName = findViewById(R.id.input_suffix);
@@ -64,34 +53,16 @@ public class SignupActivity extends AppCompatActivity {
         String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
 
-        ArrayList<Classroom> classrooms = new ArrayList<>();
-        boolean isTeacher;
-
-        if(demographic.equals("teacher")) {
-            isTeacher = true;
-        } else {
-            isTeacher = false;
-        }
-
-        mAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            User user = new User(isTeacher, lastName, firstName, middleName, suffixName, email, username);
-                            FirebaseDatabase.getInstance().getReference("users")
-                                    .child(FirebaseAuth.getInstance().getUid())
-                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-                                            showMenu();
-                                        }
-                                    });
-                            showMenu();
-                        } else {
-                            Toast.makeText(SignupActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        User user = new User(UserCacheData.isTeacher(), lastName, firstName, middleName, suffixName, email, username);
+                        FirebaseDatabase.getInstance().getReference("users")
+                                .child(username)
+                                .setValue(user).addOnCompleteListener(t -> showMenu());
+                    } else {
+                        Toast.makeText(SignupActivity.this, "Authentication failed.",
+                                Toast.LENGTH_SHORT).show();
                     }
                 });
     }

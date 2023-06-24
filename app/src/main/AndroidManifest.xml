@@ -32,6 +32,7 @@
         <activity android:name=".activities.classroom.ClassDashboardActivity"/>
         <activity android:name=".activities.navigation.LogoutActivity"/>
         <activity android:name=".activities.excel.ExcelUploadActivity"/>
+        <activity android:name=".activities.classroom.ClassEmptyTeacherActivity"/>
     </application>
 
 </manifest>
