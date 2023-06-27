@@ -40,9 +40,4 @@
     <color name="frame2_color">#95C3BA</color>
     <color name="greenbg_color">#61AE9F</color>
     <color name="gradifysmalltext_color">#000000</color>
-
-    <color name="filter5_color">#5A5555</color>
-    <color name="magnifyingglass_color">#3C3C43</color>
-
-
-    </resources>
+</resources>
