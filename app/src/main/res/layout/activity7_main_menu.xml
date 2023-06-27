@@ -16,7 +16,6 @@
         android:contentDescription="@string/background_desc"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_background2"
@@ -101,14 +100,12 @@
         android:radius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/img_menu_accnt_info" />
 
     <ImageButton
-        android:id="@+id/menu_menuleaderboard"
+        android:id="@+id/menu_menuleaderbaord"
         android:layout_width="115dp"
         android:layout_height="99dp"
         android:layout_marginStart="232dp"
