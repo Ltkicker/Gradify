@@ -39,7 +39,7 @@ public class Classroom {
         this.building = building;
         this.teacher = teacher;
 
-        FirebaseDatabase.getInstance().getReference("grades").child(key).setValue(new GradingSystem());
+        //FirebaseDatabase.getInstance().getReference("grades").child(key).setValue(new GradingSystem());
     }
 
     public void getData(Classroom classroom) {
@@ -53,5 +53,13 @@ public class Classroom {
         this.room = classroom.room;
         this.building = classroom.building;
         this.units = classroom.units;
+    }
+
+    public String getCode() {
+        return this.code;
+    }
+
+    public String getTitle() {
+        return this.title;
     }
 }

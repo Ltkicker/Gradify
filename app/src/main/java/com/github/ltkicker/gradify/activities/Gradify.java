@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Handler;
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
+import com.github.ltkicker.gradify.data.database.FirebaseUtils;
 
 import android.content.Intent;
 
@@ -22,6 +23,8 @@ public class Gradify extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity00_allpagesforloading);
+
+        FirebaseUtils.init();
 
         final LinearLayout loadingContainer = findViewById(R.id.loadingContainer);
         final View loading1 = findViewById(R.id.activity0_main_loading_withlogo);

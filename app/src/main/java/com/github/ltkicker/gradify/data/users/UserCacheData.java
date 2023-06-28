@@ -25,10 +25,16 @@ public class UserCacheData {
 
 
     public static String getUsername(){
-        return username;
+        return UserCacheData.username;
+    }
+    public static void setUsername(String username){
+        UserCacheData.username = username;
     }
 
     public static boolean isAuthenticated() {
+        if(UserCacheData.getUsername() == null) {
+            return false;
+        }
         mAuth = FirebaseAuth.getInstance();
         if (mAuth.getCurrentUser() != null) {
             return true;
