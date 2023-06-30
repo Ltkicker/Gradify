@@ -79,7 +79,6 @@ public class ClassDashboardActivity extends AppCompatActivity {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             classrooms.add(snapshot.getValue(Classroom.class));
-                            Log.d("AWEvAWEVAWEVAWEVWE", classrooms.toString());
                             adapter.notifyDataSetChanged();
                         }
 
@@ -90,8 +89,6 @@ public class ClassDashboardActivity extends AppCompatActivity {
                     });
                 }
 
-                Log.d("AWEvAWEVAWEVAWEVWE", classroomsById.toString());
-
             }
 
             @Override
@@ -100,22 +97,8 @@ public class ClassDashboardActivity extends AppCompatActivity {
             }
         });
 
-//        ClassroomHandler handler = new ClassroomHandler();
-//        handler.userClassrooms(UserCacheData.getUsername(), UserCacheData.isTeacher(), new FirebaseUtils.ClassListListener() {
-//            @Override
-//            public void onUpdate(boolean exists) {
-//
-//            }
-//        });
 
 
 
-
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.d("awevaweawe", classrooms.toString());
     }
 }
