@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,9 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.data.classrooms.ClassListAdapter;
+import com.github.ltkicker.gradify.data.classrooms.ClassListInterface;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
-import com.github.ltkicker.gradify.data.classrooms.ClassroomHandler;
-import com.github.ltkicker.gradify.data.database.FirebaseUtils;
 import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -26,7 +24,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class ClassDashboardActivity extends AppCompatActivity {
+public class ClassDashboardActivity extends AppCompatActivity implements ClassListInterface {
+
+
 
     ArrayList<Classroom> classrooms;
     ArrayList<String> classroomsById;
@@ -39,7 +39,7 @@ public class ClassDashboardActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity9_yourclass_teacher);
+        setContentView(R.layout.activity9_yourclass);
         if(UserCacheData.isTeacher()) {
             dRef = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
         } else {
@@ -48,9 +48,12 @@ public class ClassDashboardActivity extends AppCompatActivity {
         cRef = FirebaseDatabase.getInstance().getReference("classrooms");
 
         addButton = findViewById(R.id.btn_add);
-        addButton.setOnClickListener(view -> {
-            Intent intent = new Intent(ClassDashboardActivity.this, ClassEditActivity.class);
-            startActivity(intent);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClassDashboardActivity.this, ClassEditActivity.class);
+                startActivity(intent);
+            }
         });
 
         classroomsById = new ArrayList<>();
@@ -62,7 +65,7 @@ public class ClassDashboardActivity extends AppCompatActivity {
         classList.setBackgroundResource(android.R.color.transparent);
         ArrayList<Classroom> temp = new ArrayList<>();
         classrooms = new ArrayList<>();
-        adapter = new ClassListAdapter(this, classrooms);
+        adapter = new ClassListAdapter(this, classrooms, this);
         classList.setAdapter(adapter);
 
 
@@ -99,6 +102,14 @@ public class ClassDashboardActivity extends AppCompatActivity {
 
 
 
+
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent intent = new Intent(ClassDashboardActivity.this, ClassOverviewActivity.class);
+        intent.putExtra("CLASS_ID", classrooms.get(position));
+        startActivity(intent);
 
     }
 }
