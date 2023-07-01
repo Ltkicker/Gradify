@@ -77,10 +77,18 @@
     <string name="edit_class">  Edit Class </string>
     <string name="grading_system">  Grading System </string>
     <string name="category_grading_system">  Category Grading System </string>
-    <string name="category_percent_grading_system"> -- </string>
     <string name="add_excel">Choose Excel File</string>
+    <string name="parent_category_1"> Attendance </string>
+    <string name="parent_category1_percent">10 %</string>
+    <string name="parent_category_2"> Quizzes </string>
+    <string name="parent_category2_percent">10 %</string>
+    <string name="parent_category_3"> Project </string>
+    <string name="parent_category3_percent">20 %</string>
+    <string name="parent_category4"> Exam </string>
+    <string name="parent_category4_percent">60 %</string>
     <string name="add_more_category"> Add Category </string>
     <string name="save"> Save </string>
+    <string name="class_list"> Class List </string>
     <!-- activity_add_class_file strings -->
     <string name="font1_string">Your Students</string>
     <string name="inserttext_string">Choose Excel File</string>
