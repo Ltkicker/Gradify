@@ -107,4 +107,8 @@ public class User {
         this.classrooms = classrooms;
     }
 
+    public String getFullName() {
+        return firstName + " " + middleName + " " + lastName + " " + suffixName;
+    }
+
 }

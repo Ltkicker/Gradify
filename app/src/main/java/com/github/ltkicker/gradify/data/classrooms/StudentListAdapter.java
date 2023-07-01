@@ -10,48 +10,49 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.data.users.User;
 
 import java.util.ArrayList;
 
-public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.MyViewHolder> {
-    private final ClassListInterface recyclerViewInterface;
+public class StudentListAdapter extends RecyclerView.Adapter<StudentListAdapter.MyViewHolder> {
+    private final StudentListInterface recyclerViewInterface;
     Context context;
-    ArrayList<Classroom> classrooms;
+    ArrayList<User> students;
 
-    public ClassListAdapter(Context context, ArrayList<Classroom> classrooms, ClassListInterface recyclerViewInterface) {
+    public StudentListAdapter(Context context, ArrayList<User> students, StudentListInterface recyclerViewInterface) {
         this.context = context;
-        this.classrooms = classrooms;
+        this.students = students;
         this.recyclerViewInterface = recyclerViewInterface;
     }
 
     @NonNull
     @Override
-    public ClassListAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public StudentListAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.classlist_row, parent, false);
-        return new ClassListAdapter.MyViewHolder(view, recyclerViewInterface);
+        return new StudentListAdapter.MyViewHolder(view, recyclerViewInterface);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ClassListAdapter.MyViewHolder holder, int position) {
-        holder.classCode.setText(classrooms.get(position).getCode());
-        holder.classDesc.setText(classrooms.get(position).getTitle());
+    public void onBindViewHolder(@NonNull StudentListAdapter.MyViewHolder holder, int position) {
+        holder.fullName.setText(students.get(position).getFullName());
+        holder.idNumber.setText(students.get(position).getIdNumber());
     }
 
     @Override
     public int getItemCount() {
-        return classrooms.size();
+        return students.size();
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView classCode, classDesc;
+        TextView fullName, idNumber;
 
         public MyViewHolder(@NonNull View itemView, ClassListInterface recyclerViewInterface) {
             super(itemView);
 
-            classCode = itemView.findViewById(R.id.studentFullName);
-            classDesc = itemView.findViewById(R.id.IdNumber);
+            fullName = itemView.findViewById(R.id.studentFullName);
+            idNumber = itemView.findViewById(R.id.IdNumber);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -58,10 +58,6 @@ public class ClassEditActivity extends AppCompatActivity {
         Classroom newClass = new Classroom(classCode, classSection, classDesc, roomNo, building, UserCacheData.getUsername(), key);
         classrooms.child(key).setValue(newClass);
 
-//        DatabaseReference gradeSys = FirebaseDatabase.getInstance().getReference("grades");
-//        GradingSystem newGradeSys = new GradingSystem();
-//        gradeSys.child(key).setValue(newGradeSys);
-
         // Add classroom to list of classrooms handled by teacher
         fbClasses = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
         fbClasses.addListenerForSingleValueEvent(new ValueEventListener() {

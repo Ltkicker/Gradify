@@ -40,6 +40,21 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
         setContentView(R.layout.activity9_yourclass);
         if(UserCacheData.isTeacher()) {
             dRef = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
+            dRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if(snapshot.getChildrenCount() <= 0) {
+                        Intent intent = new Intent(ClassDashboardActivity.this, ClassEmptyActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
         } else {
             dRef = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asStudent");
         }
@@ -105,7 +120,7 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
 
     @Override
     public void onItemClick(int position) {
-        Intent intent = new Intent(ClassDashboardActivity.this, ClassOverviewActivity.class);
+        Intent intent = new Intent(ClassDashboardActivity.this, ClassStudentsActivity.class);
         intent.putExtra("CLASS_ID", classrooms.get(position));
         startActivity(intent);
     }

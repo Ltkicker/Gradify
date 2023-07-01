@@ -34,6 +34,7 @@
         <activity android:name=".activities.excel.ExcelUploadActivity"/>
         <activity android:name=".activities.classroom.ClassOverviewActivity"/>
         <activity android:name=".activities.moreinfo.MoreInfoActivity"/>
+        <activity android:name=".activities.classroom.ClassEmptyActivity"/>
     </application>
 
 </manifest>
