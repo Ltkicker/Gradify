@@ -26,8 +26,6 @@ import java.util.ArrayList;
 
 public class ClassDashboardActivity extends AppCompatActivity implements ClassListInterface {
 
-
-
     ArrayList<Classroom> classrooms;
     ArrayList<String> classroomsById;
     DatabaseReference dRef;
@@ -110,6 +108,5 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
         Intent intent = new Intent(ClassDashboardActivity.this, ClassOverviewActivity.class);
         intent.putExtra("CLASS_ID", classrooms.get(position));
         startActivity(intent);
-
     }
 }

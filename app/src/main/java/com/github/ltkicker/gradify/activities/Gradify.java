@@ -22,7 +22,9 @@ public class Gradify extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity8_if_homebuttonicon_goto_logout);
+
+        setContentView(R.layout.activity0_main_loading_withlogo);
+        //setContentView(R.layout.activity9f_add_manually_teacher);
 
         FirebaseUtils.init();
 

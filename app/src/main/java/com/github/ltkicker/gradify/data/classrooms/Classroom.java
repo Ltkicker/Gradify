@@ -1,5 +1,8 @@
 package com.github.ltkicker.gradify.data.classrooms;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import androidx.annotation.NonNull;
 
 import com.github.ltkicker.gradify.data.grades.GradingInstanceData;
@@ -31,7 +34,9 @@ public class Classroom implements Serializable {
     private int units;
 
     public Classroom() {
+
     }
+
     public Classroom(String code, String section, String title, String room, String building, String teacher, String key) {
         this.code = code;
         this.section = section;
@@ -135,4 +140,5 @@ public class Classroom implements Serializable {
     public void setUnits(int units) {
         this.units = units;
     }
+
 }
