@@ -15,7 +15,6 @@
 		android:visibility="visible"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
 		app:layout_constraintVertical_bias="0.0"
@@ -138,7 +137,6 @@
 		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.0"
 		tools:ignore="TextContrastCheck" />
 
 	<TextView
@@ -164,15 +162,19 @@
 		android:id="@+id/textchoose"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="31dp"
+		android:layout_marginStart="171dp"
+		android:layout_marginTop="346dp"
+		android:layout_marginEnd="170dp"
+		android:layout_marginBottom="345dp"
 		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/menu_choose_portal"
 		android:textColor="@color/white"
 		android:textSize="24sp"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+		app:layout_constraintTop_toTopOf="parent"
 		tools:ignore="TextContrastCheck" />
 
 
