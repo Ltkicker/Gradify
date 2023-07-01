@@ -152,6 +152,34 @@
 
     <!-- gradesheet strings -->
     <string name="txtsearch_string">Search Name</string>
+    <string name="col1">ID #</string>
+    <string name="col2">Student Name</string>
+    <string name="col3">Letter Grade</string>
+    <string name="col4">Prelim</string>
+    <string name="col5">Midterm</string>
+    <string name="col6">Final</string>
+    <string name="col7">Exam Avg.</string>
+    <string name="col8">Project</string>
+    <string name="col9">Homework</string>
+    <string name="col10">Reporting</string>
+    <string name="col11">Class Participation Avg.</string>
+    <string name="col12">Written Reports</string>
+    <string name="col13">Quizzes</string>
+    <string name="col14">Quizzes Avg.</string>
+    <string name="col15">Attendance</string>
+    <string name="col16">Grade</string>
+    <string name="row"></string>
+    <string name="row1ID">2020-0001</string>
+    <string name="row1Name">Barro, Shiela Mae </string>
+    <string name="row2ID">2020-0002</string>
+    <string name="row2Name">Camama, Reham Dee </string>
+    <string name="row3ID">2020-0003</string>
+    <string name="row3Name">Dela Peña, Shaira Krizz </string>
+    <string name="row4ID">2020-0004</string>
+    <string name="row4Name">Ellevera, Paolo Alexis </string>
+    <string name="row5ID">2020-0005</string>
+    <string name="row5Name">Miranda, Genesis </string>
+
 
     <!-- about gradify strings -->
     <string name="text_version">Version</string>
