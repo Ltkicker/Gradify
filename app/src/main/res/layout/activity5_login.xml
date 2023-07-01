@@ -20,13 +20,19 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:srcCompat="@drawable/img_background2" />
+		app:srcCompat="@drawable/img_background2" /><![CDATA[
+
+	" />
+
+
+
+	]]>
 
 	<TextView
 		android:id="@+id/clickable_signup"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
-		android:layout_marginBottom="60dp"
+		android:layout_marginBottom="48dp"
 		android:background="@drawable/shape_password"
 		android:backgroundTintMode="src_over"
 		android:clickable="true"
@@ -47,7 +53,6 @@
 		app:layout_marginBaseline="10dp"
 		tools:ignore="MissingConstraints"
 		tools:visibility="visible" />
-	" />
 
 	<TextView
 		android:id="@+id/textsignup"
@@ -122,9 +127,9 @@
 		android:layout_width="336dp"
 		android:layout_height="61dp"
 		android:layout_marginStart="38dp"
-		android:layout_marginTop="496dp"
+		android:layout_marginTop="492dp"
 		android:layout_marginEnd="37dp"
-		android:layout_marginBottom="174dp"
+		android:layout_marginBottom="178dp"
 		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
@@ -132,6 +137,8 @@
 		android:fontFamily="@font/poppins"
 		android:hint="@string/password"
 		android:inputType="textPassword"
+		android:paddingStart="16dp"
+		android:paddingEnd="16dp"
 		android:textColor="#FFFFFF"
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
@@ -140,9 +147,7 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:ignore="MissingConstraints,TextContrastCheck"
-		android:paddingStart="16dp"
-		android:paddingEnd="16dp"/>
+		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/login_email1"
@@ -158,6 +163,8 @@
 		android:drawableTint="#36FFFFFF"
 		android:fontFamily="@font/poppins"
 		android:hint="@string/username"
+		android:paddingStart="16dp"
+		android:paddingEnd="16dp"
 		android:textColor="#FFFFFF"
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
@@ -166,29 +173,23 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		tools:ignore="MissingConstraints,TextContrastCheck"
-		android:paddingStart="16dp"
-		android:paddingEnd="16dp"/>
+		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<CheckBox
 		android:id="@+id/cb_accept_terms"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="46dp"
-		android:layout_marginTop="557dp"
 		android:layout_marginEnd="237dp"
-		android:layout_marginBottom="126dp"
 		android:buttonTint="#FFFFFF"
 		android:fontFamily="@font/poppins"
 		android:text="@string/remember_me"
 		android:textColor="#FFFCFC"
 		android:textSize="13sp"
-		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/clickable_signup"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.0"
+		app:layout_constraintTop_toBottomOf="@+id/login_password"
 		tools:ignore="MissingConstraints,TextContrastCheck,UnknownId" />
 
 
