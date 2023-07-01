@@ -101,24 +101,6 @@
         app:layout_constraintVertical_bias="0.183"
         tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
-    <ImageView
-        android:id="@+id/yourstudent_img"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="266dp"
-        android:layout_marginEnd="320dp"
-        android:layout_marginBottom="384dp"
-        android:cropToPadding="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
     <TextView
         android:id="@+id/text_yourstudent"
         android:layout_width="211dp"
@@ -142,97 +124,6 @@
         app:layout_constraintVertical_bias="0.941"
         tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/yourstudent1"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="387dp"
-        android:layout_marginEnd="320dp"
-        android:layout_marginBottom="263dp"
-        android:cropToPadding="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.015"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/yourstudent3"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="503dp"
-        android:layout_marginEnd="320dp"
-        android:layout_marginBottom="147dp"
-        android:cropToPadding="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/yourclass_img3"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="619dp"
-        android:layout_marginEnd="320dp"
-        android:layout_marginBottom="31dp"
-        android:cropToPadding="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
-
-    <TextView
-        android:id="@+id/fullname"
-        android:layout_width="198dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="286dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="438dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/fullname_student"
-        android:textAlignment="textStart"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.319"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818" />
-
-    <TextView
-        android:id="@+id/id_no"
-        android:layout_width="196dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="307dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="400dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/recordidno"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="312dp"
@@ -250,6 +141,13 @@
         app:queryHint="Search name">
 
     </androidx.appcompat.widget.SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="362dp"
+        tools:layout_editor_absoluteY="243dp" />
 
     <ImageButton
         android:id="@+id/btn_add"

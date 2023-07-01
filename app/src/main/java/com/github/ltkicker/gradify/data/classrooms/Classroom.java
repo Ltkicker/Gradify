@@ -150,4 +150,12 @@ public class Classroom implements Serializable {
         this.units = units;
     }
 
+    public void addStudent(String id) {
+        students.add(id);
+    }
+
+    public void removeStudent(String id) {
+        students.remove(id);
+    }
+
 }

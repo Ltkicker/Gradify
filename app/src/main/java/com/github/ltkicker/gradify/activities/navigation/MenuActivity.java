@@ -18,8 +18,7 @@ import com.github.ltkicker.gradify.data.users.UserCacheData;
 public class MenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (!UserCacheData.isAuthenticated()) {
+        super.onCreate(savedInstanceState);if(!UserCacheData.isAuthenticated()) {
             Intent intent = new Intent(this, AuthPortalActivity.class);
             startActivity(intent);
             finish();

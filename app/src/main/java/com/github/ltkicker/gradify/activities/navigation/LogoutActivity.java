@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
+import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LogoutActivity extends AppCompatActivity {
@@ -23,6 +24,12 @@ public class LogoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(!UserCacheData.isAuthenticated()) {
+            Intent intent = new Intent(this, AuthPortalActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        }
         setContentView(R.layout.activity8_if_homebuttonicon_goto_logout);
 
         button = (ImageView) findViewById(R.id.backlog_out_ground);

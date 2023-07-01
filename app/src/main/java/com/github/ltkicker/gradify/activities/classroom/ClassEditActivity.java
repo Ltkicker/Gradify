@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.grades.GradingSystem;
 import com.github.ltkicker.gradify.data.users.UserCacheData;
@@ -30,6 +31,13 @@ public class ClassEditActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(!UserCacheData.isAuthenticated()) {
+            Intent intent = new Intent(this, AuthPortalActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        }
+
         setContentView(R.layout.activity9b_class_info_teacher);
 
         TextView createClass = findViewById(R.id.clickable_createclass);
@@ -67,11 +75,9 @@ public class ClassEditActivity extends AppCompatActivity {
                 if(snapshot.exists()) {
                     list = snapshot.getValue(new GenericTypeIndicator<ArrayList<String>>() {});
                     list.add(key);
-                    Log.d("Property", "Existing Class");
                 } else {
                     list = new ArrayList<>();
                     list.add(key);
-                    Log.d("Property", "New Class");
                 }
                 fbClasses.setValue(list)
                         .addOnSuccessListener(unused -> {
