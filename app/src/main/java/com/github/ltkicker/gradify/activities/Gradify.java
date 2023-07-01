@@ -26,7 +26,16 @@ public class Gradify extends AppCompatActivity {
 
         FirebaseUtils.init();
 
-
+        // Add a delay before showing the next loading screen
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(Gradify.this, AuthPortalActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 5000); // 4000 milliseconds delay
     }
 
     public static void addVisitedAuthActivity(Activity activity) {
