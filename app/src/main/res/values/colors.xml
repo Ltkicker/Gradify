@@ -40,4 +40,5 @@
     <color name="frame2_color">#95C3BA</color>
     <color name="greenbg_color">#61AE9F</color>
     <color name="gradifysmalltext_color">#000000</color>
+    <color name="create_class">#61AE9F</color>
 </resources>
