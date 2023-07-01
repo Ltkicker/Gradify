@@ -1,71 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_loadingpage_scene2"
-    tools:context=".activities.authentication.AuthPortalActivity"
-    tools:ignore="MotionLayoutInvalidSceneFileReference">
+    tools:context=".activities.Gradify">
 
     <ImageView
-        android:id="@+id/innerLayer"
-        android:layout_width="1000dp"
-        android:layout_height="1000dp"
-        android:src="@drawable/img_background2"
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/background_desc"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck"
-        android:contentDescription="TODO" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_background2"
+        tools:ignore="ImageContrastCheck" />
 
-    <androidx.constraintlayout.motion.widget.MotionLayout
-        android:id="@+id/innercircle"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/bg_loading"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MotionLayoutInvalidSceneFileReference" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="191dp"
+        android:layout_marginBottom="155dp"
+        android:progressTint="@color/white" />
 
     <ImageView
-        android:id="@+id/loadinglogo"
-        android:layout_width="200dp"
-        android:layout_height="147dp"
-        android:src="@drawable/img_loadingLogo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        android:layout_width="293dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="56dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/gradify_logo"
+        android:cropToPadding="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_loadinglogo"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/finallayer"
-        android:layout_width="1000dp"
-        android:layout_height="1000dp"
-        android:src="@drawable/img_background2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/finallogo"
-        android:layout_width="200dp"
-        android:layout_height="147dp"
-        android:src="@drawable/img_loadingscreenlogo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
+        android:layout_width="256dp"
+        android:layout_height="184dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="101dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/gradify_logo"
+        android:cropToPadding="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_cubixlogo"
+        tools:ignore="ImageContrastCheck" />
 
 
-</androidx.constraintlayout.motion.widget.MotionLayout>
+</RelativeLayout>
 
 

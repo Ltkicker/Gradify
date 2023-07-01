@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MotionScene 
+<MotionScene
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="3000">
        <KeyFrameSet>
        </KeyFrameSet>
+        <OnSwipe motion:maxAcceleration="4.68" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -74,8 +75,8 @@
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            android:scaleX="10"
-            android:scaleY="10" />
+            android:scaleX="0"
+            android:scaleY="0" />
         <Constraint
             android:id="@+id/loadinglogo"
             motion:layout_constraintEnd_toEndOf="parent"
