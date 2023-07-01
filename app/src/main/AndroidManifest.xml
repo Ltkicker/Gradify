@@ -35,6 +35,15 @@
         <activity android:name=".activities.authentication.SignupActivity"/>
         <activity android:name=".activities.authentication.LoginActivity"/>
 
+
+        <activity android:name=".activities.navigation.MenuActivity"/>
+        <activity android:name=".activities.classroom.ClassEditActivity"/>
+        <activity android:name=".activities.classroom.ClassDashboardActivity"/>
+        <activity android:name=".activities.navigation.LogoutActivity"/>
+        <activity android:name=".activities.excel.ExcelUploadActivity"/>
+        <activity android:name=".activities.classroom.ClassOverviewActivity"/>
+        <activity android:name=".activities.moreinfo.MoreInfoActivity"/>
+
     </application>
 
 </manifest>

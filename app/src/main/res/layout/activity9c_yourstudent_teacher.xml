@@ -101,6 +101,24 @@
         app:layout_constraintVertical_bias="0.183"
         tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
+    <ImageView
+        android:id="@+id/yourstudent_img"
+        android:layout_width="103dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="384dp"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icon_bookmainlogo"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
     <TextView
         android:id="@+id/text_yourstudent"
         android:layout_width="211dp"
@@ -123,43 +141,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.941"
         tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
-
-    <ImageButton
-        android:id="@+id/yourclass_select_button"
-        android:layout_width="416dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="249dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="369dp"
-        android:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/round_corner"
-        app:tint="#54CBCBCB"
-        tools:ignore="ContentDescription,VisualLintBounds,DuplicateSpeakableTextCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/yourstudent_img"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="266dp"
-        android:layout_marginEnd="320dp"
-        android:layout_marginBottom="384dp"
-        android:cropToPadding="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/yourstudent1"

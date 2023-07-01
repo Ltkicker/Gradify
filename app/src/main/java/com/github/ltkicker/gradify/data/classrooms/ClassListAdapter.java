@@ -60,7 +60,6 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.MyVi
                 public void onClick(View view) {
                     if(recyclerViewInterface != null) {
                         int pos = getAdapterPosition();
-                        Log.d("AWEVAWEVAWE", "WORKING POS");
                         if(pos != RecyclerView.NO_POSITION) {
                             recyclerViewInterface.onItemClick(pos);
                         }
