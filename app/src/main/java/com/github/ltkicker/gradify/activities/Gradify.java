@@ -25,8 +25,6 @@ public class Gradify extends AppCompatActivity {
         setContentView(R.layout.activity0_main_loading_withlogo);
 
         FirebaseUtils.init();
-
-
     }
 
     public static void addVisitedAuthActivity(Activity activity) {
