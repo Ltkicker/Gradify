@@ -20,7 +20,7 @@ public class ClassOverviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity9g_add_category_teacher);
 
-        TextView subjectDescription = findViewById(R.id.subjectdescription);
+        TextView subjectDescription = findViewById(R.id.subjectdesciption);
         TextView classCode = findViewById(R.id.text_mainsubjectcode);
 
         Classroom result = (Classroom) getIntent().getSerializableExtra("CLASS_ID");

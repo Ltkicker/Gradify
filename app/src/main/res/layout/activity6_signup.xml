@@ -235,7 +235,7 @@
 		android:backgroundTintMode="src_over"
 		android:drawableTint="#36FFFFFF"
 		android:fontFamily="@font/poppins"
-		android:hint="@string/suffix"
+		android:hint="@string/id_no"
 		android:paddingStart="16dp"
 		android:paddingEnd="16dp"
 		android:textColor="#FFFFFF"
