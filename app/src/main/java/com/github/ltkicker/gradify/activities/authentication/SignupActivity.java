@@ -9,14 +9,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
-import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.users.User;
 import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.ArrayList;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -37,7 +34,7 @@ public class SignupActivity extends AppCompatActivity {
 
     private void registerUser() {
 
-        TextInputEditText etLastName = findViewById(R.id.login_email);
+        TextInputEditText etLastName = findViewById(R.id.login_email1);
         TextInputEditText etFirstName = findViewById(R.id.input_first_name);
         TextInputEditText etMiddleName = findViewById(R.id.input_middle_name);
         TextInputEditText etSuffixName = findViewById(R.id.input_suffix);

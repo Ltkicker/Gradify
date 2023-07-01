@@ -26,8 +26,6 @@ import java.util.ArrayList;
 
 public class ClassDashboardActivity extends AppCompatActivity implements ClassListInterface {
 
-
-
     ArrayList<Classroom> classrooms;
     ArrayList<String> classroomsById;
     DatabaseReference dRef;
@@ -60,7 +58,7 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
         classrooms = new ArrayList<>();
 
         // Used to display the classrooms
-        classList = findViewById(R.id.classList);
+
         classList.setLayoutManager(new LinearLayoutManager(this));
         classList.setBackgroundResource(android.R.color.transparent);
         ArrayList<Classroom> temp = new ArrayList<>();
@@ -110,6 +108,5 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
         Intent intent = new Intent(ClassDashboardActivity.this, ClassOverviewActivity.class);
         intent.putExtra("CLASS_ID", classrooms.get(position));
         startActivity(intent);
-
     }
 }
