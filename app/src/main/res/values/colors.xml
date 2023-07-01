@@ -40,4 +40,9 @@
     <color name="frame2_color">#95C3BA</color>
     <color name="greenbg_color">#61AE9F</color>
     <color name="gradifysmalltext_color">#000000</color>
+
+    <!-- gradesheet colors -->
+    <color name="row1_color">#93ECA9</color>
+    <color name="row2_color">#CDFFEA</color>
+
 </resources>
