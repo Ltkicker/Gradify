@@ -87,7 +87,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/img_leaderboard"
-        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"  />
+        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
 
 
     <com.google.android.material.textfield.TextInputEditText
@@ -249,6 +249,8 @@
         android:id="@+id/clickable_save"
         android:layout_width="201dp"
         android:layout_height="61dp"
+        android:layout_marginTop="549dp"
+        android:layout_marginBottom="121dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="@color/sign_in"
         android:backgroundTintMode="src_over"
@@ -258,20 +260,22 @@
         android:fontFamily="@font/poppins"
         android:gravity="center|center_horizontal|center_vertical"
         android:text="@string/save"
+
         android:textAlignment="inherit"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-
         android:textColor="@color/common_google_signin_btn_text_dark_pressed"
         android:textDirection="inherit"
         android:textSize="20sp"
         android:textStyle="bold"
         android:visibility="visible"
         app:drawableBottomCompat="@drawable/round_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:layout_marginBaseline="10dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteY="549dp"
         tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
