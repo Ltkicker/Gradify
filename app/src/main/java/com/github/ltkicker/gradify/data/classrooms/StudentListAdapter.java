@@ -14,7 +14,7 @@ import com.github.ltkicker.gradify.data.users.User;
 
 import java.util.ArrayList;
 
-public class StudentListAdapter extends RecyclerView.Adapter<StudentListAdapter.MyViewHolder> {
+public class StudentListAdapter extends RecyclerView.Adapter<StudentListAdapter.MyStudentViewHolder> {
     private final StudentListInterface recyclerViewInterface;
     Context context;
     ArrayList<User> students;
@@ -27,14 +27,14 @@ public class StudentListAdapter extends RecyclerView.Adapter<StudentListAdapter.
 
     @NonNull
     @Override
-    public StudentListAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public StudentListAdapter.MyStudentViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.classlist_row, parent, false);
-        return new StudentListAdapter.MyViewHolder(view, recyclerViewInterface);
+        return new StudentListAdapter.MyStudentViewHolder(view, recyclerViewInterface);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull StudentListAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull StudentListAdapter.MyStudentViewHolder holder, int position) {
         holder.fullName.setText(students.get(position).getFullName());
         holder.idNumber.setText(students.get(position).getIdNumber());
     }
@@ -44,11 +44,11 @@ public class StudentListAdapter extends RecyclerView.Adapter<StudentListAdapter.
         return students.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyStudentViewHolder extends RecyclerView.ViewHolder {
 
         TextView fullName, idNumber;
 
-        public MyViewHolder(@NonNull View itemView, ClassListInterface recyclerViewInterface) {
+        public MyStudentViewHolder(@NonNull View itemView, StudentListInterface recyclerViewInterface) {
             super(itemView);
 
             fullName = itemView.findViewById(R.id.studentFullName);

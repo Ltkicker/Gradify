@@ -50,8 +50,8 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.MyVi
         public MyViewHolder(@NonNull View itemView, ClassListInterface recyclerViewInterface) {
             super(itemView);
 
-            classCode = itemView.findViewById(R.id.studentFullName);
-            classDesc = itemView.findViewById(R.id.IdNumber);
+            classCode = itemView.findViewById(R.id.classCode);
+            classDesc = itemView.findViewById(R.id.classDesc);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

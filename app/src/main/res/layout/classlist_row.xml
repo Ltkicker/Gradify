@@ -33,19 +33,19 @@
                 tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
             <TextView
-                android:id="@+id/studentFullName"
+                android:id="@+id/classCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:text="Subject Code"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toTopOf="@id/IdNumber"
+                app:layout_constraintBottom_toTopOf="@id/classDesc"
                 app:layout_constraintStart_toEndOf="@+id/yourclass_img"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/IdNumber"
+                android:id="@+id/classDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_marginStart="20dp"
@@ -54,7 +54,7 @@
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/yourclass_img"
-                app:layout_constraintTop_toBottomOf="@+id/studentFullName" />
+                app:layout_constraintTop_toBottomOf="@+id/classCode" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
