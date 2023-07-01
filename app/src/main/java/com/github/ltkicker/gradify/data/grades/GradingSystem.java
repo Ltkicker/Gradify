@@ -19,6 +19,11 @@ public class GradingSystem {
 
 
     public GradingSystem(){
+        categories = new HashMap<>();
+        categories.put("Exams", "Exam");
+        categories.put("Assignments", "Assignment");
+        categories.put("Projects", "Project");
+        history = new HashMap<>();
     }
 
 

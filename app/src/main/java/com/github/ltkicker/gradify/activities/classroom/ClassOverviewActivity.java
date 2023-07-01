@@ -1,14 +1,15 @@
 package com.github.ltkicker.gradify.activities.classroom;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
+import android.util.Log;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ClassEmptyTeacherActivity extends AppCompatActivity {
+public class ClassOverviewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String result = getIntent().getStringExtra("CLASS_ID");
+        Log.d("AWEVAWEVAWE", result);
     }
 }

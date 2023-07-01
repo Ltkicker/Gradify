@@ -8,18 +8,11 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.github.ltkicker.gradify.R;
-import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.grades.GradingSystem;
-import com.github.ltkicker.gradify.data.users.User;
 import com.github.ltkicker.gradify.data.users.UserCacheData;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -29,10 +22,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.GenericTypeIndicator;
 import com.google.firebase.database.ValueEventListener;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class ClassEditActivity extends AppCompatActivity {
+    DatabaseReference fbClasses;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,13 +35,6 @@ public class ClassEditActivity extends AppCompatActivity {
         TextView createClass = findViewById(R.id.clickable_createclass);
         createClass.setOnClickListener(view -> registerClass());
 
-    }
-
-    private void showPopup() {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        //fragmentTransaction.replace(R.id.popuptemp, new PopupFragment());
-        fragmentTransaction.commit();
     }
 
     private void registerClass() {
@@ -66,18 +53,17 @@ public class ClassEditActivity extends AppCompatActivity {
 
         // Create classroom then add to database
 
-
         DatabaseReference classrooms = FirebaseDatabase.getInstance().getReference("classrooms");
         String key = classrooms.push().getKey();
-        Classroom newClass = new Classroom(classCode, classSection, classDesc, roomNo, building, FirebaseAuth.getInstance().getUid(), key);
+        Classroom newClass = new Classroom(classCode, classSection, classDesc, roomNo, building, UserCacheData.getUsername(), key);
         classrooms.child(key).setValue(newClass);
 
-        DatabaseReference gradeSys = FirebaseDatabase.getInstance().getReference("grades");
-        GradingSystem newGradeSys = new GradingSystem();
-        gradeSys.child(key).setValue(newGradeSys);
+//        DatabaseReference gradeSys = FirebaseDatabase.getInstance().getReference("grades");
+//        GradingSystem newGradeSys = new GradingSystem();
+//        gradeSys.child(key).setValue(newGradeSys);
 
         // Add classroom to list of classrooms handled by teacher
-        DatabaseReference fbClasses = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
+        fbClasses = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
         fbClasses.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
