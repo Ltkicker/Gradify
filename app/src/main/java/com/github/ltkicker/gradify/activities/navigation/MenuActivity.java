@@ -1,6 +1,7 @@
 package com.github.ltkicker.gradify.activities.navigation;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
@@ -28,6 +29,21 @@ public class MenuActivity extends AppCompatActivity {
 
         ImageButton homepage = findViewById(R.id.menu_homepage);
         homepage.setOnClickListener(view -> navigate("HOMEPAGE"));
+
+        ImageButton gradesheet = findViewById(R.id.menu_gradesheet);
+        gradesheet.setOnClickListener(view -> navigate("GRADESHEET"));
+
+        ImageButton leaderboard = findViewById(R.id.menu_leaderboard);
+        leaderboard.setOnClickListener(view -> navigate("LEADERBOARD"));
+
+        ImageButton notification = findViewById(R.id.menu_notif);
+        leaderboard.setOnClickListener(view -> navigate("NOTIFICATION"));
+
+        ImageButton message = findViewById(R.id.menu_message);
+        message.setOnClickListener(view -> navigate("MESSAGE"));
+
+        ImageButton moreinfo = findViewById(R.id.menu_moreinfo);
+        moreinfo.setOnClickListener(view -> navigate("MOREINFO"));
 
     }
 
