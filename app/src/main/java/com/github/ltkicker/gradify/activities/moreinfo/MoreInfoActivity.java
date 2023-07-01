@@ -15,6 +15,13 @@ import com.github.ltkicker.gradify.data.users.UserCacheData;
 public class MoreInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(!UserCacheData.isAuthenticated()) {
+            Intent intent = new Intent(this, AuthPortalActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        }
+
         setContentView(R.layout.activity_c_moreicon_teacher_student);
 
         Button homepage = findViewById(R.id.img_home_button5);

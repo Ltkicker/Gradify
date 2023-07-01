@@ -33,8 +33,13 @@ public class Classroom implements Serializable {
     private String building;
     private int units;
 
-    public Classroom() {
+    private HashMap<String, String> categories; // Plural, Singular
 
+    public Classroom() {
+        categories = new HashMap<>();
+        categories.put("Exams", "Exam");
+        categories.put("Assignments", "Assignment");
+        categories.put("Projects", "Project");
     }
 
     public Classroom(String code, String section, String title, String room, String building, String teacher, String key) {
@@ -45,7 +50,11 @@ public class Classroom implements Serializable {
         this.building = building;
         this.teacher = teacher;
 
-        //FirebaseDatabase.getInstance().getReference("grades").child(key).setValue(new GradingSystem());
+        categories = new HashMap<>();
+        categories.put("Assignments", "Assignment");
+        categories.put("Exams", "Exam");
+        categories.put("Projects", "Project");
+        categories.put("Quizzes", "Quiz");
     }
 
     public void getData(Classroom classroom) {
@@ -139,6 +148,14 @@ public class Classroom implements Serializable {
 
     public void setUnits(int units) {
         this.units = units;
+    }
+
+    public void addStudent(String id) {
+        students.add(id);
+    }
+
+    public void removeStudent(String id) {
+        students.remove(id);
     }
 
 }
