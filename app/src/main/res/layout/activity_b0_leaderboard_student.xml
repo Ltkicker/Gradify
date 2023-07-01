@@ -10,13 +10,12 @@
 
     <View
         android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="434dp"
+        android:layout_height="879dp"
         android:background="@drawable/img_background2"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -109,16 +108,12 @@
         android:id="@+id/gradify_logo_add_cat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="377dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="269dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.572"
         app:srcCompat="@drawable/img_leaderboard_button"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -126,16 +121,12 @@
         android:id="@+id/gradifytext_add_cat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="487dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="159dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.743"
         app:srcCompat="@drawable/img_leaderboard_button"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -280,7 +271,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/img_leaderboard_button1"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -288,16 +279,11 @@
         android:id="@+id/quiz_text_bkg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="392dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="308dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.557"
         app:srcCompat="@drawable/img_leaderboard_button1"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -342,7 +328,7 @@
         android:layout_marginStart="167dp"
         android:layout_marginTop="285dp"
         android:layout_marginEnd="167dp"
-        android:layout_marginBottom="414dp"
+        android:layout_marginBottom="420dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category"
         android:textAlignment="center"
@@ -369,7 +355,7 @@
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category_date"
         android:textAlignment="center"
-        android:textSize="9sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -382,10 +368,6 @@
         android:id="@+id/quiz_text2"
         android:layout_width="145dp"
         android:layout_height="24dp"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="397dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="310dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category"
         android:textAlignment="center"
@@ -393,13 +375,9 @@
         android:textColorHint="#1ABF71"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="397dp" />
 
     <TextView
         android:id="@+id/quiz_date2"
@@ -412,7 +390,7 @@
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category_date"
         android:textAlignment="center"
-        android:textSize="9sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -455,7 +433,7 @@
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category_date"
         android:textAlignment="center"
-        android:textSize="9sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -498,7 +476,7 @@
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category_date"
         android:textAlignment="center"
-        android:textSize="9sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -531,14 +509,13 @@
 
     <TextView
         android:id="@+id/subject_section"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="604dp"
+        android:layout_width="109dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginBottom="607dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/subject_section"
+
         android:textColor="#80516E69"
         android:textColorHint="#678A84"
 
@@ -546,8 +523,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
@@ -565,8 +540,9 @@
         android:textColor="#80506D69"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
