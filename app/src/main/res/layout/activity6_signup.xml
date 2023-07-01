@@ -9,19 +9,17 @@
 	android:filterTouchesWhenObscured="true"
 	android:textAlignment="center">
 
-
 	<ImageView
 		android:id="@+id/background2"
-		android:layout_width="412dp"
-		android:layout_height="730dp"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
 		android:contentDescription="@string/background_desc"
 		android:scaleType="centerCrop"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:srcCompat="@drawable/img_background2"
-		tools:ignore="ImageContrastCheck,VisualLintBounds" />
+		app:srcCompat="@drawable/img_background2" />
 
 	<ImageView
 		android:id="@+id/iconback12"
@@ -47,7 +45,7 @@
 		android:id="@+id/clickable_signup2"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
-		android:layout_marginBottom="16dp"
+		android:layout_marginBottom="24dp"
 		android:background="@drawable/shape_password"
 		android:backgroundTintMode="src_over"
 		android:clickable="true"
