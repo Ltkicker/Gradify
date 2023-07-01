@@ -2,186 +2,162 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/p"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <View
-        android:id="@+id/main_background"
-        android:layout_width="469dp"
-        android:layout_height="784dp"
+        android:id="@+id/background_selectedclass5"
+        android:layout_width="502dp"
+        android:layout_height="794dp"
         android:background="@drawable/img_background1"
+        android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="VisualLintBounds" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/background_overlay3"
-        android:layout_width="419dp"
-        android:layout_height="740dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="48dp"
-
+        android:id="@+id/background_selectedclass7"
+        android:layout_width="413dp"
+        android:layout_height="759dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/img_background1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019"
-        tools:ignore="VisualLintBounds" />
-
-    <ImageView
-        android:id="@+id/img_gradifytext2"
-        android:layout_width="126dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="669dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:contextClickable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_gradify_logo5"
+        android:layout_width="77dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="-6dp"
+        app:layout_constraintBottom_toTopOf="@id/background_selectedclass7"
+        app:layout_constraintEnd_toStartOf="@id/img_gradifytext5"
+        app:layout_constraintStart_toStartOf="@id/iconback14"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_gradifybiglogo"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_gradifytext5"
+        android:layout_width="126dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="-6dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintBottom_toTopOf="@id/background_selectedclass7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_gradify_logo5"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_gradifybigtext"
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/img_gradify_logo2"
-        android:layout_width="77dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="654dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifybiglogo"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <Button
-        android:id="@+id/img_home_button2"
+        android:id="@+id/iconback14"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="331dp"
-        android:layout_marginBottom="654dp"
-        android:background="@drawable/img_menu_home"
-        android:backgroundTint="#00FFFFFF"
-        app:iconTint="#EDFFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/iconback3"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="133dp"
-        android:layout_marginEnd="331dp"
-        android:layout_marginBottom="550dp"
+        android:layout_marginEnd="50dp"
         android:background="@drawable/iconback"
         android:backgroundTint="#FFFEFE"
         android:clickable="true"
         android:contentDescription="@string/background_desc"
         android:focusable="true"
         android:foregroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/background_selectedclass7"
+        app:layout_constraintEnd_toEndOf="@id/img_gradify_logo5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:id="@+id/txtyourstudents"
+        android:id="@+id/text_yourstudent"
         android:layout_width="211dp"
         android:layout_height="50dp"
-        android:layout_gravity="center_horizontal|center"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="131dp"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="551dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="600dp"
         android:fontFamily="@font/poppins"
         android:gravity="center"
-        android:text="@string/your_students"
+        android:text="@string/your_classes"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/background_selectedclass5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TextSizeCheck" />
+        app:layout_constraintTop_toTopOf="@id/background_selectedclass7"
+        tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
 
-    <View
-        android:id="@+id/alrge_container"
-        android:layout_width="310dp"
-        android:layout_height="302dp"
-        android:layout_marginTop="245dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="184dp"
-        android:background="@drawable/frame2_shape"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/btn_all"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/btn_all"
+        app:layout_constraintBottom_toTopOf="@id/classList"
+        app:layout_constraintEnd_toStartOf="@id/btn_ongoing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_yourstudent"
+        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_ongoing"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/btn_ongoing"
+        app:layout_constraintBottom_toTopOf="@id/classList"
+        app:layout_constraintEnd_toStartOf="@id/btn_archived"
+        app:layout_constraintStart_toEndOf="@id/btn_all"
+        app:layout_constraintTop_toBottomOf="@id/text_yourstudent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_archived"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/btn_archived"
+        app:layout_constraintBottom_toTopOf="@id/classList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_ongoing"
+        app:layout_constraintTop_toBottomOf="@id/text_yourstudent"
+        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/classList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/background_selectedclass5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/btn_ongoing" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="201dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="290dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="391dp"
+    <ImageButton
+        android:id="@+id/btn_add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="311dp"
+        android:layout_marginTop="585dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="74dp"
+        android:clickable="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/plus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifybigtext"
-        tools:ignore="ContentDescription" />
-
-    <TextView
-        android:id="@+id/txt_interactive"
-        android:layout_width="248dp"
-        android:layout_height="79dp"
-        android:layout_gravity="center_horizontal|center"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="354dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="298dp"
-        android:fontFamily="@font/poppins"
-        android:gravity="center"
-        android:text="@string/popup_desc"
-        android:textColor="#616161"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextSizeCheck" />
-
-    <View
-        android:id="@+id/create_class"
-        android:layout_width="214dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="458dp"
-        android:layout_marginEnd="87dp"
-        android:layout_marginBottom="221dp"
-        android:background="@drawable/img_create_class"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
