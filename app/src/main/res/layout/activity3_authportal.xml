@@ -15,11 +15,12 @@
 		android:visibility="visible"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0"
 		app:srcCompat="@drawable/img_background2"
 		tools:ignore="ImageContrastCheck" />
-
 
 	<LinearLayout
 		android:id="@+id/linearLayout"
@@ -38,7 +39,7 @@
 			android:orientation="horizontal">
 
 			<TextView
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:fontFamily="@font/pragati_narrow"
 				android:gravity="center"
@@ -85,28 +86,36 @@
 		android:id="@+id/imgstudent"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="12dp"
-		android:layout_marginEnd="7dp"
+		android:layout_marginStart="237dp"
+		android:layout_marginTop="398dp"
+		android:layout_marginEnd="32dp"
+		android:layout_marginBottom="95dp"
 		android:backgroundTint="#00FFFFFF"
 		android:contentDescription="@string/student_img_desc"
 		android:src="@drawable/img_student"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toEndOf="@+id/imgteacher"
-		app:layout_constraintTop_toBottomOf="@+id/textchoose"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
 		tools:ignore="ImageContrastCheck" />
 
 	<ImageButton
 		android:id="@+id/imgteacher"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="12dp"
-		android:layout_marginEnd="19dp"
+		android:layout_marginStart="44dp"
+		android:layout_marginTop="398dp"
+		android:layout_marginEnd="227dp"
+		android:layout_marginBottom="96dp"
 		android:backgroundTint="#00FFFFFF"
 		android:contentDescription="@string/teacher_img_desc"
 		android:src="@drawable/img_teacher"
-		app:layout_constraintEnd_toStartOf="@+id/imgstudent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/textchoose"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0"
 		tools:ignore="ImageContrastCheck" />
 
 	<TextView
@@ -145,11 +154,11 @@
 		android:id="@+id/textchoose"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
+		android:layout_marginTop="31dp"
+		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/menu_choose_portal"
 		android:textColor="@color/white"
-		android:layout_marginTop="31dp"
-		android:fontFamily="@font/poppins"
 		android:textSize="24sp"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
