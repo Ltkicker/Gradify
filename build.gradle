@@ -1,9 +1,8 @@
 buildscript {
     repositories {
-        // Make sure that you have the following two repositories
-        gradlePluginPortal()
         google()  // Google's Maven repository
         mavenCentral()  // Maven Central repository
+        gradlePluginPortal() // Make sure that you have the following two repositories
     }
     dependencies {
         // Add the dependency for the Google services Gradle plugin

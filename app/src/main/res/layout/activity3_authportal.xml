@@ -1,0 +1,160 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/horizontalScrollView"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<ImageView
+		android:id="@+id/imgBackground"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:contentDescription="@string/background_desc"
+		android:scaleType="centerCrop"
+		android:visibility="visible"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/img_background2"
+		tools:ignore="ImageContrastCheck" />
+
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="191dp"
+		android:layout_height="265dp"
+		android:layout_marginTop="50dp"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/imgBackground">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/pragati_narrow"
+				android:gravity="center"
+				android:text="@string/cubix_text_1"
+				android:textColor="@color/black"
+				android:textSize="55sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/pragati_narrow"
+				android:text="@string/cubix_text_2"
+				android:textColor="@color/light_gray"
+				android:textSize="55sp"
+				android:textStyle="bold"
+				tools:ignore="TextContrastCheck" />
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="64dp"
+				android:layout_weight="1"
+				android:fontFamily="@font/pragati_narrow"
+				android:text="@string/cubix_text_3"
+				android:textColor="@color/black"
+				android:textSize="50sp"
+				tools:ignore="TextSizeCheck" />
+		</LinearLayout>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:contentDescription="@string/gradify_logo"
+			android:cropToPadding="false"
+			android:scaleType="centerInside"
+			android:src="@drawable/logo_cubixicon"
+			tools:ignore="ImageContrastCheck" />
+
+	</LinearLayout>
+
+
+	<ImageButton
+		android:id="@+id/imgstudent"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:layout_marginEnd="7dp"
+		android:backgroundTint="#00FFFFFF"
+		android:contentDescription="@string/student_img_desc"
+		android:src="@drawable/img_student"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/imgteacher"
+		app:layout_constraintTop_toBottomOf="@+id/textchoose"
+		tools:ignore="ImageContrastCheck" />
+
+	<ImageButton
+		android:id="@+id/imgteacher"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:layout_marginEnd="19dp"
+		android:backgroundTint="#00FFFFFF"
+		android:contentDescription="@string/teacher_img_desc"
+		android:src="@drawable/img_teacher"
+		app:layout_constraintEnd_toStartOf="@+id/imgstudent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textchoose"
+		tools:ignore="ImageContrastCheck" />
+
+	<TextView
+		android:id="@+id/txtstudent"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="11dp"
+		android:layout_marginEnd="2dp"
+		android:fontFamily="@font/poppins"
+		android:gravity="center"
+		android:text="@string/student_txt"
+		android:textColor="@color/white"
+		android:textSize="24sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/txtteacher"
+		app:layout_constraintTop_toBottomOf="@+id/imgstudent"
+		tools:ignore="TextContrastCheck" />
+
+	<TextView
+		android:id="@+id/txtteacher"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:layout_marginEnd="19dp"
+		android:fontFamily="@font/poppins"
+		android:gravity="center"
+		android:text="@string/teacher_txt"
+		android:textColor="@color/white"
+		android:textSize="24sp"
+		app:layout_constraintEnd_toStartOf="@+id/txtstudent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/imgteacher"
+		tools:ignore="TextContrastCheck" />
+
+	<TextView
+		android:id="@+id/textchoose"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/menu_choose_portal"
+		android:textColor="@color/white"
+		android:layout_marginTop="31dp"
+		android:fontFamily="@font/poppins"
+		android:textSize="24sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+		tools:ignore="TextContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
