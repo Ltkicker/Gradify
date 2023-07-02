@@ -28,6 +28,11 @@ public class FirebaseUtils {
         void onUpdate(ArrayList<Classroom> classList);
     }
 
+    public interface SubCategoryCount {
+        void onUpdate(long data);
+    }
+
+
     public interface ClassListByIdListener {
         void onUpdate(ArrayList<String> classListById);
     }

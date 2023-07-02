@@ -28,7 +28,7 @@ public class ClassroomHandler {
             }
         });
     }
-
+    //kinin nga method gigamit para kuhaon ang listahan sa mga classes na gi handle sa teacher sa database
     private void getClassesById(String username, boolean isTeacher, FirebaseUtils.ClassListByIdListener listener) {
         String path = getUserPath(username, isTeacher);
         uDataRef.child(path).addListenerForSingleValueEvent(new ValueEventListener() {
