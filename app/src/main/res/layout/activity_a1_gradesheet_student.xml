@@ -23,18 +23,10 @@
         android:id="@+id/gradesheet"
         android:layout_width="307dp"
         android:layout_height="53dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="554dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/iconback2"
         app:srcCompat="@drawable/img_gradesheet"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints"
+        tools:layout_editor_absoluteX="54dp" />
 
     <ImageView
         android:id="@+id/iconback2"
@@ -61,12 +53,10 @@
         android:id="@+id/bar"
         android:layout_width="430dp"
         android:layout_height="65dp"
-        android:layout_marginTop="197dp"
-        android:layout_marginBottom="469dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iconback2"
         app:srcCompat="@drawable/img_vctrbar"
         tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
@@ -74,7 +64,7 @@
         android:id="@+id/input_subject_code2"
         android:layout_width="115dp"
         android:layout_height="48dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="53dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#00FFEBEE"
         android:backgroundTintMode="src_over"
@@ -86,56 +76,70 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#757575"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintBottom_toBottomOf="@+id/bar"
+        app:layout_constraintEnd_toEndOf="@+id/iconback2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301"
+        app:layout_constraintTop_toTopOf="@+id/bar"
         tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
-        android:layout_width="292dp"
+        android:layout_width="190dp"
         android:layout_height="33dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="279dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="398dp"
         android:background="@color/white"
         app:iconifiedByDefault="false"
+        app:queryHint="Search name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="320dp">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <TextView
+        android:id="@+id/overall_percentage"
+        android:layout_width="123dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="461dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/overall_percentage"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:queryHint="Search name">
-
-    </androidx.appcompat.widget.SearchView>
+        app:layout_constraintVertical_bias="0.421" />
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAlignment="center">
+        android:id="@+id/relativeLayout2"
+        android:layout_width="412dp"
+        android:layout_height="397dp"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="361dp">
 
-        <HorizontalScrollView
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="389dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TableLayout
-                    android:layout_width="1179dp"
-                    android:layout_height="91dp"
+                    android:layout_width="395dp"
+                    android:layout_height="471dp"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="351dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="169dp"
-                    android:background="@color/white">
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp">
 
                     <TableRow
                         android:layout_width="match_parent"
@@ -148,8 +152,8 @@
                             android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/col1"
-                            android:textColor="@color/white"
+                            android:text="@string/act1"
+                            android:textColor="@color/black"
                             android:textSize="10sp" />
 
                         <TextView
@@ -158,311 +162,338 @@
                             android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/col2"
+                            android:text="@string/score"
                             android:textColor="@color/white"
                             android:textSize="10sp" />
 
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row2_color">
+
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="84dp"
                             android:layout_height="match_parent"
                             android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/col3"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:text="@string/Attendance"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
 
                         <TextView
-                            android:layout_width="64dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/col4"
+                            android:text="@string/score"
                             android:textColor="@color/white"
                             android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="65dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col5"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col6"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col7"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col8"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col9"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col10"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col11"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col12"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col13"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col14"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col15"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col16"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
-
 
                     </TableRow>
 
                     <TableRow
-                        android:layout_width="590dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row1_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/act2"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:background="@color/row2_color">
 
                         <TextView
-                            android:layout_width="56dp"
+                            android:layout_width="84dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row1ID"
+                            android:text="@string/Attendance"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row1_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/act3"
+                            android:textColor="@color/black"
                             android:textSize="10sp" />
 
                         <TextView
-                            android:layout_width="123dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row1Name"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row2_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/Attendance"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row1_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/act4"
+                            android:textColor="@color/black"
                             android:textSize="10sp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row2_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/Attendance"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row1_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/act5"
+                            android:textColor="@color/black"
                             android:textSize="10sp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row2_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/Attendance"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row1_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/act1.1"
+                            android:textColor="@color/black"
                             android:textSize="10sp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row2_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/act1.2"
+                            android:textColor="@color/black"
                             android:textSize="10sp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/row1_color">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/act1.3"
+                            android:textColor="@color/black"
                             android:textSize="10sp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
+                            android:layout_width="49dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/score"
+                            android:textColor="@color/white"
                             android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
 
                     </TableRow>
 
 
+
                 </TableLayout>
+
             </LinearLayout>
-        </HorizontalScrollView>
-
+        </ScrollView>
     </RelativeLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
