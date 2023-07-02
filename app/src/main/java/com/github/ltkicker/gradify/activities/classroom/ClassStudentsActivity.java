@@ -44,7 +44,6 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
             return;
         }
         setContentView(R.layout.activity9c_yourstudent_teacher);
-        studentList = findViewById(R.id.studentList);
         studentList.setLayoutManager(new LinearLayoutManager(this));
         studentList.setBackgroundResource(android.R.color.transparent);
         students = new ArrayList<>();
