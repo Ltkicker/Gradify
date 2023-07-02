@@ -78,13 +78,14 @@
         android:layout_marginBottom="410dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="@string/addcalass"
+        android:contentDescription="@string/addclass"
         android:radius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_menu_add_class" />
+        app:srcCompat="@drawable/img_menu_add_class"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <ImageButton
         android:id="@+id/menu_moreinfo"
@@ -114,7 +115,7 @@
         android:layout_marginBottom="289dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="@string/leaderboard"
+        android:contentDescription="@string/txtleaderboard_string"
         android:radius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -150,7 +151,7 @@
         android:layout_marginBottom="163dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="@string/message"
+        android:contentDescription="@string/txtmessages_string"
         android:radius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -168,7 +169,7 @@
         android:layout_marginBottom="163dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="@string/notif"
+        android:contentDescription="@string/txtnotifications_string"
         android:radius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
