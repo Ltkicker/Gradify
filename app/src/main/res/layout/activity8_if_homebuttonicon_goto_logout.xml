@@ -35,28 +35,9 @@
 
 
     <TextView
-        android:id="@+id/viewprofile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="194dp"
-        android:layout_marginTop="146dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginBottom="565dp"
-        android:text="@string/txtviewprofile_string"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
         android:id="@+id/full_name"
-        android:layout_width="201dp"
-        android:layout_height="34dp"
+        android:layout_width="208dp"
+        android:layout_height="30dp"
         android:layout_marginStart="194dp"
         android:layout_marginTop="110dp"
         android:layout_marginEnd="40dp"
@@ -64,6 +45,8 @@
         android:background="@drawable/frame2_shape"
         android:fontFamily="@font/poppins"
         android:hint="@string/fullname_student"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:text="@string/fullname_student"
         android:textColor="#616161"
         android:textColorHint="#F1E4E4"
@@ -410,6 +393,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_end="391dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

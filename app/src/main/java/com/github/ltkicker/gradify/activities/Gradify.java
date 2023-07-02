@@ -21,7 +21,7 @@ public class Gradify extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.au);
+        setContentView(R.layout.activity3_authportal);
 
         FirebaseUtils.init();
 

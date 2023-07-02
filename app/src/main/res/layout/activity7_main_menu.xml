@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/backgroud"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="420dp"
+        android:layout_height="843dp"
         android:contentDescription="@string/background_desc"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"

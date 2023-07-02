@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <View
         android:id="@+id/background_selectedclass"
-        android:layout_width="502dp"
-        android:layout_height="794dp"
+        android:layout_width="476dp"
+        android:layout_height="841dp"
         android:background="@drawable/img_background4"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
