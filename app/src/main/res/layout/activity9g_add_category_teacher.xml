@@ -282,6 +282,25 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/parent_category1_percent_editable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="454dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="273dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/parent_category1_percent"
+        android:textColor="#335C2C"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
     <ImageButton
         android:id="@+id/added_catgeory2"
         android:layout_width="265dp"
@@ -320,6 +339,25 @@
 
     <TextView
         android:id="@+id/parent_category2_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="249dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/parent_category2_percent"
+        android:textColor="#335C2C"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/parent_category2_percent_editable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="294dp"
@@ -391,6 +429,25 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/parent_category3_percent_editable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="502dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="225dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/parent_category3_percent"
+        android:textColor="#335C2C"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
     <ImageButton
         android:id="@+id/added_catgeory4"
         android:layout_width="265dp"
@@ -426,6 +483,25 @@
 
     <TextView
         android:id="@+id/parent_category4_percent"
+        android:layout_width="29dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="293dp"
+        android:layout_marginTop="526dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="204dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/parent_category4_percent"
+        android:textColor="#335C2C"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TextSizeCheck" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/parent_category4_percent_editable"
         android:layout_width="29dp"
         android:layout_height="18dp"
         android:layout_marginStart="293dp"

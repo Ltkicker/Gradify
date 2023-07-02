@@ -16,6 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -26,9 +27,9 @@ public class Classroom implements Serializable {
     private String title;
     private String section;
     private String teacher;
-    private List<String> students;
-    private List<String> days;
-    private List<String> time;
+    private ArrayList<String> students;
+    private ArrayList<String> days;
+    private ArrayList<String> time;
     private String room;
     private String building;
     private int units;
@@ -102,27 +103,27 @@ public class Classroom implements Serializable {
         this.teacher = teacher;
     }
 
-    public List<String> getStudents() {
+    public ArrayList<String> getStudents() {
         return students;
     }
 
-    public void setStudents(List<String> students) {
+    public void setStudents(ArrayList<String> students) {
         this.students = students;
     }
 
-    public List<String> getDays() {
+    public ArrayList<String> getDays() {
         return days;
     }
 
-    public void setDays(List<String> days) {
+    public void setDays(ArrayList<String> days) {
         this.days = days;
     }
 
-    public List<String> getTime() {
+    public ArrayList<String> getTime() {
         return time;
     }
 
-    public void setTime(List<String> time) {
+    public void setTime(ArrayList<String> time) {
         this.time = time;
     }
 
