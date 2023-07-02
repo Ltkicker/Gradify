@@ -24,15 +24,11 @@
         android:layout_width="307dp"
         android:layout_height="53dp"
         android:layout_marginStart="54dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="554dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toTopOf="@+id/bg_gradesheet"
         app:srcCompat="@drawable/img_gradesheet"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -61,12 +57,10 @@
         android:id="@+id/bar"
         android:layout_width="430dp"
         android:layout_height="65dp"
-        android:layout_marginTop="197dp"
-        android:layout_marginBottom="469dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconback2"
         app:srcCompat="@drawable/img_vctrbar"
         tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
@@ -74,7 +68,7 @@
         android:id="@+id/input_subject_code2"
         android:layout_width="115dp"
         android:layout_height="48dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="53dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#00FFEBEE"
         android:backgroundTintMode="src_over"
@@ -86,12 +80,10 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#757575"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintBottom_toBottomOf="@+id/bar"
+        app:layout_constraintEnd_toEndOf="@+id/iconback2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301"
+        app:layout_constraintTop_toBottomOf="@+id/gradesheet"
         tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.SearchView
@@ -115,13 +107,14 @@
     </androidx.appcompat.widget.SearchView>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textAlignment="center">
 
         <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="583dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -1065,7 +1058,6 @@
         </HorizontalScrollView>
 
     </RelativeLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

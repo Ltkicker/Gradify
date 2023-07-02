@@ -188,6 +188,17 @@
     <string name="row5ID">2020-0005</string>
     <string name="row5Name">Miranda, Genesis </string>
 
+    <string name="act1">Quiz 1 </string>
+    <string name="act2">Quiz 2 </string>
+    <string name="act3">Quiz 3 </string>
+    <string name="act4">Quiz 4 </string>
+    <string name="act5">Quiz 5 </string>
+    <string name="act1.1">Exam 1 </string>
+    <string name="act1.2">Exam 2 </string>
+    <string name="act1.3">Exam 3 </string>
+    <string name="Attendance">Attendance </string>
+    <string name="score">Total Score </string>
+
 
     <!-- about gradify strings -->
     <string name="text_version">Version</string>
