@@ -11,6 +11,6 @@ public class ClassGradeSheetActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a_gradesheet_teacher);
+        setContentView(R.layout.activity_a0_gradesheet_teacher);
     }
 }
