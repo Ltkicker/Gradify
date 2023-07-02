@@ -49,7 +49,7 @@ public class ClassOverviewActivity extends AppCompatActivity {
 //            }
 //        });
 
-       Classroom result = (Classroom) getIntent().getSerializableExtra("CLASS_ID");
+        Classroom result = (Classroom) getIntent().getSerializableExtra("CLASS_ID");
 
         subjectDescription.setText(result.getTitle());
         classCode.setText(result.getCode());

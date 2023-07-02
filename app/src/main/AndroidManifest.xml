@@ -36,6 +36,7 @@
         <activity android:name=".activities.navigation.LogoutActivity"/>
         <activity android:name=".activities.excel.ExcelUploadActivity"/>
         <activity android:name=".activities.moreinfo.MoreInfoActivity"/>
+        <activity android:name=".activities.classroom.ClassAddStudentManualActivity"/>
     </application>
 
 </manifest>

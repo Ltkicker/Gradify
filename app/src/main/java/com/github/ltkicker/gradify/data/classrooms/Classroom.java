@@ -158,4 +158,20 @@ public class Classroom implements Serializable {
         students.remove(id);
     }
 
+    public boolean equals(Classroom classroom) {
+        if (this.title.equals(classroom.title)
+        && this.section.equals(classroom.section)
+        && this.teacher.equals(classroom.teacher)
+        && this.students == classroom.students
+        && this.days == classroom.days
+        && this.time == classroom.time
+        && this.room.equals(classroom.room)
+        && this.building.equals(classroom.building)
+        && this.units == classroom.units) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

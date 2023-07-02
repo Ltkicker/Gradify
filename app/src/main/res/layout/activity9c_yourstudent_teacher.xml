@@ -142,13 +142,6 @@
 
     </androidx.appcompat.widget.SearchView>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/studentList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="362dp"
-        tools:layout_editor_absoluteY="243dp" />
-
     <ImageButton
         android:id="@+id/btn_add"
         android:layout_width="wrap_content"

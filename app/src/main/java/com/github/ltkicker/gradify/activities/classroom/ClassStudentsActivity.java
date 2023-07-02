@@ -2,6 +2,7 @@ package com.github.ltkicker.gradify.activities.classroom;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -50,6 +51,8 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
         adapter = new StudentListAdapter(this, students, this);
         studentList.setAdapter(adapter);
 
+        studentsById = new ArrayList<>();
+        students = new ArrayList<>();
         Classroom result = (Classroom) getIntent().getSerializableExtra("CLASS_ID");
 
         ImageButton buttonAdd = findViewById(R.id.btn_add);
@@ -63,8 +66,8 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
         });
 
         cRef = FirebaseDatabase.getInstance().getReference("classrooms");
-        dRef = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
-        dRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        dRef = FirebaseDatabase.getInstance().getReference("users");
+        dRef.child(UserCacheData.getUsername()).child("classrooms").child("asTeacher").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()) {
@@ -73,11 +76,13 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
                     });
                 }
                 for (String s : studentsById) {
-                    cRef.child(s).addListenerForSingleValueEvent(new ValueEventListener() {
+                    cRef.child(s).child("students").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            students.add(snapshot.getValue(User.class));
-                            adapter.notifyDataSetChanged();
+                            if(snapshot.exists()) {
+                                students.add(snapshot.getValue(User.class));
+                                adapter.notifyDataSetChanged();
+                            }
                         }
 
                         @Override
