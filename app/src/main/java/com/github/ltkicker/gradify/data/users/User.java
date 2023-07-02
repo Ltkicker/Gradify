@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class User {
 
-    private String lastName;
+    protected String lastName;
     private String firstName;
     private String middleName;
     private String suffixName;
