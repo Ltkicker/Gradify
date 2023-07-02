@@ -7,14 +7,14 @@
 
     <View
         android:id="@+id/main_background3"
-        tools:ignore="VisualLintBounds"
-        android:layout_width="426dp"
-        android:layout_height="750dp"
+        android:layout_width="432dp"
+        android:layout_height="847dp"
         android:background="@drawable/img_background1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds" />
 
     <View
         android:id="@+id/background_overlay2"
@@ -31,7 +31,6 @@
 
     <ImageView
         android:id="@+id/iconback15"
-        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="48dp"
@@ -46,27 +45,14 @@
         android:foregroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/img_gradifytext3"
-        tools:ignore="ContentDescription"
-        android:layout_width="126dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="669dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifybigtext" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/img_gradify_logo3"
-        tools:ignore="ContentDescription,ImageContrastCheck"
         android:layout_width="77dp"
         android:layout_height="58dp"
         android:layout_marginStart="122dp"
@@ -75,13 +61,15 @@
         android:layout_marginBottom="654dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifybiglogo" />
+        app:layout_constraintVertical_bias="0.108"
+        app:srcCompat="@drawable/img_gradifybiglogo"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <Button
         android:id="@+id/img_home_button6"
-        tools:ignore="SpeakableTextPresentCheck"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="48dp"
@@ -93,9 +81,28 @@
         app:iconTint="#EDFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/img_gradifytext3"
+        android:layout_width="126dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="669dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
+        app:srcCompat="@drawable/img_gradifybigtext"
+        tools:ignore="ContentDescription" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_idnum"
@@ -120,7 +127,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.689"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_lastname"
@@ -145,7 +154,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.332"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_firstname"
@@ -170,7 +181,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.453"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_middlename"
@@ -195,7 +208,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.571"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
 
     <TextView
         android:id="@+id/click_save"
@@ -223,7 +238,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_marginBaseline="10dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteY="574dp"
+        tools:layout_editor_absoluteY="636dp"
         tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

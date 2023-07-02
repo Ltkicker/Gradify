@@ -11,8 +11,8 @@
 
 	<ImageView
 		android:id="@+id/background2"
-		android:layout_width="0dp"
-		android:layout_height="wrap_content"
+		android:layout_width="429dp"
+		android:layout_height="821dp"
 		android:contentDescription="@string/background_desc"
 		android:scaleType="centerCrop"
 		app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +45,7 @@
 		android:id="@+id/clickable_signup2"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
-		android:layout_marginBottom="24dp"
+		android:layout_marginBottom="68dp"
 		android:background="@drawable/shape_password"
 		android:backgroundTintMode="src_over"
 		android:clickable="true"

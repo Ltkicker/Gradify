@@ -21,22 +21,20 @@ public class Gradify extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity0_main_loading_withlogo);
-        //setContentView(R.layout.activity9f_add_manually_teacher);
+        setContentView(R.layout.activity3_authportal);
 
         FirebaseUtils.init();
 
         // Add a delay before showing the next loading screen
         Handler handler = new Handler();
-      /*  handler.postDelayed(new Runnable() {
-            @Override
+        handler.postDelayed(new Runnable() {
+        @Override
             public void run() {
                 startActivity (new Intent(Gradify.this,AuthPortalActivity.class));
                 finish();
             }
 
         }, 2000); // 4000 milliseconds delay
-
 
     }
     private static final ArrayList<Activity> visitedAuthActivities = new ArrayList<>();
@@ -48,9 +46,5 @@ public class Gradify extends AppCompatActivity {
         for (Activity activity : visitedAuthActivities) {
             activity.finish();
         }
-
     }
-
-
-
 }

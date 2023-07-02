@@ -24,7 +24,7 @@ public class GradeSheet extends AppCompatActivity {
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a_gradesheet_teacher);
+        setContentView(R.layout.activity_a0_gradesheet_teacher);
         //recyclerView=findViewById(R.id.recyclerView);
         searchView=findViewById(R.id.searchView);
 

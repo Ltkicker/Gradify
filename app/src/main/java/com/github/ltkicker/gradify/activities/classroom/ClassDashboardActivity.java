@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class ClassDashboardActivity extends AppCompatActivity implements ClassListInterface {
-
+//public class ClassDashboardActivity extends AppCompatActivity {
     ArrayList<Classroom> classrooms;
     ArrayList<String> classroomsById;
     DatabaseReference dRef;
@@ -38,13 +39,36 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity9_yourclass);
+//        ImageView image = findViewById(R.id.yourstudent_img2);
+//        image.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(ClassDashboardActivity.this, ClassOverviewActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//    }
         if(UserCacheData.isTeacher()) {
             dRef = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
+            dRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if(!snapshot.exists()) {
+                        Intent intent = new Intent(ClassDashboardActivity.this, ClassEmptyActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
         } else {
             dRef = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asStudent");
         }
         cRef = FirebaseDatabase.getInstance().getReference("classrooms");
-
         addButton = findViewById(R.id.btn_add);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +85,6 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
 
         classList.setLayoutManager(new LinearLayoutManager(this));
         classList.setBackgroundResource(android.R.color.transparent);
-        ArrayList<Classroom> temp = new ArrayList<>();
         classrooms = new ArrayList<>();
         adapter = new ClassListAdapter(this, classrooms, this);
         classList.setAdapter(adapter);

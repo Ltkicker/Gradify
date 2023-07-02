@@ -7,8 +7,8 @@
 
     <View
         android:id="@+id/main_background2"
-        android:layout_width="459dp"
-        android:layout_height="762dp"
+        android:layout_width="437dp"
+        android:layout_height="844dp"
         android:background="@drawable/img_background1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,10 +39,29 @@
         android:layout_marginBottom="654dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
         app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_gradifytext4"
+        android:layout_width="126dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="669dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
+        app:srcCompat="@drawable/img_gradifybigtext"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/img_home_button4"
@@ -63,21 +82,6 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
-        android:id="@+id/img_gradifytext4"
-        android:layout_width="126dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="669dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifybigtext"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
         android:id="@+id/iconback13"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -93,8 +97,10 @@
         android:foregroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
@@ -102,10 +108,10 @@
         android:layout_width="211dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal|center"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="551dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="642dp"
         android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text="@string/your_classes"
@@ -114,10 +120,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941"
         tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
 
     <ImageView
@@ -135,8 +139,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/img_rectangle"
-        tools:ignore="ContentDescription"
-        app:tint="@color/popup_box" />
+        app:tint="@color/popup_box"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/create_class_button"
@@ -188,10 +192,10 @@
         android:layout_marginBottom="380dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/img_gradifybigtext"
         tools:ignore="ContentDescription" />
 

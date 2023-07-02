@@ -37,7 +37,7 @@ public class SignupActivity extends AppCompatActivity {
         TextInputEditText etLastName = findViewById(R.id.login_email1);
         TextInputEditText etFirstName = findViewById(R.id.input_first_name);
         TextInputEditText etMiddleName = findViewById(R.id.input_middle_name);
-        TextInputEditText etSuffixName = findViewById(R.id.input_suffix);
+        TextInputEditText etIdNumber = findViewById(R.id.input_suffix);
         TextInputEditText etEmail = findViewById(R.id.input_email);
         TextInputEditText etUsername = findViewById(R.id.input_username);
         TextInputEditText etPassword = findViewById(R.id.input_password);
@@ -45,7 +45,7 @@ public class SignupActivity extends AppCompatActivity {
         String lastName = etLastName.getText().toString();
         String firstName = etFirstName.getText().toString();
         String middleName = etMiddleName.getText().toString();
-        String suffixName = etSuffixName.getText().toString();
+        String idNumber = etIdNumber.getText().toString();
         String email = etEmail.getText().toString();
         String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
@@ -53,7 +53,7 @@ public class SignupActivity extends AppCompatActivity {
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
-                        User user = new User(UserCacheData.isTeacher(), lastName, firstName, middleName, suffixName, email, username);
+                        User user = new User(UserCacheData.isTeacher(), lastName, firstName, middleName, idNumber, email, username);
                         FirebaseDatabase.getInstance().getReference("users")
                                 .child(username)
                                 .setValue(user).addOnCompleteListener(t -> showMenu());

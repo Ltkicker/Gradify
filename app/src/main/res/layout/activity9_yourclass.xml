@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.205"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="VisualLintBounds" />
 
     <ImageView
@@ -58,10 +58,9 @@
         android:layout_marginBottom="654dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141"
         app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -105,63 +104,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/fullname5"
-        android:layout_width="198dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="286dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="438dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/subject_code"
-        android:textAlignment="textStart"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.312"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/yourstudent_img2"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="266dp"
-        android:layout_marginEnd="320dp"
-        android:layout_marginBottom="384dp"
-        android:cropToPadding="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <TextView
-        android:id="@+id/id_no2"
-        android:layout_width="196dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="307dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="400dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/subject_description"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <ImageButton
         android:id="@+id/btn_add"
         android:layout_width="60dp"
@@ -178,5 +120,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
