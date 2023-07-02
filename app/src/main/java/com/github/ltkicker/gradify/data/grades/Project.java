@@ -20,4 +20,8 @@ public class Project {
     public void setScore(double score) {
         this.score = score;
     }
+
+    //obect - ma create ni siya pag mag create sa frond end ug new project
+    Project project1 = new Project("Project 1", 97); // dapat ma create ni siya whenever mag buhat ug new exam
+
 }

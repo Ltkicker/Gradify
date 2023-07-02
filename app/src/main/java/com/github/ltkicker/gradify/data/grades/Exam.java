@@ -20,4 +20,10 @@ public class Exam {
     public void setScore(double score) {
         this.score = score;
     }
+
+
+    //object - ma create ni pag mag create ug new exam sa font end
+    Exam exam1 = new Exam("Exam 1", 40); // dapat ma create ni siya whenever mag buhat ug new exam
+    Exam exam2 = new Exam("Exam 2", 43);
+
 }
