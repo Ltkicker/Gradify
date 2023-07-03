@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
+import com.github.ltkicker.gradify.data.classrooms.UnregisteredStudent;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -45,13 +46,14 @@ public class ClassAddStudentManualActivity extends AppCompatActivity {
         addStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                storeStudent(idNum, result);
+                storeStudent(idNum, firstName, middleName, lastName, result);
             }
         });
     }
 
-    private void storeStudent(String idNum, Classroom classroom) {
-        DatabaseReference cRef = FirebaseDatabase.getInstance().getReference("classrooms");
+    private void storeStudent(String idNum, String firstName, String middleName, String lastName, Classroom classroom) {
+        DatabaseReference cRef = FirebaseDatabase.getInstance().getReference("unregistered");
+        UnregisteredStudent unregisteredStudent = new UnregisteredStudent(firstName, lastName, middleName);
         cRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -62,13 +64,13 @@ public class ClassAddStudentManualActivity extends AppCompatActivity {
                             cRef.child(key).addValueEventListener(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                    ArrayList<String> list;
+                                    ArrayList<UnregisteredStudent> list;
                                     if(snapshot.exists()) {
-                                        list = snapshot.getValue(new GenericTypeIndicator<ArrayList<String>>() {});
-                                        list.add(idNum);
+                                        list = snapshot.getValue(new GenericTypeIndicator<ArrayList<UnregisteredStudent>>() {});
+                                        list.add(unregisteredStudent);
                                     } else {
                                         list = new ArrayList<>();
-                                        list.add(idNum);
+                                        list.add(unregisteredStudent);
                                     }
                                     cRef.child(key).setValue(list)
                                             .addOnSuccessListener(unused -> {
