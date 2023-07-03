@@ -4,19 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#00FFFFFF">
+    android:foregroundGravity="center_vertical|clip_horizontal"
+    android:foregroundTint="#F8E9E9"
+    android:visibility="visible">
 
     <ImageView
         android:id="@+id/backlog_out_ground"
-        android:layout_width="563dp"
-        android:layout_height="968dp"
+        android:layout_width="1081dp"
+        android:layout_height="948dp"
+        android:layout_below="@+id/guideline"
+        android:layout_alignEnd="@+id/line"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-0dp"
+        android:layout_marginEnd="-17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/img_background2"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,NotSibling" />
+
+    <RelativeLayout
+        android:id="@+id/motionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.navigation.LogoutActivity">
 
     <ImageButton
         android:id="@+id/profile"
@@ -59,22 +73,24 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextSizeCheck" />
 
-    <ImageView
-        android:id="@+id/line"
-        android:layout_width="378dp"
-        android:layout_height="7dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="494dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_line"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="390dp"
+            android:layout_height="7dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="494dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_line"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <ImageView
+        <ImageView
         android:id="@+id/classes"
         android:layout_width="36dp"
         android:layout_height="36dp"
@@ -91,7 +107,7 @@
 
     <TextView
         android:id="@+id/Myclasses"
-        android:layout_width="wrap_content"
+        android:layout_width="104dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="252dp"
@@ -100,32 +116,14 @@
         android:fontFamily="@font/poppins"
         android:text="@string/txtmyclasses_string"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/iconback7"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="664dp"
-        android:background="@drawable/iconback"
-        android:backgroundTint="#FFFEFE"
-        android:clickable="true"
-        android:contentDescription="@string/background_desc"
-        android:focusable="true"
-        android:foregroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
 
     <ImageView
         android:id="@+id/leaderboard"
@@ -186,7 +184,7 @@
         android:fontFamily="@font/poppins"
         android:text="@string/txtnotifications_string"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -219,7 +217,7 @@
         android:fontFamily="@font/poppins"
         android:text="@string/txtmessages_string"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -267,7 +265,7 @@
         android:fontFamily="@font/poppins"
         android:text="@string/txtsettings_string"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -333,7 +331,7 @@
         android:fontFamily="@font/poppins"
         android:text="@string/txtaboutus_string"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -394,5 +392,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="391dp" />
+
+        <ImageView
+            android:id="@+id/iconback7"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/profile"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-61dp"
+            android:layout_marginEnd="327dp"
+            android:background="@drawable/iconback"
+            android:backgroundTint="#FFFEFE"
+            android:clickable="true"
+            android:contentDescription="@string/background_desc"
+            android:focusable="true"
+            android:foregroundTint="#FFFFFF"
+            tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

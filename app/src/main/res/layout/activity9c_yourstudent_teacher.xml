@@ -130,6 +130,16 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studentList"
+        android:layout_width="411dp"
+        android:layout_height="556dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="312dp"

@@ -16,8 +16,8 @@ import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LogoutActivity extends AppCompatActivity {
-
     public TextView button_text;
+    public TextView button_text2;
     public ImageView button;
 
     @SuppressLint("MissingInflatedId")
@@ -40,7 +40,7 @@ public class LogoutActivity extends AppCompatActivity {
         button_text = (TextView) findViewById(R.id.settings);
         button_text = (TextView) findViewById(R.id.help);
         button_text = (TextView) findViewById(R.id.aboutUs);
-        button_text = (TextView) findViewById(R.id.logout);
+        button_text2 = (TextView) findViewById(R.id.logout);
 
         ImageButton temp = findViewById(R.id.profile);
 
@@ -60,10 +60,12 @@ public class LogoutActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button_text.setOnClickListener(new View.OnClickListener() {
+
+        button_text2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(logOut.this,);
+                Intent intent = new Intent(LogoutActivity.this, AuthPortalActivity.class);
+                startActivity(intent);
             }
         });
     }
