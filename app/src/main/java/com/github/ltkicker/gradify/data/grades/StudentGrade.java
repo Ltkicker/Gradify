@@ -2,7 +2,7 @@ package com.github.ltkicker.gradify.data.grades;
 
 import java.util.ArrayList;
 
-public class StudentGrade extends total_percent_parent_category {
+public class StudentGrade{
 
         private String name;
         private ArrayList<Double> exams;
@@ -10,7 +10,6 @@ public class StudentGrade extends total_percent_parent_category {
         private ArrayList<Integer> attendance;
 
         public StudentGrade(String name) {
-            super(total_percent_parent_category;);
             this.name = name;
             this.exams = new ArrayList<>();
             this.projects = new ArrayList<>();

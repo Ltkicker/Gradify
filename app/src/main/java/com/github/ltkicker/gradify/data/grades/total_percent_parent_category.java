@@ -10,8 +10,8 @@ import com.google.firebase.database.ValueEventListener;
 
 public class total_percent_parent_category extends parent_category {
     long n;
-    DatabaseReference deRef =  FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7").child("students").child("parentcategory");
-    DatabaseReference subDeRef =  FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7").child("students").child("parentcategory").child("subcategory");
+    DatabaseReference deRef =  FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7").child("parentcategory");
+    DatabaseReference subDeRef =  FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7").child("students").child("id").child("parentcategory").child("subcategory");
     public total_percent_parent_category(String sub_category, int raw_score, double parent_category_percentage) {
         super(sub_category, raw_score, parent_category_percentage);
 
@@ -26,17 +26,15 @@ public class total_percent_parent_category extends parent_category {
             }
         };
 
-
-
         deRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                //childSnapshot - parentCategory 1-4
+                //secondSnapshot - parentCategory 1-4
                 //getChildren - subcategory
                 for (DataSnapshot secondSnapshot : snapshot.getChildren()) {
-
                     long ParentPercent = secondSnapshot.getValue(Integer.class);
                     String key = secondSnapshot.getKey();
+
 
                     subDeRef.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
@@ -60,8 +58,6 @@ public class total_percent_parent_category extends parent_category {
 
                         }
                     });
-
-
 
 
                 }

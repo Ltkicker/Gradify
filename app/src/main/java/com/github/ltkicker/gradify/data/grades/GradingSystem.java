@@ -14,9 +14,11 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class GradingSystem {
-    private String history; // Category, GradeInstance
+
+
     public GradingSystem(){
-        this.history = history;
+        
     }
+
 
 }

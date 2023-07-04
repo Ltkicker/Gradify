@@ -5,6 +5,7 @@ import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import java.util.List;
 
 public class Student extends User {
+
     private int yearlevel;
     private String college;
     private String course;
@@ -13,6 +14,7 @@ public class Student extends User {
     //Private string scholarshipstat;
 //Private string scholasticstat;
 //Private double prevgpa;
+
 
 
 
