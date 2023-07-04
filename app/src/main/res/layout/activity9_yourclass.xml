@@ -131,6 +131,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/classList"
+
         android:layout_width="409dp"
         android:layout_height="412dp"
         android:layout_alignTop="@+id/img_background_overlay"
@@ -140,4 +141,7 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="236dp" />
 </RelativeLayout>
+
+       
+
 

@@ -10,9 +10,10 @@ import com.google.firebase.database.ValueEventListener;
 
 public class total_percent_parent_category extends parent_category {
     long n;
-    DatabaseReference deRef =  FirebaseDatabase.getInstance().getReference("Grades").child("parentcategory");
-    public total_percent_parent_category(String sub_category, int raw_score, double parent_category_pertage) {
-        super(sub_category, raw_score, parent_category_pertage);
+    DatabaseReference deRef =  FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7").child("students").child("parentcategory");
+    DatabaseReference subDeRef =  FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7").child("students").child("parentcategory").child("subcategory");
+    public total_percent_parent_category(String sub_category, int raw_score, double parent_category_percentage) {
+        super(sub_category, raw_score, parent_category_percentage);
 
     }
 
@@ -24,23 +25,45 @@ public class total_percent_parent_category extends parent_category {
                 n = data;
             }
         };
+
+
+
         deRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 //childSnapshot - parentCategory 1-4
                 //getChildren - subcategory
-                for (DataSnapshot childSnapshot : snapshot.getChildren()) {
-                    listener.onUpdate(childSnapshot.getChildrenCount());
-                    int SumSubcategory = 0;
-                    int ParentPercent = 0;
-                    for(DataSnapshot rawScoreSnapshot: childSnapshot.getChildren()){
-                        SumSubcategory += rawScoreSnapshot.getValue(Integer.class);
-                    }
-                    for(DataSnapshot parentPercentSnapshot: childSnapshot.getChildren()){
-                        ParentPercent = parentPercentSnapshot.getValue(Integer.class);
-                    }
+                for (DataSnapshot secondSnapshot : snapshot.getChildren()) {
 
-                    int totalParentPercentage = (int) ((SumSubcategory/n) * ParentPercent);
+                    long ParentPercent = secondSnapshot.getValue(Integer.class);
+                    String key = secondSnapshot.getKey();
+
+                    subDeRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            for(DataSnapshot secondSnapshot : snapshot.getChildren()) {
+                                if (secondSnapshot.getKey().equals(key)) {
+                                    listener.onUpdate(secondSnapshot.getChildrenCount());
+                                    int SumSubcategory = 0;
+                                    for(DataSnapshot rawScoreSnapshot : secondSnapshot.getChildren()) {
+                                        SumSubcategory += rawScoreSnapshot.getValue(Integer.class);
+                                    }
+                                    long totalParentPercentage = ((SumSubcategory/n) * ParentPercent);
+                                }
+
+
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
+
+
+
                 }
             }
 
@@ -49,6 +72,7 @@ public class total_percent_parent_category extends parent_category {
                 Log.e("Property", error.toString());
             }
         });
+
 
     }
 
