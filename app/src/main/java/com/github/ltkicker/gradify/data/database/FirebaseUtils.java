@@ -10,6 +10,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class FirebaseUtils {
@@ -39,6 +40,35 @@ public class FirebaseUtils {
 
     public interface GetClassroomNameListener {
         void onFetch(String classroomById);
+    }
+
+    public interface ParentCategoryListener {
+        void onFetch(ArrayList<String> parentCategories);
+        void onCancel(String error);
+    }
+
+    public static void getAllParentCategories(String classroomId, ParentCategoryListener listener) {
+        FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("parentcategory")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if(snapshot.exists()) {
+                            ArrayList<String> values = new ArrayList<>();
+                            for(DataSnapshot child : snapshot.getChildren()) {
+                                values.add(child.getKey());
+                                listener.onFetch(values);
+                            }
+                        } else {
+                            listener.onCancel("Something went wrong");
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+        });
     }
 
 

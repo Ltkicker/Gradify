@@ -36,15 +36,15 @@ public class ClassOverviewActivity extends AppCompatActivity {
         TextView manageStudents = findViewById(R.id.manage_students1);
         TextView editCategory = findViewById(R.id.bt_add_category);
 
-        TextInputEditText etFirstPercent = findViewById(R.id.parent_category1_percent_editable);
-        TextInputEditText etSecondPercent = findViewById(R.id.parent_category2_percent_editable);
-        TextInputEditText etThirdPercent = findViewById(R.id.parent_category3_percent_editable);
-        TextInputEditText etFourthPercent = findViewById(R.id.parent_category4_percent_editable);
+//        TextInputEditText etFirstPercent = findViewById(R.id.parent_category1_percent_editable);
+//        TextInputEditText etSecondPercent = findViewById(R.id.parent_category2_percent_editable);
+//        TextInputEditText etThirdPercent = findViewById(R.id.parent_category3_percent_editable);
+//        TextInputEditText etFourthPercent = findViewById(R.id.parent_category4_percent_editable);
 
-        etFirstPercent.setVisibility(View.INVISIBLE);
-        etSecondPercent.setVisibility(View.INVISIBLE);
-        etThirdPercent.setVisibility(View.INVISIBLE);
-        etFourthPercent.setVisibility(View.INVISIBLE);
+//        etFirstPercent.setVisibility(View.INVISIBLE);
+//        etSecondPercent.setVisibility(View.INVISIBLE);
+//        etThirdPercent.setVisibility(View.INVISIBLE);
+//        etFourthPercent.setVisibility(View.INVISIBLE);
 
 
 //        });
@@ -90,20 +90,20 @@ public class ClassOverviewActivity extends AppCompatActivity {
                     secondPercent.setVisibility(View.INVISIBLE);
                     thirdPercent.setVisibility(View.INVISIBLE);
                     fourthPercent.setVisibility(View.INVISIBLE);
-                    etFirstPercent.setVisibility(View.VISIBLE);
-                    etSecondPercent.setVisibility(View.VISIBLE);
-                    etThirdPercent.setVisibility(View.VISIBLE);
-                    etFourthPercent.setVisibility(View.VISIBLE);
+//                    etFirstPercent.setVisibility(View.VISIBLE);
+//                    etSecondPercent.setVisibility(View.VISIBLE);
+//                    etThirdPercent.setVisibility(View.VISIBLE);
+//                    etFourthPercent.setVisibility(View.VISIBLE);
                     editCategory.setText("Finish Editing");
                 } else {
                     firstPercent.setVisibility(View.VISIBLE);
                     secondPercent.setVisibility(View.VISIBLE);
                     thirdPercent.setVisibility(View.VISIBLE);
                     fourthPercent.setVisibility(View.VISIBLE);
-                    etFirstPercent.setVisibility(View.INVISIBLE);
-                    etSecondPercent.setVisibility(View.INVISIBLE);
-                    etThirdPercent.setVisibility(View.INVISIBLE);
-                    etFourthPercent.setVisibility(View.INVISIBLE);
+//                    etFirstPercent.setVisibility(View.INVISIBLE);
+//                    etSecondPercent.setVisibility(View.INVISIBLE);
+//                    etThirdPercent.setVisibility(View.INVISIBLE);
+//                    etFourthPercent.setVisibility(View.INVISIBLE);
                     editCategory.setText("Add Category");
                 }
             }
