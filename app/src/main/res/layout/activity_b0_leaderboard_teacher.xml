@@ -257,6 +257,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subCategList"
         android:layout_width="337dp"
         android:layout_height="383dp"
         android:layout_marginStart="37dp"

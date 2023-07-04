@@ -82,7 +82,7 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
         classrooms = new ArrayList<>();
 
         // Used to display the classrooms
-
+        classList = findViewById(R.id.classList);
         classList.setLayoutManager(new LinearLayoutManager(this));
         classList.setBackgroundResource(android.R.color.transparent);
         classrooms = new ArrayList<>();

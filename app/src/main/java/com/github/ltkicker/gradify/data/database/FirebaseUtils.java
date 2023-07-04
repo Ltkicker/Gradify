@@ -37,6 +37,11 @@ public class FirebaseUtils {
         void onUpdate(ArrayList<String> classListById);
     }
 
+    public interface GetClassroomNameListener {
+        void onFetch(String classroomById);
+    }
+
+
     public static ArrayList<String> getClassListOfUsersById() {
         ArrayList<String> result = new ArrayList<>();
         DatabaseReference tempDataRef;

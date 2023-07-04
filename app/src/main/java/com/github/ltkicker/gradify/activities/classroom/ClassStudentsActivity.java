@@ -43,15 +43,17 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
             finish();
             return;
         }
+        studentsById = new ArrayList<>();
+        students = new ArrayList<>();
+
         setContentView(R.layout.activity9c_yourstudent_teacher);
+        studentList = findViewById(R.id.studentList);
         studentList.setLayoutManager(new LinearLayoutManager(this));
         studentList.setBackgroundResource(android.R.color.transparent);
         students = new ArrayList<>();
         adapter = new StudentListAdapter(this, students, this);
         studentList.setAdapter(adapter);
 
-        studentsById = new ArrayList<>();
-        students = new ArrayList<>();
         Classroom result = (Classroom) getIntent().getSerializableExtra("CLASS_ID");
 
         ImageButton buttonAdd = findViewById(R.id.btn_add);
@@ -74,22 +76,22 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
                         studentsById.add(data.getValue(String.class));
                     });
                 }
-                for (String s : studentsById) {
-                    cRef.child(s).child("students").addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if(snapshot.exists()) {
-                                students.add(snapshot.getValue(User.class));
-                                adapter.notifyDataSetChanged();
-                            }
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
-                    });
-                }
+//                for (String s : studentsById) {
+//                    cRef.child(s).child("students").addListenerForSingleValueEvent(new ValueEventListener() {
+//                        @Override
+//                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                            if(snapshot.exists()) {
+//                                students.add(snapshot.getValue(User.class));
+//                                adapter.notifyDataSetChanged();
+//                            }
+//                        }
+//
+//                        @Override
+//                        public void onCancelled(@NonNull DatabaseError error) {
+//
+//                        }
+//                    });
+//                }
             }
 
             @Override

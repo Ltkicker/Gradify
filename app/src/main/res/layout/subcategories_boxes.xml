@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
 
     <ImageView
         android:id="@+id/subcat_container"
@@ -51,8 +52,8 @@
 
     <TextView
         android:id="@+id/quiz_date"
-        android:layout_width="52dp"
-        android:layout_height="20dp"
+        android:layout_width="168dp"
+        android:layout_height="24dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category_date"
         android:textAlignment="center"
@@ -63,73 +64,5 @@
         app:layout_constraintStart_toStartOf="@+id/subcat_container"
         app:layout_constraintTop_toBottomOf="@+id/subcat_name_bg"
         tools:ignore="SmallSp,TextContrastCheck" />
-
-    <ImageView
-        android:id="@+id/img_mainfloatingbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subcat_name_bg"
-        app:srcCompat="@drawable/img_teachermainfloatingbox"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <TextView
-        android:id="@+id/text_delete"
-        android:layout_width="71dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/poppins"
-        android:text="@string/main_floatdelete"
-        android:textAlignment="center"
-        android:textColor="#80596F6B"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/img_mainfloatingbox"
-        app:layout_constraintEnd_toStartOf="@+id/img_editicon2"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toStartOf="@+id/img_mainfloatingbox"
-        tools:ignore="MissingConstraints,TextContrastCheck,TextSizeCheck" />
-
-    <TextView
-        android:id="@+id/text_edit"
-        android:layout_width="49dp"
-        android:layout_height="24dp"
-        android:clickable="true"
-        android:fontFamily="@font/poppins"
-        android:text="@string/main_floatedit"
-        android:textAlignment="center"
-        android:textColor="#80596F6B"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/text_delete"
-        app:layout_constraintEnd_toStartOf="@+id/img_editicon"
-        app:layout_constraintStart_toStartOf="@+id/img_mainfloatingbox"
-        app:layout_constraintTop_toTopOf="@+id/img_mainfloatingbox"
-        tools:ignore="KeyboardInaccessibleWidget,MissingConstraints,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck" />
-
-    <ImageButton
-        android:id="@+id/img_editicon"
-        android:layout_width="23dp"
-        android:layout_height="22dp"
-        android:layout_marginEnd="12dp"
-        android:background="@android:drawable/ic_menu_edit"
-        android:backgroundTint="#285129"
-        app:layout_constraintBottom_toTopOf="@+id/img_editicon2"
-        app:layout_constraintEnd_toEndOf="@+id/img_mainfloatingbox"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/quiz_date"
-        app:layout_constraintTop_toTopOf="@+id/img_mainfloatingbox"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <ImageButton
-        android:id="@+id/img_editicon2"
-        android:layout_width="23dp"
-        android:layout_height="22dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="12dp"
-        android:background="@android:drawable/ic_menu_delete"
-        android:backgroundTint="#285129"
-        app:layout_constraintBottom_toBottomOf="@+id/img_mainfloatingbox"
-        app:layout_constraintEnd_toEndOf="@+id/img_mainfloatingbox"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
