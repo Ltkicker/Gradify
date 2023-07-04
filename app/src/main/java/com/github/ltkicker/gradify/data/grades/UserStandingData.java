@@ -4,7 +4,6 @@ import android.util.Log;
 
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
 
-import org.apache.poi.poifs.property.Parent;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +15,7 @@ public class UserStandingData {
     String finalGradeFormatted;
     HashMap<ParentCategory, Double> breakdown = new HashMap<>();
 
-    public UserStandingData(String classroomId, String studentId) {
+    public UserStandingData(String studentId, String classroomId) {
         this.classroomId = classroomId;
         this.studentId = studentId;
     }
