@@ -108,11 +108,12 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
-        android:layout_width="402dp"
-        android:layout_height="603dp"
+        android:layout_width="405dp"
+        android:layout_height="616dp"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="109dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg_gradesheet">
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -125,7 +126,7 @@
 
                 <TableLayout
                     android:layout_width="1173dp"
-                    android:layout_height="226dp"
+                    android:layout_height="250dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="351dp"
                     android:layout_marginEnd="0dp"
@@ -149,7 +150,7 @@
 
                         <TextView
                             android:layout_width="49dp"
-                            android:layout_height="match_parent"
+                            android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
@@ -157,15 +158,6 @@
                             android:textColor="@color/white"
                             android:textSize="10sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col3"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
 
                         <TextView
                             android:layout_width="64dp"
@@ -257,15 +249,6 @@
                             android:textColor="@color/white"
                             android:textSize="10sp" />
 
-                        <TextView
-                            android:layout_width="70dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/col13"
-                            android:textColor="@color/white"
-                            android:textSize="10sp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -297,6 +280,46 @@
                             android:textColor="@color/white"
                             android:textSize="10sp" />
 
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/col17"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/col18"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/col19"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/col20"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
 
                     </TableRow>
 
@@ -322,13 +345,32 @@
                             android:text="@string/row1Name"
                             android:textSize="10sp" />
 
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row1Exam1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row1Exam2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row1Exam3"
                             android:textSize="10sp" />
 
                         <TextView
@@ -346,7 +388,43 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row1Project"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row1Quiz1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row1Quiz2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row1Quiz3"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row1Quiz4"
                             android:textSize="10sp" />
 
                         <TextView
@@ -358,13 +436,14 @@
                             android:text="@string/row"
                             android:textSize="10sp" />
 
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row1Attendance1"
                             android:textSize="10sp" />
 
                         <TextView
@@ -373,7 +452,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row1Attendance2"
                             android:textSize="10sp" />
 
                         <TextView
@@ -382,7 +461,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row1Attendance3"
                             android:textSize="10sp" />
 
                         <TextView
@@ -391,7 +470,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row1Attendance4"
                             android:textSize="10sp" />
 
                         <TextView
@@ -400,43 +479,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row1Attendance5"
                             android:textSize="10sp" />
 
                         <TextView
@@ -479,7 +522,25 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row2Exam1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row2Exam2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Exam3"
                             android:textSize="10sp" />
 
                         <TextView
@@ -497,7 +558,43 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row2Project"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row2Quiz1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row2Quiz2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row2Quiz3"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row2Quiz4"
                             android:textSize="10sp" />
 
                         <TextView
@@ -509,13 +606,14 @@
                             android:text="@string/row"
                             android:textSize="10sp" />
 
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row2Attendance1"
                             android:textSize="10sp" />
 
                         <TextView
@@ -524,7 +622,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row2Attendance2"
                             android:textSize="10sp" />
 
                         <TextView
@@ -533,7 +631,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row2Attendance3"
                             android:textSize="10sp" />
 
                         <TextView
@@ -542,7 +640,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row2Attendance4"
                             android:textSize="10sp" />
 
                         <TextView
@@ -551,43 +649,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row2Attendance5"
                             android:textSize="10sp" />
 
                         <TextView
@@ -630,7 +692,25 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row3Exam1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Exam2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Exam3"
                             android:textSize="10sp" />
 
                         <TextView
@@ -648,7 +728,43 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row3Project"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Quiz1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Quiz2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Quiz3"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Quiz4"
                             android:textSize="10sp" />
 
                         <TextView
@@ -660,13 +776,50 @@
                             android:text="@string/row"
                             android:textSize="10sp" />
 
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row3Attendance1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Attendance2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Attendance3"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Attendance4"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row3Attendance5"
                             android:textSize="10sp" />
 
                         <TextView
@@ -677,79 +830,6 @@
                             android:padding="10sp"
                             android:text="@string/row"
                             android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
 
                     </TableRow>
 
@@ -781,7 +861,25 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row4Exam1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row4Exam2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row4Exam3"
                             android:textSize="10sp" />
 
                         <TextView
@@ -799,7 +897,43 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row4Project"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row4Quiz1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row4Quiz2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row4Quiz3"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row4Quiz4"
                             android:textSize="10sp" />
 
                         <TextView
@@ -811,13 +945,14 @@
                             android:text="@string/row"
                             android:textSize="10sp" />
 
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row4Attendance1"
                             android:textSize="10sp" />
 
                         <TextView
@@ -826,7 +961,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row4Attendance2"
                             android:textSize="10sp" />
 
                         <TextView
@@ -835,7 +970,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row4Attendance3"
                             android:textSize="10sp" />
 
                         <TextView
@@ -844,7 +979,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row4Attendance4"
                             android:textSize="10sp" />
 
                         <TextView
@@ -853,43 +988,7 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row4Attendance5"
                             android:textSize="10sp" />
 
                         <TextView
@@ -932,7 +1031,25 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row5Exam1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Exam2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Exam3"
                             android:textSize="10sp" />
 
                         <TextView
@@ -950,7 +1067,43 @@
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row5Project"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Quiz1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Quiz2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Quiz3"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Quiz4"
                             android:textSize="10sp" />
 
                         <TextView
@@ -962,13 +1115,50 @@
                             android:text="@string/row"
                             android:textSize="10sp" />
 
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:gravity="center_horizontal"
                             android:padding="10sp"
-                            android:text="@string/row"
+                            android:text="@string/row5Attendance1"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Attendance2"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Attendance3"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Attendance4"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="@string/row5Attendance5"
                             android:textSize="10sp" />
 
                         <TextView
@@ -979,79 +1169,6 @@
                             android:padding="10sp"
                             android:text="@string/row"
                             android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center_horizontal"
-                            android:padding="10sp"
-                            android:text="@string/row"
-                            android:textSize="10sp" />
-
 
                     </TableRow>
 
