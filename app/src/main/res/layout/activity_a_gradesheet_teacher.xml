@@ -26,16 +26,11 @@
         android:id="@+id/gradesheet"
         android:layout_width="307dp"
         android:layout_height="53dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="554dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="125dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/img_gradesheet"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -43,33 +38,27 @@
         android:id="@+id/iconback2"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="331dp"
-        android:layout_marginBottom="550dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="34dp"
         android:background="@drawable/iconback"
         android:backgroundTint="#FFFEFE"
         android:clickable="true"
         android:contentDescription="@string/background_desc"
         android:focusable="true"
         android:foregroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/bar"
         android:layout_width="430dp"
         android:layout_height="65dp"
-        android:layout_marginTop="197dp"
-        android:layout_marginBottom="469dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradesheet"
         app:srcCompat="@drawable/img_vctrbar"
         tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
@@ -77,7 +66,7 @@
         android:id="@+id/input_subject_code2"
         android:layout_width="115dp"
         android:layout_height="48dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#00FFEBEE"
         android:backgroundTintMode="src_over"
@@ -89,30 +78,30 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#757575"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/gradesheet"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="54dp" />
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="316dp"
         android:layout_height="54dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="279dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="398dp"
+        android:layout_marginTop="8dp"
         android:background="@color/white"
         app:iconifiedByDefault="false"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar"
         app:queryHint="Search name">
 
     </androidx.appcompat.widget.SearchView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-150dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
