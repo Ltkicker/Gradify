@@ -74,11 +74,14 @@ public class StudentGradeManager{
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
                     for(DataSnapshot categorySnapshot : snapshot.getChildren()) {
+
                         Double categoryPercent = categorySnapshot.child("percentage").getValue(Double.class);
+                        ParentCategory category = new ParentCategory(categorySnapshot.getKey(), categoryPercent);
                         sRef.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 for(DataSnapshot studentSnapshot : snapshot.getChildren()) {
+                                    UserStandingData userStandingData = new UserStandingData(studentSnapshot.getKey(), classroomId);
                                     DataSnapshot parentCategory = studentSnapshot.child(categorySnapshot.getKey());
                                     double sumCategory = 0;
                                     long n = parentCategory.getChildrenCount();
@@ -86,6 +89,8 @@ public class StudentGradeManager{
                                         sumCategory += subCategory.getValue(Double.class);
                                     }
                                     double totalParentPercentage = (sumCategory / n) * categoryPercent;
+                                    userStandingData.addCategoryScore(category, totalParentPercentage);
+                                    userStandingData.printToLogcat();
                                 }
                             }
 
@@ -94,6 +99,7 @@ public class StudentGradeManager{
 
                             }
                         });
+
                     }
                 }
             }
