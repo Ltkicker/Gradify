@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Handler;
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
+import com.github.ltkicker.gradify.calculator.StudentGradeManager;
 import com.github.ltkicker.gradify.data.database.FirebaseUtils;
 import com.google.android.material.badge.ExperimentalBadgeUtils;
 
@@ -25,16 +26,18 @@ public class Gradify extends AppCompatActivity {
 
         FirebaseUtils.init();
 
-        // Add a delay before showing the next loading screen
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-        @Override
-            public void run() {
-                startActivity (new Intent(Gradify.this,AuthPortalActivity.class));
-                finish();
-            }
+        StudentGradeManager.startCalculate();
 
-        }, 2000); // 4000 milliseconds delay
+        // Add a delay before showing the next loading screen
+//        Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//        @Override
+//            public void run() {
+//                startActivity (new Intent(Gradify.this,AuthPortalActivity.class));
+//                finish();
+//            }
+//
+//        }, 2000); // 4000 milliseconds delay
 
     }
     private static final ArrayList<Activity> visitedAuthActivities = new ArrayList<>();
