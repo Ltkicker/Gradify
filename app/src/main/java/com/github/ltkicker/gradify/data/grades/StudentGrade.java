@@ -1,47 +1,24 @@
 package com.github.ltkicker.gradify.data.grades;
-import com.github.ltkicker.gradify.data.users.User;
 
 import java.util.ArrayList;
-import java.util.List;
 
+public class StudentGrade extends total_percent_parent_category {
 
-//public class StudentGrade extends User {
-   // public class Student {
-      //  private final String lastName;
-      //  private List<Quiz> quiz;
-      //  private List<Exam> exams;
-       // private List<Project> projects;
+        private String name;
+        private ArrayList<Double> exams;
+        private ArrayList<Double> projects;
+        private ArrayList<Integer> attendance;
 
-        //public Student(String lastname) {
-        //    this.lastName = lastname;
-         //   this.quiz = new ArrayList<>();
-           // this.exams = new ArrayList<>();
-          //  this.projects = new ArrayList<>();
-       // }
+        public StudentGrade(String name) {
+            super(total_percent_parent_category;);
+            this.name = name;
+            this.exams = new ArrayList<>();
+            this.projects = new ArrayList<>();
+            this.attendance = new ArrayList<>();
+        }
 
-      //  public void addAssignment(Quiz quiz) {
-      //      quiz.add(quiz);
-      //  }
+        public void addExamGrade(double grade) {
+            exams.add(grade);
+        }
 
-        //public void addExam(Exam exam) {
-        //    exams.add(exam);
-        //}
-
-       // public void addProject(Project project) {
-       //     projects.add(project);
-      //  }
-
-       // public List<Quiz>getAssignments() {
-       //     return quiz;
-      //  }
-
-      //  public List<Exam> getExams() {
-       //     return exams;
-       // }
-
-     //   public List<Project> getProjects() {
-       //     return projects;
-       // }
-    //}
-
-//}
+}

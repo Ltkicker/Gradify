@@ -35,7 +35,6 @@ public class LogoutActivity extends AppCompatActivity {
         button = (ImageView) findViewById(R.id.backlog_out_ground);
         button_text = (TextView) findViewById(R.id.Myclasses);
         button_text = (TextView) findViewById(R.id.txtleaderboards_string);
-        button_text = (TextView) findViewById(R.id.viewprofile);
         button_text = (TextView) findViewById(R.id.notifications);
         button_text = (TextView) findViewById(R.id.messages);
         button_text = (TextView) findViewById(R.id.settings);
