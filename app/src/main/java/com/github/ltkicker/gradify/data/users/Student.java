@@ -16,9 +16,7 @@ public class Student extends User {
 //Private double prevgpa;
 
 
-    public Student(String lastname){
-    this.lastName = lastname;
-    }
+
 
     public int getYearlevel() {
         return yearlevel;
