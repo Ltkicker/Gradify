@@ -134,6 +134,25 @@
     <string name="recordscores"> Score </string>
     <string name="recordnumbering"> No. </string>
 
+    <!-- recordscore_teacher xml -->
+    <string name="no1"> 1 </string>
+    <string name="no2"> 2 </string>
+    <string name="no3"> 3 </string>
+    <string name="no4"> 4 </string>
+    <string name="no5"> 5 </string>
+    <string name="no6"> 6 </string>
+    <string name="no7"> 7 </string>
+    <string name="no8"> 8 </string>
+    <string name="no9"> 9 </string>
+    <string name="no10"> 10 </string>
+
+    <string name="s1"> Student 1 score</string>
+    <string name="s2"> Student 2 score</string>
+    <string name="s3"> Student 3 score</string>
+    <string name="s4"> Student 4 score</string>
+    <string name="s5"> Student 5 score</string>
+
+
 
     <!-- student_log_in strings -->
     <string name="txtstudentlogin_string">Student Log in:</string>
