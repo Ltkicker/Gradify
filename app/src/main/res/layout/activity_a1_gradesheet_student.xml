@@ -23,30 +23,28 @@
         android:id="@+id/gradesheet"
         android:layout_width="307dp"
         android:layout_height="53dp"
-        app:layout_constraintTop_toBottomOf="@+id/iconback2"
+        android:layout_marginTop="97dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_gradesheet"
-        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints"
-        tools:layout_editor_absoluteX="54dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints" />
 
     <ImageView
         android:id="@+id/iconback2"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="331dp"
-        android:layout_marginBottom="550dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="49dp"
         android:background="@drawable/iconback"
         android:backgroundTint="#FFFEFE"
         android:clickable="true"
         android:contentDescription="@string/background_desc"
         android:focusable="true"
         android:foregroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
@@ -99,22 +97,16 @@
         android:id="@+id/overall_percentage"
         android:layout_width="123dp"
         android:layout_height="72dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="198dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="461dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/overall_percentage"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintTop_toBottomOf="@+id/gradesheet" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -167,6 +159,7 @@
                             android:textSize="10sp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -220,6 +213,7 @@
                             android:textSize="10sp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -273,6 +267,7 @@
                             android:textSize="10sp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -326,6 +321,7 @@
                             android:textSize="10sp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -415,6 +411,7 @@
                             android:textSize="10sp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -468,7 +465,6 @@
                             android:textSize="10sp" />
 
                     </TableRow>
-
 
 
                 </TableLayout>
