@@ -4,35 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
 
     <View
-        android:id="@+id/background4"
-        android:layout_width="423dp"
-        android:layout_height="841dp"
+        android:id="@+id/bg2"
+        android:layout_width="571dp"
+        android:layout_height="967dp"
+        android:layout_marginBottom="4dp"
         android:background="@drawable/img_background2"
-        android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.486"
+        tools:ignore="VisualLintBounds" />
 
     <ImageView
         android:id="@+id/gradify_logo3"
         android:layout_width="126dp"
         android:layout_height="21dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="669dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="96dp"
+        app:layout_constraintBottom_toTopOf="@+id/top3_bkg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032"
+        app:layout_constraintVertical_bias="0.546"
         app:srcCompat="@drawable/img_gradifysmalltext"
         tools:ignore="ContentDescription" />
 
@@ -40,16 +37,11 @@
         android:id="@+id/gradify_logo2"
         android:layout_width="77dp"
         android:layout_height="58dp"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="654dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="208dp"
+        app:layout_constraintBottom_toTopOf="@+id/top3_bkg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.592"
         app:srcCompat="@drawable/img_gradifysmall"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -57,38 +49,28 @@
         android:id="@+id/iconback6"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="664dp"
         android:background="@drawable/iconback"
         android:backgroundTint="#FFFEFE"
         android:clickable="true"
         android:contentDescription="@string/background_desc"
         android:focusable="true"
         android:foregroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/top3_bkg"
+        app:layout_constraintEnd_toStartOf="@+id/gradify_logo2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/top3_bkg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="336dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lower_rank_main_bkg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.975"
         app:srcCompat="@drawable/img_top_scorers_bkg"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -96,52 +78,72 @@
         android:id="@+id/leaderboard_title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/dp_top1"
+        app:layout_constraintEnd_toEndOf="@+id/top3_bkg"
+        app:layout_constraintStart_toStartOf="@+id/top3_bkg"
+        app:layout_constraintTop_toTopOf="@+id/top3_bkg"
         app:srcCompat="@drawable/img_leaderboard"
-        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
-        tools:layout_editor_absoluteY="99dp" />
+        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" /><![CDATA[
+
+    tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
 
     <ImageView
         android:id="@+id/stage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top3_bkg"
+        app:layout_constraintEnd_toEndOf="@+id/top3_bkg"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/top3_bkg"
         app:srcCompat="@drawable/img_stage"
-        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck"
-        tools:layout_editor_absoluteY="85dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/dp_top1"
         android:layout_width="64dp"
         android:layout_height="63dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/stage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_default_profile"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteY="164dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/dp_top2"
         android:layout_width="64dp"
         android:layout_height="63dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/dp_top1"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/top3_bkg"
+        app:layout_constraintTop_toBottomOf="@+id/leaderboard_title2"
         app:srcCompat="@drawable/img_default_profile"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="191dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/top3_rank1"
         android:layout_width="21dp"
         android:layout_height="33dp"
-        android:layout_marginStart="189dp"
-        android:layout_marginTop="309dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="388dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category_rank"
         android:textAlignment="center"
@@ -149,31 +151,19 @@
         android:textColorHint="#DFECE9"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/sub_category_title"
+        app:layout_constraintEnd_toStartOf="@+id/top3_rank3"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/top3_rank2"
+        app:layout_constraintTop_toBottomOf="@+id/stage"
+        app:layout_constraintVertical_bias="0.181"
         tools:ignore="TextContrastCheck" />
-
-    <ImageView
-        android:id="@+id/dp_top3"
-        android:layout_width="64dp"
-        android:layout_height="63dp"
-        app:srcCompat="@drawable/img_default_profile"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="191dp" />
 
     <TextView
         android:id="@+id/top3_rank2"
-        android:layout_width="45dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="316dp"
-        android:layout_marginEnd="261dp"
-        android:layout_marginBottom="384dp"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="72dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category_rank"
         android:textAlignment="center"
@@ -181,11 +171,9 @@
         android:textColorHint="#DEEBE8"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/sub_category_title"
+        app:layout_constraintStart_toStartOf="@+id/top3_bkg"
+        app:layout_constraintTop_toBottomOf="@+id/stage"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextContrastCheck,VisualLintOverlap" />
 
@@ -193,10 +181,7 @@
         android:id="@+id/top3_rank3"
         android:layout_width="36dp"
         android:layout_height="29dp"
-        android:layout_marginStart="259dp"
-        android:layout_marginTop="313dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="389dp"
+        android:layout_marginEnd="72dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category_rank"
         android:textAlignment="center"
@@ -204,82 +189,75 @@
         android:textColorHint="#DBE9E5"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/sub_category_title"
+        app:layout_constraintEnd_toEndOf="@+id/top3_bkg"
+        app:layout_constraintTop_toBottomOf="@+id/stage"
+        app:layout_constraintVertical_bias="0.133"
         tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/dp_top3"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/top3_bkg"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toEndOf="@+id/dp_top1"
+        app:layout_constraintTop_toBottomOf="@+id/leaderboard_title2"
+        app:srcCompat="@drawable/img_default_profile"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/student_firstname_top1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="186dp"
-        android:layout_marginTop="254dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="461dp"
+        android:layout_width="50dp"
+        android:layout_height="18dp"
         android:hint="@string/student_firstname"
         android:textColor="#803C6C4B"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintBottom_toBottomOf="@+id/stage"
+        app:layout_constraintEnd_toStartOf="@+id/student_firstname_top3"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toEndOf="@+id/student_firstname_top2"
+        app:layout_constraintTop_toTopOf="@+id/stage"
+        app:layout_constraintVertical_bias="0.562"
         tools:ignore="TextContrastCheck,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/student_firstname_top2"
-        android:layout_width="38dp"
+        android:layout_width="59dp"
         android:layout_height="19dp"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="277dp"
-        android:layout_marginEnd="184dp"
-        android:layout_marginBottom="435dp"
+        android:layout_marginStart="8dp"
         android:hint="@string/student_firstname"
         android:textColor="#803C6C4B"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/stage"
+        app:layout_constraintStart_toStartOf="@+id/stage"
+        app:layout_constraintTop_toTopOf="@+id/stage"
+        app:layout_constraintVertical_bias="0.571"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/student_firstname_top3"
-        android:layout_width="38dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="259dp"
-        android:layout_marginTop="277dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginBottom="435dp"
+        android:layout_width="50dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
         android:hint="@string/student_firstname"
         android:textColor="#803C6C4B"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/stage"
+        app:layout_constraintEnd_toEndOf="@+id/stage"
+        app:layout_constraintTop_toTopOf="@+id/stage"
+        app:layout_constraintVertical_bias="0.578"
         tools:ignore="TextContrastCheck,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/sub_category_title"
         android:layout_width="232dp"
         android:layout_height="20dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="368dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="343dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category"
         android:textAlignment="center"
@@ -287,34 +265,33 @@
         android:textColorHint="#FEFEFE"
         android:textSize="13sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/lower_rank_main_bkg"
+        app:layout_constraintEnd_toEndOf="@+id/top3_bkg"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="@+id/top3_bkg"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/lower_rank_main_bkg"
-        android:layout_width="409dp"
-        android:layout_height="424dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="390dp"
+        android:layout_width="375dp"
+        android:layout_height="401dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
         app:srcCompat="@drawable/img_scorers_bkg"
         tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/topScorerList"
-        android:layout_width="374dp"
-        android:layout_height="369dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="421dp" />
+        android:layout_width="315dp"
+        android:layout_height="345dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lower_rank_main_bkg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top3_bkg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
