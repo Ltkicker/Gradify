@@ -7,43 +7,56 @@
 
     <View
         android:id="@+id/background6"
-        android:layout_width="463dp"
-        android:layout_height="921dp"
+        android:layout_width="523dp"
+        android:layout_height="989dp"
         android:background="@drawable/img_background2"
-        android:contextClickable="false" />
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/gradify_logo8"
         android:layout_width="126dp"
         android:layout_height="21dp"
+        android:layout_marginEnd="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/record_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534"
         app:srcCompat="@drawable/img_gradifysmalltext"
-        tools:ignore="ContentDescription"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="87dp" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/gradify_logo9"
         android:layout_width="77dp"
         android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_gradifysmall"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="65dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/iconback16"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="29dp"
         android:background="@drawable/iconback"
         android:backgroundTint="#FFFEFE"
         android:clickable="true"
         android:contentDescription="@string/background_desc"
         android:focusable="true"
         android:foregroundTint="#FFFFFF"
-        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="65dp" />
-
+        app:layout_constraintEnd_toStartOf="@+id/gradify_logo9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
     <TextView
         android:id="@+id/clickable_save2"
         android:layout_width="201dp"
