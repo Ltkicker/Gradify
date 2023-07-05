@@ -9,15 +9,16 @@
 
     <View
         android:id="@+id/bg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="571dp"
+        android:layout_height="967dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/img_background2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.237"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57"
         tools:ignore="VisualLintBounds" />
 
     <Button
@@ -197,114 +198,112 @@
         android:id="@+id/terms"
         android:layout_width="239dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#CDFFEA"
         android:backgroundTintMode="src_over"
-        app:layout_constraintBottom_toTopOf="@+id/privacy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_bg" />
 
     <TextView
         android:id="@+id/text_terms"
         android:layout_width="165dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="74dp"
         android:fontFamily="@font/pragati_narrow"
         android:text="@string/terms_service"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/privacy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_bg"
         tools:ignore="TextContrastCheck,TextSizeCheck,VisualLintOverlap" />
 
     <View
         android:id="@+id/privacy"
         android:layout_width="239dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#CDFFEA"
         android:backgroundTintMode="src_over"
-        app:layout_constraintBottom_toTopOf="@+id/bg_cookies"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms" />
 
     <TextView
         android:id="@+id/text_privacy"
         android:layout_width="165dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/pragati_narrow"
         android:text="@string/privacy_policy"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/privacy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms"
         tools:ignore="TextContrastCheck,TextSizeCheck" />
 
     <View
         android:id="@+id/bg_cookies"
         android:layout_width="239dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#CDFFEA"
         android:backgroundTintMode="src_over"
-        app:layout_constraintBottom_toTopOf="@+id/bg_cookies2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacy" />
 
     <TextView
         android:id="@+id/text_cookies_use"
         android:layout_width="165dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/pragati_narrow"
         android:text="@string/cookies_use"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/bg_cookies2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacy"
         tools:ignore="TextContrastCheck,TextSizeCheck" />
 
     <View
         android:id="@+id/bg_cookies2"
         android:layout_width="239dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="#CDFFEA"
         android:backgroundTintMode="src_over"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_cookies" />
 
     <TextView
         android:id="@+id/text_cookies_use2"
         android:layout_width="165dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/pragati_narrow"
         android:text="@string/legal_notices"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_cookies"
         tools:ignore="TextContrastCheck,TextSizeCheck" /><![CDATA[
 
     /LinearLayout>
