@@ -11,13 +11,13 @@
 
     <ImageView
         android:id="@+id/backgroud"
-        android:layout_width="434dp"
-        android:layout_height="840dp"
+        android:layout_width="504dp"
+        android:layout_height="926dp"
         android:contentDescription="@string/background_desc"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/img_background2"
         tools:ignore="ImageContrastCheck"
-        tools:layout_editor_absoluteX="-13dp"
+        tools:layout_editor_absoluteX="-83dp"
         tools:layout_editor_absoluteY="-7dp" />
 
     <ImageView
