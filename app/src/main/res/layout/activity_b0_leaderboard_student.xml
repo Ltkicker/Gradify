@@ -16,10 +16,10 @@
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.107"
+        app:layout_constraintVertical_bias="0.1"
         tools:ignore="VisualLintBounds" />
 
     <ImageView
@@ -30,7 +30,7 @@
         android:layout_marginEnd="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifysmalltext"
+        app:srcCompat="@drawable/img_gradifybigtext"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -41,7 +41,7 @@
         android:layout_marginEnd="108dp"
         app:layout_constraintEnd_toEndOf="@+id/gradify_logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifysmall"
+        app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
