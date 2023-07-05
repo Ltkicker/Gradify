@@ -32,6 +32,8 @@
         <activity android:name=".activities.classroom.ClassOverviewActivity"/>
         <activity android:name=".activities.classroom.ClassEmptyActivity"/>
         <activity android:name=".activities.classroom.ClassStudentsActivity"/>
+        <activity android:name=".activities.classroom.ClassAddStudentManualActivity"/>
+        <activity android:name=".activities.classroom.ClassGradeSheetActivity"/>
         <activity android:name=".activities.leaderboard.LeaderboardActivity"/>
         <activity android:name=".activities.leaderboard.LeaderboardTopScorers"/>
         <activity android:name=".activities.leaderboard.StudentOverallStandingActivity"/>
@@ -40,7 +42,6 @@
         <activity android:name=".activities.navigation.LogoutActivity"/>
         <activity android:name=".activities.excel.ExcelUploadActivity"/>
         <activity android:name=".activities.moreinfo.MoreInfoActivity"/>
-        <activity android:name=".activities.classroom.ClassAddStudentManualActivity"/>
     </application>
 
 </manifest>

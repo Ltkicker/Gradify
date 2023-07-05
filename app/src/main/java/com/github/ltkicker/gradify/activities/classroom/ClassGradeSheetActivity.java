@@ -1,15 +1,112 @@
 package com.github.ltkicker.gradify.activities.classroom;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.data.database.FirebaseUtils;
+import com.github.ltkicker.gradify.data.database.SubCategoriesListener;
+import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
+import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
 
 public class ClassGradeSheetActivity extends AppCompatActivity {
+    private String classroodId = "NZItQ2M6m_y9IXcgOW7";
+    private TableLayout tableLayout;
+
+    DatabaseReference subCatRef = FirebaseDatabase.getInstance().getReference("grades")
+            .child(classroodId).child("subcategories");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a0_gradesheet_teacher);
+
+        Context context = this;
+
+        tableLayout = findViewById(R.id.gradeSheetLayout);
+
+        // ---- HEADERS
+        TableRow header = new TableRow(this);
+        TableRow.LayoutParams layoutParams = new TableRow.LayoutParams(
+                TableRow.LayoutParams.WRAP_CONTENT,
+                TableRow.LayoutParams.WRAP_CONTENT
+        );
+        layoutParams.setMargins(5, 5, 5, 5);
+        header.setBackgroundColor(ContextCompat.getColor(this, R.color.row1_color));
+        header.setLayoutParams(layoutParams);
+        tableLayout.addView(header);
+
+        // ID #
+        TextView idNumCol = new TextView(this);
+        idNumCol.setText("ID #");
+        header.addView(idNumCol);
+
+        // Student Name
+        TextView studentNameCol = new TextView(this);
+        studentNameCol.setText("Student Name");
+        header.addView(studentNameCol);
+
+        // Subcategories
+
+        // Fetching all parent categories
+        FirebaseUtils.ParentCategoryListener listener = new FirebaseUtils.ParentCategoryListener() {
+            @Override
+            public void onFetch(ArrayList<ParentCategory> parentCategories) {
+                for(ParentCategory parent : parentCategories) {
+                    subCatRef.child(parent.getName()).addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            if(snapshot.exists()) {
+                                for(DataSnapshot subCatSnapshot : snapshot.getChildren()) {
+                                    SubCategory subCateg = subCatSnapshot.getValue(SubCategory.class);
+                                    TextView subCatCol = new TextView(context);
+                                    subCatCol.setText(subCateg.getName());
+                                    header.addView(subCatCol);
+                                }
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
+                    TextView parentCol = new TextView(context);
+                    parentCol.setText(parent.getName() + " Avg");
+                    header.addView(parentCol);
+                }
+
+                TextView finalGradeCol = new TextView(context);
+                finalGradeCol.setText("Final Grade");
+                header.addView(finalGradeCol);
+
+            }
+
+            @Override
+            public void onCancel(String error) {
+
+            }
+        };
+
+        FirebaseUtils.getAllParentCategories(classroodId, listener);
+
     }
 }

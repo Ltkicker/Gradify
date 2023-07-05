@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
+import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
 import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -13,6 +14,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 public class FirebaseUtils {
     static DatabaseReference mDataRef = FirebaseDatabase.getInstance().getReference();
@@ -71,6 +73,30 @@ public class FirebaseUtils {
                     }
         });
     }
+
+//    public static void getAllSubCategories(String classroomId, SubCategoriesListener listener) {
+//        FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("subcategories")
+//                .addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                        if(snapshot.exists()) {
+//
+//                            for(DataSnapshot child : snapshot.getChildren()) {
+//                                values.put(new ParentCategory(child.getKey(), child.child("percentage").getValue(Double.class)));
+//                            }
+//                            listener.onFetch(values);
+//                        } else {
+//                            listener.onCancel("Something went wrong");
+//                        }
+//
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError error) {
+//
+//                    }
+//                });
+//    }
 
 
     public static ArrayList<String> getClassListOfUsersById() {
