@@ -7,8 +7,8 @@
 
     <View
         android:id="@+id/background7"
-        android:layout_width="423dp"
-        android:layout_height="841dp"
+        android:layout_width="457dp"
+        android:layout_height="933dp"
         android:background="@drawable/img_background2"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
