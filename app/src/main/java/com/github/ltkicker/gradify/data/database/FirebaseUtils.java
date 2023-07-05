@@ -3,6 +3,7 @@ package com.github.ltkicker.gradify.data.database;
 import androidx.annotation.NonNull;
 
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
+import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
 import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -43,7 +44,7 @@ public class FirebaseUtils {
     }
 
     public interface ParentCategoryListener {
-        void onFetch(ArrayList<String> parentCategories);
+        void onFetch(ArrayList<ParentCategory> parentCategories);
         void onCancel(String error);
     }
 
@@ -53,11 +54,11 @@ public class FirebaseUtils {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if(snapshot.exists()) {
-                            ArrayList<String> values = new ArrayList<>();
+                            ArrayList<ParentCategory> values = new ArrayList<>();
                             for(DataSnapshot child : snapshot.getChildren()) {
-                                values.add(child.getKey());
-                                listener.onFetch(values);
+                                values.add(new ParentCategory(child.getKey(), child.child("percentage").getValue(Double.class)));
                             }
+                            listener.onFetch(values);
                         } else {
                             listener.onCancel("Something went wrong");
                         }

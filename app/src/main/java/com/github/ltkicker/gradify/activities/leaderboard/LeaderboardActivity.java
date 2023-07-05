@@ -38,6 +38,9 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b0_leaderboard_teacher);
 
+        // Kato naning mag change2 ug category pero diari rako taman kay bungkag ang front end ani
+        keyReference = "parentcategory4";
+
         subCategList = findViewById(R.id.subCategList);
         subCategList.setLayoutManager(new LinearLayoutManager(this));
         subCategList.setBackgroundResource(android.R.color.transparent);
@@ -49,15 +52,12 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
         dRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot childSnapshot : snapshot.getChildren()) {
-                    if(childSnapshot.getKey().equals("parentcategory1")) {
-                        keyReference = childSnapshot.getKey();
-                        for(DataSnapshot thirdSnapshot : childSnapshot.getChildren()) {
-                            subCategories.add(thirdSnapshot.getValue(SubCategory.class));
-                            adapter.notifyDataSetChanged();
-                        }
-
+                if(snapshot.exists()) {
+                    subCategories.clear();
+                    for(DataSnapshot subSnapshot : snapshot.child(keyReference).getChildren()) {
+                        subCategories.add(subSnapshot.getValue(SubCategory.class));
                     }
+                    adapter.notifyDataSetChanged();
                 }
             }
 

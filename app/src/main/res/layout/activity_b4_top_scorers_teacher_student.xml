@@ -311,6 +311,7 @@
         tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topScorerList"
         android:layout_width="374dp"
         android:layout_height="369dp"
         tools:layout_editor_absoluteX="18dp"

@@ -415,7 +415,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/breakdown_title"
+        android:id="@+id/parentCategory1"
         android:layout_width="63dp"
         android:layout_height="18dp"
         android:layout_marginStart="96dp"
@@ -456,7 +456,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/breakdown_title2"
+        android:id="@+id/parentCategory2"
         android:layout_width="63dp"
         android:layout_height="18dp"
         android:layout_marginStart="244dp"

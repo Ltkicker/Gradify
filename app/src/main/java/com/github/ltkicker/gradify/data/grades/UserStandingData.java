@@ -24,7 +24,23 @@ public class UserStandingData {
         breakdown.put(category, score);
     }
 
+//    public void calculatePersonalGrade(String classroomId) {
+//        FirebaseDatabase.getInstance().getReference("grades").child(classroomId)
+//                .child("students").child(studentId).addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                        for(Da)
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError error) {
+//
+//                    }
+//                });
+//    }
+
     public void printToLogcat() {
+        Log.d("UserStandingData", " ");
         Log.d("UserStandingData", "From classroom: " + classroomId);
         Log.d("UserStandingData", "Student issued: " + studentId);
         Log.d("UserStandingData", "Grade Breakdown:");
@@ -33,7 +49,7 @@ public class UserStandingData {
             Double value = entry.getValue();
             Log.d("UserStandingData", "  - " + key + ": " + value);
         }
-        Log.d("UserStandingData", "From classroom: " + classroomId);
+        Log.d("UserStandingData", " ");
     }
 
 }
