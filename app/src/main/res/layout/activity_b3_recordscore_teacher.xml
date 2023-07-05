@@ -10,77 +10,51 @@
         android:layout_width="463dp"
         android:layout_height="921dp"
         android:background="@drawable/img_background2"
-        android:contextClickable="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        android:contextClickable="false" />
 
     <ImageView
         android:id="@+id/gradify_logo8"
         android:layout_width="126dp"
         android:layout_height="21dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="669dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_gradifysmalltext"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="87dp" />
 
     <ImageView
         android:id="@+id/gradify_logo9"
         android:layout_width="77dp"
         android:layout_height="58dp"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="654dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_gradifysmall"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="65dp" />
 
     <ImageView
         android:id="@+id/iconback16"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="664dp"
         android:background="@drawable/iconback"
         android:backgroundTint="#FFFEFE"
         android:clickable="true"
         android:contentDescription="@string/background_desc"
         android:focusable="true"
         android:foregroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="65dp" />
 
     <TextView
         android:id="@+id/clickable_save2"
         android:layout_width="201dp"
         android:layout_height="61dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/shape_signin"
         android:backgroundTint="@color/white"
         android:backgroundTintMode="src_over"
         android:clickable="true"
-        android:ellipsize="middle"
 
+        android:ellipsize="middle"
         android:focusable="true"
         android:fontFamily="@font/poppins"
         android:gravity="center|center_horizontal|center_vertical"
@@ -93,11 +67,10 @@
         android:textStyle="bold"
         android:visibility="visible"
         app:drawableBottomCompat="@drawable/round_corner"
-        app:layout_constraintBottom_toBottomOf="@+id/background6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recordedScoresList"
-        app:layout_constraintVertical_bias="0.0"
         app:layout_marginBaseline="10dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:visibility="visible" />
@@ -106,39 +79,33 @@
         android:id="@+id/record_text"
         android:layout_width="209dp"
         android:layout_height="22dp"
-        android:layout_marginTop="148dp"
         android:background="@drawable/record_score"
-        app:layout_constraintBottom_toTopOf="@+id/recordedScoresList"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/background6"
+        app:layout_constraintVertical_bias="0.895" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recordedScoresList"
         android:layout_width="323dp"
         android:layout_height="473dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="224dp"
+        app:layout_constraintBottom_toTopOf="@+id/clickable_save2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="324dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="39dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="16dp"
+
         android:background="#1AC171"
         app:layout_constraintBottom_toTopOf="@+id/recordedScoresList"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/record_text"
-
-        />
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/No"
@@ -153,17 +120,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/Name"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.454"
+        app:layout_constraintVertical_bias="0.562"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/Name"
         android:layout_width="40dp"
         android:layout_height="18dp"
-        android:layout_marginEnd="80dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/breakdown_title"
         android:text="@string/recordname"
@@ -172,16 +138,14 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/cscore"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.625"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="MissingConstraints,TextContrastCheck"
+        tools:layout_editor_absoluteX="180dp" />
 
     <TextView
         android:id="@+id/cscore"
         android:layout_width="40dp"
         android:layout_height="18dp"
-        android:layout_marginEnd="32dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/breakdown_title"
         android:text="@string/recordscores"
@@ -191,8 +155,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toEndOf="@+id/Name"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.625"
+        app:layout_constraintVertical_bias="0.461"
         tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
