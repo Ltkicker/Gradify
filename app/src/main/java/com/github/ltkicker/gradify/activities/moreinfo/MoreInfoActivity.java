@@ -20,13 +20,7 @@ public class MoreInfoActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_c_moreicon_teacher_student);
 
-//        Button homepage = findViewById(R.id.img_home_button5);
-//        homepage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MoreInfoActivity.this, MenuActivity.class);
-//            }
-//        });
+
     }
 }
 

@@ -36,21 +36,16 @@
         android:id="@+id/iconback2"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="331dp"
-        android:layout_marginBottom="550dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="29dp"
         android:background="@drawable/iconback"
         android:backgroundTint="#FFFEFE"
         android:clickable="true"
         android:contentDescription="@string/background_desc"
         android:focusable="true"
         android:foregroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
@@ -381,7 +376,8 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="10sp"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -551,7 +547,8 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="10sp"
+                            tools:ignore="SpeakableTextPresentCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -721,7 +718,8 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="10sp"
+                            tools:ignore="SpeakableTextPresentCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -890,7 +888,8 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="10sp"
+                            tools:ignore="SpeakableTextPresentCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1060,7 +1059,8 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="10sp"
+                            tools:ignore="SpeakableTextPresentCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"

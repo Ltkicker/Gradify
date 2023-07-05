@@ -22,10 +22,12 @@
         android:id="@+id/gradify_logo4"
         android:layout_width="126dp"
         android:layout_height="21dp"
-        app:srcCompat="@drawable/img_gradifysmalltext"
-        tools:ignore="ContentDescription"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="42dp" />
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_gradifybigtext"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/gradify_logo5"
@@ -35,7 +37,7 @@
         android:layout_marginEnd="108dp"
         app:layout_constraintEnd_toEndOf="@+id/gradify_logo4"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifysmall"
+        app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
@@ -59,12 +61,13 @@
         android:id="@+id/top3_bkg2"
         android:layout_width="315dp"
         android:layout_height="337dp"
+        android:layout_marginTop="66dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_top_scorers_bkg"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteY="66dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/overall_standing_text"
@@ -293,15 +296,17 @@
         android:id="@+id/value_equivalent_grade"
         android:layout_width="59dp"
         android:layout_height="41dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/value_equivalent_grade"
         android:textColor="#2F5E3D"
         android:textColorHint="#0AB310"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:ignore="VisualLintOverlap,TextContrastCheck"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="337dp" />
+        app:layout_constraintBottom_toTopOf="@+id/grade_system_breakdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="VisualLintOverlap,TextContrastCheck" />
 
     <TextView
         android:id="@+id/grade_system_breakdown"

@@ -22,12 +22,12 @@
         android:id="@+id/gradify_logo8"
         android:layout_width="126dp"
         android:layout_height="21dp"
-        android:layout_marginEnd="92dp"
+        android:layout_marginEnd="88dp"
         app:layout_constraintBottom_toTopOf="@+id/record_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.534"
-        app:srcCompat="@drawable/img_gradifysmalltext"
+        app:layout_constraintVertical_bias="0.38"
+        app:srcCompat="@drawable/img_gradifybigtext"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -38,7 +38,7 @@
         android:layout_marginEnd="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_gradifysmall"
+        app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView

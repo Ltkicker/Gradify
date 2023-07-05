@@ -11,17 +11,14 @@
 
     <ImageView
         android:id="@+id/backgroud"
-        android:layout_width="442dp"
-        android:layout_height="937dp"
+        android:layout_width="504dp"
+        android:layout_height="926dp"
         android:contentDescription="@string/background_desc"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_background2"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck,MissingConstraints"
+        tools:layout_editor_absoluteX="-83dp"
+        tools:layout_editor_absoluteY="-7dp" />
 
     <ImageView
         android:id="@+id/img_gradifybigtext"
@@ -48,7 +45,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/menu_homepage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -75,12 +72,12 @@
         android:layout_width="115dp"
         android:layout_height="99dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/addcalass"
         android:radius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/menu_menuleaderbaord"
+        app:layout_constraintBottom_toTopOf="@+id/menu_leaderboard"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/img_menu_add_class" />
 
@@ -89,17 +86,19 @@
         android:layout_width="115dp"
         android:layout_height="99dp"
         android:layout_marginStart="72dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="130dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/moreinfo"
         android:radius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_menu_accnt_info" />
 
     <ImageButton
-        android:id="@+id/menu_menuleaderbaord"
+        android:id="@+id/menu_leaderboard"
         android:layout_width="115dp"
         android:layout_height="99dp"
         android:layout_marginEnd="64dp"
@@ -117,6 +116,7 @@
         android:layout_width="115dp"
         android:layout_height="99dp"
         android:layout_marginStart="72dp"
+        android:layout_marginTop="228dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
@@ -126,6 +126,7 @@
         app:layout_constraintEnd_toStartOf="@+id/menu_addclass"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_menu_home" />
 
     <ImageButton
@@ -133,7 +134,7 @@
         android:layout_width="115dp"
         android:layout_height="99dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="180dp"
+        android:layout_marginBottom="255dp"
         android:background="@drawable/round_corner"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/message"
@@ -173,6 +174,7 @@
         app:layout_constraintEnd_toStartOf="@+id/menu_menuleaderbaord"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_menu_grade_sheet" />
+        app:srcCompat="@drawable/img_menu_grade_sheet"
+        tools:ignore="UnknownId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

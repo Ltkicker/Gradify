@@ -24,7 +24,7 @@ public class Gradify extends AppCompatActivity {
 
         FirebaseUtils.init();
 
-        StudentGradeManager.startCalculate2();
+
 
         // Add a delay before showing the next loading screen
         Handler handler = new Handler();
