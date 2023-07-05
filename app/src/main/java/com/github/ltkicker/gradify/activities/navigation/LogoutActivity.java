@@ -1,11 +1,12 @@
 package com.github.ltkicker.gradify.activities.navigation;
 
-import androidx.appcompat.app.AppCompatActivity;
+import  androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ public class LogoutActivity extends AppCompatActivity {
     public TextView button_text;
     public TextView button_text2;
     public ImageView button;
+    public Button backbutton;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,6 +33,15 @@ public class LogoutActivity extends AppCompatActivity {
             return;
         }
         setContentView(R.layout.activity8_if_homebuttonicon_goto_logout);
+        backbutton = (Button)findViewById(R.id.img_backbutton);
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogoutActivity.this,MenuActivity.class);
+                startActivity(intent);
+            }
+        });
 
         button = (ImageView) findViewById(R.id.backlog_out_ground);
         button_text = (TextView) findViewById(R.id.Myclasses);
@@ -53,6 +64,7 @@ public class LogoutActivity extends AppCompatActivity {
                 finish();
             }
         });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.classrooms.ClassListAdapter;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.classrooms.StudentListAdapter;
@@ -34,6 +36,8 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
     ArrayList<String> studentsById;
     ArrayList<User> students;
     StudentListAdapter adapter;
+
+    Button backbutton2;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +66,14 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
             public void onClick(View view) {
                 Intent intent = new Intent(ClassStudentsActivity.this, ClassAddStudentManualActivity.class);
                 intent.putExtra("CLASS_ID", result);
+                startActivity(intent);
+            }
+        });
+        backbutton2 = (Button)findViewById(R.id.img_backbutton2);
+        backbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClassStudentsActivity.this, ClassOverviewActivity.class);
                 startActivity(intent);
             }
         });

@@ -393,21 +393,24 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="391dp" />
 
-        <ImageView
-            android:id="@+id/iconback7"
+        <Button
+            android:id="@+id/img_backbutton"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_alignTop="@+id/profile"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="-61dp"
-            android:layout_marginEnd="327dp"
-            android:background="@drawable/iconback"
-            android:backgroundTint="#FFFEFE"
-            android:clickable="true"
-            android:contentDescription="@string/background_desc"
-            android:focusable="true"
-            android:foregroundTint="#FFFFFF"
-            tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="312dp"
+            android:layout_marginBottom="654dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:foreground="@drawable/iconback"
+            android:foregroundTint="@color/white"
+            app:iconTint="#EDFFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
     </RelativeLayout>
 
