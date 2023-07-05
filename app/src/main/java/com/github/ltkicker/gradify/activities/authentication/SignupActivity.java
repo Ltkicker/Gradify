@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.users.User;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
@@ -22,7 +22,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity6_signup);
 
-        if (UserCacheData.isAuthenticated()) {
+        if (CacheData.isAuthenticated()) {
             showMenu();
             finish();
             return;
@@ -53,7 +53,7 @@ public class SignupActivity extends AppCompatActivity {
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
-                        User user = new User(UserCacheData.isTeacher(), lastName, firstName, middleName, idNumber, email, username);
+                        User user = new User(CacheData.isTeacher(), lastName, firstName, middleName, idNumber, email, username);
                         FirebaseDatabase.getInstance().getReference("users")
                                 .child(username)
                                 .setValue(user).addOnCompleteListener(t -> showMenu());

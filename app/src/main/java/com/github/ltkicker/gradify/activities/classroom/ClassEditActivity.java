@@ -2,7 +2,6 @@ package com.github.ltkicker.gradify.activities.classroom;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,10 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
-import com.github.ltkicker.gradify.data.grades.GradingSystem;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,7 +28,7 @@ public class ClassEditActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(!UserCacheData.isAuthenticated()) {
+        if(!CacheData.isAuthenticated()) {
             Intent intent = new Intent(this, AuthPortalActivity.class);
             startActivity(intent);
             finish();
@@ -63,11 +60,11 @@ public class ClassEditActivity extends AppCompatActivity {
 
         DatabaseReference classrooms = FirebaseDatabase.getInstance().getReference("classrooms");
         String key = classrooms.push().getKey();
-        Classroom newClass = new Classroom(classCode, classSection, classDesc, roomNo, building, UserCacheData.getUsername(), key);
+        Classroom newClass = new Classroom(classCode, classSection, classDesc, roomNo, building, CacheData.getUsername(), key);
         classrooms.child(key).setValue(newClass);
 
         // Add classroom to list of classrooms handled by teacher
-        fbClasses = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
+        fbClasses = FirebaseDatabase.getInstance().getReference("users").child(CacheData.getUsername()).child("classrooms").child("asTeacher");
         fbClasses.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

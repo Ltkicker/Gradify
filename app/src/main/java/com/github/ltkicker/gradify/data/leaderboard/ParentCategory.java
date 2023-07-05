@@ -1,9 +1,5 @@
 package com.github.ltkicker.gradify.data.leaderboard;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.TimeZone;
-
 public class ParentCategory {
 
     private String name;

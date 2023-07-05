@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +15,7 @@ import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.data.classrooms.ClassListAdapter;
 import com.github.ltkicker.gradify.data.classrooms.ClassListInterface;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -48,8 +47,8 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
 //            }
 //        });
 //    }
-        if(UserCacheData.isTeacher()) {
-            dRef = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
+        if(CacheData.isTeacher()) {
+            dRef = FirebaseDatabase.getInstance().getReference("users").child(CacheData.getUsername()).child("classrooms").child("asTeacher");
             dRef.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -66,7 +65,7 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
                 }
             });
         } else {
-            dRef = FirebaseDatabase.getInstance().getReference("users").child(UserCacheData.getUsername()).child("classrooms").child("asStudent");
+            dRef = FirebaseDatabase.getInstance().getReference("users").child(CacheData.getUsername()).child("classrooms").child("asStudent");
         }
         cRef = FirebaseDatabase.getInstance().getReference("classrooms");
         addButton = findViewById(R.id.btn_add);

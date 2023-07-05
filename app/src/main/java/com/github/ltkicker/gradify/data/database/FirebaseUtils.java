@@ -4,17 +4,14 @@ import androidx.annotation.NonNull;
 
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
-import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 
 public class FirebaseUtils {
     static DatabaseReference mDataRef = FirebaseDatabase.getInstance().getReference();
@@ -102,11 +99,11 @@ public class FirebaseUtils {
     public static ArrayList<String> getClassListOfUsersById() {
         ArrayList<String> result = new ArrayList<>();
         DatabaseReference tempDataRef;
-        if(UserCacheData.isTeacher()) {
-            tempDataRef = mDataRef.child("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
+        if(CacheData.isTeacher()) {
+            tempDataRef = mDataRef.child("users").child(CacheData.getUsername()).child("classrooms").child("asTeacher");
 
         } else {
-            tempDataRef = mDataRef.child("users").child(UserCacheData.getUsername()).child("classrooms").child("asStudent");
+            tempDataRef = mDataRef.child("users").child(CacheData.getUsername()).child("classrooms").child("asStudent");
 
         }
         tempDataRef.addListenerForSingleValueEvent(new ValueEventListener() {

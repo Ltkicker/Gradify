@@ -11,8 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
-import com.google.android.material.textfield.TextInputEditText;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -24,7 +23,7 @@ public class ClassOverviewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(!UserCacheData.isAuthenticated()) {
+        if(!CacheData.isAuthenticated()) {
             Intent intent = new Intent(this, AuthPortalActivity.class);
             startActivity(intent);
             finish();
