@@ -1,29 +1,48 @@
 package com.github.ltkicker.gradify.data.users;
 
+import com.github.ltkicker.gradify.data.classrooms.Classroom;
+
+import java.util.ArrayList;
+
 public class User {
 
-    private String lastName;
+    protected String lastName;
     private String firstName;
     private String middleName;
-    private String suffixName;
     private String email;
     private String username;
     private String gender;
+    private String idNumber;
+
+    private ArrayList<Classroom> classrooms;
+
+    private boolean isTeacher;
+
+    private boolean hasClassrooms;
 
 
     public User() {
     }
 
-    public User(String lastName, String firstName, String middleName, String suffixName, String email, String username, String gender) {
+    public User(boolean isTeacher, String lastName, String firstName, String middleName, String idNumber, String email, String username) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.middleName = middleName;
-        this.suffixName = suffixName;
         this.email = email;
         this.username = username;
-        this.gender = gender;
+        this.isTeacher = isTeacher;
+        //this.gender = gender;
+        this.hasClassrooms = false;
+        this.idNumber = idNumber;
     }
 
+    public boolean isTeacher() {
+        return isTeacher;
+    }
+
+    public void setTeacher(boolean teacher) {
+        isTeacher = teacher;
+    }
     public String getLastName() {
         return lastName;
     }
@@ -46,14 +65,6 @@ public class User {
 
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
-    }
-
-    public String getSuffixName() {
-        return suffixName;
-    }
-
-    public void setSuffixName(String suffixName) {
-        this.suffixName = suffixName;
     }
 
     public String getEmail() {
@@ -80,5 +91,20 @@ public class User {
         this.gender = gender;
     }
 
+    public ArrayList<Classroom> getClassrooms() {
+        return classrooms;
+    }
+
+    public void setClassrooms(ArrayList<Classroom> classrooms) {
+        this.classrooms = classrooms;
+    }
+
+    public String getFullName() {
+        return firstName + " " + middleName + " " + lastName + " ";
+    }
+
+    public String getIdNumber() {
+        return idNumber;
+    }
 
 }

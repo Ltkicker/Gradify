@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "358446607620",
-    "firebase_url": "https://gradify-4bd5e-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "gradify-4bd5e",
-    "storage_bucket": "gradify-4bd5e.appspot.com"
+    "project_number": "451345456786",
+    "firebase_url": "https://gradify-8d9d9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "gradify-8d9d9",
+    "storage_bucket": "gradify-8d9d9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:358446607620:android:c444989eebe837b0acb451",
+        "mobilesdk_app_id": "1:451345456786:android:85e6c794d1fbb507c2d04b",
         "android_client_info": {
           "package_name": "com.github.ltkicker.gradify"
         }
       },
       "oauth_client": [
         {
-          "client_id": "358446607620-5unmo04sh2ilf0p73uk3gphgl3e3ijrj.apps.googleusercontent.com",
+          "client_id": "451345456786-nb31kvq536q334l86cugh5duivdftqa6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBHcWhgt9g-VsOxPrPqjgyUGcGPZvktFnQ"
+          "current_key": "AIzaSyCjei9G63-oE7BTg3DDPPOnCy-W0MA9UjA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "358446607620-5unmo04sh2ilf0p73uk3gphgl3e3ijrj.apps.googleusercontent.com",
+              "client_id": "451345456786-nb31kvq536q334l86cugh5duivdftqa6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

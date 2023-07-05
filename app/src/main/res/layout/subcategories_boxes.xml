@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/subcat_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364"
+        app:srcCompat="@drawable/img_leaderboard_button"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/subcat_name_bg"
+        android:layout_width="212dp"
+        android:layout_height="31dp"
+        android:background="@drawable/shape_password"
+        app:layout_constraintBottom_toBottomOf="@+id/subcat_container"
+        app:layout_constraintEnd_toEndOf="@+id/subcat_container"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/subcat_container"
+        app:layout_constraintTop_toTopOf="@+id/subcat_container"
+        app:layout_constraintVertical_bias="0.175"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/quiz_text"
+        android:layout_width="134dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/sub_category"
+        android:textAlignment="center"
+        android:textColor="#1AC171"
+        android:textColorHint="#1AC071"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/subcat_name_bg"
+        app:layout_constraintEnd_toEndOf="@+id/subcat_name_bg"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="@+id/subcat_name_bg"
+        app:layout_constraintTop_toTopOf="@+id/subcat_name_bg"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/quiz_date"
+        android:layout_width="168dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/sub_category_date"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/subcat_container"
+        app:layout_constraintEnd_toEndOf="@+id/subcat_container"
+        app:layout_constraintStart_toStartOf="@+id/subcat_container"
+        app:layout_constraintTop_toBottomOf="@+id/subcat_name_bg"
+        tools:ignore="SmallSp,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

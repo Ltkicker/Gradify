@@ -15,11 +15,12 @@
 		android:visibility="visible"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="1.0"
 		app:srcCompat="@drawable/img_background2"
 		tools:ignore="ImageContrastCheck" />
-
 
 	<LinearLayout
 		android:id="@+id/linearLayout"
@@ -38,7 +39,7 @@
 			android:orientation="horizontal">
 
 			<TextView
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:fontFamily="@font/pragati_narrow"
 				android:gravity="center"
@@ -85,12 +86,13 @@
 		android:id="@+id/imgstudent"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="12dp"
-		android:layout_marginEnd="7dp"
+		android:layout_marginTop="24dp"
+		android:layout_marginEnd="36dp"
 		android:backgroundTint="#00FFFFFF"
 		android:contentDescription="@string/student_img_desc"
 		android:src="@drawable/img_student"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
 		app:layout_constraintStart_toEndOf="@+id/imgteacher"
 		app:layout_constraintTop_toBottomOf="@+id/textchoose"
 		tools:ignore="ImageContrastCheck" />
@@ -99,28 +101,28 @@
 		android:id="@+id/imgteacher"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="12dp"
-		android:layout_marginEnd="19dp"
+		android:layout_marginStart="56dp"
+		android:layout_marginTop="24dp"
 		android:backgroundTint="#00FFFFFF"
 		android:contentDescription="@string/teacher_img_desc"
 		android:src="@drawable/img_teacher"
-		app:layout_constraintEnd_toStartOf="@+id/imgstudent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/textchoose"
 		tools:ignore="ImageContrastCheck" />
 
 	<TextView
 		android:id="@+id/txtstudent"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="11dp"
-		android:layout_marginEnd="2dp"
+		android:layout_width="96dp"
+		android:layout_height="33dp"
+		android:layout_marginTop="36dp"
+		android:layout_marginEnd="56dp"
 		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/student_txt"
 		android:textColor="@color/white"
 		android:textSize="24sp"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
 		app:layout_constraintStart_toEndOf="@+id/txtteacher"
 		app:layout_constraintTop_toBottomOf="@+id/imgstudent"
 		tools:ignore="TextContrastCheck" />
@@ -129,31 +131,37 @@
 		android:id="@+id/txtteacher"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="12dp"
-		android:layout_marginEnd="19dp"
+		android:layout_marginStart="72dp"
+		android:layout_marginTop="8dp"
 		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/teacher_txt"
 		android:textColor="@color/white"
 		android:textSize="24sp"
-		app:layout_constraintEnd_toStartOf="@+id/txtstudent"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/imgteacher"
+		app:layout_constraintVertical_bias="0.195"
 		tools:ignore="TextContrastCheck" />
 
 	<TextView
 		android:id="@+id/textchoose"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
+		android:layout_marginStart="171dp"
+		android:layout_marginEnd="170dp"
+		android:layout_marginBottom="345dp"
+		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/menu_choose_portal"
 		android:textColor="@color/white"
-		android:layout_marginTop="31dp"
-		android:fontFamily="@font/poppins"
 		android:textSize="24sp"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+		app:layout_constraintVertical_bias="0.243"
 		tools:ignore="TextContrastCheck" />
 
 

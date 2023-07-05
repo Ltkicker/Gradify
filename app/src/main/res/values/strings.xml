@@ -28,7 +28,7 @@
     <string name="last_name">     Last Name:</string>
     <string name="first_name">   First Name:</string>
     <string name="middle_name">   Middle Name:</string>
-    <string name="suffix">   Suffix:</string>
+    <string name="id_no">   ID No.</string>
     <string name="username">       Username:</string>
     <string name="password">       Password:</string>
     <string name="email">     Email:</string>
@@ -77,19 +77,26 @@
     <string name="edit_class">  Edit Class </string>
     <string name="grading_system">  Grading System </string>
     <string name="category_grading_system">  Category Grading System </string>
-    <string name="category_percent_grading_system"> -- </string>
     <string name="add_excel">Choose Excel File</string>
-    <string name="add_more_category" > Add Category </string>
-    <string name="save" > Save </string>
+    <string name="parent_category_1"> Attendance </string>
+    <string name="parent_category1_percent">10 %</string>
+    <string name="parent_category_2"> Quizzes </string>
+    <string name="parent_category2_percent">10 %</string>
+    <string name="parent_category_3"> Project </string>
+    <string name="parent_category3_percent">20 %</string>
+    <string name="parent_category4"> Exam </string>
+    <string name="parent_category4_percent">60 %</string>
+    <string name="add_more_category"> Add Category </string>
+    <string name="save"> Save </string>
+    <string name="class_list"> Class List </string>
     <!-- activity_add_class_file strings -->
     <string name="font1_string">Your Students</string>
     <string name="inserttext_string">Choose Excel File</string>
     <string name="gradifysmalltext_string">GRADIFY </string>
-    <string name = "add_student_desc">Beep! You have no students in this class.</string>
+    <string name="add_student_desc">Beep! You have no students in this class.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search_bar">Search</string>
-
 
 
     <!-- Leaderboard Popup -->
@@ -127,6 +134,25 @@
     <string name="recordscores"> Score </string>
     <string name="recordnumbering"> No. </string>
 
+    <!-- recordscore_teacher xml -->
+    <string name="no1"> 1 </string>
+    <string name="no2"> 2 </string>
+    <string name="no3"> 3 </string>
+    <string name="no4"> 4 </string>
+    <string name="no5"> 5 </string>
+    <string name="no6"> 6 </string>
+    <string name="no7"> 7 </string>
+    <string name="no8"> 8 </string>
+    <string name="no9"> 9 </string>
+    <string name="no10"> 10 </string>
+
+    <string name="s1"> Student 1 score</string>
+    <string name="s2"> Student 2 score</string>
+    <string name="s3"> Student 3 score</string>
+    <string name="s4"> Student 4 score</string>
+    <string name="s5"> Student 5 score</string>
+
+
 
     <!-- student_log_in strings -->
     <string name="txtstudentlogin_string">Student Log in:</string>
@@ -153,6 +179,120 @@
 
     <!-- gradesheet strings -->
     <string name="txtsearch_string">Search Name</string>
+    <string name="col1">ID #</string>
+    <string name="col2">Student Name</string>
+    <string name="col3">Letter Grade</string>
+    <string name="col4">Exam 1</string>
+    <string name="col5">Exam 2</string>
+    <string name="col6">Exam 3</string>
+    <string name="col7">Exam Avg.</string>
+    <string name="col8">Project</string>
+    <string name="col9">Quiz 1</string>
+    <string name="col10">Quiz 2</string>
+    <string name="col11">Quiz 3</string>
+    <string name="col12">Quiz 4</string>
+    <string name="col13">Quiz 5</string>
+    <string name="col14">Quizzes Avg.</string>
+    <string name="col15">Attendance 1</string>
+    <string name="col16">Attendance 2</string>
+    <string name="col17">Attendance 3</string>
+    <string name="col18">Attendance 4</string>
+    <string name="col19">Attendance 5</string>
+    <string name="col20">Grade</string>
+
+    <string name="row"> </string>
+
+    <string name="row1ID">2020-0001</string>
+    <string name="row1Name">Barro, Shiela Mae </string>
+    <string name="row1Exam1">99</string>
+    <string name="row1Exam2">91</string>
+    <string name="row1Exam3">98</string>
+    <string name="row1Project">98</string>
+    <string name="row1Quiz1">49</string>
+    <string name="row1Quiz2">46</string>
+    <string name="row1Quiz3">98</string>
+    <string name="row1Quiz4">94</string>
+    <string name="row1Attendance1">10</string>
+    <string name="row1Attendance2">10</string>
+    <string name="row1Attendance3">10</string>
+    <string name="row1Attendance4">10</string>
+    <string name="row1Attendance5">10</string>
+
+    <string name="row2ID">2020-0002</string>
+    <string name="row2Name">Camama, Reham Dee </string>
+    <string name="row2Exam1">96</string>
+    <string name="row2Exam2">93</string>
+    <string name="row2Exam3">97</string>
+    <string name="row2Project">95</string>
+    <string name="row2Quiz1">42</string>
+    <string name="row2Quiz2">47</string>
+    <string name="row2Quiz3">99</string>
+    <string name="row2Quiz4">92</string>
+    <string name="row2Attendance1">10</string>
+    <string name="row2Attendance2">10</string>
+    <string name="row2Attendance3">0</string>
+    <string name="row2Attendance4">5</string>
+    <string name="row2Attendance5">10</string>
+
+    <string name="row3ID">2020-0003</string>
+    <string name="row3Name">Dela Peña, Shaira Krizz </string>
+    <string name="row3Exam1">94</string>
+    <string name="row3Exam2">92</string>
+    <string name="row3Exam3">98</string>
+    <string name="row3Project">95</string>
+    <string name="row3Quiz1">42</string>
+    <string name="row3Quiz2">45</string>
+    <string name="row3Quiz3">97</string>
+    <string name="row3Quiz4">93</string>
+    <string name="row3Attendance1">10</string>
+    <string name="row3Attendance2">10</string>
+    <string name="row3Attendance3">10</string>
+    <string name="row3Attendance4">10</string>
+    <string name="row3Attendance5">5</string>
+
+    <string name="row4ID">2020-0004</string>
+    <string name="row4Name">Ellevera, Paolo Alexis </string>
+    <string name="row4Exam1">98</string>
+    <string name="row4Exam2">94</string>
+    <string name="row4Exam3">95</string>
+    <string name="row4Project">97</string>
+    <string name="row4Quiz1">47</string>
+    <string name="row4Quiz2">48</string>
+    <string name="row4Quiz3">90</string>
+    <string name="row4Quiz4">91</string>
+    <string name="row4Attendance1">10</string>
+    <string name="row4Attendance2">10</string>
+    <string name="row4Attendance3">10</string>
+    <string name="row4Attendance4">10</string>
+    <string name="row4Attendance5">10</string>
+
+    <string name="row5ID">2020-0005</string>
+    <string name="row5Name">Miranda, Genesis </string>
+    <string name="row5Exam1">97</string>
+    <string name="row5Exam2">98</string>
+    <string name="row5Exam3">96</string>
+    <string name="row5Project">99</string>
+    <string name="row5Quiz1">45</string>
+    <string name="row5Quiz2">40</string>
+    <string name="row5Quiz3">95</string>
+    <string name="row5Quiz4">95</string>
+    <string name="row5Attendance1">10</string>
+    <string name="row5Attendance2">10</string>
+    <string name="row5Attendance3">10</string>
+    <string name="row5Attendance4">10</string>
+    <string name="row5Attendance5">10</string>
+
+    <string name="act1">Quiz 1 </string>
+    <string name="act2">Quiz 2 </string>
+    <string name="act3">Quiz 3 </string>
+    <string name="act4">Quiz 4 </string>
+    <string name="act5">Quiz 5 </string>
+    <string name="act1.1">Exam 1 </string>
+    <string name="act1.2">Exam 2 </string>
+    <string name="act1.3">Exam 3 </string>
+    <string name="Attendance">Attendance </string>
+    <string name="score">Total Score </string>
+
 
     <!-- about gradify strings -->
     <string name="text_version">Version</string>

@@ -1,19 +1,15 @@
 package com.github.ltkicker.gradify.calculator;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import java.util.HashMap;
 
 public class Leaderboard {
+    private HashMap<String, Double> studentsParticipated;
+    private String name;
+    private int totalScore;
+
     public Leaderboard(){
 
     }
-
-    DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-
-    public void createClass() {
-        reference.child("classrooms").child("teacher").setValue("Admin");
-    }
-
 }
 
 

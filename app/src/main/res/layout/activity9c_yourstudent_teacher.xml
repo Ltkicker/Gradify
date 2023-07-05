@@ -8,15 +8,14 @@
 
     <View
         android:id="@+id/background_selectedclass5"
-        android:layout_width="513dp"
-        android:layout_height="839dp"
+        android:layout_width="484dp"
+        android:layout_height="831dp"
         android:background="@drawable/img_background1"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.379"
         tools:ignore="VisualLintBounds" />
 
     <View
@@ -28,176 +27,136 @@
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021"
+        app:layout_constraintVertical_bias="0.012"
         tools:ignore="VisualLintBounds" />
 
     <ImageView
         android:id="@+id/img_gradify_logo5"
         android:layout_width="77dp"
         android:layout_height="58dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="108dp"
-        app:layout_constraintEnd_toEndOf="@+id/img_gradifytext5"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="654dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
         app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/img_gradifytext5"
-        android:layout_width="126dp"
-        android:layout_height="21dp"
-        app:srcCompat="@drawable/img_gradifybigtext"
-        tools:ignore="ContentDescription"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="42dp" />
 
     <Button
         android:id="@+id/img_home_button3"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="331dp"
+        android:layout_marginBottom="654dp"
         android:background="@drawable/img_menu_home"
         android:backgroundTint="#00FFFFFF"
         android:clickable="true"
         app:iconTint="#EDFFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/img_gradify_logo5"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
         tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/img_gradifytext5"
+        android:layout_width="126dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="669dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
+        app:srcCompat="@drawable/img_gradifybigtext"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/img_backbutton2"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="314dp"
+        android:layout_marginBottom="550dp"
         android:background="#00FFFFFF"
         android:backgroundTint="#00FFFFFF"
         android:foreground="@drawable/iconback"
         android:foregroundTint="@color/white"
         app:iconTint="#EDFFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/text_yourstudent"
-        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183"
+        tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/text_yourstudent"
         android:layout_width="211dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal|center"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="551dp"
         android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text="@string/your_students"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/searchView"
-        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextSizeCheck,VisualLintOverlap,TextContrastCheck" />
 
-    <ImageButton
-        android:id="@+id/yourclass_select_button"
-        android:layout_width="416dp"
-        android:layout_height="130dp"
-        android:backgroundTint="#00FFFFFF"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studentList"
+        android:layout_width="411dp"
+        android:layout_height="556dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/background_selectedclass7"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/round_corner"
-        app:tint="#54CBCBCB"
-        tools:ignore="ContentDescription,VisualLintBounds,DuplicateSpeakableTextCheck,SpeakableTextPresentCheck,ImageContrastCheck"
-        tools:layout_editor_absoluteY="249dp" />
-
-    <ImageView
-        android:id="@+id/yourstudent_img"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="196dp"
-        android:cropToPadding="false"
-        app:layout_constraintEnd_toEndOf="@+id/id_no"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteY="266dp" />
-
-    <ImageView
-        android:id="@+id/yourstudent1"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:cropToPadding="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yourstudent_img"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/yourstudent3"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginTop="20dp"
-        android:cropToPadding="false"
-        app:layout_constraintTop_toBottomOf="@+id/yourstudent1"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteX="50dp" />
-
-    <ImageView
-        android:id="@+id/yourclass_img3"
-        android:layout_width="103dp"
-        android:layout_height="98dp"
-        android:layout_marginTop="20dp"
-        android:cropToPadding="false"
-        app:layout_constraintTop_toBottomOf="@+id/yourstudent3"
-        app:srcCompat="@drawable/icon_bookmainlogo"
-        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds"
-        tools:layout_editor_absoluteX="50dp" />
-
-    <TextView
-        android:id="@+id/fullname"
-        android:layout_width="198dp"
-        android:layout_height="18dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/fullname_student"
-        android:textAlignment="textStart"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/id_no"
-        tools:layout_editor_absoluteX="154dp" />
-
-    <TextView
-        android:id="@+id/id_no"
-        android:layout_width="196dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="64dp"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/recordidno"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/fullname"
-        app:layout_constraintTop_toTopOf="@+id/yourclass_select_button" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="312dp"
         android:layout_height="41dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="493dp"
         android:background="@drawable/shape_signin"
         app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:queryHint="Search name"
-        tools:layout_editor_absoluteY="197dp">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163"
+        app:queryHint="Search name">
 
     </androidx.appcompat.widget.SearchView>
 
@@ -205,12 +164,31 @@
         android:id="@+id/btn_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="73dp"
+        android:layout_marginStart="311dp"
+        android:layout_marginTop="585dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="74dp"
         android:backgroundTint="#00FFFFFF"
         android:src="@drawable/plus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/classList"
+        android:layout_width="314dp"
+        android:layout_height="495dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +17,7 @@
         <activity
             android:name=".activities.Gradify"
             android:exported="true"
-            android:theme="@style/Theme.Gradify.NoActionBar">
+            android:theme="@style/Theme.Gradify.loading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,9 +27,20 @@
         <activity android:name=".activities.authentication.AuthPortalActivity"/>
         <activity android:name=".activities.authentication.SignupActivity"/>
         <activity android:name=".activities.authentication.LoginActivity"/>
-        <activity android:name=".activities.navigation.MenuActivity"/>
+        <activity android:name=".activities.classroom.ClassEditActivity"/>
         <activity android:name=".activities.classroom.ClassDashboardActivity"/>
+        <activity android:name=".activities.classroom.ClassOverviewActivity"/>
+        <activity android:name=".activities.classroom.ClassEmptyActivity"/>
+        <activity android:name=".activities.classroom.ClassStudentsActivity"/>
+        <activity android:name=".activities.leaderboard.LeaderboardActivity"/>
+        <activity android:name=".activities.leaderboard.LeaderboardTopScorers"/>
+        <activity android:name=".activities.leaderboard.StudentOverallStandingActivity"/>
+        <activity android:name=".activities.leaderboard.RecordedScoresActivity"/>
+        <activity android:name=".activities.navigation.MenuActivity"/>
         <activity android:name=".activities.navigation.LogoutActivity"/>
+        <activity android:name=".activities.excel.ExcelUploadActivity"/>
+        <activity android:name=".activities.moreinfo.MoreInfoActivity"/>
+        <activity android:name=".activities.classroom.ClassAddStudentManualActivity"/>
     </application>
 
 </manifest>
