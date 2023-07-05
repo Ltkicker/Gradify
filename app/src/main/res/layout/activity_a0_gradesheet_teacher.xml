@@ -120,6 +120,7 @@
                 android:orientation="vertical">
 
                 <TableLayout
+                    android:id="@+id/gradeSheetLayout"
                     android:layout_width="1173dp"
                     android:layout_height="250dp"
                     android:layout_marginStart="10dp"

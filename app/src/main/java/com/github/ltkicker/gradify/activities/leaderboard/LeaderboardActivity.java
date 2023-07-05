@@ -10,11 +10,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.ltkicker.gradify.R;
-import com.github.ltkicker.gradify.data.classrooms.ClassListAdapter;
 import com.github.ltkicker.gradify.data.leaderboard.GradeSubCategoryAdapter;
 import com.github.ltkicker.gradify.data.leaderboard.GradeSubCategoryInterface;
 import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -32,11 +30,13 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
     private DatabaseReference dRef;
 
     String keyReference;
+    private ArrayList<String> subKey;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b0_leaderboard_teacher);
+        subKey = new ArrayList<>();
 
         // Kato naning mag change2 ug category pero diari rako taman kay bungkag ang front end ani
         keyReference = "parentcategory4";
@@ -54,8 +54,11 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()) {
                     subCategories.clear();
+                    subKey.clear();
                     for(DataSnapshot subSnapshot : snapshot.child(keyReference).getChildren()) {
                         subCategories.add(subSnapshot.getValue(SubCategory.class));
+                        subKey.add(subSnapshot.getKey());
+
                     }
                     adapter.notifyDataSetChanged();
                 }
@@ -71,7 +74,9 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
     @Override
     public void onItemClick(int position) {
         Intent intent = new Intent(this, LeaderboardTopScorers.class);
-        intent.putExtra("reference", keyReference);
+        intent.putExtra("PARENTCATEGORYID", keyReference);
+        intent.putExtra("SUBCATEGORY", subCategories.get(position));
+        intent.putExtra("SUBCATEGORYID", subKey.get(position));
         startActivity(intent);
     }
 }

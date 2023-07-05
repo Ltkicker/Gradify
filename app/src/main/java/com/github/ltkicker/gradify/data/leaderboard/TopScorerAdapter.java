@@ -10,15 +10,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.data.grades.GradingInstanceData;
 
 import java.util.ArrayList;
 
 public class TopScorerAdapter extends RecyclerView.Adapter<TopScorerAdapter.MyViewHolder> {
     private final TopScorerInterface recyclerViewInterface;
     Context context;
-    ArrayList<SubCategory> topScorers;
+    ArrayList<GradingInstanceData> topScorers;
 
-    public TopScorerAdapter(Context context, ArrayList<SubCategory> subCategories, TopScorerInterface recyclerViewInterface) {
+    public TopScorerAdapter(Context context, ArrayList<GradingInstanceData> subCategories, TopScorerInterface recyclerViewInterface) {
         this.context = context;
         this.topScorers = subCategories;
         this.recyclerViewInterface = recyclerViewInterface;
@@ -35,8 +36,8 @@ public class TopScorerAdapter extends RecyclerView.Adapter<TopScorerAdapter.MyVi
 
     @Override
     public void onBindViewHolder(@NonNull TopScorerAdapter.MyViewHolder holder, int position) {
-        holder.name.setText(topScorers.get(position).getName());
-        holder.date.setText(topScorers.get(position).getDate());
+        holder.name.setText(topScorers.get(position).getStudentId());
+        holder.place.setText(String.valueOf(topScorers.get(position).getPlace()));
     }
 
     @Override
@@ -46,13 +47,13 @@ public class TopScorerAdapter extends RecyclerView.Adapter<TopScorerAdapter.MyVi
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView date, name;
+        TextView place, name;
 
         public MyViewHolder(@NonNull View itemView, TopScorerInterface recyclerViewInterface) {
             super(itemView);
 
-            date = itemView.findViewById(R.id.quiz_date);
-            name = itemView.findViewById(R.id.quiz_text);
+            place = itemView.findViewById(R.id.lower_rank_num);
+            name = itemView.findViewById(R.id.fullname);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
