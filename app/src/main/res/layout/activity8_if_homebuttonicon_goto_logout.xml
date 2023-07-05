@@ -9,48 +9,23 @@
 
     <ImageView
         android:id="@+id/backlog_out_ground"
-        android:layout_width="563dp"
-        android:layout_height="968dp"
+        android:layout_width="616dp"
+        android:layout_height="996dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641"
+        app:layout_constraintVertical_bias="0.969"
         app:srcCompat="@drawable/img_background2"
         tools:ignore="ContentDescription" />
-
-    <ImageButton
-        android:id="@+id/profile"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/line"
-        app:layout_constraintEnd_toStartOf="@+id/full_name"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_student_log_in"
-        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/viewprofile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="@string/txtviewprofile_string"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/profile"
-        tools:layout_editor_absoluteX="195dp" />
 
     <TextView
         android:id="@+id/full_name"
         android:layout_width="201dp"
         android:layout_height="34dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/frame2_shape"
         android:fontFamily="@font/poppins"
         android:hint="@string/fullname_student"
@@ -60,20 +35,45 @@
         android:textColorLink="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/viewprofile"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/viewprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="138dp"
+        android:text="@string/txtviewprofile_string"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toStartOf="@+id/full_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_student_log_in"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/line"
         android:layout_width="378dp"
         android:layout_height="7dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
         app:srcCompat="@drawable/img_line"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -81,14 +81,12 @@
         android:id="@+id/classes"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/leaderboard"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toStartOf="@+id/Myclasses"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/line"
-        app:layout_constraintVertical_bias="0.133"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_classes"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -96,44 +94,44 @@
         android:id="@+id/Myclasses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="216dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="214dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtmyclasses_string"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtleaderboards_string"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/iconback7"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="315dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="29dp"
         android:background="@drawable/iconback"
         android:backgroundTint="#FFFEFE"
         android:clickable="true"
         android:contentDescription="@string/background_desc"
         android:focusable="true"
         android:foregroundTint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/leaderboard"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/notif"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="302dp"
         app:layout_constraintEnd_toStartOf="@+id/txtleaderboards_string"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_leaderboard"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -141,14 +139,16 @@
         android:id="@+id/txtleaderboards_string"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="200dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="199dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtleaderboard_string"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/notifications"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
@@ -156,11 +156,11 @@
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/message"
+        android:layout_marginTop="356dp"
         app:layout_constraintEnd_toStartOf="@+id/notifications"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_notifications"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -168,66 +168,66 @@
         android:id="@+id/notifications"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="204dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="358dp"
+        android:layout_marginEnd="203dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtnotifications_string"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/messages"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/message"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="41dp"
-        app:layout_constraintEnd_toStartOf="@+id/messages"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/icon_mail"
         tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteY="397dp" />
+        tools:layout_editor_absoluteY="405dp" />
 
     <TextView
         android:id="@+id/messages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="224dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtmessages_string"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/line2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/line2"
         android:layout_width="378dp"
         android:layout_height="7dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="464dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_line"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteY="448dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/setting"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/info"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@+id/settings"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line2"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/icon_settings"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -235,25 +235,27 @@
         android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
         android:layout_marginEnd="245dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtsettings_string"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck"
-        tools:layout_editor_absoluteY="480dp" />
+        tools:layout_editor_absoluteY="493dp" />
 
     <ImageView
         android:id="@+id/info"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/about"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toStartOf="@+id/help"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
         app:srcCompat="@drawable/icon_info"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
@@ -261,63 +263,69 @@
         android:id="@+id/help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="272dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="276dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txthelp_string"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="TextContrastCheck"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/about"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="104dp"
         app:layout_constraintEnd_toStartOf="@+id/aboutUs"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
         app:srcCompat="@drawable/icon_aboutus"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteY="570dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/aboutUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="236dp"
-        android:layout_marginBottom="12dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtaboutus_string"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/lastLine"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/lastLine"
         android:layout_width="378dp"
         android:layout_height="7dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="148dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
         app:srcCompat="@drawable/img_line"
-        tools:ignore="ContentDescription,ImageContrastCheck"
-        tools:layout_editor_absoluteY="618dp" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/logouticn"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/logout"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastLine"
         app:srcCompat="@drawable/icon_logout"
         tools:ignore="ContentDescription" />
 
@@ -326,13 +334,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="256dp"
+        android:layout_marginBottom="56dp"
         android:fontFamily="@font/poppins"
         android:text="@string/txtlogout_string"
         android:textColor="#EE0808"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="TextContrastCheck"
-        tools:layout_editor_absoluteY="637dp" />
+        tools:ignore="TextContrastCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

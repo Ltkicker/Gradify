@@ -15,85 +15,97 @@
 		android:visibility="visible"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="1.0"
 		app:srcCompat="@drawable/img_background2"
 		tools:ignore="ImageContrastCheck" />
 
-	<LinearLayout
+	<androidx.constraintlayout.widget.ConstraintLayout
 		android:id="@+id/linearLayout"
 		android:layout_width="191dp"
 		android:layout_height="265dp"
 		android:layout_marginTop="50dp"
 		android:gravity="center_horizontal"
-		android:orientation="vertical"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="@+id/imgBackground">
+		app:layout_constraintTop_toTopOf="parent">
 
-		<LinearLayout
+
+		<TextView
+			android:id="@+id/textView"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:orientation="horizontal">
+			android:layout_marginStart="30dp"
+			android:layout_marginTop="1dp"
+			android:fontFamily="@font/pragati_narrow"
+			android:gravity="center"
+			android:text="@string/cubix_text_1"
+			android:textColor="@color/black"
+			android:textSize="55sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toEndOf="@+id/textView2"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
 
-			<TextView
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:fontFamily="@font/pragati_narrow"
-				android:gravity="center"
-				android:text="@string/cubix_text_1"
-				android:textColor="@color/black"
-				android:textSize="55sp"
-				android:textStyle="bold" />
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="1dp"
+			android:layout_marginEnd="21dp"
+			android:fontFamily="@font/pragati_narrow"
+			android:text="@string/cubix_text_2"
+			android:textColor="@color/light_gray"
+			android:textSize="55sp"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toEndOf="@+id/textView3"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:ignore="TextContrastCheck" />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:fontFamily="@font/pragati_narrow"
-				android:text="@string/cubix_text_2"
-				android:textColor="@color/light_gray"
-				android:textSize="55sp"
-				android:textStyle="bold"
-				tools:ignore="TextContrastCheck" />
-
-			<TextView
-				android:layout_width="0dp"
-				android:layout_height="64dp"
-				android:layout_weight="1"
-				android:fontFamily="@font/pragati_narrow"
-				android:text="@string/cubix_text_3"
-				android:textColor="@color/black"
-				android:textSize="50sp"
-				tools:ignore="TextSizeCheck" />
-		</LinearLayout>
+		<TextView
+			android:id="@+id/textView3"
+			android:layout_width="wrap_content"
+			android:layout_height="64dp"
+			android:layout_marginTop="16dp"
+			android:layout_marginEnd="17dp"
+			android:fontFamily="@font/pragati_narrow"
+			android:text="@string/cubix_text_3"
+			android:textColor="@color/black"
+			android:textSize="50sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:ignore="TextSizeCheck" />
 
 		<ImageView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
+			android:id="@+id/imageView3"
+			android:layout_width="191dp"
+			android:layout_height="172dp"
+			android:layout_marginTop="94dp"
 			android:adjustViewBounds="true"
 			android:contentDescription="@string/gradify_logo"
 			android:cropToPadding="false"
 			android:scaleType="centerInside"
 			android:src="@drawable/logo_cubixicon"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
 			tools:ignore="ImageContrastCheck" />
 
-	</LinearLayout>
+	</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 	<ImageButton
 		android:id="@+id/imgstudent"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="24dp"
-		android:layout_marginEnd="36dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginEnd="52dp"
 		android:backgroundTint="#00FFFFFF"
 		android:contentDescription="@string/student_img_desc"
 		android:src="@drawable/img_student"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
-		app:layout_constraintStart_toEndOf="@+id/imgteacher"
 		app:layout_constraintTop_toBottomOf="@+id/textchoose"
 		tools:ignore="ImageContrastCheck" />
 
@@ -102,10 +114,12 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="56dp"
-		android:layout_marginTop="24dp"
+		android:layout_marginTop="20dp"
 		android:backgroundTint="#00FFFFFF"
 		android:contentDescription="@string/teacher_img_desc"
 		android:src="@drawable/img_teacher"
+		app:layout_constraintEnd_toStartOf="@+id/imgstudent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/textchoose"
 		tools:ignore="ImageContrastCheck" />
@@ -114,16 +128,14 @@
 		android:id="@+id/txtstudent"
 		android:layout_width="96dp"
 		android:layout_height="33dp"
-		android:layout_marginTop="36dp"
-		android:layout_marginEnd="56dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginEnd="72dp"
 		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/student_txt"
 		android:textColor="@color/white"
 		android:textSize="24sp"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
-		app:layout_constraintStart_toEndOf="@+id/txtteacher"
 		app:layout_constraintTop_toBottomOf="@+id/imgstudent"
 		tools:ignore="TextContrastCheck" />
 
@@ -132,36 +144,32 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="72dp"
-		android:layout_marginTop="8dp"
+		android:layout_marginTop="21dp"
 		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/teacher_txt"
 		android:textColor="@color/white"
 		android:textSize="24sp"
-		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/txtstudent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/imgteacher"
-		app:layout_constraintVertical_bias="0.195"
 		tools:ignore="TextContrastCheck" />
 
 	<TextView
 		android:id="@+id/textchoose"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginStart="171dp"
-		android:layout_marginEnd="170dp"
-		android:layout_marginBottom="345dp"
+		android:layout_marginTop="12dp"
 		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/menu_choose_portal"
 		android:textColor="@color/white"
 		android:textSize="24sp"
-		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintHorizontal_bias="0.498"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-		app:layout_constraintVertical_bias="0.243"
 		tools:ignore="TextContrastCheck" />
 
 

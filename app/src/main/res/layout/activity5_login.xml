@@ -12,8 +12,8 @@
 
 	<ImageView
 		android:id="@+id/background2"
-		android:layout_width="414dp"
-		android:layout_height="843dp"
+		android:layout_width="449dp"
+		android:layout_height="942dp"
 		android:contentDescription="@string/background_desc"
 		android:scaleType="centerCrop"
 		app:layout_constraintBottom_toBottomOf="parent"
@@ -26,13 +26,15 @@
 
 
 
+
+
 	]]>
 
 	<TextView
 		android:id="@+id/clickable_signup"
 		android:layout_width="201dp"
 		android:layout_height="61dp"
-		android:layout_marginBottom="48dp"
+		android:layout_marginTop="16dp"
 		android:background="@drawable/shape_password"
 		android:backgroundTintMode="src_over"
 		android:clickable="true"
@@ -47,9 +49,9 @@
 		android:textSize="24sp"
 		android:textStyle="bold"
 		app:drawableBottomCompat="@drawable/round_corner"
-		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/cb_accept_terms"
 		app:layout_marginBaseline="10dp"
 		tools:ignore="MissingConstraints"
 		tools:visibility="visible" />
@@ -58,38 +60,31 @@
 		android:id="@+id/textsignup"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginStart="46dp"
-		android:layout_marginTop="379dp"
-		android:layout_marginEnd="165dp"
-		android:layout_marginBottom="327dp"
+		android:layout_marginTop="36dp"
 		android:fontFamily="@font/poppins"
 		android:text="@string/not_a_member_yet"
 		android:textColor="@color/shapesignin_color"
 		android:textSize="15sp"
-		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.213"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/loginBigTxt"
 		tools:ignore="MissingConstraints,TextContrastCheck,VisualLintOverlap" />
 
 	<TextView
 		android:id="@+id/loginBigTxt"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginStart="117dp"
-		android:layout_marginTop="299dp"
-		android:layout_marginEnd="116dp"
-		android:layout_marginBottom="392dp"
 		android:fontFamily="@font/poppins"
 		android:gravity="center"
 		android:text="@string/teacher_login"
 		android:textColor="@color/shapesignin_color"
 		android:textSize="24sp"
-		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		tools:ignore="TextContrastCheck" />
+		tools:ignore="TextContrastCheck"
+		tools:layout_editor_absoluteY="299dp" />
 
 	<ImageView
 		android:id="@+id/loginImg"
@@ -110,8 +105,8 @@
 		android:id="@+id/iconback"
 		android:layout_width="48dp"
 		android:layout_height="48dp"
-		android:layout_marginStart="48dp"
-		android:layout_marginTop="48dp"
+		android:layout_marginStart="29dp"
+		android:layout_marginTop="49dp"
 		android:clickable="true"
 		android:contentDescription="@string/background_desc"
 		android:enabled="true"
@@ -126,10 +121,7 @@
 		android:id="@+id/login_password"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
-		android:layout_marginStart="38dp"
-		android:layout_marginTop="492dp"
-		android:layout_marginEnd="37dp"
-		android:layout_marginBottom="178dp"
+		android:layout_marginTop="16dp"
 		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
@@ -143,20 +135,17 @@
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
 		android:textStyle="bold"
-		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.493"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/login_email1"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/login_email1"
 		android:layout_width="336dp"
 		android:layout_height="61dp"
-		android:layout_marginStart="38dp"
-		android:layout_marginTop="419dp"
-		android:layout_marginEnd="37dp"
-		android:layout_marginBottom="251dp"
+		android:layout_marginTop="20dp"
 		android:background="@drawable/shape_signin"
 		android:backgroundTint="#36FFEBEE"
 		android:backgroundTintMode="src_over"
@@ -169,25 +158,22 @@
 		android:textColorHint="#FFFFFF"
 		android:textSize="16sp"
 		android:textStyle="bold"
-		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.493"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textsignup"
 		tools:ignore="MissingConstraints,TextContrastCheck" />
 
 	<CheckBox
 		android:id="@+id/cb_accept_terms"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginStart="46dp"
-		android:layout_marginEnd="237dp"
+		android:layout_marginStart="44dp"
 		android:buttonTint="#FFFFFF"
 		android:fontFamily="@font/poppins"
 		android:text="@string/remember_me"
 		android:textColor="#FFFCFC"
 		android:textSize="13sp"
-		app:layout_constraintBottom_toTopOf="@+id/clickable_signup"
-		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/login_password"
 		tools:ignore="MissingConstraints,TextContrastCheck,UnknownId" />
