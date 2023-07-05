@@ -108,8 +108,8 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
-        android:layout_width="405dp"
-        android:layout_height="616dp"
+        android:layout_width="407dp"
+        android:layout_height="606dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,8 +125,8 @@
                 android:orientation="vertical">
 
                 <TableLayout
-                    android:layout_width="1173dp"
-                    android:layout_height="250dp"
+                    android:layout_width="1546dp"
+                    android:layout_height="319dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="351dp"
                     android:layout_marginEnd="0dp"
@@ -146,7 +146,7 @@
                             android:padding="10sp"
                             android:text="@string/col1"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="49dp"
@@ -156,7 +156,7 @@
                             android:padding="10sp"
                             android:text="@string/col2"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                         <TextView
@@ -167,7 +167,7 @@
                             android:padding="10sp"
                             android:text="@string/col4"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="65dp"
@@ -177,7 +177,7 @@
                             android:padding="10sp"
                             android:text="@string/col5"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -187,7 +187,7 @@
                             android:padding="10sp"
                             android:text="@string/col6"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -197,7 +197,7 @@
                             android:padding="10sp"
                             android:text="@string/col7"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -207,7 +207,7 @@
                             android:padding="10sp"
                             android:text="@string/col8"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -217,7 +217,7 @@
                             android:padding="10sp"
                             android:text="@string/col9"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -227,7 +227,7 @@
                             android:padding="10sp"
                             android:text="@string/col10"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -237,7 +237,7 @@
                             android:padding="10sp"
                             android:text="@string/col11"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -247,7 +247,7 @@
                             android:padding="10sp"
                             android:text="@string/col12"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                         <TextView
@@ -258,7 +258,7 @@
                             android:padding="10sp"
                             android:text="@string/col14"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -268,7 +268,7 @@
                             android:padding="10sp"
                             android:text="@string/col15"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -278,7 +278,7 @@
                             android:padding="10sp"
                             android:text="@string/col16"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -288,7 +288,7 @@
                             android:padding="10sp"
                             android:text="@string/col17"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -298,7 +298,7 @@
                             android:padding="10sp"
                             android:text="@string/col18"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -308,7 +308,7 @@
                             android:padding="10sp"
                             android:text="@string/col19"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="70dp"
@@ -318,7 +318,7 @@
                             android:padding="10sp"
                             android:text="@string/col20"
                             android:textColor="@color/white"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                     </TableRow>
@@ -334,7 +334,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1ID"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="123dp"
@@ -343,7 +343,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Name"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                         <TextView
@@ -353,7 +353,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Exam1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -362,7 +362,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Exam2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -371,7 +371,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Exam3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -380,7 +380,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -389,7 +389,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Project"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -398,7 +398,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Quiz1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -407,7 +407,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Quiz2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -416,7 +416,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Quiz3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -425,7 +425,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Quiz4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -434,7 +434,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                         <TextView
@@ -444,7 +444,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Attendance1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -453,7 +453,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Attendance2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -462,7 +462,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Attendance3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -471,7 +471,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Attendance4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -480,7 +480,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row1Attendance5"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -489,7 +489,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                     </TableRow>
@@ -505,7 +505,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2ID"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="123dp"
@@ -514,7 +514,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Name"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -523,7 +523,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Exam1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -532,7 +532,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Exam2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -541,7 +541,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Exam3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -550,7 +550,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -559,7 +559,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Project"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -568,7 +568,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Quiz1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -577,7 +577,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Quiz2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -586,7 +586,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Quiz3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -595,7 +595,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Quiz4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -604,7 +604,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                         <TextView
@@ -614,7 +614,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Attendance1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -623,7 +623,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Attendance2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -632,7 +632,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Attendance3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -641,7 +641,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Attendance4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -650,7 +650,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row2Attendance5"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -659,7 +659,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                     </TableRow>
@@ -675,7 +675,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3ID"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="123dp"
@@ -684,7 +684,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Name"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -693,7 +693,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Exam1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -702,7 +702,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Exam2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -711,7 +711,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Exam3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -720,7 +720,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -729,7 +729,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Project"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -738,7 +738,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Quiz1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -747,7 +747,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Quiz2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -756,7 +756,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Quiz3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -765,7 +765,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Quiz4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -774,7 +774,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                         <TextView
@@ -784,7 +784,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Attendance1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -793,7 +793,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Attendance2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -802,7 +802,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Attendance3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -811,7 +811,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Attendance4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -820,7 +820,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row3Attendance5"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -829,7 +829,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
 
@@ -844,7 +844,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4ID"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="123dp"
@@ -853,7 +853,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Name"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -862,7 +862,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Exam1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -871,7 +871,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Exam2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -880,7 +880,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Exam3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -889,7 +889,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -898,7 +898,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Project"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -907,7 +907,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Quiz1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -916,7 +916,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Quiz2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -925,7 +925,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Quiz3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -934,7 +934,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Quiz4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -943,7 +943,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                         <TextView
@@ -953,7 +953,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Attendance1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -962,7 +962,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Attendance2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -971,7 +971,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Attendance3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -980,7 +980,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Attendance4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -989,7 +989,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row4Attendance5"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -998,7 +998,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                     </TableRow>
@@ -1014,7 +1014,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5ID"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="123dp"
@@ -1023,7 +1023,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Name"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1032,7 +1032,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Exam1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1041,7 +1041,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Exam2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1050,7 +1050,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Exam3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1059,7 +1059,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1068,7 +1068,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Project"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1077,7 +1077,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Quiz1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1086,7 +1086,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Quiz2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1095,7 +1095,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Quiz3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1104,7 +1104,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Quiz4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1113,7 +1113,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
 
                         <TextView
@@ -1123,7 +1123,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Attendance1"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1132,7 +1132,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Attendance2"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1141,7 +1141,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Attendance3"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1150,7 +1150,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Attendance4"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1159,7 +1159,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row5Attendance5"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1168,7 +1168,7 @@
                             android:gravity="center_horizontal"
                             android:padding="10sp"
                             android:text="@string/row"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
 
