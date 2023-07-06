@@ -5,9 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Handler;
 import com.github.ltkicker.gradify.R;
-import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
-import com.github.ltkicker.gradify.activities.leaderboard.LeaderboardActivity;
-import com.github.ltkicker.gradify.calculator.StudentGradeManager;
+import com.github.ltkicker.gradify.activities.leaderboard.StudentOverallStandingActivity;
 import com.github.ltkicker.gradify.data.database.FirebaseUtils;
 
 import android.content.Intent;
@@ -30,7 +28,7 @@ public class Gradify extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
         @Override
             public void run() {
-                startActivity (new Intent(Gradify.this, AuthPortalActivity.class));
+                startActivity (new Intent(Gradify.this, StudentOverallStandingActivity.class));
                 finish();
             }
 

@@ -66,26 +66,28 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
             @Override
             public void onRefresh(HashMap<String, UserStandingData> data) {
                 for (ParentCategory parent : data.get(studentId).getBreakdown().keySet()) {
-                    String percentBr = parent.getPercentage() * 100 + "%%";
+                    Double percentBr = parent.getPercentage() * 100;
                     Double percent = data.get(studentId).getBreakdown().get(parent);
                     DecimalFormat decimalFormat = new DecimalFormat("#.00");
-                    String formattedNumber = decimalFormat.format(percent) + "%%";
+                    DecimalFormat decimalFormat2 = new DecimalFormat("#");
+                    String formattedNumber = decimalFormat.format(percent) + "%";
+                    String formattedNumber2 = decimalFormat2.format(percentBr) + "%";
 
                     if (parent.getKey().equalsIgnoreCase("parentCategory1")) {
                         bdCategory1.setText(parent.getName());
-                        bdPercent1.setText(percentBr);
+                        bdPercent1.setText(formattedNumber2);
                         bdPercentCurrent1.setText(formattedNumber);
                     } else if (parent.getKey().equalsIgnoreCase("parentcategory2")) {
                         bdCategory2.setText(parent.getName());
-                        bdPercent2.setText(percentBr);
+                        bdPercent2.setText(formattedNumber2);
                         bdPercentCurrent2.setText(formattedNumber);
                     } else if (parent.getKey().equalsIgnoreCase("parentcategory3")) {
                         bdCategory3.setText(parent.getName());
-                        bdPercent3.setText(percentBr);
+                        bdPercent3.setText(formattedNumber2);
                         bdPercentCurrent3.setText(formattedNumber);
                     } else if (parent.getKey().equalsIgnoreCase("parentcategory4")) {
                         bdCategory4.setText(parent.getName());
-                        bdPercent4.setText(percentBr);
+                        bdPercent4.setText(formattedNumber2);
                         bdPercentCurrent4.setText(formattedNumber);
                     }
                 }
