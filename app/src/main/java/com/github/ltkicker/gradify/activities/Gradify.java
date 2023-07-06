@@ -20,7 +20,7 @@ public class Gradify extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity7_main_menu);
+        setContentView(R.layout.activity0_main_loading_withlogo);
 
         FirebaseUtils.init();
 

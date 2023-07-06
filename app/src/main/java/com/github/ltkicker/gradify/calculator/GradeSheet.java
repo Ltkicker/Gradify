@@ -46,14 +46,6 @@ public class GradeSheet extends AppCompatActivity {
             arrayList.add(modelClass);
 
         }
-        backbutton = (Button)findViewById(R.id.img_backbutton);
 
-        backbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(GradeSheet.this, MenuActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

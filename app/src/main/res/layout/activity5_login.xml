@@ -102,14 +102,19 @@
 		app:layout_constraintTop_toTopOf="parent"
 		tools:ignore="ImageContrastCheck" />
 
-	<ImageView
-		android:id="@+id/iconback"
+	<Button
+		android:id="@+id/img_backbutton"
 		android:layout_width="48dp"
 		android:layout_height="48dp"
 		android:layout_marginStart="29dp"
 		android:layout_marginTop="49dp"
 		android:clickable="true"
 		android:contentDescription="@string/background_desc"
+		android:background="#00FFFFFF"
+		android:backgroundTint="#00FFFFFF"
+		android:foreground="@drawable/iconback"
+		android:foregroundTint="@color/white"
+		app:iconTint="#EDFFFFFF"
 		android:enabled="true"
 		android:focusable="true"
 		android:importantForAccessibility="yes"
