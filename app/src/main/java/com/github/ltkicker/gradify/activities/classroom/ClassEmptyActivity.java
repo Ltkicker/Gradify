@@ -12,12 +12,11 @@ import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
 import com.github.ltkicker.gradify.data.users.CacheData;
 import com.github.ltkicker.gradify.activities.navigation.LogoutActivity;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
 
 public class ClassEmptyActivity extends AppCompatActivity {
     Button backbutton;
-   
-  @Override
+
+    @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if(!CacheData.isAuthenticated()) {

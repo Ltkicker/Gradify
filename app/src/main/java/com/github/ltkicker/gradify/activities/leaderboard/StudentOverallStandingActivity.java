@@ -2,33 +2,29 @@ package com.github.ltkicker.gradify.activities.leaderboard;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.calculator.StudentGradeManager;
 import com.github.ltkicker.gradify.calculator.UniversityGrade;
 import com.github.ltkicker.gradify.calculator.listeners.GradesRefresherListener;
-import com.github.ltkicker.gradify.data.database.FirebaseUtils;
 import com.github.ltkicker.gradify.data.grades.UserStandingData;
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class StudentOverallStandingActivity extends AppCompatActivity {
 
+public class StudentOverallStandingActivity extends AppCompatActivity {
     private ArrayList<ParentCategory> parentCategories;
 
     private DatabaseReference dRef;
@@ -40,12 +36,6 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
     TextView bdCategory4;
     TextView bdPercent1, bdPercent2, bdPercent3, bdPercent4;
     TextView bdPercentCurrent1, bdPercentCurrent2, bdPercentCurrent3, bdPercentCurrent4;
-
-import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
-import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
-import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
-
-public class StudentOverallStandingActivity extends AppCompatActivity {
     Button backbutton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -76,23 +66,27 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
             @Override
             public void onRefresh(HashMap<String, UserStandingData> data) {
                 for (ParentCategory parent : data.get(studentId).getBreakdown().keySet()) {
+                    String percentBr = parent.getPercentage() * 100 + "%%";
+                    Double percent = data.get(studentId).getBreakdown().get(parent);
+                    DecimalFormat decimalFormat = new DecimalFormat("#.00");
+                    String formattedNumber = decimalFormat.format(percent) + "%%";
+
                     if (parent.getKey().equalsIgnoreCase("parentCategory1")) {
                         bdCategory1.setText(parent.getName());
-
-                        bdPercent1.setText(String.valueOf(parent.getPercentage() * 100) %%);
-                        bdPercentCurrent1.setText(String.valueOf(data.get(studentId).getBreakdown().get(parent)));
+                        bdPercent1.setText(percentBr);
+                        bdPercentCurrent1.setText(formattedNumber);
                     } else if (parent.getKey().equalsIgnoreCase("parentcategory2")) {
                         bdCategory2.setText(parent.getName());
-                        bdPercent2.setText(String.valueOf(parent.getPercentage() * 100));
-                        bdPercentCurrent2.setText(String.valueOf(data.get(studentId).getBreakdown().get(parent)));
+                        bdPercent2.setText(percentBr);
+                        bdPercentCurrent2.setText(formattedNumber);
                     } else if (parent.getKey().equalsIgnoreCase("parentcategory3")) {
                         bdCategory3.setText(parent.getName());
-                        bdPercent3.setText(String.valueOf(parent.getPercentage() * 100));
-                        bdPercentCurrent3.setText(String.valueOf(data.get(studentId).getBreakdown().get(parent)));
+                        bdPercent3.setText(percentBr);
+                        bdPercentCurrent3.setText(formattedNumber);
                     } else if (parent.getKey().equalsIgnoreCase("parentcategory4")) {
                         bdCategory4.setText(parent.getName());
-                        bdPercent4.setText(String.valueOf(parent.getPercentage() * 100));
-                        bdPercentCurrent4.setText(String.valueOf(data.get(studentId).getBreakdown().get(parent)));
+                        bdPercent4.setText(percentBr);
+                        bdPercentCurrent4.setText(formattedNumber);
                     }
                 }
                 double finalGrade = data.get(studentId).getFinalGrade();
