@@ -106,21 +106,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/iconback7"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="29dp"
-        android:background="@drawable/iconback"
-        android:backgroundTint="#FFFEFE"
-        android:clickable="true"
-        android:contentDescription="@string/background_desc"
-        android:focusable="true"
-        android:foregroundTint="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/leaderboard"
@@ -353,7 +338,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp"
-        app:layout_constraintGuide_end="391dp" />
+        app:layout_constraintGuide_end="391dp"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+    <Button
+        android:id="@+id/img_backbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/iconback"
+        android:foregroundTint="@color/white"
+        app:iconTint="#EDFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

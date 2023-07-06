@@ -20,13 +20,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.text.DecimalFormat;
+
+import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
+import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
 
 public class StudentOverallStandingActivity extends AppCompatActivity {
     private ArrayList<ParentCategory> parentCategories;
-
     private DatabaseReference dRef;
 
     private String classroomId = "NZItQ2M6m_y9IXcgOW7";
@@ -100,15 +104,8 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
             }
         };
         StudentGradeManager.getGrades(listener);
+        FirebaseUtils.getAllParentCategories("NZItQ2M6m_y9IXcgOW7", listener);
 
-        backbutton = (Button)findViewById(R.id.img_backbutton);
-
-        backbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StudentOverallStandingActivity.this, MenuActivity.class);
-                startActivity(intent);
-            }
-        });
+        }
     }
-}
+

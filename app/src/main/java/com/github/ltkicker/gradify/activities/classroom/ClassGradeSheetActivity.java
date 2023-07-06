@@ -1,8 +1,11 @@
 package com.github.ltkicker.gradify.activities.classroom;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -12,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
+import com.github.ltkicker.gradify.calculator.GradeSheet;
 import com.github.ltkicker.gradify.data.database.FirebaseUtils;
 import com.github.ltkicker.gradify.data.database.SubCategoriesListener;
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
@@ -27,6 +32,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 public class ClassGradeSheetActivity extends AppCompatActivity {
+
+    Button backbutton;
     private String classroodId = "NZItQ2M6m_y9IXcgOW7";
     private TableLayout tableLayout;
 
@@ -39,7 +46,15 @@ public class ClassGradeSheetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_a0_gradesheet_teacher);
 
         Context context = this;
+        backbutton = (Button)findViewById(R.id.img_backbutton);
 
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClassGradeSheetActivity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
         tableLayout = findViewById(R.id.gradeSheetLayout);
 
         // ---- HEADERS

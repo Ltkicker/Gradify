@@ -30,6 +30,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
+import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -44,6 +47,7 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
     private LinkedHashMap<String, Double> scores;
 
     private DatabaseReference dref;
+  
     Button backbutton;
 
     @Override
@@ -74,7 +78,6 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
         TextView firstplace = findViewById(R.id.student_firstname_top1);
         TextView secondplace = findViewById(R.id.student_firstname_top2);
         TextView thirdplace = findViewById(R.id.student_firstname_top3);
-
         backbutton = (Button)findViewById(R.id.img_backbutton);
 
         backbutton.setOnClickListener(new View.OnClickListener() {
@@ -127,8 +130,6 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
     @Override
     public void onItemClick(int position) {
 
-    }
-
     private static LinkedHashMap<String, Double> sortByValues(LinkedHashMap<String, Double> map) {
         LinkedHashMap<String, Double> sortedMap = new LinkedHashMap<>();
 
@@ -139,4 +140,4 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
 
         return sortedMap;
     }
-}
+

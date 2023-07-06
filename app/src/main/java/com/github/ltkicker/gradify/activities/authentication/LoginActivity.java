@@ -2,6 +2,9 @@ package com.github.ltkicker.gradify.activities.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -11,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.Gradify;
+import com.github.ltkicker.gradify.activities.leaderboard.LeaderboardActivity;
+import com.github.ltkicker.gradify.activities.leaderboard.LeaderboardTopScorers;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.android.material.textfield.TextInputEditText;
@@ -24,8 +29,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
-
     private DatabaseReference dRef;
+    Button backbutton;
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +44,15 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity5_login);
 
+        backbutton = (Button)findViewById(R.id.img_backbutton);
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, AuthPortalActivity.class);
+                startActivity(intent);
+            }
+        });
         TextView bigLoginTxt = findViewById(R.id.loginBigTxt);
         ImageView loginImg = findViewById(R.id.loginImg);
         if(CacheData.isTeacher()) {
