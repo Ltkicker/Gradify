@@ -354,5 +354,27 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_end="391dp" />
+
+        <Button
+            android:id="@+id/img_backbutton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="312dp"
+            android:layout_marginBottom="654dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:foreground="@drawable/iconback"
+            android:foregroundTint="@color/white"
+            app:iconTint="#EDFFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

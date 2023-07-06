@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.activities.navigation.LogoutActivity;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.classrooms.ClassListAdapter;
 import com.github.ltkicker.gradify.data.classrooms.ClassListInterface;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
@@ -34,6 +37,8 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
     ClassListAdapter adapter;
     ImageButton addButton;
 
+    Button backbutton;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,8 +52,20 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
 //            }
 //        });
 //    }
+      
         if(CacheData.isTeacher()) {
             dRef = FirebaseDatabase.getInstance().getReference("users").child(CacheData.getUsername()).child("classrooms").child("asTeacher");
+
+        backbutton = (Button)findViewById(R.id.img_backbutton);
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClassDashboardActivity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
+
             dRef.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {

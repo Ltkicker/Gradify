@@ -45,19 +45,22 @@
         app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <ImageView
-        android:id="@+id/iconback6"
+  <Button
+        android:id="@+id/img_backbutton"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="29dp"
-        android:background="@drawable/iconback"
-        android:backgroundTint="#FFFEFE"
-        android:clickable="true"
-        android:contentDescription="@string/background_desc"
-        android:focusable="true"
-        android:foregroundTint="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/gradify_logo9"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="664dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/iconback"
+        android:foregroundTint="@color/white"
+        app:iconTint="#EDFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />

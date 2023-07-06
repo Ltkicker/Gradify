@@ -1,8 +1,11 @@
 package com.github.ltkicker.gradify.activities.leaderboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -38,6 +41,12 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
     TextView bdPercent1, bdPercent2, bdPercent3, bdPercent4;
     TextView bdPercentCurrent1, bdPercentCurrent2, bdPercentCurrent3, bdPercentCurrent4;
 
+import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
+import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
+
+public class StudentOverallStandingActivity extends AppCompatActivity {
+    Button backbutton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,5 +105,14 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
         };
         StudentGradeManager.getGrades(listener);
 
+        backbutton = (Button)findViewById(R.id.img_backbutton);
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StudentOverallStandingActivity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

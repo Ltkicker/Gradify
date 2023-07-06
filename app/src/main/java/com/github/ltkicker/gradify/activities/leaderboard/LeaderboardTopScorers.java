@@ -1,8 +1,14 @@
 package com.github.ltkicker.gradify.activities.leaderboard;
 
+import android.content.Intent;
 import android.os.Bundle;
+
 import android.util.Log;
 import android.widget.TextView;
+
+import android.view.View;
+import android.widget.Button;
+
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.ltkicker.gradify.R;
+
 import com.github.ltkicker.gradify.data.grades.GradingInstanceData;
 import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
 import com.github.ltkicker.gradify.data.leaderboard.TopScorerAdapter;
@@ -37,6 +44,13 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
     private LinkedHashMap<String, Double> scores;
 
     private DatabaseReference dref;
+=======
+import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
+import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
+
+public class LeaderboardTopScorers extends AppCompatActivity {
+    Button backbutton;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,5 +133,15 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
                 .forEachOrdered(entry -> sortedMap.put(entry.getKey(), entry.getValue()));
 
         return sortedMap;
+
+        backbutton = (Button)findViewById(R.id.img_backbutton);
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LeaderboardTopScorers.this, LeaderboardActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
