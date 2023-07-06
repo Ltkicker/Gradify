@@ -20,7 +20,7 @@ public class Gradify extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity0_main_loading_withlogo);
+        setContentView(R.layout.activity7_main_menu);
 
         FirebaseUtils.init();
 
@@ -34,7 +34,7 @@ public class Gradify extends AppCompatActivity {
                 finish();
             }
 
-        }, 2000); // 4000 milliseconds delay
+        }, 10000); // 4000 milliseconds delay
 
     }
     private static final ArrayList<Activity> visitedAuthActivities = new ArrayList<>();
