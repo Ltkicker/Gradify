@@ -29,11 +29,11 @@ public class Gradify extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
         @Override
             public void run() {
-                startActivity (new Intent(Gradify.this, AuthPortalActivity.class));
+                startActivity (new Intent(Gradify.this, StudentOverallStandingActivity.class));
                 finish();
             }
 
-        }, 10000); // 4000 milliseconds delay
+        }, 1000);
 
     }
     private static final ArrayList<Activity> visitedAuthActivities = new ArrayList<>();

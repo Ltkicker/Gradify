@@ -2,6 +2,7 @@ package com.github.ltkicker.gradify.activities.leaderboard;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import android.view.View;
 import android.widget.Button;
@@ -41,6 +42,9 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
     TextView bdCategory4;
     TextView bdPercent1, bdPercent2, bdPercent3, bdPercent4;
     TextView bdPercentCurrent1, bdPercentCurrent2, bdPercentCurrent3, bdPercentCurrent4;
+
+    double finalGrade = 0;
+
     Button backbutton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -70,6 +74,7 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
         GradesRefresherListener listener = new GradesRefresherListener() {
             @Override
             public void onRefresh(HashMap<String, UserStandingData> data) {
+
                 for (ParentCategory parent : data.get(studentId).getBreakdown().keySet()) {
                     Double percentBr = parent.getPercentage() * 100;
                     Double percent = data.get(studentId).getBreakdown().get(parent);
@@ -77,6 +82,8 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
                     DecimalFormat decimalFormat2 = new DecimalFormat("#");
                     String formattedNumber = decimalFormat.format(percent) + "%";
                     String formattedNumber2 = decimalFormat2.format(percentBr) + "%";
+                    
+                    finalGrade += percent;
 
                     if (parent.getKey().equalsIgnoreCase("parentCategory1")) {
                         bdCategory1.setText(parent.getName());
@@ -96,7 +103,7 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
                         bdPercentCurrent4.setText(formattedNumber);
                     }
                 }
-                double finalGrade = data.get(studentId).getFinalGrade();
+                Log.d("eawveawve", "finalGrade: " + finalGrade);
                 TextView finalGradetxt = findViewById(R.id.overall_percentage);
                 finalGradetxt.setText(String.valueOf(finalGrade));
                 TextView uniGradetxt = findViewById(R.id.value_equivalent_grade);

@@ -25,18 +25,15 @@ public class UserStandingData {
 
     public void addParentCategoryScore(ParentCategory category, double score) {
         breakdown.put(category, score);
-        double a = 0.0;
-        for (ParentCategory parent : breakdown.keySet()) {
-            Double value = breakdown.get(parent);
-//            Log.d("awwww", "key " + parent.getName() + ", value: " + value);
-//            Log.d("awwww", "");
-            a += value;
-        }
-        finalGrade = a;
+        this.finalGrade += score;
     }
 
     public double getFinalGrade() {
-        return finalGrade;
+        return this.finalGrade;
+    }
+
+    public void setFinalGrade(double num) {
+        this.finalGrade = num;
     }
 
     public HashMap<ParentCategory, Double> getBreakdown() {

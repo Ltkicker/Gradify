@@ -89,58 +89,50 @@ public class StudentGradeManager{
 
     public static void getGrades(GradesRefresherListener listener) {
         classroomId = "NZItQ2M6m_y9IXcgOW7";
-        sbRef = FirebaseDatabase.getInstance().getReference().child("grades").child(classroomId).child("subcategories");
         sRef = FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("students");
-        dRef = FirebaseDatabase.getInstance().getReference("grades").child(classroomId);
-        dRef.child("parentcategory").addListenerForSingleValueEvent(new ValueEventListener() {
+        dRef = FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("categories");
+        dRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
 
-                    for(DataSnapshot categorySnapshot : snapshot.getChildren()) {
-                        SubCategFromParentListener listener2 = new SubCategFromParentListener() {
+                    for(DataSnapshot parentSnapshot : snapshot.getChildren()) {
+                        Double categoryPercent = parentSnapshot.child("percentage").getValue(Double.class);
+                        String categoryName = parentSnapshot.child("name").getValue(String.class);
+                        ParentCategory category = new ParentCategory(parentSnapshot.getKey(), categoryName, categoryPercent);
+
+                        sRef.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
-                            public void onFetch(ArrayList<SubCategory> data) {
-                                Double categoryPercent = categorySnapshot.child("percentage").getValue(Double.class);
-                                String categoryName = categorySnapshot.child("name").getValue(String.class);
-                                ParentCategory category = new ParentCategory(categorySnapshot.getKey(), categoryName, categoryPercent);
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                double sumCategory = 0;
 
-                                sRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                                    @Override
-                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                        double sumCategory = 0;
-                                        double maxScores = 0;
-                                        for(SubCategory x : data) {
-                                            maxScores += x.getMaxScore();
-                                        }
-                                        HashMap<String, UserStandingData> allStudentData = new HashMap<>();
-                                        for(DataSnapshot studentSnapshot : snapshot.getChildren()) {
-                                            UserStandingData userStandingData = new UserStandingData(studentSnapshot.getKey(), classroomId);
-                                            DataSnapshot parentCategory = studentSnapshot.child(categorySnapshot.getKey());
-                                            for(DataSnapshot subCategory : parentCategory.getChildren()) {
-                                                sumCategory += subCategory.getValue(Double.class);
-                                            }
-                                            double totalParentPercentage = ((sumCategory /  maxScores) * categoryPercent ) * 100;
-                                            Log.d("awevawe", totalParentPercentage + "");
-                                            userStandingData.addParentCategoryScore(category, totalParentPercentage);
-                                            allStudentData.put(studentSnapshot.getKey(), userStandingData);
-                                        }
-                                        listener.onRefresh(allStudentData);
+                                double totalpoints = 0;
+                                for(DataSnapshot subcateginstance : parentSnapshot.child("subcategories").getChildren()) {
+                                    totalpoints += subcateginstance.child("totalpoints").getValue(Double.class);
+                                }
 
+                                HashMap<String, UserStandingData> allStudentData = new HashMap<>();
+                                for(DataSnapshot studentSnapshot : snapshot.getChildren()) {
+                                    UserStandingData userStandingData = new UserStandingData(studentSnapshot.getKey(), classroomId);
+                                    DataSnapshot sParentSnapshot = studentSnapshot.child(parentSnapshot.getKey());
+                                    for(DataSnapshot sSubCategory : sParentSnapshot.getChildren()) {
+                                        sumCategory += sSubCategory.getValue(Double.class);
                                     }
+                                    double totalParentPercentage = ((sumCategory /  totalpoints) * categoryPercent ) * 100;
 
-                                    @Override
-                                    public void onCancelled(@NonNull DatabaseError error) {
+                                    userStandingData.addParentCategoryScore(category, totalParentPercentage);
+                                    allStudentData.put(studentSnapshot.getKey(), userStandingData);
+                                }
+                                listener.onRefresh(allStudentData);
 
-                                    }
-                                });
                             }
-                        };
-//                        ParentCategory category = new ParentCategory(categorySnapshot.getKey(), categorySnapshot.child("name").getValue(String.class), categorySnapshot.child("percentage").getValue(Double.class));
-//                        FirebaseUtils.getAllSubCategFromParents(classroomId, category, listener2);
 
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
                     }
-
                 }
             }
 
