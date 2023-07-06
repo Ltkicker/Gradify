@@ -104,7 +104,7 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
             }
         };
         StudentGradeManager.getGrades(listener);
-        FirebaseUtils.getAllParentCategories("NZItQ2M6m_y9IXcgOW7", listener);
+   //     FirebaseUtils.getAllParentCategories("NZItQ2M6m_y9IXcgOW7", listener);
 
         }
     }

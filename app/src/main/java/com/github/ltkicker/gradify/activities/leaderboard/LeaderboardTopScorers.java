@@ -55,7 +55,7 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b4_top_scorers_teacher_student);
 
-        SubCategory subCategory = (SubCategory) getIntent().getSerializableExtra("SUBCATEGORY");
+        SubCategory subCategory = (SubCategory)getIntent().getSerializableExtra("SUBCATEGORY");
         String subCategoryKey = getIntent().getStringExtra("SUBCATEGORYID");
         String parentCategoryKey = getIntent().getStringExtra("PARENTCATEGORYID");
 
@@ -128,9 +128,7 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
     }
 
     @Override
-    public void onItemClick(int position) {
-
-    private static LinkedHashMap<String, Double> sortByValues(LinkedHashMap<String, Double> map) {
+    public void onItemClick(int position) {private static LinkedHashMap<String, Double> sortByValues(LinkedHashMap<String, Double> map) {
         LinkedHashMap<String, Double> sortedMap = new LinkedHashMap<>();
 
         map.entrySet()
