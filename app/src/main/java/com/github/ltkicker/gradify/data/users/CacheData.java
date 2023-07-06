@@ -1,38 +1,27 @@
 package com.github.ltkicker.gradify.data.users;
 
-import android.content.Intent;
-import android.widget.Toast;
-
-import com.github.ltkicker.gradify.R;
-import com.github.ltkicker.gradify.activities.authentication.LoginActivity;
-import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
-
-public class UserCacheData {
+public class CacheData {
     private static FirebaseAuth mAuth;
     private static String username;
     private static boolean asTeacher;
 
     public static void updateUserCache(String username, boolean asTeacher) {
-        UserCacheData.username = username;
-        UserCacheData.asTeacher = asTeacher;
+        CacheData.username = username;
+        CacheData.asTeacher = asTeacher;
     }
 
 
     public static String getUsername(){
-        return UserCacheData.username;
+        return CacheData.username;
     }
     public static void setUsername(String username){
-        UserCacheData.username = username;
+        CacheData.username = username;
     }
 
     public static boolean isAuthenticated() {
-        if(UserCacheData.getUsername() == null) {
+        if(CacheData.getUsername() == null) {
             return false;
         }
         mAuth = FirebaseAuth.getInstance();
@@ -44,10 +33,10 @@ public class UserCacheData {
     }
 
     public static void setAsTeacher(boolean asTeacher) {
-        UserCacheData.asTeacher = asTeacher;
+        CacheData.asTeacher = asTeacher;
     }
 
     public static boolean isTeacher() {
-        return UserCacheData.asTeacher;
+        return CacheData.asTeacher;
     }
 }

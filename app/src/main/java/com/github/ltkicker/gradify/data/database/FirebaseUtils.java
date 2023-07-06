@@ -3,14 +3,14 @@ package com.github.ltkicker.gradify.data.database;
 import androidx.annotation.NonNull;
 
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
+import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class FirebaseUtils {
@@ -43,7 +43,7 @@ public class FirebaseUtils {
     }
 
     public interface ParentCategoryListener {
-        void onFetch(ArrayList<String> parentCategories);
+        void onFetch(ArrayList<ParentCategory> parentCategories);
         void onCancel(String error);
     }
 
@@ -53,11 +53,11 @@ public class FirebaseUtils {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if(snapshot.exists()) {
-                            ArrayList<String> values = new ArrayList<>();
+                            ArrayList<ParentCategory> values = new ArrayList<>();
                             for(DataSnapshot child : snapshot.getChildren()) {
-                                values.add(child.getKey());
-                                listener.onFetch(values);
+                                values.add(new ParentCategory(child.getKey(), child.child("percentage").getValue(Double.class)));
                             }
+                            listener.onFetch(values);
                         } else {
                             listener.onCancel("Something went wrong");
                         }
@@ -71,15 +71,39 @@ public class FirebaseUtils {
         });
     }
 
+//    public static void getAllSubCategories(String classroomId, SubCategoriesListener listener) {
+//        FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("subcategories")
+//                .addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                        if(snapshot.exists()) {
+//
+//                            for(DataSnapshot child : snapshot.getChildren()) {
+//                                values.put(new ParentCategory(child.getKey(), child.child("percentage").getValue(Double.class)));
+//                            }
+//                            listener.onFetch(values);
+//                        } else {
+//                            listener.onCancel("Something went wrong");
+//                        }
+//
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError error) {
+//
+//                    }
+//                });
+//    }
+
 
     public static ArrayList<String> getClassListOfUsersById() {
         ArrayList<String> result = new ArrayList<>();
         DatabaseReference tempDataRef;
-        if(UserCacheData.isTeacher()) {
-            tempDataRef = mDataRef.child("users").child(UserCacheData.getUsername()).child("classrooms").child("asTeacher");
+        if(CacheData.isTeacher()) {
+            tempDataRef = mDataRef.child("users").child(CacheData.getUsername()).child("classrooms").child("asTeacher");
 
         } else {
-            tempDataRef = mDataRef.child("users").child(UserCacheData.getUsername()).child("classrooms").child("asStudent");
+            tempDataRef = mDataRef.child("users").child(CacheData.getUsername()).child("classrooms").child("asStudent");
 
         }
         tempDataRef.addListenerForSingleValueEvent(new ValueEventListener() {

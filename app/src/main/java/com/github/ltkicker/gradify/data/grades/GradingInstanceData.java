@@ -1,22 +1,39 @@
 package com.github.ltkicker.gradify.data.grades;
 
-import java.time.Instant;
-import java.util.HashMap;
-
 public class GradingInstanceData {
-    long unixDate;
-    String altName;
-    double maxScore;
-    HashMap<String, Double> scores;
 
-    public GradingInstanceData() {
-        scores = new HashMap<>();
+    int place;
+
+    String studentId;
+    double score;
+
+    public GradingInstanceData(String studentId, double score) {
+
+        this.studentId = studentId;
+        this.score = score;
     }
 
-    public GradingInstanceData(String name, double maxScore) {
-        this.altName = name;
-        this.maxScore = maxScore;
-        this.unixDate = Instant.now().getEpochSecond();
-        scores = new HashMap<>();
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
+
+    public void setPlace(int i) {
+        this.place = i;
+    }
+
+    public int getPlace() {
+        return this.place;
     }
 }

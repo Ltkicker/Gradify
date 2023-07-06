@@ -49,7 +49,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
@@ -124,6 +123,7 @@
                 android:orientation="vertical">
 
                 <TableLayout
+                    android:id="@+id/gradeSheetLayout"
                     android:layout_width="1546dp"
                     android:layout_height="319dp"
                     android:layout_marginStart="10dp"
@@ -551,6 +551,7 @@
                             android:text="@string/row"
                             android:textSize="12dp" />
 
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -721,6 +722,7 @@
                             android:text="@string/row"
                             android:textSize="12dp" />
 
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -889,6 +891,7 @@
                             android:padding="10sp"
                             android:text="@string/row"
                             android:textSize="12dp" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1059,6 +1062,7 @@
                             android:padding="10sp"
                             android:text="@string/row"
                             android:textSize="12dp" />
+
 
                         <TextView
                             android:layout_width="wrap_content"

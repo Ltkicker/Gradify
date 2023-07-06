@@ -1,10 +1,11 @@
 package com.github.ltkicker.gradify.data.leaderboard;
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class SubCategory {
+public class SubCategory implements Serializable {
 
     private String name;
     private long date;

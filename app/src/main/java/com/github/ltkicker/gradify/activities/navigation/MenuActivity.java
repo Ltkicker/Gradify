@@ -2,7 +2,6 @@ package com.github.ltkicker.gradify.activities.navigation;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -14,13 +13,13 @@ import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
 import com.github.ltkicker.gradify.activities.classroom.ClassGradeSheetActivity;
 import com.github.ltkicker.gradify.activities.leaderboard.LeaderboardActivity;
 import com.github.ltkicker.gradify.activities.moreinfo.MoreInfoActivity;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
+import com.github.ltkicker.gradify.data.users.CacheData;
 
 public class MenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(!UserCacheData.isAuthenticated()) {
+        if(!CacheData.isAuthenticated()) {
             Intent intent = new Intent(this, AuthPortalActivity.class);
             startActivity(intent);
             finish();

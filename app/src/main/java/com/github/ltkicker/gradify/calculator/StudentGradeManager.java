@@ -1,13 +1,7 @@
 package com.github.ltkicker.gradify.calculator;
 
-import android.provider.ContactsContract;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 
-import com.github.ltkicker.gradify.activities.authentication.SignupActivity;
-import com.github.ltkicker.gradify.data.database.FirebaseUtils;
-import com.github.ltkicker.gradify.data.grades.StudentGrade;
 import com.github.ltkicker.gradify.data.grades.UserStandingData;
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
 import com.google.firebase.database.DataSnapshot;
@@ -16,21 +10,36 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashMap;
-
 public class StudentGradeManager{
     private static DatabaseReference dRef;
     private static DatabaseReference sRef;
-    private static String classroomId;
+    private static String classroomId = "NZItQ2M6m_y9IXcgOW7";
 
-    public void init() {
+
+    public StudentGradeManager() {
 
     }
 
+    public StudentGradeManager(String classroomId) {
+
+    }
+
+    public static void calculateSingleStudentGrade(String studentId) {
+        FirebaseDatabase.getInstance().getReference("grades").child(classroomId)
+                .child("students").child("studentId").addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+    }
+
     public static void startCalculate() {
-        classroomId = "NZItQ2M6m_y9IXcgOW7";
         dRef = FirebaseDatabase.getInstance().getReference("grades").child(classroomId);
         dRef.child("students").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

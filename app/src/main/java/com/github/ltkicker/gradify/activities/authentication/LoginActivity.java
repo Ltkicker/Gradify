@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.Gradify;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (UserCacheData.isAuthenticated()) {
+        if (CacheData.isAuthenticated()) {
             Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
             startActivity(intent);
             finish();
@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
 
         TextView bigLoginTxt = findViewById(R.id.loginBigTxt);
         ImageView loginImg = findViewById(R.id.loginImg);
-        if(UserCacheData.isTeacher()) {
+        if(CacheData.isTeacher()) {
             bigLoginTxt.setText("Teacher Login:");
             loginImg.setImageResource(R.drawable.img_teacher_2);
         } else {
@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
                     FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                             .addOnCompleteListener(task -> {
                                 if (task.isSuccessful()) {
-                                    UserCacheData.setUsername(username);
+                                    CacheData.setUsername(username);
                                     Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                                     startActivity(intent);

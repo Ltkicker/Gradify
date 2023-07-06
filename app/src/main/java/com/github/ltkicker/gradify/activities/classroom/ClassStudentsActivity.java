@@ -2,17 +2,14 @@ package com.github.ltkicker.gradify.activities.classroom;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
@@ -21,7 +18,7 @@ import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.classrooms.StudentListAdapter;
 import com.github.ltkicker.gradify.data.classrooms.StudentListInterface;
 import com.github.ltkicker.gradify.data.users.User;
-import com.github.ltkicker.gradify.data.users.UserCacheData;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -41,7 +38,7 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(!UserCacheData.isAuthenticated()) {
+        if(!CacheData.isAuthenticated()) {
             Intent intent = new Intent(this, AuthPortalActivity.class);
             startActivity(intent);
             finish();
@@ -80,7 +77,7 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
 
         cRef = FirebaseDatabase.getInstance().getReference("classrooms");
         dRef = FirebaseDatabase.getInstance().getReference("users");
-        dRef.child(UserCacheData.getUsername()).child("classrooms").child("asTeacher").addValueEventListener(new ValueEventListener() {
+        dRef.child(CacheData.getUsername()).child("classrooms").child("asTeacher").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()) {

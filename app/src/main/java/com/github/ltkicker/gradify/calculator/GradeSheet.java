@@ -35,7 +35,7 @@ public class GradeSheet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a0_gradesheet_teacher);
         Intent intent = new Intent(GradeSheet.this, MenuActivity.class);
-        recyclerView=findViewById(R.id.recyclerView);
+        recyclerView=findViewById(R.id.recordedScoresList);
         searchView=findViewById(R.id.searchView);
 
         for (int i = 0; i < studentList.length; i++) {
