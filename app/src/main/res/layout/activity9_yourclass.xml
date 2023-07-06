@@ -9,8 +9,8 @@
 
     <View
         android:id="@+id/img_background"
-        android:layout_width="461dp"
-        android:layout_height="953dp"
+        android:layout_width="508dp"
+        android:layout_height="1030dp"
         android:background="@drawable/img_background3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

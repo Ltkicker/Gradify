@@ -44,6 +44,7 @@
         app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
+
     <Button
         android:id="@+id/img_backbutton"
         android:layout_width="48dp"
@@ -59,10 +60,11 @@
         app:iconTint="#EDFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
-
 
     <TextView
         android:id="@+id/subject_section"
