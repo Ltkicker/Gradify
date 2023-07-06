@@ -338,6 +338,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        app:layout_constraintGuide_end="391dp"
         app:layout_constraintGuide_begin="20dp" />
 
 
@@ -355,6 +356,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

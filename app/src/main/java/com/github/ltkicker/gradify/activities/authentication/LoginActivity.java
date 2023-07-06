@@ -22,13 +22,16 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
+    private DatabaseReference dRef;
     Button backbutton;
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             finish();
             return;
         }
+
         setContentView(R.layout.activity5_login);
 
         backbutton = (Button)findViewById(R.id.img_backbutton);
@@ -76,14 +80,13 @@ public class LoginActivity extends AppCompatActivity {
         TextInputEditText etPassword = findViewById(R.id.login_password);
         String username = Objects.requireNonNull(etUsername.getText()).toString();
         String password = Objects.requireNonNull(etPassword.getText()).toString();
-        Log.d("LOL", username);
-        FirebaseDatabase.getInstance().getReference("users").child(username).child("email").addListenerForSingleValueEvent(new ValueEventListener() {
+
+        dRef = FirebaseDatabase.getInstance().getReference("users").child(username);
+        dRef.child("email").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Log.d("LOL", "yes");
                 if(snapshot.exists()) {
                     String email = snapshot.getValue(String.class);
-                    Log.d("LOL", email);
                     FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                             .addOnCompleteListener(task -> {
                                 if (task.isSuccessful()) {
@@ -107,6 +110,21 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
+//        dRef.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                if (snapshot.exists()) {
+//                    User user = snapshot.getValue(User.class);
+//                    CacheData.setInstanceUser(user);
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
     }
 
 }

@@ -397,7 +397,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/breakdown_title3"
+        android:id="@+id/parentCategory3"
         android:layout_width="63dp"
         android:layout_height="18dp"
         android:layout_marginStart="101dp"
@@ -409,7 +409,7 @@
         android:textColorHint="#FFFFFF"
         android:textSize="11sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/breakdown_title4"
+        app:layout_constraintEnd_toStartOf="@+id/parentCategory4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/breakdown_bkg1"
         tools:ignore="TextContrastCheck" />
@@ -451,7 +451,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/breakdown_title4"
+        android:id="@+id/parentCategory4"
         android:layout_width="63dp"
         android:layout_height="18dp"
         android:layout_marginTop="38dp"

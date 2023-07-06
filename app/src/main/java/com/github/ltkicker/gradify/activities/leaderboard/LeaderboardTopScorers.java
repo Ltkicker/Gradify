@@ -22,6 +22,8 @@ import com.github.ltkicker.gradify.data.grades.GradingInstanceData;
 import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
 import com.github.ltkicker.gradify.data.leaderboard.TopScorerAdapter;
 import com.github.ltkicker.gradify.data.leaderboard.TopScorerInterface;
+import com.github.ltkicker.gradify.data.users.CacheData;
+import com.github.ltkicker.gradify.data.users.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -45,8 +47,7 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
     private LinkedHashMap<String, Double> scores;
 
     private DatabaseReference dref;
-
-//public class LeaderboardTopScorers extends AppCompatActivity {
+  
     Button backbutton;
 
     @Override
@@ -86,6 +87,7 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
                 startActivity(intent);
             }
         });
+
         dref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -110,8 +112,6 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
                         } else if (i == 3) {
                             thirdplace.setText(key);
                         }
-
-                        Log.d("AWEVAWEV", i + ". " + key + ": " + value);
                         i++;
                         studentScores.add(data);
                     }
@@ -130,8 +130,6 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
     @Override
     public void onItemClick(int position) {
 
-    }
-
     private static LinkedHashMap<String, Double> sortByValues(LinkedHashMap<String, Double> map) {
         LinkedHashMap<String, Double> sortedMap = new LinkedHashMap<>();
 
@@ -141,7 +139,5 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
                 .forEachOrdered(entry -> sortedMap.put(entry.getKey(), entry.getValue()));
 
         return sortedMap;
-    }
-
     }
 
