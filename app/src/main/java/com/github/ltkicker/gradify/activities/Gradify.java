@@ -25,7 +25,6 @@ public class Gradify extends AppCompatActivity {
         FirebaseUtils.init();
 
 
-
         // Add a delay before showing the next loading screen
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {

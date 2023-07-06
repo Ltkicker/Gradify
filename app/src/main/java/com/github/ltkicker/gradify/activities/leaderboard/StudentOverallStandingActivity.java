@@ -1,7 +1,10 @@
 package com.github.ltkicker.gradify.activities.leaderboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +20,12 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
     private ArrayList<ParentCategory> parentCategories;
 
 
+import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
+import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
+
+public class StudentOverallStandingActivity extends AppCompatActivity {
+    Button backbutton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,5 +55,14 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
         };
         FirebaseUtils.getAllParentCategories("NZItQ2M6m_y9IXcgOW7", listener);
 
+        backbutton = (Button)findViewById(R.id.img_backbutton);
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StudentOverallStandingActivity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

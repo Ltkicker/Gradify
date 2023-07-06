@@ -127,7 +127,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="389dp">
+            android:layout_height="314dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -135,8 +135,8 @@
                 android:orientation="vertical">
 
                 <TableLayout
-                    android:layout_width="395dp"
-                    android:layout_height="471dp"
+                    android:layout_width="399dp"
+                    android:layout_height="464dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp">
@@ -154,7 +154,7 @@
                             android:padding="10sp"
                             android:text="@string/act1"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="49dp"
@@ -164,9 +164,10 @@
                             android:padding="10sp"
                             android:text="@string/row2Quiz1"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -190,7 +191,7 @@
                             android:padding="10sp"
                             android:text="@string/row2Attendance1"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
 
@@ -207,7 +208,7 @@
                             android:padding="10sp"
                             android:text="@string/act2"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="49dp"
@@ -217,9 +218,10 @@
                             android:padding="10sp"
                             android:text="@string/row2Quiz2"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -243,7 +245,7 @@
                             android:padding="10sp"
                             android:text="@string/row2Attendance2"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
 
@@ -260,7 +262,7 @@
                             android:padding="10sp"
                             android:text="@string/act3"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="49dp"
@@ -270,9 +272,10 @@
                             android:padding="10sp"
                             android:text="@string/row2Quiz3"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -286,7 +289,7 @@
                             android:padding="10sp"
                             android:text="@string/Attendance"
                             android:textColor="@color/black"
-                            android:textSize="12sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="49dp"
@@ -296,7 +299,7 @@
                             android:padding="10sp"
                             android:text="@string/row2Attendance3"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
 
@@ -313,7 +316,7 @@
                             android:padding="10sp"
                             android:text="@string/act4"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="49dp"
@@ -323,9 +326,10 @@
                             android:padding="10sp"
                             android:text="@string/row2Quiz4"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -349,7 +353,7 @@
                             android:padding="10sp"
                             android:text="@string/row2Attendance4"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
 
@@ -375,7 +379,7 @@
                             android:padding="10sp"
                             android:text="@string/act1.1"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="49dp"
@@ -385,7 +389,7 @@
                             android:padding="10sp"
                             android:text="@string/row2Exam1"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
 
@@ -402,7 +406,7 @@
                             android:padding="10sp"
                             android:text="@string/act1.2"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="49dp"
@@ -412,9 +416,10 @@
                             android:padding="10sp"
                             android:text="@string/row2Exam2"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -438,7 +443,7 @@
                             android:padding="10sp"
                             android:text="@string/row2Attendance5"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
 
@@ -455,7 +460,7 @@
                             android:padding="10sp"
                             android:text="@string/act1.3"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                         <TextView
                             android:layout_width="49dp"
@@ -465,10 +470,9 @@
                             android:padding="10sp"
                             android:text="@string/row2Exam3"
                             android:textColor="@color/black"
-                            android:textSize="10sp" />
+                            android:textSize="12dp" />
 
                     </TableRow>
-
 
 
                 </TableLayout>

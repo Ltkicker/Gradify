@@ -2,14 +2,17 @@ package com.github.ltkicker.gradify.activities.classroom;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.android.material.textfield.TextInputEditText;
@@ -24,7 +27,7 @@ import java.util.ArrayList;
 
 public class ClassEditActivity extends AppCompatActivity {
     DatabaseReference fbClasses;
-
+    Button backbutton;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +42,15 @@ public class ClassEditActivity extends AppCompatActivity {
 
         TextView createClass = findViewById(R.id.clickable_createclass);
         createClass.setOnClickListener(view -> registerClass());
+      
+        backbutton = (Button)findViewById(R.id.img_backbutton);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClassEditActivity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

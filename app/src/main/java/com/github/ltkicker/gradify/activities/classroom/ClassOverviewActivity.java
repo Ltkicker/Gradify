@@ -3,6 +3,7 @@ package com.github.ltkicker.gradify.activities.classroom;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.authentication.AuthPortalActivity;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.firebase.database.DataSnapshot;
@@ -20,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class ClassOverviewActivity extends AppCompatActivity {
     DatabaseReference cRef;
+    Button backbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +67,15 @@ public class ClassOverviewActivity extends AppCompatActivity {
 
         subjectDescription.setText(result.getTitle());
         classCode.setText(result.getCode());
+        backbutton = (Button)findViewById(R.id.img_backbutton);
 
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClassOverviewActivity.this, ClassDashboardActivity.class);
+                startActivity(intent);
+            }
+        });
         manageStudents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
