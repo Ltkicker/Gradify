@@ -35,7 +35,7 @@ public class GradeSheetAdapter extends RecyclerView.Adapter<GradeSheetAdapter.Vi
 
     @Override
     public void onBindViewHolder(@NonNull GradeSheetAdapter.ViewHolder holder, int position) {
-        holder.fullName.setText(students.get(position).getFullName());
+        holder.fullName.setText(students.get(position).getFirstName() + " " + students.get(position).getLastName());
         holder.idNumber.setText(students.get(position).getIdNumber());
     }
 

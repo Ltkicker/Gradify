@@ -13,6 +13,9 @@ public class UserStandingData {
     String classroomId;
     double finalGrade;
     String finalGradeFormatted;
+
+
+
     HashMap<ParentCategory, Double> breakdown = new HashMap<>();
 
     public UserStandingData(String studentId, String classroomId) {
@@ -23,6 +26,20 @@ public class UserStandingData {
     public void addCategoryScore(ParentCategory category, double score) {
         breakdown.put(category, score);
     }
+
+    public double getFinalGrade() {
+        double a = 0.0;
+        for (ParentCategory parent : breakdown.keySet()) {
+            Double value = breakdown.get(parent);
+            a += value;
+        }
+        return a;
+    }
+
+    public HashMap<ParentCategory, Double> getBreakdown() {
+        return breakdown;
+    }
+
 
 //    public void calculatePersonalGrade(String classroomId) {
 //        FirebaseDatabase.getInstance().getReference("grades").child(classroomId)

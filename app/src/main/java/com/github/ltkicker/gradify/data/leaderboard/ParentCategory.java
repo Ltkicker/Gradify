@@ -4,10 +4,12 @@ public class ParentCategory {
 
     private String name;
     private double percentage;
+    private String key;
 
-    public ParentCategory(String name, double percentage) {
+    public ParentCategory(String key, String name, double percentage) {
         this.name = name;
         this.percentage = percentage;
+        this.key = key;
     }
 
 
@@ -17,5 +19,9 @@ public class ParentCategory {
 
     public double getPercentage() {
         return percentage;
+    }
+
+    public String getKey() {
+        return key;
     }
 }

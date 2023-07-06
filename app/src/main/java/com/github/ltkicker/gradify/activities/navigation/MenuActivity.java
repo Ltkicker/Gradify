@@ -35,7 +35,7 @@ public class MenuActivity extends AppCompatActivity {
         ImageButton gradesheet = findViewById(R.id.menu_gradesheet);
         gradesheet.setOnClickListener(view -> navigate("GRADESHEET"));
 
-        ImageButton leaderboard = findViewById(R.id.menu_leaderboard);
+        ImageButton leaderboard = findViewById(R.id.menu_menuleaderbaord);
         leaderboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
