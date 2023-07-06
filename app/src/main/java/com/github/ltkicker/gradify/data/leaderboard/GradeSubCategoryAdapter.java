@@ -35,7 +35,7 @@ public class GradeSubCategoryAdapter extends RecyclerView.Adapter<GradeSubCatego
     @Override
     public void onBindViewHolder(@NonNull GradeSubCategoryAdapter.MyViewHolder holder, int position) {
         holder.name.setText(subCategories.get(position).getName());
-        holder.date.setText(subCategories.get(position).getDate());
+        holder.date.setText(subCategories.get(position).getFormattedDate());
     }
 
     @Override

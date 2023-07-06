@@ -14,6 +14,7 @@ import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.calculator.StudentGradeManager;
 import com.github.ltkicker.gradify.calculator.UniversityGrade;
 import com.github.ltkicker.gradify.calculator.listeners.GradesRefresherListener;
+import com.github.ltkicker.gradify.data.database.FirebaseUtils;
 import com.github.ltkicker.gradify.data.grades.UserStandingData;
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
 import com.google.firebase.database.DatabaseReference;
@@ -104,8 +105,6 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
             }
         };
         StudentGradeManager.getGrades(listener);
-        FirebaseUtils.getAllParentCategories("NZItQ2M6m_y9IXcgOW7", listener);
-
         }
     }
 

@@ -1,9 +1,12 @@
 package com.github.ltkicker.gradify.data.database;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
+import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
 import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -11,6 +14,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class FirebaseUtils {
@@ -71,20 +75,22 @@ public class FirebaseUtils {
         });
     }
 
-//    public static void getAllSubCategories(String classroomId, SubCategoriesListener listener) {
-//        FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("subcategories")
+//    public static void getAllSubCategFromParents(String classroomId, ParentCategory parent, SubCategFromParentListener listener) {
+//        FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("subcategories").child(parent.getKey())
 //                .addListenerForSingleValueEvent(new ValueEventListener() {
 //                    @Override
 //                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                        if(snapshot.exists()) {
 //
+//                        if(snapshot.exists()) {
+//                            ArrayList<SubCategory> values = new ArrayList<>();
+//                            Log.d("awevawe", "enter");
 //                            for(DataSnapshot child : snapshot.getChildren()) {
-//                                values.put(new ParentCategory(child.getKey(), child.child("percentage").getValue(Double.class)));
+//                                SubCategory subCategory = child.getValue(SubCategory.class);
+//                                values.add(subCategory);
 //                            }
 //                            listener.onFetch(values);
-//                        } else {
-//                            listener.onCancel("Something went wrong");
 //                        }
+//                        Log.d("awevawe", "exit");
 //
 //                    }
 //

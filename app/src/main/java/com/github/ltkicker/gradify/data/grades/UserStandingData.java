@@ -23,13 +23,16 @@ public class UserStandingData {
         this.studentId = studentId;
     }
 
-    public void addCategoryScore(ParentCategory category, double score) {
+    public void addParentCategoryScore(ParentCategory category, double score) {
         breakdown.put(category, score);
         double a = 0.0;
         for (ParentCategory parent : breakdown.keySet()) {
             Double value = breakdown.get(parent);
+//            Log.d("awwww", "key " + parent.getName() + ", value: " + value);
+//            Log.d("awwww", "");
             a += value;
         }
+        finalGrade = a;
     }
 
     public double getFinalGrade() {
