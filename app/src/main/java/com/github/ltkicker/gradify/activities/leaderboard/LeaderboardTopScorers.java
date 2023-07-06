@@ -3,7 +3,6 @@ package com.github.ltkicker.gradify.activities.leaderboard;
 import android.content.Intent;
 import android.os.Bundle;
 
-import android.util.Log;
 import android.widget.TextView;
 
 import android.view.View;
@@ -22,22 +21,16 @@ import com.github.ltkicker.gradify.data.grades.GradingInstanceData;
 import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
 import com.github.ltkicker.gradify.data.leaderboard.TopScorerAdapter;
 import com.github.ltkicker.gradify.data.leaderboard.TopScorerInterface;
-import com.github.ltkicker.gradify.data.users.CacheData;
-import com.github.ltkicker.gradify.data.users.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
-import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 public class LeaderboardTopScorers extends AppCompatActivity implements TopScorerInterface {
@@ -128,7 +121,10 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
     }
 
     @Override
-    public void onItemClick(int position) {private static LinkedHashMap<String, Double> sortByValues(LinkedHashMap<String, Double> map) {
+    public void onItemClick(int position) {
+    }
+    private static LinkedHashMap<String, Double> sortByValues(LinkedHashMap<String, Double> map) {
+
         LinkedHashMap<String, Double> sortedMap = new LinkedHashMap<>();
 
         map.entrySet()
@@ -138,4 +134,5 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
 
         return sortedMap;
     }
+}
 

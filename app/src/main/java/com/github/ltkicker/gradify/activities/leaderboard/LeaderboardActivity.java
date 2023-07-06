@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,6 +20,7 @@ import com.github.ltkicker.gradify.data.classrooms.ClassListAdapter;
 import com.github.ltkicker.gradify.data.leaderboard.GradeSubCategoryAdapter;
 import com.github.ltkicker.gradify.data.leaderboard.GradeSubCategoryInterface;
 import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -42,6 +44,7 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b0_leaderboard_teacher);
+
         subKey = new ArrayList<>();
 
         // Kato naning mag change2 ug category pero diari rako taman kay bungkag ang front end ani
@@ -56,6 +59,8 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
                 startActivity(intent);
             }
         });
+
+
         subCategList = findViewById(R.id.subCategList);
         subCategList.setLayoutManager(new LinearLayoutManager(this));
         subCategList.setBackgroundResource(android.R.color.transparent);
@@ -82,6 +87,41 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+        TextView attendanceTxt = findViewById(R.id.parent_category1);
+        attendanceTxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                keyReference = "parentcategory1";
+                adapter.notifyDataSetChanged();
+            }
+        });
+
+        TextView quizzesTxt = findViewById(R.id.parent_categor2);
+        quizzesTxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                keyReference = "parentcategory2";
+                adapter.notifyDataSetChanged();
+            }
+        });
+
+        TextView projectTxt = findViewById(R.id.parent_category3);
+        quizzesTxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                keyReference = "parentcategory3";
+                adapter.notifyDataSetChanged();
+            }
+        });
+
+        TextView othersTxt = findViewById(R.id.parent_category4);
+        othersTxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                keyReference = "parentcategory4";
+                adapter.notifyDataSetChanged();
             }
         });
     }

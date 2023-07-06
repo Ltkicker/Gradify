@@ -10,12 +10,20 @@ public class SubCategory implements Serializable {
     private String name;
     private long date;
 
+    private double maxScore;
+
+    public SubCategory() {
+
+    }
 
     public String getName() {
         return name;
     }
+    public double getMaxScore() {
+        return maxScore;
+    }
 
-    public String getDate() {
+    public String getFormattedDate() {
         SimpleDateFormat sdf = new SimpleDateFormat("MMMM d, yyyy H:mm");
         sdf.setTimeZone(TimeZone.getDefault());
         Date date1 = new Date(date * 1000);
@@ -23,7 +31,23 @@ public class SubCategory implements Serializable {
         return formattedDate;
     }
 
+    public double getDate() {
+        return date;
+    }
+
     public long getDateInUnix() {
         return date;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDate(int date) {
+        this.date = date;
+    }
+
+    public void setMaxScore(double maxScore) {
+        this.maxScore = maxScore;
     }
 }

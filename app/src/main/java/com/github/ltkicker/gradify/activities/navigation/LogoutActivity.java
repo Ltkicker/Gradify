@@ -33,7 +33,7 @@ public class LogoutActivity extends AppCompatActivity {
             return;
         }
         setContentView(R.layout.activity8_if_homebuttonicon_goto_logout);
-        backbutton = (Button)findViewById(R.id.iconback7);
+        backbutton = (Button)findViewById(R.id.img_backbutton);
 
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
