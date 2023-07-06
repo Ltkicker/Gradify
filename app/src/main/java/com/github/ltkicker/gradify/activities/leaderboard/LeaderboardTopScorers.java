@@ -28,6 +28,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
+import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -42,11 +45,8 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
     private LinkedHashMap<String, Double> scores;
 
     private DatabaseReference dref;
-=======
-import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
-import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
 
-public class LeaderboardTopScorers extends AppCompatActivity {
+//public class LeaderboardTopScorers extends AppCompatActivity {
     Button backbutton;
 
     @Override
@@ -77,7 +77,15 @@ public class LeaderboardTopScorers extends AppCompatActivity {
         TextView firstplace = findViewById(R.id.student_firstname_top1);
         TextView secondplace = findViewById(R.id.student_firstname_top2);
         TextView thirdplace = findViewById(R.id.student_firstname_top3);
+        backbutton = (Button)findViewById(R.id.img_backbutton);
 
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LeaderboardTopScorers.this, LeaderboardActivity.class);
+                startActivity(intent);
+            }
+        });
         dref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -133,15 +141,7 @@ public class LeaderboardTopScorers extends AppCompatActivity {
                 .forEachOrdered(entry -> sortedMap.put(entry.getKey(), entry.getValue()));
 
         return sortedMap;
-
-        backbutton = (Button)findViewById(R.id.img_backbutton);
-
-        backbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LeaderboardTopScorers.this, LeaderboardActivity.class);
-                startActivity(intent);
-            }
-        });
     }
-}
+
+    }
+
