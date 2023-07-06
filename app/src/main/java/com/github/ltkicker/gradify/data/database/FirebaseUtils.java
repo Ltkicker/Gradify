@@ -55,7 +55,7 @@ public class FirebaseUtils {
                         if(snapshot.exists()) {
                             ArrayList<ParentCategory> values = new ArrayList<>();
                             for(DataSnapshot child : snapshot.getChildren()) {
-                                values.add(new ParentCategory(child.getKey(), child.child("percentage").getValue(Double.class)));
+                                values.add(new ParentCategory(child.getKey(), child.child("name").getValue(String.class), child.child("percentage").getValue(Double.class)));
                             }
                             listener.onFetch(values);
                         } else {
