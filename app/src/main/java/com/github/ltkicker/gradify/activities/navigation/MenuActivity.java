@@ -2,9 +2,11 @@ package com.github.ltkicker.gradify.activities.navigation;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
@@ -14,6 +16,11 @@ import com.github.ltkicker.gradify.activities.classroom.ClassGradeSheetActivity;
 import com.github.ltkicker.gradify.activities.leaderboard.LeaderboardActivity;
 import com.github.ltkicker.gradify.activities.moreinfo.MoreInfoActivity;
 import com.github.ltkicker.gradify.data.users.CacheData;
+import com.github.ltkicker.gradify.data.users.User;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MenuActivity extends AppCompatActivity {
     @Override
@@ -25,6 +32,7 @@ public class MenuActivity extends AppCompatActivity {
             finish();
             return;
         }
+
         setContentView(R.layout.activity7_main_menu);
         ImageButton classDashboard = findViewById(R.id.menu_addclass);
         classDashboard.setOnClickListener(view -> navigate("CLASSDASH"));

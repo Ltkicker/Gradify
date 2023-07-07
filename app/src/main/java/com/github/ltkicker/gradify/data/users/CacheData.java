@@ -21,6 +21,24 @@ public class CacheData {
     private static String username;
     private static boolean asTeacher;
 
+    private static String idNumber;
+
+
+
+    public static void setMiddleName(String middleName) {
+        CacheData.middleName = middleName;
+    }
+
+    public static String getLastName() {
+        return LastName;
+    }
+
+    public static void setLastName(String lastName) {
+        LastName = lastName;
+    }
+
+    private static String firstName, middleName, LastName;
+
 
     public static void updateUserCache(String username, boolean asTeacher) {
         CacheData.username = username;
@@ -53,6 +71,26 @@ public class CacheData {
 
     public static boolean isTeacher() {
         return CacheData.asTeacher;
+    }
+
+    public static String getIdNumber() {
+        return idNumber;
+    }
+
+    public static void setIdNumber(String idNumber) {
+        CacheData.idNumber = idNumber;
+    }
+
+    public static String getFirstName() {
+        return firstName;
+    }
+
+    public static void setFirstName(String firstName) {
+        CacheData.firstName = firstName;
+    }
+
+    public static String getMiddleName() {
+        return middleName;
     }
 
     public static void init() {

@@ -18,6 +18,7 @@ import com.github.ltkicker.gradify.activities.leaderboard.LeaderboardActivity;
 import com.github.ltkicker.gradify.activities.leaderboard.LeaderboardTopScorers;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.users.CacheData;
+import com.github.ltkicker.gradify.data.users.User;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -82,15 +83,24 @@ public class LoginActivity extends AppCompatActivity {
         String password = Objects.requireNonNull(etPassword.getText()).toString();
 
         dRef = FirebaseDatabase.getInstance().getReference("users").child(username);
-        dRef.child("email").addListenerForSingleValueEvent(new ValueEventListener() {
+        dRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()) {
-                    String email = snapshot.getValue(String.class);
+                    String email = snapshot.child("email").getValue(String.class);
                     FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                             .addOnCompleteListener(task -> {
                                 if (task.isSuccessful()) {
+                                    String studentId = snapshot.child("idNumber").getValue(String.class);
+                                    String firstName = snapshot.child("firstName").getValue(String.class);
+                                    String middleName = snapshot.child("middleName").getValue(String.class);
+                                    String lastName = snapshot.child("lastName").getValue(String.class);
                                     CacheData.setUsername(username);
+                                    CacheData.setIdNumber(studentId);
+                                    CacheData.setFirstName(firstName);
+                                    CacheData.setMiddleName(middleName);
+                                    CacheData.setLastName(lastName);
+                                    Log.d("awevaweva", CacheData.getUsername());
                                     Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                                     startActivity(intent);

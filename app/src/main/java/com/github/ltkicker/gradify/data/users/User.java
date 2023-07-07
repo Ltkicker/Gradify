@@ -3,6 +3,7 @@ package com.github.ltkicker.gradify.data.users;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class User {
 
@@ -14,7 +15,7 @@ public class User {
     private String gender;
     private String idNumber;
 
-    private ArrayList<Classroom> classrooms;
+    private HashMap<String, ArrayList<String>> classrooms;
 
     private boolean isTeacher;
 
@@ -91,11 +92,11 @@ public class User {
         this.gender = gender;
     }
 
-    public ArrayList<Classroom> getClassrooms() {
+    public HashMap<String, ArrayList<String>> getClassrooms() {
         return classrooms;
     }
 
-    public void setClassrooms(ArrayList<Classroom> classrooms) {
+    public void setClassrooms(HashMap<String, ArrayList<String>> classrooms) {
         this.classrooms = classrooms;
     }
 

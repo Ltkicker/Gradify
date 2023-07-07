@@ -35,8 +35,6 @@ public class ClassEmptyActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        setContentView(R.layout.activity9a_addclass_teacher);
         backbutton = (Button)findViewById(R.id.img_backbutton);
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -2,7 +2,6 @@ package com.github.ltkicker.gradify.activities.classroom;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,9 +15,7 @@ import androidx.core.content.ContextCompat;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
-import com.github.ltkicker.gradify.calculator.GradeSheet;
 import com.github.ltkicker.gradify.data.database.FirebaseUtils;
-import com.github.ltkicker.gradify.data.database.SubCategoriesListener;
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
 import com.github.ltkicker.gradify.data.leaderboard.SubCategory;
 import com.google.firebase.database.DataSnapshot;
@@ -28,8 +25,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
 
 public class ClassGradeSheetActivity extends AppCompatActivity {
 
@@ -92,7 +87,7 @@ public class ClassGradeSheetActivity extends AppCompatActivity {
                                 for(DataSnapshot subCatSnapshot : snapshot.getChildren()) {
                                     SubCategory subCateg = subCatSnapshot.getValue(SubCategory.class);
                                     TextView subCatCol = new TextView(context);
-                                    subCatCol.setText(subCateg.getName());
+                                    subCatCol.setText(subCateg.getTitle());
                                     header.addView(subCatCol);
                                 }
                             }

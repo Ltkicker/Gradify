@@ -57,6 +57,12 @@ public class SignupActivity extends AppCompatActivity {
                         FirebaseDatabase.getInstance().getReference("users")
                                 .child(username)
                                 .setValue(user).addOnCompleteListener(t -> showMenu());
+
+                        CacheData.setUsername(username);
+                        CacheData.setIdNumber(idNumber);
+                        CacheData.setFirstName(firstName);
+                        CacheData.setMiddleName(middleName);
+                        CacheData.setLastName(lastName);
                     } else {
                         Toast.makeText(SignupActivity.this, "Authentication failed.",
                                 Toast.LENGTH_SHORT).show();

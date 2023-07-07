@@ -2,6 +2,7 @@ package com.github.ltkicker.gradify.activities.leaderboard;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,8 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.ltkicker.gradify.R;
 import com.github.ltkicker.gradify.activities.classroom.ClassDashboardActivity;
-import com.github.ltkicker.gradify.activities.classroom.ClassOverviewActivity;
-import com.github.ltkicker.gradify.data.classrooms.ClassListAdapter;
 
 import com.github.ltkicker.gradify.data.leaderboard.GradeSubCategoryAdapter;
 import com.github.ltkicker.gradify.data.leaderboard.GradeSubCategoryInterface;
@@ -40,6 +39,11 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
     String keyReference;
     private ArrayList<String> subKey;
 
+    private String classroomId;
+    TextView subjectCodeTxt;
+    TextView subjectSectionTxt;
+    TextView subjectDescTxt;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,8 +51,14 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
 
         subKey = new ArrayList<>();
 
+        classroomId = "-NZItQ2M6m_y9IXcgOW7";
+
         // Kato naning mag change2 ug category pero diari rako taman kay bungkag ang front end ani
-        keyReference = "parentcategory4";
+        keyReference = "parentcategory1";
+
+        subjectCodeTxt = findViewById(R.id.subject_code);
+        subjectSectionTxt = findViewById(R.id.subject_section);
+        subjectDescTxt = findViewById(R.id.subject_description);
 
         backbutton = (Button)findViewById(R.id.img_backbutton);
 
@@ -60,7 +70,6 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
             }
         });
 
-
         subCategList = findViewById(R.id.subCategList);
         subCategList.setLayoutManager(new LinearLayoutManager(this));
         subCategList.setBackgroundResource(android.R.color.transparent);
@@ -68,33 +77,34 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
         adapter = new GradeSubCategoryAdapter(this, subCategories, this);
         subCategList.setAdapter(adapter);
 
-        dRef = FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7").child("subcategories");
-        dRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists()) {
-                    subCategories.clear();
-                    subKey.clear();
-                    for(DataSnapshot subSnapshot : snapshot.child(keyReference).getChildren()) {
-                        subCategories.add(subSnapshot.getValue(SubCategory.class));
-                        subKey.add(subSnapshot.getKey());
+        refreshList();
+
+        FirebaseDatabase.getInstance().getReference("classrooms").child(classroomId)
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        String subjectCode = snapshot.child("code").getValue(String.class);
+                        String subjectSection = snapshot.child("section").getValue(String.class);
+                        String subjectDesc = snapshot.child("title").getValue(String.class);
+
+                        subjectCodeTxt.setText(subjectCode);
+                        subjectSectionTxt.setText(subjectSection);
+                        subjectDescTxt.setText(subjectDesc);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
 
                     }
-                    adapter.notifyDataSetChanged();
-                }
-            }
+                });
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
 
-            }
-        });
         TextView attendanceTxt = findViewById(R.id.parent_category1);
         attendanceTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 keyReference = "parentcategory1";
-                adapter.notifyDataSetChanged();
+                refreshList();
             }
         });
 
@@ -103,31 +113,83 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
             @Override
             public void onClick(View view) {
                 keyReference = "parentcategory2";
-                adapter.notifyDataSetChanged();
+                refreshList();
             }
         });
 
         TextView projectTxt = findViewById(R.id.parent_category3);
-        quizzesTxt.setOnClickListener(new View.OnClickListener() {
+        projectTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                keyReference = "parentcategory3";
-                adapter.notifyDataSetChanged();
+                keyReference = "parentcategory4";
+                refreshList();
             }
         });
 
         TextView othersTxt = findViewById(R.id.parent_category4);
-        othersTxt.setOnClickListener(new View.OnClickListener() {
+        if(CacheData.isTeacher()) {
+            othersTxt.setText("Exams");
+            othersTxt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    keyReference = "parentcategory3";
+                    refreshList();
+                }
+            });
+        } else {
+            othersTxt.setText("Others");
+            othersTxt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    keyReference = "parentcategory3";
+                    refreshList(true);
+                }
+            });
+        }
+
+    }
+
+    private void refreshList(boolean others) {
+        dRef = FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7")
+                .child("categories").child(keyReference).child("subcategories");
+        dRef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                keyReference = "parentcategory4";
-                adapter.notifyDataSetChanged();
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()) {
+                    subCategories.clear();
+                    subKey.clear();
+                    if(others) {
+                        subKey.add("Overall");
+                        SubCategory overall = new SubCategory();
+                        overall.setTitle("Overall Standing");
+                        subCategories.add(overall);
+                    }
+                    for(DataSnapshot subSnapshot : snapshot.getChildren()) {
+                        subCategories.add(subSnapshot.getValue(SubCategory.class));
+                        subKey.add(subSnapshot.getKey());
+
+                    }
+                    adapter.notifyDataSetChanged();
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
     }
 
+    private void refreshList() {
+        refreshList(false);
+    }
+
     @Override
     public void onItemClick(int position) {
+        if(!CacheData.isTeacher() && keyReference.equalsIgnoreCase("parentcategory3") && position == 0) {
+            Intent intent = new Intent(LeaderboardActivity.this, StudentOverallStandingActivity.class);
+            startActivity(intent);
+            return;
+        }
         Intent intent = new Intent(this, LeaderboardTopScorers.class);
         intent.putExtra("PARENTCATEGORYID", keyReference);
         intent.putExtra("SUBCATEGORY", subCategories.get(position));

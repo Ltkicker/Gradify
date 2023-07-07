@@ -1,10 +1,11 @@
 package com.github.ltkicker.gradify.activities.navigation;
 
-import  androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -32,40 +33,17 @@ public class LogoutActivity extends AppCompatActivity {
             finish();
             return;
         }
+
+
         setContentView(R.layout.activity8_if_homebuttonicon_goto_logout);
+
+        TextView fullname = findViewById(R.id.full_name);
+        Log.d("awevawevawe", CacheData.getUsername());
+        fullname.setText(CacheData.getFirstName() + " " + CacheData.getLastName());
+
         backbutton = (Button)findViewById(R.id.img_backbutton);
 
         backbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LogoutActivity.this,MenuActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        button = (ImageView) findViewById(R.id.backlog_out_ground);
-        button_text = (TextView) findViewById(R.id.Myclasses);
-        button_text = (TextView) findViewById(R.id.txtleaderboards_string);
-        button_text = (TextView) findViewById(R.id.notifications);
-        button_text = (TextView) findViewById(R.id.messages);
-        button_text = (TextView) findViewById(R.id.settings);
-        button_text = (TextView) findViewById(R.id.help);
-        button_text = (TextView) findViewById(R.id.aboutUs);
-        button_text2 = (TextView) findViewById(R.id.logout);
-
-        ImageButton temp = findViewById(R.id.profile);
-
-        temp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(LogoutActivity.this, AuthPortalActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LogoutActivity.this, MenuActivity.class);
@@ -73,9 +51,13 @@ public class LogoutActivity extends AppCompatActivity {
             }
         });
 
+        button_text2 = (TextView) findViewById(R.id.logout);
+
+
         button_text2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(LogoutActivity.this, AuthPortalActivity.class);
                 startActivity(intent);
             }

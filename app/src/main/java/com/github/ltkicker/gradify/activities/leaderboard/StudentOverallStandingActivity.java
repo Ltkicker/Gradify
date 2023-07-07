@@ -3,6 +3,7 @@ package com.github.ltkicker.gradify.activities.leaderboard;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.github.ltkicker.gradify.calculator.listeners.GradesRefresherListener;
 import com.github.ltkicker.gradify.data.database.FirebaseUtils;
 import com.github.ltkicker.gradify.data.grades.UserStandingData;
 import com.github.ltkicker.gradify.data.leaderboard.ParentCategory;
+import com.github.ltkicker.gradify.data.users.CacheData;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -42,6 +44,8 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
     TextView bdCategory4;
     TextView bdPercent1, bdPercent2, bdPercent3, bdPercent4;
     TextView bdPercentCurrent1, bdPercentCurrent2, bdPercentCurrent3, bdPercentCurrent4;
+
+    ProgressBar progress;
 
     double finalGrade = 0;
 
@@ -69,16 +73,23 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
         bdPercentCurrent3 = findViewById(R.id.breakdown_percentage_current3);
         bdPercentCurrent4 = findViewById(R.id.breakdown_percentage_current4);
 
-        String studentId = "2020-0001";
+        progress = findViewById(R.id.progressBar);
+
+
+        String studentId = CacheData.getIdNumber();
+
+
 
         GradesRefresherListener listener = new GradesRefresherListener() {
             @Override
             public void onRefresh(HashMap<String, UserStandingData> data) {
-
+                if (!data.containsKey(studentId)) {
+                    return;
+                }
                 for (ParentCategory parent : data.get(studentId).getBreakdown().keySet()) {
                     Double percentBr = parent.getPercentage() * 100;
                     Double percent = data.get(studentId).getBreakdown().get(parent);
-                    DecimalFormat decimalFormat = new DecimalFormat("#.00");
+                    DecimalFormat decimalFormat = new DecimalFormat("#.##");
                     DecimalFormat decimalFormat2 = new DecimalFormat("#");
                     String formattedNumber = decimalFormat.format(percent) + "%";
                     String formattedNumber2 = decimalFormat2.format(percentBr) + "%";
@@ -103,12 +114,12 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
                         bdPercentCurrent4.setText(formattedNumber);
                     }
                 }
-                Log.d("eawveawve", "finalGrade: " + finalGrade);
                 TextView finalGradetxt = findViewById(R.id.overall_percentage);
                 finalGradetxt.setText(String.valueOf(finalGrade));
                 TextView uniGradetxt = findViewById(R.id.value_equivalent_grade);
                 Double uniGrade = UniversityGrade.convert(finalGrade);
                 uniGradetxt.setText(String.valueOf(uniGrade));
+                progress.setProgress((int) finalGrade);
             }
         };
         StudentGradeManager.getGrades(listener);

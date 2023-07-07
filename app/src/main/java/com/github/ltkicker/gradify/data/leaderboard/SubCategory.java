@@ -7,20 +7,20 @@ import java.util.TimeZone;
 
 public class SubCategory implements Serializable {
 
-    private String name;
+    private String title;
     private long date;
 
-    private double maxScore;
+    private double totalpoints;
 
     public SubCategory() {
 
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
-    public double getMaxScore() {
-        return maxScore;
+    public double getTotalpoints() {
+        return totalpoints;
     }
 
     public String getFormattedDate() {
@@ -39,15 +39,15 @@ public class SubCategory implements Serializable {
         return date;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setDate(int date) {
         this.date = date;
     }
 
-    public void setMaxScore(double maxScore) {
-        this.maxScore = maxScore;
+    public void setTotalpoints(double totalpoints) {
+        this.totalpoints = totalpoints;
     }
 }

@@ -65,7 +65,7 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
         topScorerList.setAdapter(adapter);
 
         TextView subcategtitle = findViewById(R.id.sub_category_title);
-        subcategtitle.setText(subCategory.getName());
+        subcategtitle.setText(subCategory.getTitle());
 
 
         TextView firstplace = findViewById(R.id.student_firstname_top1);

@@ -86,13 +86,18 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
         }
         cRef = FirebaseDatabase.getInstance().getReference("classrooms");
         addButton = findViewById(R.id.btn_add);
-        addButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ClassDashboardActivity.this, ClassEditActivity.class);
-                startActivity(intent);
-            }
-        });
+        if(CacheData.isTeacher()) {
+            addButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(ClassDashboardActivity.this, ClassEditActivity.class);
+                    startActivity(intent);
+                }
+            });
+        } else {
+            addButton.setVisibility(View.GONE);
+        }
+
 
         classroomsById = new ArrayList<>();
         classrooms = new ArrayList<>();
