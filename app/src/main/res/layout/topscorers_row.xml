@@ -42,6 +42,7 @@
         android:layout_height="23dp"
         android:hint="@string/sub_category_rank"
         android:textAlignment="center"
+        android:textColor="#F5000000"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/lower_rank4_bkg"

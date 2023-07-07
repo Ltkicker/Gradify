@@ -106,25 +106,32 @@ public class StudentGradeManager{
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 double sumCategory = 0;
 
-                                double totalpoints = 0;
-                                for(DataSnapshot subcateginstance : parentSnapshot.child("subcategories").getChildren()) {
-                                    totalpoints += subcateginstance.child("totalpoints").getValue(Double.class);
-                                }
+//                                double totalpoints = 0;
+//                                for(DataSnapshot subcateginstance : parentSnapshot.child("subcategories").getChildren()) {
+//                                    totalpoints += subcateginstance.child("totalpoints").getValue(Double.class);
+//                                }
 
                                 HashMap<String, UserStandingData> allStudentData = new HashMap<>();
                                 for(DataSnapshot studentSnapshot : snapshot.getChildren()) {
                                     UserStandingData userStandingData = new UserStandingData(studentSnapshot.getKey(), classroomId);
                                     DataSnapshot sParentSnapshot = studentSnapshot.child(parentSnapshot.getKey());
+                                    long n = sParentSnapshot.getChildrenCount();
                                     for(DataSnapshot sSubCategory : sParentSnapshot.getChildren()) {
-                                        sumCategory += sSubCategory.getValue(Double.class);
+                                        double maxScore = 0.0;
+                                        for (DataSnapshot subcateginstance : parentSnapshot.child("subcategories").getChildren()) {
+                                            if (subcateginstance.getKey().equals(sSubCategory.getKey())) {
+                                                maxScore = subcateginstance.child("totalpoints").getValue(Double.class);
+                                                break;
+                                            }
+                                        }
+                                        sumCategory += sSubCategory.getValue(Double.class) / maxScore;
                                     }
-                                    double totalParentPercentage = ((sumCategory /  totalpoints) * categoryPercent ) * 100;
+                                    double totalParentPercentage = ((sumCategory /  n) * categoryPercent ) * 100;
 
                                     userStandingData.addParentCategoryScore(category, totalParentPercentage);
                                     allStudentData.put(studentSnapshot.getKey(), userStandingData);
                                 }
                                 listener.onRefresh(allStudentData);
-
                             }
 
                             @Override

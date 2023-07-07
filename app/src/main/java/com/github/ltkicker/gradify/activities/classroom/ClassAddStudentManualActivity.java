@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.ltkicker.gradify.R;
+import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 import com.github.ltkicker.gradify.data.classrooms.Classroom;
 import com.github.ltkicker.gradify.data.classrooms.UnregisteredStudent;
 import com.google.android.material.textfield.TextInputEditText;
@@ -25,6 +27,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class ClassAddStudentManualActivity extends AppCompatActivity {
+
+    Button homeButton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +46,14 @@ public class ClassAddStudentManualActivity extends AppCompatActivity {
         String idNum = etIdNum.getText().toString();
 
         TextView addStudent = findViewById(R.id.click_save);
+
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClassAddStudentManualActivity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
 
         addStudent.setOnClickListener(new View.OnClickListener() {
             @Override

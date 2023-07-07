@@ -57,6 +57,7 @@
         android:fontFamily="@font/poppins"
         android:hint="@string/sub_category_date"
         android:textAlignment="center"
+        android:textColor="#545754"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/subcat_container"

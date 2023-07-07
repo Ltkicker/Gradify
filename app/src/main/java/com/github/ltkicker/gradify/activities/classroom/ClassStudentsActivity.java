@@ -35,6 +35,8 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
     StudentListAdapter adapter;
 
     Button backbutton2;
+
+    Button homeButton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +73,15 @@ public class ClassStudentsActivity extends AppCompatActivity implements StudentL
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ClassStudentsActivity.this, ClassOverviewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        homeButton = findViewById(R.id.img_home_button3);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClassStudentsActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });

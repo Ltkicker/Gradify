@@ -15,6 +15,7 @@ import com.github.ltkicker.gradify.activities.navigation.MenuActivity;
 
 public class ClassEmptyActivity extends AppCompatActivity {
     Button backbutton;
+    Button homeButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +44,16 @@ public class ClassEmptyActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        homeButton = findViewById(R.id.img_home_button4);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClassEmptyActivity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
