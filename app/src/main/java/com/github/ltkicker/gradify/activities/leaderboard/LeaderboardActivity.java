@@ -150,7 +150,7 @@ public class LeaderboardActivity extends AppCompatActivity implements GradeSubCa
     }
 
     private void refreshList(boolean others) {
-        dRef = FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7")
+        dRef = FirebaseDatabase.getInstance().getReference("grades").child(classroomId)
                 .child("categories").child(keyReference).child("subcategories");
         dRef.addValueEventListener(new ValueEventListener() {
             @Override

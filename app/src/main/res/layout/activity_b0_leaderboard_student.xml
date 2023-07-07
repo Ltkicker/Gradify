@@ -19,19 +19,24 @@
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0.116"
         tools:ignore="VisualLintBounds" />
 
     <ImageView
         android:id="@+id/gradify_logo"
         android:layout_width="126dp"
         android:layout_height="21dp"
+        android:layout_marginStart="185dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="100dp"
+        android:layout_marginBottom="760dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_gradifybigtext"
         tools:ignore="ContentDescription" />
+
 
     <ImageView
         android:id="@+id/gradify_logo1"
@@ -39,11 +44,12 @@
         android:layout_height="58dp"
         android:layout_marginTop="19dp"
         android:layout_marginEnd="108dp"
+        android:layout_marginBottom="746dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/gradify_logo"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_gradifybiglogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
-
 
     <Button
         android:id="@+id/img_backbutton"
@@ -67,71 +73,84 @@
         tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
     <TextView
-        android:id="@+id/subject_section"
-        android:layout_width="109dp"
-        android:layout_height="17dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/poppins"
-
-        android:hint="@string/subject_section"
-        android:textColor="#80516E69"
-
-        android:textColorHint="#678A84"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/subject_code"
-        tools:ignore="TextContrastCheck" />
-
-    <TextView
         android:id="@+id/subject_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="711dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/subject_code"
         android:textColor="#80506D68"
         android:textColorHint="#B347605C"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gradify_logo1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/subject_section"
+        android:layout_width="109dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginBottom="697dp"
+
+        android:fontFamily="@font/poppins"
+        android:hint="@string/subject_section"
+
+        android:textColor="#80516E69"
+        android:textColorHint="#678A84"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/subject_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="125dp"
 
+        android:layout_marginBottom="675dp"
+        android:fontFamily="@font/poppins"
         android:hint="@string/subject_description"
-        android:textColor="#80506D69"
+        android:textColor="#80516E69"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/subject_code" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/leaderboard_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="95dp"
-        app:layout_constraintBottom_toTopOf="@+id/parent_category_bkg"
+        android:layout_marginBottom="625dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subject_description"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_leaderboard"
         tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/parent_category_bkg"
-        android:layout_width="327dp"
-        android:layout_height="38dp"
+        android:layout_width="366dp"
+        android:layout_height="48dp"
         android:layout_marginTop="56dp"
+        android:layout_marginBottom="581dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subject_description"
@@ -152,7 +171,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/parent_category_bkg"
         app:layout_constraintEnd_toStartOf="@+id/parent_categor2"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="@+id/parent_category_bkg"
         app:layout_constraintTop_toTopOf="@+id/parent_category_bkg"
         tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck,TextSizeCheck" />
@@ -161,7 +180,7 @@
         android:id="@+id/parent_categor2"
         android:layout_width="55dp"
         android:layout_height="16dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="12dp"
         android:clickable="true"
         android:fontFamily="@font/poppins"
         android:hint="@string/category"
@@ -172,7 +191,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/parent_category_bkg"
         app:layout_constraintEnd_toStartOf="@+id/parent_category3"
         app:layout_constraintTop_toTopOf="@+id/parent_category_bkg"
-        app:layout_constraintVertical_bias="0.454"
+        app:layout_constraintVertical_bias="0.468"
         tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck,TextSizeCheck" />
 
     <TextView
@@ -196,7 +215,7 @@
         android:id="@+id/parent_category4"
         android:layout_width="55dp"
         android:layout_height="18dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="36dp"
         android:clickable="true"
         android:fontFamily="@font/poppins"
         android:hint="@string/category"
@@ -207,6 +226,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/parent_category_bkg"
         app:layout_constraintEnd_toEndOf="@+id/parent_category_bkg"
         app:layout_constraintTop_toTopOf="@+id/parent_category_bkg"
+        app:layout_constraintVertical_bias="0.433"
         tools:ignore="HardcodedText,KeyboardInaccessibleWidget,VisualLintOverlap,TextContrastCheck,TouchTargetSizeCheck,TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

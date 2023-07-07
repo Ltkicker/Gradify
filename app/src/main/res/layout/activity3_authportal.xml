@@ -36,18 +36,16 @@
 			android:id="@+id/textView"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginStart="30dp"
-			android:layout_marginTop="1dp"
 			android:fontFamily="@font/pragati_narrow"
 			android:gravity="center"
 			android:text="@string/cubix_text_1"
 			android:textColor="@color/black"
 			android:textSize="55sp"
 			android:textStyle="bold"
-			app:layout_constraintEnd_toEndOf="@+id/textView2"
-			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintEnd_toStartOf="@+id/textView2"
+			app:layout_constraintHorizontal_bias="1.0"
 			app:layout_constraintStart_toStartOf="parent"
-			app:layout_constraintTop_toTopOf="parent" />
+			tools:layout_editor_absoluteY="1dp" />
 
 		<TextView
 			android:id="@+id/textView2"
