@@ -21,7 +21,7 @@ import java.util.HashMap;
 
 public class StudentGradeManager{
     private static DatabaseReference dRef, sRef, sbRef;
-    private static String classroomId = "NZItQ2M6m_y9IXcgOW7";
+    private static String classroomId = "-NZItQ2M6m_y9IXcgOW7";
 
 
     public StudentGradeManager() {
@@ -47,7 +47,7 @@ public class StudentGradeManager{
                 });
     }
 
-    public static void startCalculate(GradesRefresherListener listener) {
+    public static void fetchAllStudentsById(GradesRefresherListener listener) {
         dRef = FirebaseDatabase.getInstance().getReference("grades").child(classroomId);
         dRef.child("students").addValueEventListener(new ValueEventListener() {
             @Override
@@ -88,8 +88,7 @@ public class StudentGradeManager{
     }
 
     public static void getGrades(GradesRefresherListener listener) {
-        classroomId = "NZItQ2M6m_y9IXcgOW7";
-        sRef = FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("students");
+        sRef = FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("student");
         dRef = FirebaseDatabase.getInstance().getReference("grades").child(classroomId).child("categories");
         dRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -104,7 +103,7 @@ public class StudentGradeManager{
                         sRef.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                double sumCategory = 0;
+
 
 //                                double totalpoints = 0;
 //                                for(DataSnapshot subcateginstance : parentSnapshot.child("subcategories").getChildren()) {
@@ -112,7 +111,9 @@ public class StudentGradeManager{
 //                                }
 
                                 HashMap<String, UserStandingData> allStudentData = new HashMap<>();
+
                                 for(DataSnapshot studentSnapshot : snapshot.getChildren()) {
+                                    double sumCategory = 0;
                                     UserStandingData userStandingData = new UserStandingData(studentSnapshot.getKey(), classroomId);
                                     DataSnapshot sParentSnapshot = studentSnapshot.child(parentSnapshot.getKey());
                                     long n = sParentSnapshot.getChildrenCount();
@@ -126,7 +127,8 @@ public class StudentGradeManager{
                                         }
                                         sumCategory += sSubCategory.getValue(Double.class) / maxScore;
                                     }
-                                    double totalParentPercentage = ((sumCategory /  n) * categoryPercent ) * 100;
+                                    double totalParentPercentage = ((sumCategory / n) * categoryPercent ) * 100;
+
 
                                     userStandingData.addParentCategoryScore(category, totalParentPercentage);
                                     allStudentData.put(studentSnapshot.getKey(), userStandingData);

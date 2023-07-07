@@ -55,17 +55,6 @@ public class ClassDashboardActivity extends AppCompatActivity implements ClassLi
       
         if(CacheData.isTeacher()) {
             dRef = FirebaseDatabase.getInstance().getReference("users").child(CacheData.getUsername()).child("classrooms").child("asTeacher");
-
-        backbutton = (Button)findViewById(R.id.img_backbutton);
-
-        backbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ClassDashboardActivity.this, MenuActivity.class);
-                startActivity(intent);
-            }
-        });
-
             dRef.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {

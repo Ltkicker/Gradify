@@ -37,7 +37,7 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
     private ArrayList<ParentCategory> parentCategories;
     private DatabaseReference dRef;
 
-    private String classroomId = "NZItQ2M6m_y9IXcgOW7";
+    private String classroomId = "-NZItQ2M6m_y9IXcgOW7";
     TextView bdCategory1;
     TextView bdCategory2;
     TextView bdCategory3;
@@ -123,7 +123,6 @@ public class StudentOverallStandingActivity extends AppCompatActivity {
             }
         };
         StudentGradeManager.getGrades(listener);
-   //     FirebaseUtils.getAllParentCategories("NZItQ2M6m_y9IXcgOW7", listener);
 
         }
     }

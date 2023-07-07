@@ -43,10 +43,14 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
   
     Button backbutton;
 
+    String classroomId;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b4_top_scorers_teacher_student);
+
+        classroomId = "-NZItQ2M6m_y9IXcgOW7";
 
         SubCategory subCategory = (SubCategory)getIntent().getSerializableExtra("SUBCATEGORY");
         String subCategoryKey = getIntent().getStringExtra("SUBCATEGORYID");
@@ -54,7 +58,7 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
 
 
 
-        dref = FirebaseDatabase.getInstance().getReference("grades").child("NZItQ2M6m_y9IXcgOW7")
+        dref = FirebaseDatabase.getInstance().getReference("grades").child(classroomId)
                 .child("students");
 
         topScorerList = findViewById(R.id.topScorerList);
