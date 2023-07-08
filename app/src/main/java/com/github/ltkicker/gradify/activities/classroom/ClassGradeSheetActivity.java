@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -28,12 +28,14 @@ import java.util.ArrayList;
 
 public class ClassGradeSheetActivity extends AppCompatActivity {
 
-    Button backbutton;
-    private String classroodId = "NZItQ2M6m_y9IXcgOW7";
+    ImageView backbutton;
+    private String classroomId = "-NZItQ2M6m_y9IXcgOW7";
     private TableLayout tableLayout;
 
+    TextView classCodetxt;
+
     DatabaseReference subCatRef = FirebaseDatabase.getInstance().getReference("grades")
-            .child(classroodId).child("subcategories");
+            .child(classroomId).child("subcategories");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +43,21 @@ public class ClassGradeSheetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_a0_gradesheet_teacher);
 
         Context context = this;
-        backbutton = (Button)findViewById(R.id.img_backbutton);
+        backbutton = findViewById(R.id.iconback2);
+
+        classCodetxt = findViewById(R.id.input_subject_code2);
+        FirebaseDatabase.getInstance().getReference("classrooms").child(classroomId)
+                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                classCodetxt.setText(snapshot.child("code").getValue(String.class));
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
 
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,7 +132,7 @@ public class ClassGradeSheetActivity extends AppCompatActivity {
             }
         };
 
-        FirebaseUtils.getAllParentCategories(classroodId, listener);
+        FirebaseUtils.getAllParentCategories(classroomId, listener);
 
     }
 }

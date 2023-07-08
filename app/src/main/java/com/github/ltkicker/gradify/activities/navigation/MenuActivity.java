@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,9 +40,13 @@ public class MenuActivity extends AppCompatActivity {
 
         ImageButton homepage = findViewById(R.id.menu_homepage);
         homepage.setOnClickListener(view -> navigate("HOMEPAGE"));
-
         ImageButton gradesheet = findViewById(R.id.menu_gradesheet);
-        gradesheet.setOnClickListener(view -> navigate("GRADESHEET"));
+        if(CacheData.isTeacher()) {
+            gradesheet.setOnClickListener(view -> navigate("GRADESHEET"));
+        } else {
+            gradesheet.setOnClickListener(view -> Toast.makeText(MenuActivity.this, "Not available for students", Toast.LENGTH_SHORT).show());
+
+        }
 
         ImageButton leaderboard = findViewById(R.id.menu_leaderboard);
         leaderboard.setOnClickListener(new View.OnClickListener() {

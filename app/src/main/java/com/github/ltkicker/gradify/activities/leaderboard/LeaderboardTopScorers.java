@@ -59,7 +59,7 @@ public class LeaderboardTopScorers extends AppCompatActivity implements TopScore
 
 
         dref = FirebaseDatabase.getInstance().getReference("grades").child(classroomId)
-                .child("students");
+                .child("student");
 
         topScorerList = findViewById(R.id.topScorerList);
         topScorerList.setLayoutManager(new LinearLayoutManager(this));
